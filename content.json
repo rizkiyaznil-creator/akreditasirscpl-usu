@@ -410,20 +410,155 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Pengelolaan sediaan farmasi & BMHP dan farmasi klinik: pengorganisasian, formularium, penyimpanan (termasuk high-alert, emergensi, recall), rekonsiliasi, peresepan, dispensing, pemberian, pemantauan terapi obat, pelaporan kesalahan obat, dan penatagunaan antimikroba (PGA).",
         "standar": [
-          ["PKPO 1", "Sistem pelayanan kefarmasian & penggunaan obat serta pengorganisasiannya."],
-          ["PKPO 2", "Formularium RS sebagai acuan peresepan & pengadaan."],
-          ["PKPO 3", "Penyimpanan sediaan farmasi & BMHP dengan benar dan aman."],
-          ["PKPO 3.1", "Pengelolaan obat/produk yang memerlukan penanganan khusus."],
-          ["PKPO 3.2", "Pengelolaan obat emergensi yang disimpan di luar Instalasi Farmasi."],
-          ["PKPO 3.3", "Penarikan (recall) & pemusnahan sediaan farmasi, BMHP, dan implan."],
-          ["PKPO 4", "Rekonsiliasi obat."],
-          ["PKPO 4.1", "Peresepan/permintaan obat & instruksi pengobatan."],
-          ["PKPO 5", "Penyiapan (dispensing) sediaan farmasi."],
-          ["PKPO 5.1", "Penyiapan obat steril/aseptik."],
-          ["PKPO 6", "Pemberian obat oleh staf yang kompeten & berwenang."],
-          ["PKPO 6.1", "Obat yang dibawa pasien dari luar RS & penggunaan obat mandiri."],
-          ["PKPO 7", "Pemantauan terapi obat (PTO) secara kolaboratif."],
-          ["PKPO 7.1", "Pelaporan & tindak lanjut kesalahan obat (medication error)."]
+          {
+            "kode": "PKPO 1",
+            "pernyataan": "Sistem pelayanan kefarmasian dan penggunaan obat dikelola untuk memenuhi kebutuhan pasien sesuai peraturan perundang-undangan.",
+            "tujuan": "Sistem mencakup perencanaan, pemilihan, pengadaan, penyimpanan, distribusi, peresepan, dispensing, pemberian, dan pemantauan terapi obat; dikaji minimal sekali setahun (termasuk insiden kesalahan obat). Dipimpin apoteker berizin & kompeten yang melakukan supervisi, dan melibatkan dokter, perawat, serta TTK.",
+            "ep": [
+              { "t": "RS menetapkan regulasi sistem pelayanan kefarmasian & penggunaan obat termasuk pengorganisasiannya.", "m": "R", "b": "Pedoman pelayanan & pengorganisasian unit farmasi.", "s": "10 / 0" },
+              { "t": "Seluruh apoteker berizin & kompeten, telah melakukan supervisi, dan memastikan kepatuhan terhadap ketentuan.", "m": "D", "b": "STRA & SIPA seluruh apoteker; bukti supervisi.", "s": "10 / 5 / 0" },
+              { "t": "Terdapat bukti kajian sistem pelayanan kefarmasian & penggunaan obat setiap tahun.", "m": "D, W", "b": "Bukti kajian meliputi seluruh proses termasuk medication error; Ka Instalasi Farmasi, apoteker.", "s": "10 / 5 / 0" },
+              { "t": "Tersedia sumber informasi obat untuk semua staf yang terlibat dalam penggunaan obat.", "m": "D, O, W", "b": "Sumber informasi obat di Instalasi Farmasi & unit terkait.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 2",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan formularium yang digunakan untuk peresepan/permintaan obat/instruksi pengobatan.",
+            "tujuan": "Formularium disusun kolaboratif berdasarkan misi RS, kebutuhan & keselamatan pasien, dan aspek biaya; dievaluasi minimal setahun sekali (efektivitas, keamanan, biaya). Perencanaan & pengadaan sediaan farmasi/BMHP melibatkan apoteker agar tidak terjadi kekosongan.",
+            "ep": [
+              { "t": "RS memiliki proses penyusunan formularium secara kolaboratif.", "m": "D, W", "b": "Bukti rapat & penetapan formularium; KFT, Ka Instalasi Farmasi.", "s": "10 / 5 / 0" },
+              { "t": "Pemantauan kepatuhan terhadap formularium (persediaan & penggunaan).", "m": "D, W", "b": "Bukti monitoring kepatuhan formularium.", "s": "10 / 5 / 0" },
+              { "t": "Evaluasi formularium minimal setahun sekali (efektivitas, keamanan, biaya).", "m": "D, W", "b": "Bukti evaluasi formularium oleh KFT.", "s": "10 / 5 / 0" },
+              { "t": "Pelaksanaan & evaluasi perencanaan dan pengadaan sediaan farmasi & BMHP.", "m": "D, W", "b": "Bukti perencanaan & pengadaan; Ka & staf Instalasi Farmasi.", "s": "10 / 5 / 0" },
+              { "t": "Pengadaan sediaan farmasi & BMHP melibatkan apoteker sesuai ketentuan.", "m": "D, W", "b": "Bukti pengadaan melibatkan apoteker.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 3",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan regulasi penyimpanan sediaan farmasi dan BMHP dengan benar dan aman sesuai peraturan perundang-undangan dan standar profesi.",
+            "tujuan": "Penyimpanan memperhatikan stabilitas & keamanan; penyimpanan khusus untuk B3, narkotika/psikotropika, elektrolit konsentrat, dan obat emergensi. Apoteker melakukan supervisi rutin; obat & zat untuk peracikan diberi label akurat (termasuk BUD).",
+            "ep": [
+              { "t": "Sediaan farmasi & BMHP disimpan benar & aman sesuai stabilitas produk, termasuk yang disimpan di luar Instalasi Farmasi.", "m": "O, W", "b": "Tempat penyimpanan benar & aman; staf farmasi.", "s": "10 / 5 / 0" },
+              { "t": "Narkotika & psikotropika disimpan dan dilaporkan penggunaannya sesuai peraturan.", "m": "O, D, W", "b": "Tempat penyimpanan & laporan mutasi narkotika/psikotropika.", "s": "10 / 5 / 0" },
+              { "t": "Supervisi rutin oleh apoteker memastikan penyimpanan dilakukan benar & aman.", "m": "W", "b": "Ka Instalasi Farmasi, apoteker, staf farmasi.", "s": "10 / 5 / 0" },
+              { "t": "Obat & zat kimia untuk peracikan diberi label akurat (nama & kadar, tanggal kedaluwarsa, peringatan khusus).", "m": "O", "b": "Label obat & zat kimia peracikan sesuai ketentuan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 3.1",
+            "pernyataan": "Rumah sakit mengelola obat atau produk yang memerlukan penanganan khusus.",
+            "tujuan": "Mencakup B3, radioaktif, obat penelitian, produk nutrisi parenteral, dan obat/BMHP dari program/donasi — dikelola sesuai sifat, risiko, stabilitas, protokol, dan ketentuan.",
+            "ep": [
+              { "t": "Obat penanganan khusus & bahan berbahaya (B3) dikelola sesuai sifat & risiko bahan.", "m": "O", "b": "Penyimpanan obat penanganan khusus & B3.", "s": "10 / 5 / 0" },
+              { "t": "Radioaktif dikelola sesuai sifat & risiko bahan radioaktif.", "m": "O", "b": "Penyimpanan obat & bahan radioaktif.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Obat penelitian dikelola sesuai protokol penelitian.", "m": "O", "b": "Pengelolaan obat penelitian.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Produk nutrisi parenteral dikelola sesuai stabilitas produk.", "m": "O", "b": "Pengelolaan produk nutrisi parenteral.", "s": "10 / 5 / 0" },
+              { "t": "Obat/BMHP dari program/donasi dikelola sesuai ketentuan & pedoman.", "m": "O", "b": "Pengelolaan obat/BMHP program/donasi.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "PKPO 3.2",
+            "pernyataan": "Rumah sakit mengelola obat dan BMHP untuk kondisi emergensi yang disimpan di luar Instalasi Farmasi agar selalu tersedia, dimonitor, dan aman.",
+            "tujuan": "Pengelolaan obat & BMHP emergensi seragam di seluruh RS (penyimpanan, pemantauan, penggantian, dilindungi dari kehilangan/pencurian); troli emergensi terkunci dengan segel bernomor seri, tata letak seragam, dan panduan cepat dosis.",
+            "ep": [
+              { "t": "Obat & BMHP emergensi di luar Instalasi Farmasi (termasuk di ambulans) dikelola seragam (penyimpanan, pemantauan, penggantian) & dilindungi dari kehilangan/pencurian.", "m": "O", "b": "Penyimpanan obat & BMHP emergensi; troli terkunci dengan segel bernomor seri.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan tata laksana obat emergensi untuk meningkatkan ketepatan & kecepatan pemberian obat.", "m": "D, W", "b": "Bukti tata laksana obat emergensi; Ka Farmasi, perawat, apoteker.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 3.3",
+            "pernyataan": "Rumah sakit menerapkan penarikan kembali (recall) dan pemusnahan sediaan farmasi, BMHP, dan implan sesuai peraturan perundang-undangan.",
+            "tujuan": "RS menetapkan Beyond Use Date (BUD), sistem pelaporan sediaan substandar (rusak), proses recall (identifikasi, penarikan, pengembalian), dan proses pemusnahan.",
+            "ep": [
+              { "t": "Batas waktu obat dapat digunakan (BUD) tercantum pada label obat.", "m": "D, O", "b": "Daftar BUD mengacu referensi terkini; label obat.", "s": "10 / 5 / 0" },
+              { "t": "RS memiliki sistem pelaporan sediaan farmasi & BMHP substandar (rusak).", "m": "D, W", "b": "Bukti pelaporan sediaan substandar.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan proses recall obat, BMHP, & implan (identifikasi, penarikan, pengembalian).", "m": "D, W", "b": "Bukti proses recall sesuai ketentuan.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan proses pemusnahan sediaan farmasi & BMHP.", "m": "D, W", "b": "Bukti proses pemusnahan; Direktur, Ka Farmasi, apoteker.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 4",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan proses rekonsiliasi obat.",
+            "tujuan": "Rekonsiliasi membandingkan daftar obat pasien sebelum masuk RS dengan yang diresepkan saat masuk, transfer antar unit, dan sebelum pulang; kolaboratif (dokter, apoteker, perawat) serta melibatkan pasien/keluarga; hasilnya didokumentasikan & dikomunikasikan untuk menurunkan diskrepansi.",
+            "ep": [
+              { "t": "RS menerapkan rekonsiliasi obat saat pasien masuk, pindah antar unit, dan sebelum pulang.", "m": "D, W", "b": "Bukti rekonsiliasi; Ka Farmasi, apoteker, dokter, perawat/bidan, pasien.", "s": "10 / 5 / 0" },
+              { "t": "Hasil rekonsiliasi obat didokumentasikan di rekam medis.", "m": "D", "b": "Bukti rekam medis rekonsiliasi obat.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 4.1",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan peresepan/permintaan obat dan BMHP/instruksi pengobatan sesuai peraturan perundang-undangan.",
+            "tujuan": "Kesalahan obat tersering pada tahap peresepan. Resep harus lengkap, benar, dan terbaca (identitas pasien, nama obat, dosis, frekuensi, rute, nama & tanda tangan dokter). RS menangani resep tidak lengkap/NORUM-LASA/khusus (emergensi, cito, automatic stop order, tapering) serta resep lisan/telepon dengan komunikasi efektif (tulis–baca ulang–konfirmasi).",
+            "ep": [
+              { "t": "Resep dibuat lengkap sesuai regulasi.", "m": "D, O", "b": "Bukti penulisan resep sesuai regulasi.", "s": "10 / 5 / 0" },
+              { "t": "Evaluasi terhadap penulisan resep/instruksi pengobatan yang tidak lengkap & tidak terbaca.", "m": "D, W", "b": "Bukti evaluasi; Ka Farmasi, apoteker.", "s": "10 / 5 / 0" },
+              { "t": "Pengelolaan resep khusus (emergensi, automatic stop order, tapering).", "m": "D, W", "b": "Bukti pengelolaan resep khusus.", "s": "10 / 5 / 0" },
+              { "t": "Daftar obat yang diresepkan tercatat di rekam medis & menyertai pasien saat dipindahkan/transfer.", "m": "D, O", "b": "Bukti rekam medis / medication chart.", "s": "10 / 5 / 0" },
+              { "t": "Daftar obat pulang diserahkan kepada pasien disertai edukasi penggunaannya.", "m": "D, W", "b": "Bukti edukasi obat pulang; apoteker, pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 5",
+            "pernyataan": "Rumah sakit menerapkan dispensing sediaan farmasi dan BMHP sesuai standar profesi dan peraturan perundang-undangan.",
+            "tujuan": "Dispensing dilakukan staf terlatih dalam lingkungan aman; obat diserahkan dalam bentuk siap digunakan disertai informasi lengkap. Kompetensi berbeda untuk dispensing non-steril, steril non-sitostatika, dan sitostatika.",
+            "ep": [
+              { "t": "Sistem distribusi & dispensing seragam diterapkan di RS sesuai ketentuan.", "m": "D, O, W", "b": "Bukti sistem distribusi & dispensing; Ka Farmasi, apoteker, staf farmasi.", "s": "10 / 5 / 0" },
+              { "t": "Staf yang melakukan dispensing sediaan obat non-steril kompeten.", "m": "D, O", "b": "SPK & RKK; pelaksanaan dispensing non-steril.", "s": "10 / 5 / 0" },
+              { "t": "Staf dispensing obat steril non-sitostatika terlatih & kompeten.", "m": "D", "b": "Sertifikat aseptic dispensing; SPK & RKK.", "s": "10 / 5 / 0" },
+              { "t": "Staf pencampuran sitostatika terlatih & kompeten.", "m": "D", "b": "Sertifikat pelatihan sitostatika; SPK & RKK.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Tersedia fasilitas dispensing sesuai standar praktik kefarmasian.", "m": "O, W", "b": "Fasilitas dispensing sesuai standar.", "s": "10 / 5 / 0" },
+              { "t": "Penyerahan obat dalam bentuk siap diberikan untuk pasien rawat inap (unit dose).", "m": "O", "b": "Obat rawat inap dikemas unit dose dispensing.", "s": "10 / 5 / 0" },
+              { "t": "Obat yang disiapkan diberi etiket lengkap (identitas pasien, nama obat, dosis, cara & waktu pakai, tanggal dispensing, BUD).", "m": "O", "b": "Etiket obat sesuai ketentuan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 5.1",
+            "pernyataan": "Rumah sakit menerapkan pengkajian resep dan telaah obat sesuai peraturan perundang-undangan dan standar praktik profesi.",
+            "tujuan": "Pengkajian resep (aspek administratif, farmasetik, klinis) oleh tenaga kefarmasian yang kompeten & berwenang sebelum obat disiapkan. Telaah obat sebelum diserahkan memastikan tepat pasien, nama obat, dosis & jumlah, rute, dan waktu.",
+            "ep": [
+              { "t": "RS melaksanakan pengkajian resep oleh staf kompeten & berwenang, didukung ketersediaan informasi klinis pasien yang memadai.", "m": "D, W, S", "b": "Bukti pengkajian resep; Ka Farmasi, apoteker, tenaga vokasi farmasi.", "s": "10 / 5 / 0" },
+              { "t": "RS memiliki proses telaah obat sebelum diserahkan.", "m": "D, O, W, S", "b": "Bukti telaah obat sebelum diserahkan; apoteker.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 6",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan pemberian obat sesuai peraturan perundang-undangan.",
+            "tujuan": "Tahap pemberian adalah tahap kritikal. PPA yang kompeten & berwenang memberikan obat; sebelum pemberian dilakukan verifikasi (identitas pasien, nama obat, dosis, rute, waktu); obat high-alert wajib double check.",
+            "ep": [
+              { "t": "Staf pemberi obat kompeten & berwenang dengan pembatasan yang ditetapkan.", "m": "R, D, W", "b": "Penetapan kewenangan; SPK & RKK tenaga medis.", "s": "10 / 5 / 0" },
+              { "t": "Verifikasi sebelum obat diberikan minimal: identitas pasien, nama obat, dosis, rute, dan waktu.", "m": "S", "b": "Pelaksanaan verifikasi sebelum pemberian.", "s": "10 / 5 / 0" },
+              { "t": "Double checking untuk obat high-alert.", "m": "D, S", "b": "Bukti & pelaksanaan double check high-alert.", "s": "10 / 5 / 0" },
+              { "t": "Pasien diberi informasi tentang obat yang akan diberikan.", "m": "D, W", "b": "Bukti pemberian informasi obat; apoteker, perawat, pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 6.1",
+            "pernyataan": "Rumah sakit mengatur penggunaan obat yang dibawa pasien dari luar rumah sakit dan penggunaan obat oleh pasien secara mandiri.",
+            "tujuan": "Obat dari luar RS dinilai kelayakan penggunaannya; penggunaan obat secara mandiri harus diketahui dokter yang merawat, dicatat di rekam medis, disertai edukasi dan pemantauan.",
+            "ep": [
+              { "t": "Penilaian obat yang dibawa pasien dari luar RS untuk kelayakan penggunaannya.", "m": "D, W", "b": "Bukti penilaian obat dari luar RS; Ka Farmasi, apoteker.", "s": "10 / 5 / 0" },
+              { "t": "Edukasi kepada pasien/keluarga jika obat akan digunakan secara mandiri.", "m": "D, W", "b": "Bukti materi edukasi; apoteker, perawat, pasien.", "s": "10 / 5 / 0" },
+              { "t": "Pemantauan pelaksanaan penggunaan obat secara mandiri sesuai edukasi.", "m": "D, W", "b": "Bukti pemantauan; apoteker, perawat, pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 7",
+            "pernyataan": "Rumah sakit menerapkan pemantauan terapi obat secara kolaboratif.",
+            "tujuan": "Pemantauan terapi obat (PTO) melibatkan PPA & pasien, meliputi efek yang diharapkan dan efek samping; didokumentasikan di CPPT. RS menerapkan sistem pemantauan & pelaporan efek samping obat ke Komite/Tim Farmasi & Terapi dan ke BPOM.",
+            "ep": [
+              { "t": "RS menerapkan pemantauan terapi obat (PTO) kolaboratif dan mendokumentasikannya di CPPT.", "m": "D, W", "b": "Bukti PTO di rekam medis/CPPT; apoteker, PPA.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan sistem pemantauan & pelaporan efek samping obat (ESO/MESO) ke KFT dan BPOM.", "m": "D, W", "b": "Bukti pelaporan ESO ke KFT & BPOM.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PKPO 7.1",
+            "pernyataan": "Rumah sakit menetapkan dan menerapkan proses pelaporan serta tindak lanjut terhadap kesalahan obat (medication error) dan berupaya menurunkan kejadiannya.",
+            "tujuan": "Insiden kesalahan obat merupakan penyebab utama cedera yang dapat dicegah. RS membangun sistem pelayanan kefarmasian yang lebih aman (medication safety) dan menindaklanjuti setiap insiden.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan pelaporan serta tindak lanjut kesalahan obat (medication error).", "m": "R, D, W", "b": "Regulasi & bukti pelaporan/tindak lanjut medication error.", "s": "10 / 5 / 0" },
+              { "t": "RS berupaya menurunkan kejadian kesalahan obat (medication safety).", "m": "D, W", "b": "Bukti upaya perbaikan menurunkan kesalahan obat.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
