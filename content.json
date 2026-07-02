@@ -1,0 +1,412 @@
+{
+  "sumber": "KMK RI No. HK.01.07/MENKES/1128/2022 tentang Standar Akreditasi Rumah Sakit (STARKES 2022)",
+  "disclaimer": "Sarikan dari STARKES 2022 sebagai panduan orientasi internal. Bukan pengganti teks standar asli beserta Elemen Penilaian (EP) penuh. Nomor EP spesifik tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.",
+  "umum": {
+    "kelompok_standar": [
+      {
+        "grup": "Manajemen RS",
+        "items": [
+          [
+            "TKRS",
+            "Tata Kelola Rumah Sakit"
+          ],
+          [
+            "KPS",
+            "Kualifikasi dan Pendidikan Staf"
+          ],
+          [
+            "MFK",
+            "Manajemen Fasilitas dan Keselamatan"
+          ],
+          [
+            "PMKP",
+            "Peningkatan Mutu dan Keselamatan Pasien"
+          ],
+          [
+            "MRMIK",
+            "Manajemen Rekam Medik dan Informasi Kesehatan"
+          ],
+          [
+            "PPI",
+            "Pencegahan dan Pengendalian Infeksi"
+          ],
+          [
+            "PPK",
+            "Pendidikan dalam Pelayanan Kesehatan"
+          ]
+        ]
+      },
+      {
+        "grup": "Pelayanan Berfokus pada Pasien",
+        "items": [
+          [
+            "AKP",
+            "Akses dan Kontinuitas Pelayanan"
+          ],
+          [
+            "HPK",
+            "Hak Pasien dan Keluarga"
+          ],
+          [
+            "PP",
+            "Pengkajian Pasien"
+          ],
+          [
+            "PAP",
+            "Pelayanan dan Asuhan Pasien"
+          ],
+          [
+            "PAB",
+            "Pelayanan Anestesi dan Bedah"
+          ],
+          [
+            "PKPO",
+            "Pelayanan Kefarmasian dan Penggunaan Obat"
+          ],
+          [
+            "KE",
+            "Komunikasi dan Edukasi"
+          ]
+        ]
+      },
+      {
+        "grup": "Sasaran Keselamatan Pasien",
+        "items": [
+          [
+            "SKP",
+            "Sasaran Keselamatan Pasien (6 sasaran)"
+          ]
+        ]
+      },
+      {
+        "grup": "Program Nasional",
+        "items": [
+          [
+            "PROGNAS",
+            "Program Nasional (5 program prioritas)"
+          ]
+        ]
+      }
+    ],
+    "skp": [
+      "SKP 1 – Mengidentifikasi pasien dengan benar (minimal 2 identitas: nama & tanggal lahir / nomor RM; tidak boleh nomor kamar/lokasi).",
+      "SKP 2 – Meningkatkan komunikasi efektif (a.l. TBaK/SBAR untuk perintah lisan-telepon & pelaporan hasil kritis).",
+      "SKP 3 – Meningkatkan keamanan obat yang perlu diwaspadai (high-alert & LASA/NORUM, elektrolit konsentrat).",
+      "SKP 4 – Memastikan sisi, prosedur, dan pasien yang benar pada pembedahan/tindakan invasif (Sign in–Time out–Sign out, penandaan lokasi).",
+      "SKP 5 – Mengurangi risiko infeksi terkait pelayanan kesehatan (kebersihan tangan / hand hygiene 5 momen).",
+      "SKP 6 – Mengurangi risiko cedera pasien akibat jatuh (skrining & asesmen risiko jatuh)."
+    ],
+    "prognas": [
+      "Peningkatan kesehatan ibu dan bayi (PONEK 24 jam/7 hari).",
+      "Penurunan angka kesakitan Tuberkulosis (TB DOTS).",
+      "Penurunan angka kesakitan HIV/AIDS.",
+      "Penurunan prevalensi stunting dan wasting.",
+      "Pelayanan Keluarga Berencana Rumah Sakit (PKBRS)."
+    ],
+    "skoring": [
+      "TL – Terpenuhi Lengkap",
+      "TS – Terpenuhi Sebagian",
+      "TT – Tidak Terpenuhi",
+      "TDD – Tidak Dapat Diterapkan"
+    ]
+  },
+  "profesi": [
+    {
+      "id": "Dokter",
+      "judul": "Dokter / DPJP (Profesional Pemberi Asuhan)",
+      "ruang": "Berlaku untuk dokter umum, dokter gigi, dan dokter spesialis yang menjadi DPJP atau PPA.",
+      "standar": [
+        "SKP",
+        "KPS",
+        "MRMIK",
+        "PP",
+        "PAP",
+        "PAB",
+        "HPK",
+        "PKPO",
+        "KE"
+      ],
+      "tugasInti": [
+        "Menegakkan diagnosis, menyusun & memimpin rencana asuhan pasien sebagai DPJP.",
+        "Melakukan asesmen awal (≤24 jam sejak admisi rawat inap) dan asesmen ulang berkala.",
+        "Menulis rekam medis dan CPPT yang lengkap, terbaca, tepat waktu, disertai identitas & jam.",
+        "Mengintegrasikan asuhan antar-PPA melalui CPPT dan verifikasi (review-verifikasi DPJP).",
+        "Mengambil informed consent yang sah untuk tindakan berisiko."
+      ],
+      "poin": [
+        {
+          "std": "SKP",
+          "isi": [
+            "Verifikasi minimal 2 identitas (nama & tanggal lahir / nomor RM) sebelum tindakan, obat, transfusi, sampel.",
+            "Gunakan komunikasi efektif TBaK/SBAR untuk perintah lisan/telepon & pelaporan nilai kritis.",
+            "Lakukan Time Out (Sign in – Time out – Sign out) dan penandaan lokasi operasi bila relevan."
+          ]
+        },
+        {
+          "std": "KPS",
+          "isi": [
+            "Praktik hanya sesuai Rincian Kewenangan Klinis (RKC) hasil kredensial komite medik.",
+            "STR & SIP berlaku; ikuti re-kredensial berkala dan pengembangan profesi berkelanjutan."
+          ]
+        },
+        {
+          "std": "PP & PAP",
+          "isi": [
+            "Asesmen awal memuat riwayat, pemeriksaan, skrining nyeri, risiko jatuh, status gizi, fungsional.",
+            "Rencana asuhan terukur & dievaluasi; asuhan terintegrasi terdokumentasi di CPPT."
+          ]
+        },
+        {
+          "std": "PAB",
+          "isi": [
+            "Asesmen pra-anestesi/pra-sedasi dan pra-bedah terdokumentasi sebelum tindakan.",
+            "Laporan operasi/tindakan ditulis segera setelah selesai, sebelum pasien dipindahkan."
+          ]
+        },
+        {
+          "std": "HPK & KE",
+          "isi": [
+            "Jelaskan diagnosis, rencana, alternatif, dan risiko; hormati hak pasien mengambil keputusan.",
+            "Edukasi terdokumentasi dengan verifikasi pemahaman pasien/keluarga."
+          ]
+        },
+        {
+          "std": "PKPO",
+          "isi": [
+            "Peresepan sesuai formularium RS; hindari singkatan berbahaya & instruksi tak terbaca.",
+            "Waspadai obat high-alert dan interaksi; lakukan rekonsiliasi bersama farmasi."
+          ]
+        }
+      ],
+      "bukti": [
+        "Bukti kredensial & re-kredensial serta RKC tersimpan di komite medik.",
+        "Konsistensi RKC dengan tindakan yang benar-benar dilakukan (audit rekam medis).",
+        "Kelengkapan & ketepatan waktu pengisian rekam medis / CPPT (indikator MRMIK).",
+        "Dokumentasi Time Out pada laporan operasi & penandaan lokasi.",
+        "Informed consent tindakan berisiko tinggi lengkap dan ditandatangani.",
+        "Dokumentasi asesmen nyeri, risiko jatuh, dan skrining gizi pada asesmen awal."
+      ],
+      "surveior": [
+        "\"Tunjukkan Rincian Kewenangan Klinis Anda — apakah tindakan Anda sesuai?\"",
+        "\"Bagaimana Anda melaporkan nilai kritis ke DPJP di luar jam kerja?\"",
+        "\"Tunjukkan bukti Time Out pada laporan operasi pasien ini.\"",
+        "\"Bagaimana proses pengambilan informed consent tindakan berisiko tinggi?\"",
+        "\"Di mana Anda mendokumentasikan integrasi asuhan antar-PPA?\""
+      ]
+    },
+    {
+      "id": "PerawatBidan",
+      "judul": "Perawat & Bidan",
+      "ruang": "Berlaku untuk perawat dan bidan sebagai PPA di rawat inap, rawat jalan, IGD, kamar bersalin, dan unit khusus.",
+      "standar": [
+        "SKP",
+        "PPI",
+        "KPS",
+        "PP",
+        "PAP",
+        "MFK",
+        "KE",
+        "PROGNAS"
+      ],
+      "tugasInti": [
+        "Melaksanakan asuhan keperawatan/kebidanan sesuai rencana asuhan terintegrasi.",
+        "Melakukan skrining & asesmen (nyeri, risiko jatuh, gizi, EWS) serta asesmen ulang.",
+        "Memberikan obat dengan prinsip benar dan mendokumentasikan di CPPT sesuai profesi.",
+        "Menerapkan kebersihan tangan dan kewaspadaan standar secara konsisten."
+      ],
+      "poin": [
+        {
+          "std": "SKP",
+          "isi": [
+            "Verifikasi 2 identitas setiap sebelum tindakan/pemberian obat/pengambilan sampel.",
+            "Terima perintah lisan/telepon dengan TBaK (tulis–baca ulang–konfirmasi).",
+            "Terapkan asesmen & asesmen ulang risiko jatuh serta intervensi pencegahan.",
+            "Kebersihan tangan 5 momen; kepatuhan diukur dan diaudit."
+          ]
+        },
+        {
+          "std": "PPI",
+          "isi": [
+            "Gunakan APD sesuai indikasi; terapkan kewaspadaan standar & berbasis transmisi.",
+            "Lakukan pemilahan limbah medis/non-medis dan pengelolaan benda tajam yang benar."
+          ]
+        },
+        {
+          "std": "PP & PAP",
+          "isi": [
+            "Deteksi dini perburukan dengan Early Warning System (EWS) dan aktifkan respons.",
+            "Dokumentasikan asuhan, edukasi, dan respons pasien di CPPT."
+          ]
+        },
+        {
+          "std": "PKPO (terkait pemberian obat)",
+          "isi": [
+            "Terapkan prinsip benar pemberian obat; double-check untuk obat high-alert.",
+            "Kenali penyimpanan & pelabelan obat high-alert dan LASA/NORUM di unit."
+          ]
+        },
+        {
+          "std": "MFK",
+          "isi": [
+            "Kuasai lokasi APAR, jalur evakuasi, titik kumpul, dan kode darurat RS.",
+            "Tahu penanganan awal tumpahan B3 dan pelaporannya."
+          ]
+        },
+        {
+          "std": "PROGNAS (bidan/maternitas)",
+          "isi": [
+            "Dukung pelaksanaan PONEK 24 jam / 7 hari dan alur rujukan maternal-neonatal."
+          ]
+        }
+      ],
+      "bukti": [
+        "Compliance hand hygiene terukur & hasil audit PPI berkala.",
+        "Dokumentasi asesmen ulang risiko jatuh & intervensi di rekam medis.",
+        "Bukti double-check obat high-alert.",
+        "File kepegawaian: STR/SIP, uraian tugas, bukti orientasi & pelatihan wajib (BHD, PPI, K3).",
+        "Dokumentasi TBaK pada pelaporan hasil kritis / perintah lisan.",
+        "Bukti aktivasi & tindak lanjut EWS."
+      ],
+      "surveior": [
+        "\"Peragakan 6 langkah cuci tangan dan sebutkan 5 momennya.\"",
+        "\"Apa yang Anda lakukan bila menemukan insiden keselamatan pasien?\"",
+        "\"Tunjukkan asesmen risiko jatuh pasien ini dan intervensinya.\"",
+        "\"Bagaimana prosedur double-check obat high-alert di unit Anda?\"",
+        "\"Di mana APAR terdekat dan bagaimana cara menggunakannya?\""
+      ]
+    },
+    {
+      "id": "Farmasi",
+      "judul": "Apoteker & Tenaga Teknis Kefarmasian (TTK)",
+      "ruang": "Berlaku untuk apoteker dan TTK di instalasi farmasi, depo, dan pelayanan farmasi klinik.",
+      "standar": [
+        "PKPO",
+        "SKP",
+        "PPI",
+        "KPS",
+        "MFK",
+        "KE"
+      ],
+      "tugasInti": [
+        "Mengelola rantai obat: seleksi, pengadaan, penyimpanan, peresepan, penyiapan, distribusi, pemberian, pemantauan.",
+        "Melakukan pengkajian & telaah resep sebelum penyiapan.",
+        "Menjalankan rekonsiliasi obat pada admisi, transfer, dan pemulangan.",
+        "Mengelola obat high-alert, LASA/NORUM, elektrolit konsentrat, dan narkotika/psikotropika."
+      ],
+      "poin": [
+        {
+          "std": "PKPO",
+          "isi": [
+            "Terapkan sistem formularium RS dan pantau penggunaannya.",
+            "Simpan obat high-alert terpisah dengan pelabelan khusus; elektrolit konsentrat tidak di ruang rawat kecuali diatur.",
+            "Kelola LASA/NORUM dengan penempatan & penandaan yang mencegah tertukar.",
+            "Lakukan pengkajian resep (tepat pasien, obat, dosis, rute, waktu, duplikasi, interaksi).",
+            "Jalankan rekonsiliasi obat & dokumentasikan; lakukan pemantauan terapi obat (PTO) bila diindikasikan.",
+            "Kelola narkotika/psikotropika sesuai ketentuan (penyimpanan terkunci, pencatatan)."
+          ]
+        },
+        {
+          "std": "SKP",
+          "isi": [
+            "Dukung SKP 3 (keamanan obat high-alert) sebagai penanggung jawab utama.",
+            "Verifikasi identitas pasien saat penyerahan obat rawat jalan."
+          ]
+        },
+        {
+          "std": "PPI & MFK",
+          "isi": [
+            "Terapkan kewaspadaan standar & pengelolaan B3 (termasuk obat sitostatika bila ada).",
+            "Kelola penyimpanan sesuai suhu & kestabilan; pantau rantai dingin (cold chain)."
+          ]
+        }
+      ],
+      "bukti": [
+        "Daftar & bukti pelabelan obat high-alert, LASA, elektrolit konsentrat.",
+        "Bukti pengkajian/telaah resep terdokumentasi.",
+        "Dokumentasi rekonsiliasi obat pada admisi/transfer/pulang.",
+        "Kartu stok & pencatatan narkotika-psikotropika, hasil stok opname.",
+        "Log pemantauan suhu penyimpanan & rantai dingin.",
+        "File kepegawaian: STR/SIP(A), uraian tugas, bukti pelatihan."
+      ],
+      "surveior": [
+        "\"Bagaimana Anda menyimpan dan melabeli obat high-alert? Tunjukkan.\"",
+        "\"Peragakan proses pengkajian resep sebelum penyiapan.\"",
+        "\"Tunjukkan dokumentasi rekonsiliasi obat pasien ini.\"",
+        "\"Bagaimana pengelolaan LASA/NORUM agar tidak tertukar?\"",
+        "\"Bagaimana pencatatan dan penyimpanan narkotika di sini?\""
+      ]
+    },
+    {
+      "id": "Penunjang",
+      "judul": "Tenaga Penunjang & Umum (Rekam Medis, IPSRS/Teknisi, Gizi, Laundry, Kebersihan, Keamanan, Pendaftaran, Ambulans)",
+      "ruang": "Berlaku untuk staf non-PPA yang mendukung operasional dan keselamatan pelayanan.",
+      "standar": [
+        "SKP",
+        "MFK",
+        "PPI",
+        "MRMIK",
+        "KPS",
+        "AKP"
+      ],
+      "tugasInti": [
+        "Mendukung keselamatan pasien & fasilitas sesuai peran masing-masing.",
+        "Menjaga kerahasiaan, keamanan, dan ketertiban data serta lingkungan RS.",
+        "Mematuhi prosedur PPI dan keselamatan fasilitas (MFK) di area kerja."
+      ],
+      "poin": [
+        {
+          "std": "MRMIK (Rekam Medis & Pendaftaran)",
+          "isi": [
+            "Simpan berkas rekam medis aman dengan akses terbatas; jaga kerahasiaan pasien.",
+            "Patuhi masa retensi & prosedur peminjaman/pengembalian berkas.",
+            "Pastikan identitas pasien benar sejak pendaftaran (2 identitas)."
+          ]
+        },
+        {
+          "std": "MFK (IPSRS/Teknisi & CS)",
+          "isi": [
+            "Laksanakan pemeliharaan, uji fungsi, dan kalibrasi alat sesuai jadwal (teknisi).",
+            "Pastikan sistem utilitas (listrik, air, genset, gas medis) berfungsi & teruji.",
+            "Tangani tumpahan B3 dan kebersihan lingkungan sesuai prosedur (CS)."
+          ]
+        },
+        {
+          "std": "PPI (Gizi, Laundry, CS)",
+          "isi": [
+            "Terapkan alur bersih–kotor, higiene, dan suhu penyimpanan makanan (gizi).",
+            "Dekontaminasi & pemisahan linen infeksius/non-infeksius (laundry).",
+            "Pemilahan limbah medis/non-medis dan kebersihan area (CS)."
+          ]
+        },
+        {
+          "std": "AKP (Pendaftaran & Ambulans)",
+          "isi": [
+            "Pahami alur admisi, transfer, dan rujukan pasien."
+          ]
+        },
+        {
+          "std": "SKP & MFK (semua)",
+          "isi": [
+            "Kenali kode darurat (mis. code red), jalur evakuasi, titik kumpul, dan cara pakai APAR.",
+            "Ketahui alur pelaporan insiden dan kepada siapa melapor."
+          ]
+        }
+      ],
+      "bukti": [
+        "Bukti orientasi umum & khusus tiap staf baru terdokumentasi.",
+        "Jadwal & bukti pemeliharaan/kalibrasi alat serta uji utilitas (IPSRS).",
+        "Log akses & pengendalian berkas rekam medis; kepatuhan retensi.",
+        "Audit kebersihan lingkungan & pemilahan limbah (PPI).",
+        "Log suhu penyimpanan makanan / catatan dekontaminasi linen.",
+        "Sertifikat pelatihan wajib (BHD, kebakaran, PPI dasar) masih berlaku."
+      ],
+      "surveior": [
+        "\"Di mana jalur evakuasi terdekat dan titik kumpul?\"",
+        "\"Bagaimana Anda memilah sampah medis dan non-medis?\"",
+        "(Rekam medis) \"Siapa saja yang boleh mengakses berkas rekam medis?\"",
+        "\"Apa yang Anda lakukan bila terjadi kode kebakaran (code red)?\"",
+        "(Teknisi) \"Tunjukkan jadwal & bukti kalibrasi alat ini.\""
+      ]
+    }
+  ]
+}

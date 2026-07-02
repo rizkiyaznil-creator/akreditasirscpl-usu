@@ -1,0 +1,522 @@
+/* =========================================================
+   Handbook Akreditasi RS — STARKES 2022
+   Vanilla JS. content.json = satu-satunya sumber data.
+   ========================================================= */
+
+(function () {
+  'use strict';
+
+  var STORAGE_PREFIX = 'handbook-akreditasi:checklist:';
+  var app = document.getElementById('app');
+  var footer = document.getElementById('footer-disclaimer');
+  var searchForm = document.getElementById('search-form');
+  var searchInput = document.getElementById('search-input');
+
+  var DATA = null;        // isi content.json
+  var SEARCH_INDEX = [];  // daftar entri untuk pencarian
+
+  /* ---------- Util ---------- */
+  function h(tag, attrs, children) {
+    var el = document.createElement(tag);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        if (k === 'class') el.className = attrs[k];
+        else if (k === 'html') el.innerHTML = attrs[k];
+        else if (k === 'text') el.textContent = attrs[k];
+        else if (k.indexOf('on') === 0 && typeof attrs[k] === 'function') {
+          el.addEventListener(k.slice(2).toLowerCase(), attrs[k]);
+        } else if (attrs[k] != null) {
+          el.setAttribute(k, attrs[k]);
+        }
+      });
+    }
+    (children || []).forEach(function (c) {
+      if (c == null) return;
+      el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    });
+    return el;
+  }
+  function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function findProfesi(id) {
+    return (DATA.profesi || []).filter(function (p) { return p.id === id; })[0] || null;
+  }
+  // Bersihkan kutipan pembungkus pada pertanyaan surveior di content.json
+  function stripQuotes(s) {
+    return String(s).replace(/^["“”'\s]+|["“”'\s]+$/g, '');
+  }
+
+  /* ---------- Footer disclaimer (di tiap halaman) ---------- */
+  function renderFooter() {
+    clear(footer);
+    footer.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), DATA.sumber]));
+    footer.appendChild(h('p', { text: DATA.disclaimer }));
+  }
+
+  /* ---------- Checklist (localStorage per-scope) ---------- */
+  function loadChecks(scope) {
+    try { return JSON.parse(localStorage.getItem(STORAGE_PREFIX + scope) || '{}'); }
+    catch (e) { return {}; }
+  }
+  function saveChecks(scope, obj) {
+    try { localStorage.setItem(STORAGE_PREFIX + scope, JSON.stringify(obj)); } catch (e) {}
+  }
+
+  // items: [{badge, text}]  scope: kunci localStorage (mis. "Dokter")
+  function buildChecklist(scope, items, introNote) {
+    var saved = loadChecks(scope);
+
+    var counter = h('span', { text: '0 / ' + items.length });
+    var fill = h('span', { class: 'fill' });
+    var progress = h('div', { class: 'progress' }, [
+      counter,
+      h('span', { class: 'track' }, [fill])
+    ]);
+
+    function refresh() {
+      var done = items.reduce(function (n, _, i) { return n + (saved[i] ? 1 : 0); }, 0);
+      counter.textContent = done + ' / ' + items.length;
+      fill.style.width = (items.length ? (done / items.length * 100) : 0) + '%';
+    }
+
+    var list = h('div', {});
+    items.forEach(function (it, i) {
+      var box = h('input', { type: 'checkbox', id: 'chk-' + scope + '-' + i });
+      if (saved[i]) box.checked = true;
+      var row = h('label', {
+        class: 'check-item' + (saved[i] ? ' done' : ''),
+        for: 'chk-' + scope + '-' + i
+      }, [
+        box,
+        h('span', {}, [
+          it.badge ? h('span', { class: 'std-badge', text: it.badge, style: 'margin-right:.4rem' }) : null,
+          it.text
+        ])
+      ]);
+      box.addEventListener('change', function (e) {
+        saved[i] = e.target.checked;
+        saveChecks(scope, saved);
+        row.classList.toggle('done', e.target.checked);
+        refresh();
+      });
+      list.appendChild(row);
+    });
+
+    var resetBtn = h('button', {
+      class: 'btn no-print',
+      type: 'button',
+      onClick: function () {
+        if (!window.confirm('Reset semua centang untuk bagian ini? Tindakan ini hanya menghapus catatan di perangkat ini.')) return;
+        localStorage.removeItem(STORAGE_PREFIX + scope);
+        Object.keys(saved).forEach(function (k) { delete saved[k]; });
+        list.querySelectorAll('input').forEach(function (c) { c.checked = false; });
+        list.querySelectorAll('.check-item').forEach(function (r) { r.classList.remove('done'); });
+        refresh();
+      }
+    }, ['↺ Reset checklist bagian ini']);
+
+    refresh();
+
+    return h('div', { class: 'card' }, [
+      h('p', { class: 'note', html: introNote }),
+      progress,
+      list,
+      h('div', { style: 'margin-top:1rem' }, [resetBtn])
+    ]);
+  }
+
+  /* ---------- Tabs helper ---------- */
+  function buildTabs(defs) {
+    // defs: [{id, label, build:()=>Node}]
+    var tablist = h('div', { class: 'tabs', role: 'tablist' });
+    var panels = [];
+    var buttons = [];
+
+    defs.forEach(function (d, i) {
+      var btn = h('button', {
+        class: 'tab', role: 'tab', 'data-tab': d.id,
+        'aria-selected': i === 0 ? 'true' : 'false',
+        id: 'tab-' + d.id, 'aria-controls': 'panel-' + d.id, type: 'button'
+      }, [d.label]);
+      buttons.push(btn);
+      tablist.appendChild(btn);
+
+      var panel = h('section', {
+        class: 'panel' + (i === 0 ? ' active' : ''), role: 'tabpanel',
+        id: 'panel-' + d.id, 'aria-labelledby': 'tab-' + d.id
+      }, [h('h2', { class: 'print-h', text: d.label })]);
+      panel.appendChild(d.build());
+      panels.push(panel);
+
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
+        panels.forEach(function (p) { p.classList.toggle('active', p.id === 'panel-' + d.id); });
+      });
+    });
+
+    var frag = document.createDocumentFragment();
+    frag.appendChild(tablist);
+    panels.forEach(function (p) { frag.appendChild(p); });
+    return { fragment: frag, buttons: buttons, panels: panels, defs: defs };
+  }
+  function selectTab(tabsObj, id) {
+    tabsObj.defs.forEach(function (d, i) {
+      var on = d.id === id;
+      tabsObj.buttons[i].setAttribute('aria-selected', on ? 'true' : 'false');
+      tabsObj.panels[i].classList.toggle('active', on);
+    });
+  }
+
+  /* ---------- Views ---------- */
+  function crumbs(parts) {
+    var nav = h('nav', { class: 'crumbs', 'aria-label': 'Remah' });
+    parts.forEach(function (p, i) {
+      if (i > 0) nav.appendChild(document.createTextNode(' › '));
+      if (p.href) nav.appendChild(h('a', { href: p.href, text: p.label }));
+      else nav.appendChild(h('span', { text: p.label }));
+    });
+    return nav;
+  }
+
+  function viewHome() {
+    clear(app);
+    app.appendChild(h('div', { class: 'lead' }, [
+      h('h1', { text: 'Handbook Kesiapan Akreditasi RS' }),
+      h('p', { text: 'Sarikan berbasis peran dari STARKES 2022 untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
+    ]));
+
+    app.appendChild(h('h2', { class: 'section-title', text: 'Handbook per profesi' }));
+    var grid = h('div', { class: 'grid' });
+    (DATA.profesi || []).forEach(function (p) {
+      var chips = h('div', { class: 'chips' });
+      (p.standar || []).forEach(function (s) { chips.appendChild(h('span', { class: 'chip', text: s })); });
+      grid.appendChild(h('a', { class: 'pcard', href: '#/profesi/' + encodeURIComponent(p.id) }, [
+        h('h3', { text: p.judul }),
+        h('p', { text: p.ruang }),
+        chips
+      ]));
+    });
+    app.appendChild(grid);
+
+    app.appendChild(h('h2', { class: 'section-title', text: 'Bagian umum' }));
+    var grid2 = h('div', { class: 'grid' });
+    grid2.appendChild(h('a', { class: 'pcard', href: '#/umum' }, [
+      h('h3', { text: 'Standar, SKP, Program Nasional & Skoring' }),
+      h('p', { text: '16 kelompok standar dalam 4 grup, 6 Sasaran Keselamatan Pasien, 5 Program Nasional, dan skema skoring TL/TS/TT/TDD.' })
+    ]));
+    app.appendChild(grid2);
+
+    document.title = 'Handbook Akreditasi RS — Kesiapan STARKES 2022';
+    window.scrollTo(0, 0);
+  }
+
+  function viewProfesi(id, activeTab) {
+    var p = findProfesi(id);
+    if (!p) { viewNotFound('Profesi tidak ditemukan.'); return; }
+    clear(app);
+
+    app.appendChild(crumbs([
+      { label: 'Beranda', href: '#/' },
+      { label: 'Profesi' },
+      { label: p.judul }
+    ]));
+
+    // Head
+    var chips = h('div', { class: 'chips', 'aria-label': 'Standar terkait' });
+    (p.standar || []).forEach(function (s) { chips.appendChild(h('span', { class: 'chip', text: s })); });
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('h1', { text: p.judul }),
+      h('p', { class: 'ruang', text: p.ruang }),
+      chips,
+      h('div', { class: 'head-actions' }, [
+        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak handbook profesi ini']),
+        h('a', { class: 'btn', href: '#/' }, ['← Pilih profesi lain'])
+      ])
+    ]));
+
+    // Tab: Kompetensi & Poin Standar
+    function buildKompetensi() {
+      var frag = document.createDocumentFragment();
+      if (p.tugasInti && p.tugasInti.length) {
+        var ulTugas = h('ul', { class: 'clean' });
+        p.tugasInti.forEach(function (t) { ulTugas.appendChild(h('li', { text: t })); });
+        frag.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Tugas inti' }), ulTugas]));
+      }
+      var card = h('div', { class: 'card' });
+      (p.poin || []).forEach(function (blok) {
+        var ul = h('ul', { class: 'clean' });
+        (blok.isi || []).forEach(function (i) { ul.appendChild(h('li', { text: i })); });
+        card.appendChild(h('div', { class: 'std-block' }, [
+          h('h3', {}, [h('span', { class: 'std-badge', text: blok.std })]),
+          ul
+        ]));
+      });
+      frag.appendChild(card);
+      return frag;
+    }
+
+    // Tab: Bukti
+    function buildBukti() {
+      var ul = h('ul', { class: 'clean' });
+      (p.bukti || []).forEach(function (b) { ul.appendChild(h('li', { text: b })); });
+      return h('div', { class: 'card' }, [ul]);
+    }
+
+    // Tab: Surveior
+    function buildSurveior() {
+      var ul = h('ul', { class: 'q-list' });
+      (p.surveior || []).forEach(function (q) { ul.appendChild(h('li', { text: stripQuotes(q) })); });
+      return h('div', { class: 'card' }, [ul]);
+    }
+
+    // Tab: Checklist (gabungan poin standar profesi)
+    function buildChecklistTab() {
+      var items = [];
+      (p.poin || []).forEach(function (blok) {
+        (blok.isi || []).forEach(function (i) { items.push({ badge: blok.std, text: i }); });
+      });
+      var note = 'Status centang <strong>tersimpan lokal di perangkat ini saja</strong> (localStorage) — tidak terkirim ke server dan tidak terpusat. Browser atau perangkat lain punya catatan tersendiri.';
+      return buildChecklist(p.id, items, note);
+    }
+
+    var tabsObj = buildTabs([
+      { id: 'kompetensi', label: 'Kompetensi & Poin Standar', build: buildKompetensi },
+      { id: 'bukti', label: 'Bukti / Dokumen', build: buildBukti },
+      { id: 'surveior', label: 'Pertanyaan Surveior', build: buildSurveior },
+      { id: 'checklist', label: 'Checklist Self-Assessment', build: buildChecklistTab }
+    ]);
+    app.appendChild(tabsObj.fragment);
+    if (activeTab) selectTab(tabsObj, activeTab);
+
+    document.title = p.judul + ' — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  function viewUmum(activeTab) {
+    var u = DATA.umum || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Bagian umum' }]));
+
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('h1', { text: 'Standar, SKP, Program Nasional & Skoring' }),
+      h('p', { class: 'ruang', text: 'Gambaran menyeluruh yang berlaku lintas profesi.' }),
+      h('div', { class: 'head-actions' }, [
+        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak bagian umum']),
+        h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
+      ])
+    ]));
+
+    function buildStandar() {
+      var frag = document.createDocumentFragment();
+      var card = h('div', { class: 'card' });
+      (u.kelompok_standar || []).forEach(function (g) {
+        var table = h('table', { class: 'std-table' });
+        var tbody = h('tbody', {});
+        (g.items || []).forEach(function (row) {
+          tbody.appendChild(h('tr', {}, [
+            h('td', { text: row[0] }),
+            h('td', { text: row[1] })
+          ]));
+        });
+        table.appendChild(tbody);
+        card.appendChild(h('div', { class: 'grup' }, [h('h3', { text: g.grup }), table]));
+      });
+      frag.appendChild(card);
+      return frag;
+    }
+
+    function buildSkp() {
+      var ul = h('ul', { class: 'clean' });
+      (u.skp || []).forEach(function (s) { ul.appendChild(h('li', { text: s })); });
+      return h('div', { class: 'card' }, [h('h2', { text: 'Sasaran Keselamatan Pasien (SKP)' }), ul]);
+    }
+
+    function buildPrognas() {
+      var ol = h('ol', { class: 'clean' });
+      (u.prognas || []).forEach(function (s) { ol.appendChild(h('li', { text: s })); });
+      var uls = h('ul', { class: 'clean' });
+      (u.skoring || []).forEach(function (s) { uls.appendChild(h('li', { text: s })); });
+      var frag = document.createDocumentFragment();
+      frag.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Program Nasional (PROGNAS)' }), ol]));
+      frag.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Skema skoring penilaian' }), uls]));
+      return frag;
+    }
+
+    function buildChecklistTab() {
+      var items = [];
+      (u.skp || []).forEach(function (s) { items.push({ badge: 'SKP', text: s }); });
+      (u.prognas || []).forEach(function (s) { items.push({ badge: 'PROGNAS', text: s }); });
+      var note = 'Checklist umum (SKP & Program Nasional). Status <strong>tersimpan lokal di perangkat ini saja</strong> (localStorage), tidak terpusat dan tidak terkirim ke server.';
+      return buildChecklist('_umum', items, note);
+    }
+
+    var tabsObj = buildTabs([
+      { id: 'standar', label: 'Kelompok Standar', build: buildStandar },
+      { id: 'skp', label: 'SKP', build: buildSkp },
+      { id: 'prognas', label: 'PROGNAS & Skoring', build: buildPrognas },
+      { id: 'checklist', label: 'Checklist Self-Assessment', build: buildChecklistTab }
+    ]);
+    app.appendChild(tabsObj.fragment);
+    if (activeTab) selectTab(tabsObj, activeTab);
+
+    document.title = 'Bagian Umum — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Search ---------- */
+  function buildSearchIndex() {
+    SEARCH_INDEX = [];
+    var u = DATA.umum || {};
+
+    (u.skp || []).forEach(function (s) {
+      SEARCH_INDEX.push({ text: s, badge: 'SKP', where: 'Bagian Umum · SKP', href: '#/umum/skp' });
+    });
+    (u.prognas || []).forEach(function (s) {
+      SEARCH_INDEX.push({ text: s, badge: 'PROGNAS', where: 'Bagian Umum · PROGNAS', href: '#/umum/prognas' });
+    });
+    (u.kelompok_standar || []).forEach(function (g) {
+      (g.items || []).forEach(function (row) {
+        SEARCH_INDEX.push({ text: row[0] + ' — ' + row[1], badge: row[0], where: 'Bagian Umum · ' + g.grup, href: '#/umum/standar' });
+      });
+    });
+
+    (DATA.profesi || []).forEach(function (p) {
+      var base = '#/profesi/' + encodeURIComponent(p.id);
+      (p.tugasInti || []).forEach(function (t) {
+        SEARCH_INDEX.push({ text: t, badge: 'Tugas', where: p.judul + ' · Tugas inti', href: base + '/kompetensi' });
+      });
+      (p.poin || []).forEach(function (blok) {
+        (blok.isi || []).forEach(function (i) {
+          SEARCH_INDEX.push({ text: i, badge: blok.std, where: p.judul + ' · Poin standar', href: base + '/kompetensi' });
+        });
+      });
+      (p.bukti || []).forEach(function (b) {
+        SEARCH_INDEX.push({ text: b, badge: 'Bukti', where: p.judul + ' · Bukti/Dokumen', href: base + '/bukti' });
+      });
+      (p.surveior || []).forEach(function (q) {
+        SEARCH_INDEX.push({ text: stripQuotes(q), badge: 'Surveior', where: p.judul + ' · Pertanyaan surveior', href: base + '/surveior' });
+      });
+    });
+  }
+
+  function highlight(text, q) {
+    var safe = esc(text);
+    if (!q) return safe;
+    var terms = q.split(/\s+/).filter(Boolean).map(function (t) {
+      return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    });
+    if (!terms.length) return safe;
+    var re = new RegExp('(' + terms.join('|') + ')', 'gi');
+    return safe.replace(re, '<mark>$1</mark>');
+  }
+
+  function viewSearch(q) {
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Pencarian' }]));
+    q = (q || '').trim();
+    if (searchInput.value !== q) searchInput.value = q;
+
+    app.appendChild(h('div', { class: 'lead' }, [
+      h('h1', { text: 'Hasil pencarian' }),
+      h('p', {}, [q ? ('Kata kunci: “' + q + '”') : 'Ketik kata kunci pada kotak pencarian di atas.'])
+    ]));
+
+    if (!q) { document.title = 'Pencarian — Handbook Akreditasi RS'; return; }
+
+    var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    var hits = SEARCH_INDEX.filter(function (e) {
+      var hay = (e.text + ' ' + e.badge + ' ' + e.where).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+
+    if (!hits.length) {
+      app.appendChild(h('p', { class: 'empty', text: 'Tidak ada hasil untuk kata kunci tersebut. Coba istilah lain atau lebih umum.' }));
+    } else {
+      app.appendChild(h('p', { class: 'meta', text: hits.length + ' hasil ditemukan.', style: 'color:var(--ink-soft);font-size:.82rem;margin:.2rem 0 1rem' }));
+      hits.forEach(function (e) {
+        app.appendChild(h('div', { class: 'result' }, [
+          h('div', { class: 'meta' }, [
+            h('span', { class: 'std-badge', text: e.badge }),
+            h('span', { text: e.where })
+          ]),
+          h('a', { class: 'result-title', href: e.href, html: highlight(e.text, q) })
+        ]));
+      });
+    }
+    document.title = 'Pencarian: ' + q + ' — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  function viewNotFound(msg) {
+    clear(app);
+    app.appendChild(h('div', { class: 'lead' }, [
+      h('h1', { text: 'Halaman tidak ditemukan' }),
+      h('p', { text: msg || 'Tautan tidak dikenali.' })
+    ]));
+    app.appendChild(h('a', { class: 'btn', href: '#/' }, ['← Kembali ke beranda']));
+  }
+
+  /* ---------- Router ---------- */
+  function router() {
+    var hash = window.location.hash.replace(/^#/, '') || '/';
+    // pisahkan query untuk pencarian
+    var qi = hash.indexOf('?');
+    var query = '';
+    if (qi !== -1) { query = hash.slice(qi + 1); hash = hash.slice(0, qi); }
+    var parts = hash.split('/').filter(Boolean); // mis. ['profesi','Dokter','bukti']
+
+    if (parts.length === 0) return viewHome();
+
+    if (parts[0] === 'profesi' && parts[1]) {
+      return viewProfesi(decodeURIComponent(parts[1]), parts[2]);
+    }
+    if (parts[0] === 'umum') {
+      return viewUmum(parts[1]);
+    }
+    if (parts[0] === 'cari') {
+      var q = '';
+      query.split('&').forEach(function (kv) {
+        var pair = kv.split('=');
+        if (pair[0] === 'q') q = decodeURIComponent((pair[1] || '').replace(/\+/g, ' '));
+      });
+      return viewSearch(q);
+    }
+    viewNotFound();
+  }
+
+  /* ---------- Search box wiring ---------- */
+  searchForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    window.location.hash = '/cari?q=' + encodeURIComponent(q);
+  });
+
+  /* ---------- Boot ---------- */
+  function fatal(msg) {
+    clear(app);
+    app.appendChild(h('div', { class: 'lead' }, [
+      h('h1', { text: 'Gagal memuat data' }),
+      h('p', { text: msg })
+    ]));
+  }
+
+  fetch('content.json', { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      DATA = data;
+      renderFooter();
+      buildSearchIndex();
+      window.addEventListener('hashchange', router);
+      router();
+    })
+    .catch(function (err) {
+      fatal('Tidak dapat membaca content.json (' + err.message + '). Jalankan lewat server statis / HTTP, bukan dengan membuka berkas langsung (file://).');
+    });
+})();
