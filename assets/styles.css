@@ -79,7 +79,13 @@ mark{background:#fff3b0; color:inherit; padding:0 .1em; border-radius:2px}
 .lead h1{font-size:1.6rem; margin:0 0 .4rem; line-height:1.2}
 .lead p{margin:0; color:var(--ink-soft); max-width:65ch}
 .section-title{font-size:1.05rem; color:var(--accent); margin:1.6rem 0 .8rem}
+.section-head{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap}
+.section-head .section-title{margin-bottom:.4rem}
+.section-link{font-size:.85rem; font-weight:600; text-decoration:none; white-space:nowrap; color:var(--brand-ink)}
+.section-link:hover{text-decoration:underline}
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:.9rem}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); align-items:start}
+.card > h3.card-h{margin:0 0 .6rem; font-size:1rem; color:var(--accent)}
 .pcard{
   display:block; text-decoration:none; color:inherit; background:var(--surface);
   border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow);
