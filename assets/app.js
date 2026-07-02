@@ -478,6 +478,24 @@
   /* ---------- Standar Rinci ---------- */
   function kodeSlug(kode) { return encodeURIComponent(kode); }
 
+  // "D, S, W" -> badge kecil per metode
+  function metodeBadges(m) {
+    var out = [];
+    if (!m) return [document.createTextNode('—')];
+    String(m).split(/[,\s]+/).filter(Boolean).forEach(function (code) {
+      out.push(h('span', { class: 'metode-badge', text: code, title: metodeNama(code) }));
+    });
+    return out;
+  }
+  function metodeNama(code) {
+    return { R: 'Regulasi', D: 'Dokumen', O: 'Observasi', W: 'Wawancara', S: 'Simulasi' }[code] || code;
+  }
+  // Normalisasi satu entri standar (mendukung format [kode, desc] atau objek detail)
+  function normStandar(s) {
+    if (Array.isArray(s)) return { kode: s[0], pernyataan: s[1], tujuan: null, ep: null };
+    return { kode: s.kode, pernyataan: s.pernyataan, tujuan: s.tujuan, ep: s.ep };
+  }
+
   function viewStandarIndex() {
     var sr = DATA.standarRinci || {};
     var bab = sr.bab || [];
@@ -527,18 +545,36 @@
       ])
     ]));
 
-    var card = h('div', { class: 'card' }, [h('h2', { text: 'Daftar standar' })]);
-    var table = h('table', { class: 'std-table' });
-    var tbody = h('tbody', {});
-    (b.standar || []).forEach(function (s) {
-      tbody.appendChild(h('tr', {}, [
-        h('td', {}, [h('strong', { text: s[0] })]),
-        h('td', { text: s[1] })
-      ]));
+    var adaDetail = (b.standar || []).some(function (s) { return !Array.isArray(s) && Array.isArray(s.ep); });
+    app.appendChild(h('h2', { class: 'section-title', text: 'Daftar standar' + (adaDetail ? ' (dengan Elemen Penilaian)' : '') }));
+
+    (b.standar || []).forEach(function (s0) {
+      var s = normStandar(s0);
+      var block = h('div', { class: 'card std-detail' });
+      block.appendChild(h('h3', {}, [h('span', { class: 'std-badge', text: s.kode }), ' ', s.pernyataan || '']));
+      if (s.tujuan) block.appendChild(h('p', { class: 'tujuan' }, [h('strong', { text: 'Maksud & tujuan: ' }), s.tujuan]));
+      if (Array.isArray(s.ep) && s.ep.length) {
+        var tbl = h('table', { class: 'ep-table' });
+        tbl.appendChild(h('thead', {}, [h('tr', {}, [
+          h('th', { text: 'Elemen Penilaian' }),
+          h('th', { text: 'Metode' }),
+          h('th', { text: 'Kelengkapan bukti' }),
+          h('th', { text: 'Skor' })
+        ])]));
+        var tb = h('tbody', {});
+        s.ep.forEach(function (e, i) {
+          tb.appendChild(h('tr', {}, [
+            h('td', {}, [h('span', { class: 'ep-no', text: (i + 1) + '. ' }), e.t || '']),
+            h('td', {}, metodeBadges(e.m)),
+            h('td', { text: e.b || '—' }),
+            h('td', { class: 'ep-skor', text: e.s || '' })
+          ]));
+        });
+        tbl.appendChild(tb);
+        block.appendChild(h('div', { class: 'ep-wrap' }, [tbl]));
+      }
+      app.appendChild(block);
     });
-    table.appendChild(tbody);
-    card.appendChild(table);
-    app.appendChild(card);
 
     // Legenda kode pembuktian & skoring (dari umum)
     var u = DATA.umum || {};
@@ -576,8 +612,14 @@
 
     var sr = DATA.standarRinci || {};
     (sr.bab || []).forEach(function (b) {
-      (b.standar || []).forEach(function (s) {
-        SEARCH_INDEX.push({ text: s[0] + ' — ' + s[1], badge: b.kode, where: 'Standar Rinci · ' + b.nama, href: '#/standar/' + encodeURIComponent(b.kode) });
+      (b.standar || []).forEach(function (s0) {
+        var s = normStandar(s0);
+        SEARCH_INDEX.push({ text: s.kode + ' — ' + (s.pernyataan || ''), badge: b.kode, where: 'Standar Rinci · ' + b.nama, href: '#/standar/' + encodeURIComponent(b.kode) });
+        if (Array.isArray(s.ep)) {
+          s.ep.forEach(function (e) {
+            SEARCH_INDEX.push({ text: e.t, badge: s.kode, where: 'Standar Rinci · ' + b.nama + ' · EP', href: '#/standar/' + encodeURIComponent(b.kode) });
+          });
+        }
       });
     });
 

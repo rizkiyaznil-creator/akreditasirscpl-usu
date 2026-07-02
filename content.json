@@ -447,14 +447,84 @@
         "kelompok": "Sasaran Keselamatan Pasien",
         "ringkas": "Enam Sasaran Keselamatan Pasien nasional yang wajib diterapkan RS.",
         "standar": [
-          ["SKP 1", "Mengidentifikasi pasien dengan benar (minimal 2 identitas)."],
-          ["SKP 2", "Meningkatkan komunikasi efektif (tulis/input–baca ulang–konfirmasi, SBAR, pelaporan hasil kritis, dan serah terima/hand over)."],
-          ["SKP 3", "Meningkatkan keamanan obat high-alert termasuk LASA/NORUM."],
-          ["SKP 3.1", "Meningkatkan keamanan penggunaan elektrolit konsentrat."],
-          ["SKP 4", "Memastikan tepat sisi, prosedur, & pasien pada pembedahan/tindakan invasif (verifikasi pra-operasi, penandaan lokasi, time-out)."],
-          ["SKP 5", "Mengurangi risiko infeksi terkait pelayanan kesehatan (kebersihan tangan)."],
-          ["SKP 6", "Mengurangi risiko cedera pasien akibat jatuh."],
-          ["SKP 6.1", "Skrining & asesmen risiko jatuh pada pasien rawat jalan."]
+          {
+            "kode": "SKP 1",
+            "pernyataan": "Rumah sakit menerapkan proses untuk menjamin ketepatan identifikasi pasien.",
+            "tujuan": "Kesalahan identifikasi dapat terjadi di semua tahap pelayanan. Identifikasi memakai minimal 2 identitas (mis. nama & tanggal lahir / nomor RM); nomor kamar/lokasi tidak boleh dipakai. Tujuannya memastikan layanan, tindakan, atau pengobatan diberikan kepada pasien yang benar.",
+            "ep": [
+              { "t": "RS menetapkan regulasi Sasaran Keselamatan Pasien (poin 1–6).", "m": "R", "b": "Penetapan sasaran keselamatan pasien poin 1–6.", "s": "10 / 0" },
+              { "t": "Menerapkan identifikasi pasien menggunakan minimal 2 identitas sesuai ketentuan RS.", "m": "O, W", "b": "Penerapan identifikasi pasien; PPA; pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Pasien diidentifikasi dengan minimal dua jenis identitas pada tiap tindakan/pemberian.", "m": "O, S, W", "b": "Pelaksanaan identifikasi; PPA; pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Identifikasi pada situasi khusus dan penggunaan label sesuai ketentuan.", "m": "D, W", "b": "Bukti identifikasi pada situasi khusus & penggunaan label.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 2",
+            "pernyataan": "Rumah sakit menerapkan proses untuk meningkatkan efektivitas komunikasi lisan dan/atau telepon antar-PPA, pelaporan hasil kritis, dan komunikasi saat serah terima (hand over).",
+            "tujuan": "Komunikasi efektif harus tepat waktu, akurat, lengkap, jelas, dan dipahami. Instruksi lisan/telepon memakai tulis/input–baca ulang–konfirmasi; pelaporan kondisi pasien memakai SBAR; hasil kritis (termasuk POCT) dan serah terima dikomunikasikan dengan metode baku dan didokumentasikan.",
+            "ep": [
+              { "t": "Komunikasi saat menerima instruksi via telepon: tulis/input–baca ulang–konfirmasi, dan SBAR saat melaporkan kondisi pasien ke DPJP; didokumentasikan.", "m": "D, S, W", "b": "Bukti rekam medis komunikasi instruksi via telepon & pelaporan ke DPJP; PPA.", "s": "10 / 5 / 0" },
+              { "t": "Komunikasi pelaporan hasil kritis pemeriksaan penunjang (termasuk POCT) via telepon dengan tulis–baca ulang–konfirmasi; didokumentasikan.", "m": "R, D, S, W", "b": "Penetapan hasil kritis; bukti rekam medis; PPA, staf laboratorium & radiologi.", "s": "10 / 5 / 0" },
+              { "t": "Komunikasi saat serah terima (hand over) sesuai jenis serah terima.", "m": "D, S, W", "b": "Bukti rekam medis & pelaksanaan serah terima; PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 3",
+            "pernyataan": "Rumah sakit menerapkan proses untuk meningkatkan keamanan penggunaan obat yang memerlukan kewaspadaan tinggi (high-alert) termasuk obat LASA/NORUM.",
+            "tujuan": "Obat high-alert berisiko menyebabkan cedera serius bila salah pakai, mencakup obat risiko tinggi (mis. insulin, heparin, sitostatika), LASA/NORUM, dan elektrolit konsentrat. RS menetapkan strategi: penataan penyimpanan, pelabelan jelas, double check, pembatasan akses, dan panduan; daftar high-alert diperbarui berkala.",
+            "ep": [
+              { "t": "RS menetapkan daftar obat kewaspadaan tinggi (high-alert) termasuk LASA/NORUM.", "m": "R", "b": "Penetapan daftar high-alert termasuk LASA/NORUM.", "s": "10 / 0" },
+              { "t": "Pengelolaan high-alert termasuk LASA seragam di seluruh area RS untuk mengurangi risiko & cedera.", "m": "O, W", "b": "Penerapan pengelolaan high-alert/LASA seragam; Kepala Instalasi Farmasi/Apoteker.", "s": "10 / 5 / 0" },
+              { "t": "Evaluasi & pembaruan daftar high-alert/LASA minimal 1 tahun sekali berdasarkan laporan insiden.", "m": "W", "b": "Komite/Tim Farmasi dan Terapi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 3.1",
+            "pernyataan": "Rumah sakit menerapkan proses untuk meningkatkan keamanan penggunaan elektrolit konsentrat.",
+            "tujuan": "Elektrolit konsentrat (mis. KCl ≥1 mEq/ml, NaCl >0,9%, MgSO4 ≥50%) disimpan di Instalasi Farmasi. Penyimpanan di luar farmasi hanya untuk situasi klinis tertentu dengan syarat: staf kompeten, terpisah, dan berlabel peringatan jelas.",
+            "ep": [
+              { "t": "Penyimpanan elektrolit konsentrat tertentu hanya di Instalasi Farmasi, kecuali unit dengan pertimbangan klinis.", "m": "R", "b": "Penetapan daftar elektrolit konsentrat yang boleh di luar farmasi.", "s": "10 / 0" },
+              { "t": "Penyimpanan elektrolit konsentrat di luar Instalasi Farmasi hanya untuk situasi yang ditentukan.", "m": "O, W", "b": "Penyimpanan sesuai ketentuan; Apoteker, staf unit terkait.", "s": "10 / 5 / 0" },
+              { "t": "RS menetapkan & menerapkan protokol koreksi hipokalemia, hiponatremia, dan hipofosfatemia.", "m": "R, D, W", "b": "Penetapan & bukti penerapan protokol koreksi; PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 4",
+            "pernyataan": "Rumah sakit menetapkan proses verifikasi pra-operasi, penandaan lokasi operasi, dan time-out yang dilaksanakan sesaat sebelum tindakan serta sign-out setelah tindakan selesai.",
+            "tujuan": "Salah-sisi/prosedur/pasien dapat dicegah dengan universal protocol: verifikasi praoperasi (sisi/prosedur/pasien benar, kelengkapan dokumen & implan), penandaan lokasi yang melibatkan pasien dengan tanda seragam (tanda 'X' tidak dipakai), serta time-out sebelum insisi dan sign-out setelah tindakan menggunakan Surgical Safety Checklist WHO.",
+            "ep": [
+              { "t": "RS menerapkan proses verifikasi praoperasi (sisi/prosedur/pasien benar; kelengkapan dokumen, hasil pencitraan, darah/implan).", "m": "D, O, W", "b": "Bukti rekam medis verifikasi praoperasi; tim bedah.", "s": "10 / 5 / 0" },
+              { "t": "Penandaan lokasi operasi/tindakan invasif melibatkan pasien dengan tanda seragam yang tidak bermakna ganda.", "m": "D, O", "b": "Bukti penandaan lokasi operasi.", "s": "10 / 5 / 0" },
+              { "t": "Time-out sebelum insisi dan sign-out setelah tindakan menggunakan Surgical Safety Checklist WHO terkini.", "m": "D, O, W", "b": "Bukti Surgical Safety Checklist WHO pada tindakan operasi/invasif.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 5",
+            "pernyataan": "Rumah sakit menerapkan kebersihan tangan (hand hygiene) untuk menurunkan risiko infeksi terkait layanan kesehatan.",
+            "tujuan": "Kebersihan tangan sesuai pedoman WHO terkini adalah upaya utama menurunkan infeksi terkait layanan kesehatan (mis. ISK terkait kateter, infeksi aliran darah, pneumonia). RS menyusun kebijakan/prosedur kolaboratif dan mengukur kepatuhannya.",
+            "ep": [
+              { "t": "RS menerapkan kebersihan tangan (hand hygiene) yang mengacu pada standar WHO terkini.", "m": "O, W, S", "b": "Pelaksanaan kebersihan tangan; staf RS.", "s": "10 / 5 / 0" },
+              { "t": "Terdapat evaluasi pelaksanaan program kebersihan tangan dan upaya perbaikannya.", "m": "D, W", "b": "Bukti evaluasi & perbaikan; Komite/Tim PMKP & PPI.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 6",
+            "pernyataan": "Rumah sakit menerapkan proses untuk mengurangi risiko cedera pasien akibat jatuh di rawat jalan.",
+            "tujuan": "Di rawat jalan dilakukan skrining risiko jatuh berdasarkan kondisi (mis. geriatri, vertigo, gangguan keseimbangan/penglihatan, sedasi), diagnosis, situasi, dan lokasi. Bila berisiko, dilakukan intervensi; hasil skrining & intervensi didokumentasikan.",
+            "ep": [
+              { "t": "RS melaksanakan skrining risiko jatuh pasien rawat jalan (kondisi, diagnosis, situasi, lokasi) dengan alat bantu/metode yang ditetapkan.", "m": "D, O, W", "b": "Bukti rekam medis skrining; staf unit terkait; pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Tindakan/intervensi pengurangan risiko jatuh dilakukan bila skrining berisiko; hasil & intervensi didokumentasikan.", "m": "D, O, W", "b": "Bukti rekam medis tindakan/intervensi; staf unit terkait.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "SKP 6.1",
+            "pernyataan": "Rumah sakit menerapkan proses untuk mengurangi risiko cedera pasien akibat jatuh di rawat inap.",
+            "tujuan": "Semua pasien rawat inap (dewasa & anak) dikaji risiko jatuh dengan metode baku sesuai ketentuan RS. Pengkajian ulang dilakukan bila kondisi berubah (mis. pascabedah/anestesi, perubahan mendadak, penyesuaian obat). Kriteria & intervensi didokumentasikan di rekam medis.",
+            "ep": [
+              { "t": "Pengkajian risiko jatuh untuk semua pasien rawat inap (dewasa & anak) dengan metode pengkajian baku.", "m": "D, O, W", "b": "Bukti rekam medis pengkajian; staf unit terkait; pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian ulang risiko jatuh bila ada perubahan kondisi atau pasien sudah berisiko.", "m": "D, W", "b": "Bukti rekam medis pengkajian ulang; staf unit terkait.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
