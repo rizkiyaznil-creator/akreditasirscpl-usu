@@ -11,7 +11,15 @@
       "Membangun sistem kesehatan akademik yang berkelanjutan dan terintegrasi.",
       "Menjadi mitra terpercaya bagi masyarakat, pemerintah, dan komunitas global."
     ],
-    "nilai": []
+    "moto": "CAREST",
+    "nilai": [
+      ["Compassion (Kepedulian)", "penghormatan kepada hak asasi manusia, etika profesi, prinsip nondiskriminasi, serta sikap humanis dan empatik dalam melayani pasien, peserta didik, dan seluruh pemangku kepentingan;"],
+      ["Academic Excellence (Keunggulan Akademik)", "penyelenggaraan pelayanan, pendidikan, dan penelitian yang bermutu tinggi, berbasis bukti ilmiah, serta berdaya saing pada tingkat nasional dan internasional;"],
+      ["Responsibility (Tanggung Jawab)", "profesionalisme, integritas, dan akuntabilitas dalam penyelenggaraan pelayanan, pendidikan, dan penelitian, disertai tata kelola yang transparan, efisien, dan berkelanjutan;"],
+      ["Excellence through Innovation (Keunggulan melalui Inovasi)", "pengembangan dan penerapan ilmu pengetahuan, teknologi kedokteran, serta inovasi digital secara berkelanjutan untuk meningkatkan mutu pelayanan, pembelajaran, dan dampak ilmiah;"],
+      ["Safety First (Mengutamakan Keselamatan)", "keselamatan dan kepentingan pasien sebagai prioritas utama dalam setiap pengambilan keputusan klinis dan manajerial, dengan budaya keselamatan yang melekat pada seluruh proses kerja, termasuk keselamatan peserta didik dan tenaga kesehatan; dan"],
+      ["Teamwork & Trust (Kerja Sama dan Kepercayaan)", "kolaborasi interprofesional yang solid, komunikasi terbuka, serta saling percaya antar sejawat, peserta didik, peneliti, dan mitra kerja sebagai fondasi Academic Health System."]
+    ]
   },
   "umum": {
     "kelompok_standar": [
