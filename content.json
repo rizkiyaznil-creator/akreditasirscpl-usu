@@ -1,6 +1,12 @@
 {
   "sumber": "KMK RI No. HK.01.07/MENKES/1128/2022 tentang Standar Akreditasi Rumah Sakit (STARKES 2022)",
   "disclaimer": "Sarikan dari STARKES 2022 sebagai panduan orientasi internal. Bukan pengganti teks standar asli beserta Elemen Penilaian (EP) penuh. Nomor EP spesifik tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.",
+  "visiMisiNilai": {
+    "nama": "RS CPL USU",
+    "visi": "",
+    "misi": [],
+    "nilai": []
+  },
   "umum": {
     "kelompok_standar": [
       {
