@@ -1,7 +1,7 @@
 {
-  "name": "Handbook Akreditasi RSP CPL USU — STARKES 2022",
+  "name": "Handbook Akreditasi RSP CPL USU",
   "short_name": "Handbook RSP",
-  "description": "Sarikan handbook kesiapan akreditasi rumah sakit (STARKES 2022) berbasis peran untuk orientasi internal.",
+  "description": "Sarikan handbook kesiapan akreditasi rumah sakit berbasis peran (Standar Akreditasi RS KMK 1596/2024) untuk orientasi internal.",
   "lang": "id",
   "start_url": "./",
   "scope": "./",

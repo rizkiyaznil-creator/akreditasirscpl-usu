@@ -1,6 +1,6 @@
 {
-  "sumber": "KMK RI No. HK.01.07/MENKES/1128/2022 tentang Standar Akreditasi Rumah Sakit (STARKES 2022)",
-  "disclaimer": "Sarikan dari STARKES 2022 sebagai panduan orientasi internal. Bukan pengganti teks standar asli beserta Elemen Penilaian (EP) penuh. Nomor EP spesifik tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.",
+  "sumber": "KMK RI No. HK.01.07/MENKES/1596/2024 tentang Standar Akreditasi Rumah Sakit dan Kepdirjen Yankes No. HK.02.02/D/47104/2024 tentang Instrumen Survei Akreditasi Rumah Sakit (30 Desember 2024).",
+  "disclaimer": "Sarikan dari Standar Akreditasi Rumah Sakit (KMK 1596/2024) dan Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024) sebagai panduan orientasi internal. Bukan pengganti teks standar/instrumen asli beserta Elemen Penilaian (EP), maksud-tujuan, dan daftar kelengkapan bukti yang lengkap. Nomor EP spesifik tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.",
   "visiMisiNilai": {
     "nama": "RSP CPL USU",
     "visi": "Menjadi Smart Academic Health Centre yang unggul di Asia Tenggara dan mengintegrasikan pelayanan, pendidikan, dan penelitian untuk mewujudkan kesehatan yang lebih baik bagi seluruh masyarakat.",
@@ -24,7 +24,7 @@
   "umum": {
     "kelompok_standar": [
       {
-        "grup": "Manajemen RS",
+        "grup": "Kelompok Manajemen Rumah Sakit",
         "items": [
           [
             "TKRS",
@@ -44,20 +44,16 @@
           ],
           [
             "MRMIK",
-            "Manajemen Rekam Medik dan Informasi Kesehatan"
+            "Manajemen Rekam Medis dan Informasi Kesehatan"
           ],
           [
             "PPI",
             "Pencegahan dan Pengendalian Infeksi"
-          ],
-          [
-            "PPK",
-            "Pendidikan dalam Pelayanan Kesehatan"
           ]
         ]
       },
       {
-        "grup": "Pelayanan Berfokus pada Pasien",
+        "grup": "Kelompok Pelayanan Berfokus pada Pasien",
         "items": [
           [
             "AKP",
@@ -103,7 +99,7 @@
         "items": [
           [
             "PROGNAS",
-            "Program Nasional (5 program prioritas)"
+            "Program Nasional (6 program prioritas)"
           ]
         ]
       }
@@ -117,17 +113,25 @@
       "SKP 6 – Mengurangi risiko cedera pasien akibat jatuh (skrining & asesmen risiko jatuh)."
     ],
     "prognas": [
-      "Peningkatan kesehatan ibu dan bayi (PONEK 24 jam/7 hari).",
-      "Penurunan angka kesakitan Tuberkulosis (TB DOTS).",
+      "Peningkatan kesehatan ibu dan bayi (PONEK 24 jam / 7 hari).",
+      "Penurunan angka kesakitan Tuberkulosis/TBC (TB DOTS).",
       "Penurunan angka kesakitan HIV/AIDS.",
       "Penurunan prevalensi stunting dan wasting.",
-      "Pelayanan Keluarga Berencana Rumah Sakit (PKBRS)."
+      "Pelayanan Keluarga Berencana Rumah Sakit (PKBRS).",
+      "Program Pengendalian Resistensi Antimikroba (PPRA)."
     ],
     "skoring": [
-      "TL – Terpenuhi Lengkap",
-      "TS – Terpenuhi Sebagian",
-      "TT – Tidak Terpenuhi",
-      "TDD – Tidak Dapat Diterapkan"
+      "TL – Terpenuhi Lengkap (nilai 10).",
+      "TS – Terpenuhi Sebagian (nilai 5).",
+      "TT – Tidak Terpenuhi (nilai 0).",
+      "TDD – Tidak Dapat Diterapkan (tidak dinilai)."
+    ],
+    "kodePembuktian": [
+      ["R", "Regulasi — dokumen yang disusun RS: SPO, pedoman, panduan, surat keputusan pimpinan, dan lainnya."],
+      ["D", "Dokumen — bukti pelaksanaan suatu kegiatan atau layanan."],
+      ["O", "Observasi — surveior mengamati langsung pelaksanaan sesuai regulasi."],
+      ["W", "Wawancara — tanya jawab dengan pemilik, pimpinan, PPA, staf klinis/non-klinis, pasien, atau keluarga."],
+      ["S", "Simulasi — peragaan kegiatan oleh staf RS atas permintaan surveior."]
     ]
   },
   "profesi": [
@@ -144,7 +148,8 @@
         "PAB",
         "HPK",
         "PKPO",
-        "KE"
+        "KE",
+        "PROGNAS"
       ],
       "tugasInti": [
         "Menegakkan diagnosis, menyusun & memimpin rencana asuhan pasien sebagai DPJP.",
@@ -195,6 +200,12 @@
           "isi": [
             "Peresepan sesuai formularium RS; hindari singkatan berbahaya & instruksi tak terbaca.",
             "Waspadai obat high-alert dan interaksi; lakukan rekonsiliasi bersama farmasi."
+          ]
+        },
+        {
+          "std": "PROGNAS (PPRA)",
+          "isi": [
+            "Terapkan penggunaan antibiotik secara bijak sesuai Panduan Penggunaan Antibiotik (PPAB) dan program pengendalian resistensi antimikroba (PPRA)."
           ]
         }
       ],
@@ -305,7 +316,8 @@
         "PPI",
         "KPS",
         "MFK",
-        "KE"
+        "KE",
+        "PROGNAS"
       ],
       "tugasInti": [
         "Mengelola rantai obat: seleksi, pengadaan, penyimpanan, peresepan, penyiapan, distribusi, pemberian, pemantauan.",
@@ -337,6 +349,13 @@
           "isi": [
             "Terapkan kewaspadaan standar & pengelolaan B3 (termasuk obat sitostatika bila ada).",
             "Kelola penyimpanan sesuai suhu & kestabilan; pantau rantai dingin (cold chain)."
+          ]
+        },
+        {
+          "std": "PROGNAS (PPRA)",
+          "isi": [
+            "Dukung program pengendalian resistensi antimikroba (PPRA): pemantauan penggunaan antibiotik, audit dan umpan balik bersama tim PPRA, serta pelaporan.",
+            "Fasilitasi penerapan Panduan Penggunaan Antibiotik (PPAB) dan pembatasan antibiotik yang perlu persetujuan."
           ]
         }
       ],
