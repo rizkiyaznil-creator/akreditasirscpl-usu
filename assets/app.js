@@ -189,6 +189,41 @@
       h('p', { text: 'Sarikan berbasis peran dari STARKES 2022 untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
     ]));
 
+    // Visi, Misi & Nilai sebagai kartu di beranda
+    var vmn0 = DATA.visiMisiNilai;
+    if (vmn0 && ((vmn0.visi && vmn0.visi.trim()) || (vmn0.misi && vmn0.misi.length) || (vmn0.nilai && vmn0.nilai.length))) {
+      app.appendChild(h('div', { class: 'section-head' }, [
+        h('h2', { class: 'section-title', text: 'Visi, Misi & Nilai ' + (vmn0.nama || '') }),
+        h('a', { class: 'section-link', href: '#/visi' }, ['Buka & cetak →'])
+      ]));
+
+      if (vmn0.visi && vmn0.visi.trim()) {
+        app.appendChild(h('div', { class: 'card' }, [
+          h('h3', { class: 'card-h', text: 'Visi' }),
+          h('p', { text: vmn0.visi })
+        ]));
+      }
+
+      var pair = h('div', { class: 'grid grid-2' });
+      if (Array.isArray(vmn0.misi) && vmn0.misi.length) {
+        var olM = h('ol', { class: 'clean' });
+        vmn0.misi.forEach(function (m) { olM.appendChild(h('li', { text: m })); });
+        pair.appendChild(h('div', { class: 'card' }, [h('h3', { class: 'card-h', text: 'Misi' }), olM]));
+      }
+      if (Array.isArray(vmn0.nilai) && vmn0.nilai.length) {
+        var ulN = h('ul', { class: 'clean' });
+        vmn0.nilai.forEach(function (n) {
+          if (Array.isArray(n)) ulN.appendChild(h('li', {}, [h('strong', { text: n[0] + (n[1] ? ' — ' : '') }), n[1] || '']));
+          else ulN.appendChild(h('li', { text: n }));
+        });
+        var nChildren = [h('h3', { class: 'card-h', text: 'Nilai' })];
+        if (vmn0.moto && vmn0.moto.trim()) nChildren.push(h('p', { class: 'note' }, [h('strong', { text: 'Moto: ' + vmn0.moto })]));
+        nChildren.push(ulN);
+        pair.appendChild(h('div', { class: 'card' }, nChildren));
+      }
+      app.appendChild(pair);
+    }
+
     app.appendChild(h('h2', { class: 'section-title', text: 'Handbook per profesi' }));
     var grid = h('div', { class: 'grid' });
     (DATA.profesi || []).forEach(function (p) {
@@ -208,13 +243,6 @@
       h('h3', { text: 'Standar, SKP, Program Nasional & Skoring' }),
       h('p', { text: '16 kelompok standar dalam 4 grup, 6 Sasaran Keselamatan Pasien, 5 Program Nasional, dan skema skoring TL/TS/TT/TDD.' })
     ]));
-    var vmn = DATA.visiMisiNilai;
-    if (vmn) {
-      grid2.appendChild(h('a', { class: 'pcard', href: '#/visi' }, [
-        h('h3', { text: 'Visi, Misi & Nilai' }),
-        h('p', { text: 'Visi, misi, dan nilai ' + (vmn.nama || 'RS') + '.' })
-      ]));
-    }
     app.appendChild(grid2);
 
     document.title = 'Handbook Akreditasi RS — Kesiapan STARKES 2022';
