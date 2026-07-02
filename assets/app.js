@@ -208,6 +208,13 @@
       h('h3', { text: 'Standar, SKP, Program Nasional & Skoring' }),
       h('p', { text: '16 kelompok standar dalam 4 grup, 6 Sasaran Keselamatan Pasien, 5 Program Nasional, dan skema skoring TL/TS/TT/TDD.' })
     ]));
+    var vmn = DATA.visiMisiNilai;
+    if (vmn) {
+      grid2.appendChild(h('a', { class: 'pcard', href: '#/visi' }, [
+        h('h3', { text: 'Visi, Misi & Nilai' }),
+        h('p', { text: 'Visi, misi, dan nilai ' + (vmn.nama || 'RS') + '.' })
+      ]));
+    }
     app.appendChild(grid2);
 
     document.title = 'Handbook Akreditasi RS — Kesiapan STARKES 2022';
@@ -367,6 +374,57 @@
     window.scrollTo(0, 0);
   }
 
+  function viewVisiMisi() {
+    var v = DATA.visiMisiNilai || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Visi, Misi & Nilai' }]));
+
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('h1', { text: 'Visi, Misi & Nilai ' + (v.nama || '') }),
+      h('div', { class: 'head-actions' }, [
+        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak']),
+        h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
+      ])
+    ]));
+
+    var hasContent = (v.visi && v.visi.trim()) ||
+      (Array.isArray(v.misi) && v.misi.length) ||
+      (Array.isArray(v.nilai) && v.nilai.length);
+
+    if (!hasContent) {
+      app.appendChild(h('div', { class: 'card' }, [
+        h('p', { class: 'note', text: 'Konten visi, misi, dan nilai belum diisi. Isi bagian "visiMisiNilai" pada content.json untuk menampilkannya di sini.' })
+      ]));
+    }
+
+    if (v.visi && v.visi.trim()) {
+      app.appendChild(h('div', { class: 'card' }, [
+        h('h2', { text: 'Visi' }),
+        h('p', { text: v.visi })
+      ]));
+    }
+    if (Array.isArray(v.misi) && v.misi.length) {
+      var ol = h('ol', { class: 'clean' });
+      v.misi.forEach(function (m) { ol.appendChild(h('li', { text: m })); });
+      app.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Misi' }), ol]));
+    }
+    if (Array.isArray(v.nilai) && v.nilai.length) {
+      var ul = h('ul', { class: 'clean' });
+      v.nilai.forEach(function (n) {
+        // Dukung format string biasa atau pasangan ["Kata","penjelasan"]
+        if (Array.isArray(n)) {
+          ul.appendChild(h('li', {}, [h('strong', { text: n[0] + (n[1] ? ' — ' : '') }), n[1] || '']));
+        } else {
+          ul.appendChild(h('li', { text: n }));
+        }
+      });
+      app.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Nilai' }), ul]));
+    }
+
+    document.title = 'Visi, Misi & Nilai — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
   /* ---------- Search ---------- */
   function buildSearchIndex() {
     SEARCH_INDEX = [];
@@ -476,6 +534,9 @@
     }
     if (parts[0] === 'umum') {
       return viewUmum(parts[1]);
+    }
+    if (parts[0] === 'visi') {
+      return viewVisiMisi();
     }
     if (parts[0] === 'cari') {
       var q = '';
@@ -650,7 +711,8 @@
     if (!item) return;
     closeMenu();
     var action = item.getAttribute('data-action');
-    if (action === 'about') showAbout();
+    if (action === 'visi') window.location.hash = '/visi';
+    else if (action === 'about') showAbout();
     else if (action === 'share') shareApp();
     else if (action === 'install') installApp();
   });
