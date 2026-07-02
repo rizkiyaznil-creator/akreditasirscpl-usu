@@ -186,7 +186,7 @@
     clear(app);
     app.appendChild(h('div', { class: 'lead' }, [
       h('h1', { text: 'Handbook Kesiapan Akreditasi RS' }),
-      h('p', { text: 'Sarikan berbasis peran dari STARKES 2022 untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
+      h('p', { text: 'Sarikan berbasis peran dari Standar Akreditasi RS (KMK 1596/2024) dan Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024) untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
     ]));
 
     // Visi, Misi & Moto sebagai kartu di beranda
@@ -241,11 +241,11 @@
     var grid2 = h('div', { class: 'grid' });
     grid2.appendChild(h('a', { class: 'pcard', href: '#/umum' }, [
       h('h3', { text: 'Standar, SKP, Program Nasional & Skoring' }),
-      h('p', { text: '16 kelompok standar dalam 4 grup, 6 Sasaran Keselamatan Pasien, 5 Program Nasional, dan skema skoring TL/TS/TT/TDD.' })
+      h('p', { text: '15 bab standar dalam 4 kelompok, 6 Sasaran Keselamatan Pasien, 6 Program Nasional, kode pembuktian R-D-O-W-S, dan skema skoring TL/TS/TT/TDD.' })
     ]));
     app.appendChild(grid2);
 
-    document.title = 'Handbook Akreditasi RS — Kesiapan STARKES 2022';
+    document.title = 'Handbook Kesiapan Akreditasi RS — RSP CPL USU';
     window.scrollTo(0, 0);
   }
 
@@ -378,6 +378,17 @@
       var frag = document.createDocumentFragment();
       frag.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Program Nasional (PROGNAS)' }), ol]));
       frag.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Skema skoring penilaian' }), uls]));
+      if (Array.isArray(u.kodePembuktian) && u.kodePembuktian.length) {
+        var ulK = h('ul', { class: 'clean' });
+        u.kodePembuktian.forEach(function (k) {
+          ulK.appendChild(h('li', {}, [h('strong', { text: k[0] + ' — ' }), k[1] || '']));
+        });
+        frag.appendChild(h('div', { class: 'card' }, [
+          h('h2', { text: 'Metode pembuktian penilaian (R–D–O–W–S)' }),
+          h('p', { class: 'note', text: 'Tiap elemen penilaian pada instrumen diberi kode metode pembuktian berikut.' }),
+          ulK
+        ]));
+      }
       return frag;
     }
 
@@ -677,7 +688,7 @@
   }
   function shareApp() {
     var url = shareUrl();
-    var payload = { title: 'Handbook Akreditasi RS — STARKES 2022', text: 'Handbook kesiapan akreditasi RS (STARKES 2022).', url: url };
+    var payload = { title: 'Handbook Akreditasi RS — RSP CPL USU', text: 'Handbook kesiapan akreditasi RS RSP CPL USU.', url: url };
     if (navigator.share) {
       navigator.share(payload).catch(function () { /* dibatalkan pengguna: abaikan */ });
     } else if (navigator.clipboard && navigator.clipboard.writeText) {

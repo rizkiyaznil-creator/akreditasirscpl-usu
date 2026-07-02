@@ -1,4 +1,4 @@
-# Handbook Kesiapan Akreditasi RS — STARKES 2022
+# Handbook Kesiapan Akreditasi RS — RSP CPL USU
 
 Web app statis (vanilla HTML/CSS/JS, tanpa framework) berisi sarikan handbook
 kesiapan akreditasi rumah sakit berbasis peran, untuk orientasi internal seluruh
@@ -47,11 +47,13 @@ per profesi: `id`, `judul`, `ruang`, `standar[]`, `tugasInti[]`,
 `poin[]` (blok `{std, isi[]}`), `bukti[]`, `surveior[]`.
 
 ## Catatan sumber & batasan
-Isi adalah **sarikan** dari KMK RI No. HK.01.07/MENKES/1128/2022 (STARKES 2022)
-untuk orientasi internal — **bukan pengganti** teks standar asli beserta Elemen
-Penilaian (EP) penuh. Nomor EP spesifik sengaja tidak dicantumkan karena perlu
-verifikasi langsung dari dokumen resmi. Disclaimer ini tampil di footer setiap
-halaman aplikasi.
+Isi adalah **sarikan** dari Standar Akreditasi Rumah Sakit (KMK RI No.
+HK.01.07/MENKES/1596/2024) dan Instrumen Survei Akreditasi Rumah Sakit (Kepdirjen
+Yankes No. HK.02.02/D/47104/2024, 30 Desember 2024) untuk orientasi internal —
+**bukan pengganti** teks standar/instrumen asli beserta Elemen Penilaian (EP),
+maksud-tujuan, dan daftar kelengkapan bukti yang lengkap. Nomor EP spesifik
+sengaja tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.
+Disclaimer ini tampil di footer setiap halaman aplikasi.
 
 Checklist tersimpan **lokal di perangkat masing-masing** (localStorage), tidak
 terpusat dan tidak terkirim ke server.
