@@ -189,11 +189,11 @@
       h('p', { text: 'Sarikan berbasis peran dari STARKES 2022 untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
     ]));
 
-    // Visi, Misi & Nilai sebagai kartu di beranda
+    // Visi, Misi & Moto sebagai kartu di beranda
     var vmn0 = DATA.visiMisiNilai;
     if (vmn0 && ((vmn0.visi && vmn0.visi.trim()) || (vmn0.misi && vmn0.misi.length) || (vmn0.nilai && vmn0.nilai.length))) {
       app.appendChild(h('div', { class: 'section-head' }, [
-        h('h2', { class: 'section-title', text: 'Visi, Misi & Nilai ' + (vmn0.nama || '') }),
+        h('h2', { class: 'section-title', text: 'Visi, Misi & Moto ' + (vmn0.nama || '') }),
         h('a', { class: 'section-link', href: '#/visi' }, ['Buka & cetak →'])
       ]));
 
@@ -216,8 +216,8 @@
           if (Array.isArray(n)) ulN.appendChild(h('li', {}, [h('strong', { text: n[0] + (n[1] ? ' — ' : '') }), n[1] || '']));
           else ulN.appendChild(h('li', { text: n }));
         });
-        var nChildren = [h('h3', { class: 'card-h', text: 'Nilai' })];
-        if (vmn0.moto && vmn0.moto.trim()) nChildren.push(h('p', { class: 'note' }, [h('strong', { text: 'Moto: ' + vmn0.moto })]));
+        var nChildren = [h('h3', { class: 'card-h', text: 'Moto' })];
+        if (vmn0.moto && vmn0.moto.trim()) nChildren.push(h('p', { class: 'note' }, [h('strong', { text: vmn0.moto }), ' — enam nilai yang menjadi budaya kerja.']));
         nChildren.push(ulN);
         pair.appendChild(h('div', { class: 'card' }, nChildren));
       }
@@ -405,10 +405,10 @@
   function viewVisiMisi() {
     var v = DATA.visiMisiNilai || {};
     clear(app);
-    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Visi, Misi & Nilai' }]));
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Visi, Misi & Moto' }]));
 
     app.appendChild(h('section', { class: 'profile-head' }, [
-      h('h1', { text: 'Visi, Misi & Nilai ' + (v.nama || '') }),
+      h('h1', { text: 'Visi, Misi & Moto ' + (v.nama || '') }),
       h('div', { class: 'head-actions' }, [
         h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak']),
         h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
@@ -421,7 +421,7 @@
 
     if (!hasContent) {
       app.appendChild(h('div', { class: 'card' }, [
-        h('p', { class: 'note', text: 'Konten visi, misi, dan nilai belum diisi. Isi bagian "visiMisiNilai" pada content.json untuk menampilkannya di sini.' })
+        h('p', { class: 'note', text: 'Konten visi, misi, dan moto belum diisi. Isi bagian "visiMisiNilai" pada content.json untuk menampilkannya di sini.' })
       ]));
     }
 
@@ -446,15 +446,15 @@
           ul.appendChild(h('li', { text: n }));
         }
       });
-      var nilaiCard = [h('h2', { text: 'Nilai' })];
+      var nilaiCard = [h('h2', { text: 'Moto' })];
       if (v.moto && v.moto.trim()) {
-        nilaiCard.push(h('p', { class: 'note' }, [h('strong', { text: 'Moto: ' + v.moto }), ' — enam nilai yang menjadi budaya kerja.']));
+        nilaiCard.push(h('p', { class: 'note' }, [h('strong', { text: v.moto }), ' — enam nilai yang menjadi budaya kerja.']));
       }
       nilaiCard.push(ul);
       app.appendChild(h('div', { class: 'card' }, nilaiCard));
     }
 
-    document.title = 'Visi, Misi & Nilai — Handbook Akreditasi RS';
+    document.title = 'Visi, Misi & Moto — Handbook Akreditasi RS';
     window.scrollTo(0, 0);
   }
 
