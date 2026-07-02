@@ -162,15 +162,17 @@
         {
           "std": "SKP",
           "isi": [
-            "Verifikasi minimal 2 identitas (nama & tanggal lahir / nomor RM) sebelum tindakan, obat, transfusi, sampel.",
-            "Gunakan komunikasi efektif TBaK/SBAR untuk perintah lisan/telepon & pelaporan nilai kritis.",
-            "Lakukan Time Out (Sign in – Time out – Sign out) dan penandaan lokasi operasi bila relevan."
+            "Verifikasi minimal 2 identitas (nama & tanggal lahir / nomor RM) sebelum tindakan, obat, transfusi, dan pengambilan sampel.",
+            "Komunikasi lisan/telepon dengan metode tulis/input – baca ulang – konfirmasi; laporkan kondisi pasien memakai SBAR.",
+            "Pelaporan hasil kritis pemeriksaan diagnostik (termasuk POCT) dan komunikasi saat serah terima (hand over) terdokumentasi.",
+            "Lakukan Time Out (Sign in – Time out – Sign out) dan penandaan lokasi operasi bila relevan.",
+            "Waspadai obat high-alert, LASA/NORUM, dan elektrolit konsentrat; terapkan double check."
           ]
         },
         {
           "std": "KPS",
           "isi": [
-            "Praktik hanya sesuai Rincian Kewenangan Klinis (RKC) hasil kredensial komite medik.",
+            "Praktik hanya sesuai Surat Penugasan Klinis (SPK) dan Rincian Kewenangan Klinis (RKK) hasil kredensial komite medik.",
             "STR & SIP berlaku; ikuti re-kredensial berkala dan pengembangan profesi berkelanjutan."
           ]
         },
@@ -199,23 +201,25 @@
           "std": "PKPO",
           "isi": [
             "Peresepan sesuai formularium RS; hindari singkatan berbahaya & instruksi tak terbaca.",
-            "Waspadai obat high-alert dan interaksi; lakukan rekonsiliasi bersama farmasi."
+            "Lakukan rekonsiliasi obat kolaboratif (dokter–apoteker–perawat) saat admisi, transfer, dan pemulangan; putuskan kelanjutan terapi bila ada diskrepansi.",
+            "Dukung pemantauan terapi obat (PTO) dan pelaporan efek samping obat (ESO/MESO)."
           ]
         },
         {
           "std": "PROGNAS (PPRA)",
           "isi": [
-            "Terapkan penggunaan antibiotik secara bijak sesuai Panduan Penggunaan Antibiotik (PPAB) dan program pengendalian resistensi antimikroba (PPRA)."
+            "Gunakan antibiotik secara bijak sesuai Panduan Penggunaan Antibiotik (PPAB) dan penatagunaan antimikroba (PGA) dalam program pengendalian resistensi antimikroba (PPRA)."
           ]
         }
       ],
       "bukti": [
-        "Bukti kredensial & re-kredensial serta RKC tersimpan di komite medik.",
-        "Konsistensi RKC dengan tindakan yang benar-benar dilakukan (audit rekam medis).",
+        "Bukti kredensial & re-kredensial serta SPK/RKK tersimpan di komite medik.",
+        "Konsistensi RKK dengan tindakan yang benar-benar dilakukan (audit rekam medis).",
         "Kelengkapan & ketepatan waktu pengisian rekam medis / CPPT (indikator MRMIK).",
         "Dokumentasi Time Out pada laporan operasi & penandaan lokasi.",
         "Informed consent tindakan berisiko tinggi lengkap dan ditandatangani.",
-        "Dokumentasi asesmen nyeri, risiko jatuh, dan skrining gizi pada asesmen awal."
+        "Dokumentasi asesmen nyeri, risiko jatuh, dan skrining gizi pada asesmen awal.",
+        "Dokumentasi rekonsiliasi obat dan pemantauan terapi obat (PTO) di CPPT."
       ],
       "surveior": [
         "\"Tunjukkan Rincian Kewenangan Klinis Anda — apakah tindakan Anda sesuai?\"",
@@ -249,8 +253,9 @@
         {
           "std": "SKP",
           "isi": [
-            "Verifikasi 2 identitas setiap sebelum tindakan/pemberian obat/pengambilan sampel.",
-            "Terima perintah lisan/telepon dengan TBaK (tulis–baca ulang–konfirmasi).",
+            "Verifikasi minimal 2 identitas sebelum tindakan, pemberian obat, transfusi, dan pengambilan sampel.",
+            "Terima instruksi lisan/telepon dengan metode tulis/input – baca ulang – konfirmasi; laporkan kondisi pasien dengan SBAR.",
+            "Terapkan komunikasi baku saat serah terima (hand over) dan pelaporan hasil kritis (termasuk POCT).",
             "Terapkan asesmen & asesmen ulang risiko jatuh serta intervensi pencegahan.",
             "Kebersihan tangan 5 momen; kepatuhan diukur dan diaudit."
           ]
@@ -272,8 +277,9 @@
         {
           "std": "PKPO (terkait pemberian obat)",
           "isi": [
-            "Terapkan prinsip benar pemberian obat; double-check untuk obat high-alert.",
-            "Kenali penyimpanan & pelabelan obat high-alert dan LASA/NORUM di unit."
+            "Verifikasi sebelum pemberian obat: identitas pasien, nama obat, dosis, rute, dan waktu; double check untuk obat high-alert.",
+            "Kenali penyimpanan & pelabelan obat high-alert, LASA/NORUM, dan elektrolit konsentrat di unit.",
+            "Dukung rekonsiliasi obat serta edukasi obat yang digunakan pasien secara mandiri."
           ]
         },
         {
@@ -286,7 +292,8 @@
         {
           "std": "PROGNAS (bidan/maternitas)",
           "isi": [
-            "Dukung pelaksanaan PONEK 24 jam / 7 hari dan alur rujukan maternal-neonatal."
+            "Dukung pelaksanaan PONEK 24 jam / 7 hari dan alur rujukan maternal-neonatal.",
+            "Dukung program nasional lain sesuai unit: TB (DOTS), HIV/AIDS, stunting & wasting, PKBRS, dan pengendalian resistensi antimikroba (PPRA)."
           ]
         }
       ],
@@ -295,7 +302,7 @@
         "Dokumentasi asesmen ulang risiko jatuh & intervensi di rekam medis.",
         "Bukti double-check obat high-alert.",
         "File kepegawaian: STR/SIP, uraian tugas, bukti orientasi & pelatihan wajib (BHD, PPI, K3).",
-        "Dokumentasi TBaK pada pelaporan hasil kritis / perintah lisan.",
+        "Dokumentasi komunikasi (tulis–baca ulang–konfirmasi) & serah terima (hand over) pada pelaporan hasil kritis / perintah lisan.",
         "Bukti aktivasi & tindak lanjut EWS."
       ],
       "surveior": [
@@ -329,11 +336,12 @@
         {
           "std": "PKPO",
           "isi": [
-            "Terapkan sistem formularium RS dan pantau penggunaannya.",
-            "Simpan obat high-alert terpisah dengan pelabelan khusus; elektrolit konsentrat tidak di ruang rawat kecuali diatur.",
+            "Terapkan sistem formularium RS dan pantau kepatuhan persediaan & penggunaannya; evaluasi ≥1x/tahun.",
+            "Simpan obat high-alert terpisah dengan pelabelan khusus; elektrolit konsentrat tidak di ruang rawat kecuali diatur; perbarui daftar high-alert/LASA ≥1x/tahun.",
             "Kelola LASA/NORUM dengan penempatan & penandaan yang mencegah tertukar.",
-            "Lakukan pengkajian resep (tepat pasien, obat, dosis, rute, waktu, duplikasi, interaksi).",
-            "Jalankan rekonsiliasi obat & dokumentasikan; lakukan pemantauan terapi obat (PTO) bila diindikasikan.",
+            "Lakukan pengkajian resep dan telaah obat sebelum diserahkan (tepat pasien, obat, dosis, rute, waktu, duplikasi, interaksi).",
+            "Jalankan rekonsiliasi obat kolaboratif dan pemantauan terapi obat (PTO); laporkan efek samping obat (ESO/MESO) ke Komite/Tim Farmasi & Terapi dan BPOM.",
+            "Nilai kelayakan obat yang dibawa pasien dari luar RS dan edukasi penggunaan obat mandiri.",
             "Kelola narkotika/psikotropika sesuai ketentuan (penyimpanan terkunci, pencatatan)."
           ]
         },
@@ -360,12 +368,13 @@
         }
       ],
       "bukti": [
-        "Daftar & bukti pelabelan obat high-alert, LASA, elektrolit konsentrat.",
-        "Bukti pengkajian/telaah resep terdokumentasi.",
+        "Daftar & bukti pelabelan obat high-alert, LASA/NORUM, dan elektrolit konsentrat (diperbarui berkala).",
+        "Bukti pengkajian resep dan telaah obat sebelum diserahkan.",
         "Dokumentasi rekonsiliasi obat pada admisi/transfer/pulang.",
         "Kartu stok & pencatatan narkotika-psikotropika, hasil stok opname.",
         "Log pemantauan suhu penyimpanan & rantai dingin.",
-        "File kepegawaian: STR/SIP(A), uraian tugas, bukti pelatihan."
+        "Bukti pelaporan efek samping obat (MESO) dan kajian tahunan sistem pelayanan kefarmasian.",
+        "File kepegawaian: STRA & SIPA, uraian tugas, bukti pelatihan."
       ],
       "surveior": [
         "\"Bagaimana Anda menyimpan dan melabeli obat high-alert? Tunjukkan.\"",
@@ -427,7 +436,8 @@
           "std": "SKP & MFK (semua)",
           "isi": [
             "Kenali kode darurat (mis. code red), jalur evakuasi, titik kumpul, dan cara pakai APAR.",
-            "Ketahui alur pelaporan insiden dan kepada siapa melapor."
+            "Ketahui alur pelaporan insiden dan kepada siapa melapor.",
+            "Terapkan budaya keselamatan dan budaya 5R (ringkas, rapi, resik, rawat, rajin) di area kerja."
           ]
         }
       ],
