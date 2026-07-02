@@ -418,7 +418,12 @@
           ul.appendChild(h('li', { text: n }));
         }
       });
-      app.appendChild(h('div', { class: 'card' }, [h('h2', { text: 'Nilai' }), ul]));
+      var nilaiCard = [h('h2', { text: 'Nilai' })];
+      if (v.moto && v.moto.trim()) {
+        nilaiCard.push(h('p', { class: 'note' }, [h('strong', { text: 'Moto: ' + v.moto }), ' — enam nilai yang menjadi budaya kerja.']));
+      }
+      nilaiCard.push(ul);
+      app.appendChild(h('div', { class: 'card' }, nilaiCard));
     }
 
     document.title = 'Visi, Misi & Nilai — Handbook Akreditasi RS';
