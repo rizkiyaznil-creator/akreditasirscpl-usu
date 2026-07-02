@@ -6,6 +6,13 @@
 <meta name="description" content="Handbook kesiapan akreditasi rumah sakit (STARKES 2022) untuk seluruh personel RS.">
 <title>Handbook Akreditasi RS — Kesiapan STARKES 2022</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f6e6e'/%3E%3Ctext x='16' y='21' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E">
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f6e6e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Handbook RS">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -22,6 +29,22 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
       <input type="search" id="search-input" placeholder="Cari kata kunci di seluruh konten…" aria-label="Pencarian kata kunci" autocomplete="off">
     </form>
+    <div class="header-actions">
+      <button class="icon-btn" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="app-menu" aria-label="Menu aplikasi" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+      </button>
+      <div class="menu" id="app-menu" role="menu" hidden>
+        <button class="menu-item" role="menuitem" type="button" data-action="about">
+          <span aria-hidden="true">ℹ️</span> Tentang aplikasi
+        </button>
+        <button class="menu-item" role="menuitem" type="button" data-action="share">
+          <span aria-hidden="true">🔗</span> Bagikan aplikasi
+        </button>
+        <button class="menu-item" role="menuitem" type="button" data-action="install">
+          <span aria-hidden="true">⬇️</span> Install aplikasi
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -35,6 +58,18 @@
     <!-- Disclaimer diisi dari content.json oleh app.js -->
   </div>
 </footer>
+
+<!-- Modal (Tentang / instruksi) -->
+<div class="modal-overlay" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Tutup" type="button">×</button>
+    <h2 id="modal-title"></h2>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Toast notifikasi -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script src="assets/app.js"></script>
 </body>

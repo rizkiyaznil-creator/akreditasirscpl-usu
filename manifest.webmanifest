@@ -1,0 +1,26 @@
+{
+  "name": "Handbook Akreditasi RS — STARKES 2022",
+  "short_name": "Handbook RS",
+  "description": "Sarikan handbook kesiapan akreditasi rumah sakit (STARKES 2022) berbasis peran untuk orientasi internal.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0f6e6e",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
