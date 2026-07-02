@@ -495,6 +495,173 @@
     window.location.hash = '/cari?q=' + encodeURIComponent(q);
   });
 
+  /* ---------- Modal & toast ---------- */
+  var modal = document.getElementById('modal');
+  var modalTitle = document.getElementById('modal-title');
+  var modalBody = document.getElementById('modal-body');
+  var lastFocus = null;
+
+  function openModal(title, bodyNode) {
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    clear(modalBody);
+    modalBody.appendChild(bodyNode);
+    modal.hidden = false;
+    document.getElementById('modal-close').focus();
+  }
+  function closeModal() {
+    modal.hidden = true;
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (!modal.hidden) closeModal(); closeMenu(); }
+  });
+
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.hidden = false;
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.hidden = true; }, 3200);
+  }
+
+  /* ---------- Menu ---------- */
+  var menuToggle = document.getElementById('menu-toggle');
+  var appMenu = document.getElementById('app-menu');
+  function openMenu() { appMenu.hidden = false; menuToggle.setAttribute('aria-expanded', 'true'); }
+  function closeMenu() { appMenu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); }
+  menuToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (appMenu.hidden) openMenu(); else closeMenu();
+  });
+  document.addEventListener('click', function (e) {
+    if (!appMenu.hidden && !appMenu.contains(e.target) && e.target !== menuToggle) closeMenu();
+  });
+
+  /* ---------- Aksi: Tentang ---------- */
+  function showAbout() {
+    var box = h('div', {});
+    box.appendChild(h('p', { text: 'Sarikan handbook kesiapan akreditasi rumah sakit berbasis peran untuk orientasi internal seluruh personel RS. Pilih profesi Anda untuk melihat kompetensi, bukti/dokumen, contoh pertanyaan surveior, dan checklist self-assessment.' }));
+    box.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), (DATA && DATA.sumber) || 'STARKES 2022']));
+    box.appendChild(h('ul', {}, [
+      h('li', { text: 'Pencarian kata kunci lintas seluruh konten.' }),
+      h('li', { text: 'Checklist yang tersimpan lokal di perangkat ini (localStorage), lengkap dengan tombol reset.' }),
+      h('li', { text: 'Mode cetak per profesi / bagian umum.' }),
+      h('li', { text: 'Dapat dipasang sebagai aplikasi (PWA) dan diakses walau sedang offline.' })
+    ]));
+    box.appendChild(h('p', { class: 'fine', text: (DATA && DATA.disclaimer) || 'Sarikan untuk orientasi internal, bukan pengganti teks standar asli. Nomor EP tidak dicantumkan.' }));
+    openModal('Tentang aplikasi', box);
+  }
+
+  /* ---------- Aksi: Bagikan ---------- */
+  function shareUrl() {
+    // Bagikan tautan aplikasi (beranda), bukan hash spesifik.
+    return window.location.origin + window.location.pathname;
+  }
+  function showShareFallback(url) {
+    var box = h('div', {});
+    box.appendChild(h('p', { text: 'Salin dan bagikan tautan berikut:' }));
+    var input = h('input', {
+      type: 'text', value: url, readonly: 'readonly',
+      style: 'width:100%;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font-size:.9rem'
+    });
+    var copyBtn = h('button', {
+      class: 'btn btn-primary', type: 'button', style: 'margin-top:.7rem',
+      onClick: function () {
+        input.select();
+        try { document.execCommand('copy'); toast('Tautan disalin.'); }
+        catch (e) { toast('Silakan salin tautan secara manual.'); }
+      }
+    }, ['Salin tautan']);
+    box.appendChild(input);
+    box.appendChild(h('div', {}, [copyBtn]));
+    openModal('Bagikan aplikasi', box);
+    setTimeout(function () { input.focus(); input.select(); }, 50);
+  }
+  function shareApp() {
+    var url = shareUrl();
+    var payload = { title: 'Handbook Akreditasi RS — STARKES 2022', text: 'Handbook kesiapan akreditasi RS (STARKES 2022).', url: url };
+    if (navigator.share) {
+      navigator.share(payload).catch(function () { /* dibatalkan pengguna: abaikan */ });
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url)
+        .then(function () { toast('Tautan aplikasi disalin.'); })
+        .catch(function () { showShareFallback(url); });
+    } else {
+      showShareFallback(url);
+    }
+  }
+
+  /* ---------- Aksi: Install (PWA) ---------- */
+  var deferredPrompt = null;
+  var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferredPrompt = e;
+  });
+  window.addEventListener('appinstalled', function () {
+    deferredPrompt = null;
+    toast('Aplikasi berhasil dipasang.');
+  });
+
+  function isIOS() { return /iphone|ipad|ipod/i.test(navigator.userAgent); }
+
+  function showInstallHelp() {
+    var box = h('div', {});
+    if (isStandalone) {
+      box.appendChild(h('p', { text: 'Aplikasi sudah terpasang dan sedang dijalankan sebagai aplikasi.' }));
+    } else if (isIOS()) {
+      box.appendChild(h('p', { text: 'Di iPhone/iPad (Safari):' }));
+      box.appendChild(h('ol', {}, [
+        h('li', { text: 'Ketuk tombol Bagikan (ikon kotak dengan panah ke atas).' }),
+        h('li', { text: 'Pilih “Tambahkan ke Layar Utama”.' }),
+        h('li', { text: 'Ketuk “Tambah”. Ikon aplikasi akan muncul di layar utama.' })
+      ]));
+    } else {
+      box.appendChild(h('p', { text: 'Untuk memasang aplikasi ini:' }));
+      box.appendChild(h('ul', {}, [
+        h('li', { text: 'Di Chrome/Edge Android: buka menu browser (⋮) lalu pilih “Instal aplikasi” / “Tambahkan ke layar utama”.' }),
+        h('li', { text: 'Di Chrome/Edge desktop: klik ikon instal di ujung kanan bilah alamat.' })
+      ]));
+      box.appendChild(h('p', { class: 'fine', text: 'Pastikan aplikasi diakses melalui alamat https (bukan file lokal) agar opsi instalasi tersedia.' }));
+    }
+    openModal('Install aplikasi', box);
+  }
+
+  function installApp() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function (r) {
+        if (r && r.outcome === 'accepted') toast('Memasang aplikasi…');
+        deferredPrompt = null;
+      });
+    } else {
+      showInstallHelp();
+    }
+  }
+
+  // Wiring item menu
+  appMenu.addEventListener('click', function (e) {
+    var item = e.target.closest('[data-action]');
+    if (!item) return;
+    closeMenu();
+    var action = item.getAttribute('data-action');
+    if (action === 'about') showAbout();
+    else if (action === 'share') shareApp();
+    else if (action === 'install') installApp();
+  });
+
+  /* ---------- Service worker (offline + installable) ---------- */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* abaikan bila gagal */ });
+    });
+  }
+
   /* ---------- Boot ---------- */
   function fatal(msg) {
     clear(app);
