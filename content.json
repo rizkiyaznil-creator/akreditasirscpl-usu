@@ -2,9 +2,15 @@
   "sumber": "KMK RI No. HK.01.07/MENKES/1128/2022 tentang Standar Akreditasi Rumah Sakit (STARKES 2022)",
   "disclaimer": "Sarikan dari STARKES 2022 sebagai panduan orientasi internal. Bukan pengganti teks standar asli beserta Elemen Penilaian (EP) penuh. Nomor EP spesifik tidak dicantumkan karena perlu verifikasi langsung dari dokumen resmi.",
   "visiMisiNilai": {
-    "nama": "RS CPL USU",
-    "visi": "",
-    "misi": [],
+    "nama": "RSP CPL USU",
+    "visi": "Menjadi Smart Academic Health Centre yang unggul di Asia Tenggara dan mengintegrasikan pelayanan, pendidikan, dan penelitian untuk mewujudkan kesehatan yang lebih baik bagi seluruh masyarakat.",
+    "misi": [
+      "Memberikan pelayanan klinis yang aman, bermutu tinggi, dan berpusat pada pasien.",
+      "Menjadi pusat pendidikan kedokteran dan kesehatan berkelas dunia.",
+      "Menghasilkan penelitian translasional yang berdampak nyata.",
+      "Membangun sistem kesehatan akademik yang berkelanjutan dan terintegrasi.",
+      "Menjadi mitra terpercaya bagi masyarakat, pemerintah, dan komunitas global."
+    ],
     "nilai": []
   },
   "umum": {
