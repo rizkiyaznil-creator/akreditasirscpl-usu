@@ -134,6 +134,345 @@
       ["S", "Simulasi — peragaan kegiatan oleh staf RS atas permintaan surveior."]
     ]
   },
+  "standarRinci": {
+    "catatan": "Peta ringkas per bab. Pernyataan standar disarikan dari Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024) berbasis KMK 1596/2024. Bukan teks lengkap; Elemen Penilaian (EP), maksud-tujuan, dan daftar kelengkapan bukti diverifikasi langsung ke dokumen resmi.",
+    "bab": [
+      {
+        "kode": "TKRS",
+        "nama": "Tata Kelola Rumah Sakit",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Kepemimpinan & tata kelola RS: representasi pemilik/dewan pengawas, akuntabilitas direktur & pimpinan, komite, etika, budaya keselamatan, manajemen risiko, dan penelitian bersubjek manusia.",
+        "standar": [
+          ["TKRS 1", "Struktur & wewenang representasi pemilik/dewan pengawas diatur dalam aturan internal RS (Hospital Bylaws)."],
+          ["TKRS 2", "Direktur RS bertanggung jawab menjalankan RS dan mematuhi peraturan perundang-undangan."],
+          ["TKRS 3", "Pimpinan RS menyusun misi, rencana kerja, kebijakan, dan prosedur."],
+          ["TKRS 3.1", "Pimpinan memastikan komunikasi efektif terlaksana menyeluruh di RS."],
+          ["TKRS 4", "Pimpinan merencanakan & mengembangkan program peningkatan mutu dan keselamatan pasien."],
+          ["TKRS 5", "Pimpinan menetapkan prioritas perbaikan di tingkat RS."],
+          ["TKRS 6", "Pimpinan mengkaji, memilih, dan memantau kontrak klinis & nonklinis."],
+          ["TKRS 7", "Pimpinan membuat keputusan pengadaan & penggunaan sumber daya."],
+          ["TKRS 7.1", "Pimpinan menggunakan data keamanan rantai perbekalan (supply chain)."],
+          ["TKRS 8", "Komite Medik, Komite Keperawatan, dan Komite Tenaga Kesehatan Lain terorganisasi sesuai ketentuan."],
+          ["TKRS 9", "Akuntabilitas kepala unit klinis/non-klinis atas struktur, staf, dan pelayanan unit."],
+          ["TKRS 10", "Kepala unit berpartisipasi meningkatkan mutu & keselamatan melalui pengukuran."],
+          ["TKRS 11", "Kepala unit klinis mengevaluasi kinerja dokter, perawat, dan nakes lain dengan indikator."],
+          ["TKRS 12", "Pimpinan menetapkan kerangka kerja pengelolaan etik RS."],
+          ["TKRS 13", "Pimpinan menerapkan, memantau, dan mendukung budaya keselamatan di seluruh area."],
+          ["TKRS 14", "Program manajemen risiko terintegrasi untuk mencegah cedera & kerugian."],
+          ["TKRS 15", "Pimpinan bertanggung jawab atas mutu & keamanan penelitian bersubjek manusia."]
+        ]
+      },
+      {
+        "kode": "KPS",
+        "nama": "Kualifikasi dan Pendidikan Staf",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Perencanaan kebutuhan staf, rekrutmen, file kepegawaian, orientasi & pelatihan, kredensial dan kewenangan klinis, penilaian kinerja, serta kesehatan & keselamatan staf.",
+        "standar": [
+          ["KPS 1", "Perencanaan & penetapan persyaratan pendidikan, keterampilan, dan pengetahuan staf oleh kepala unit."],
+          ["KPS 2", "Tanggung jawab tiap staf dituangkan dalam uraian tugas."],
+          ["KPS 3", "Proses rekrutmen, evaluasi, dan pengangkatan staf yang seragam."],
+          ["KPS 4", "Memastikan kompetensi PPA sesuai kebutuhan pasien."],
+          ["KPS 5", "Memastikan kompetensi staf non-klinis sesuai persyaratan."],
+          ["KPS 6", "Informasi kepegawaian terdokumentasi dalam file tiap staf."],
+          ["KPS 7", "Orientasi bagi semua staf tentang RS, unit, dan tanggung jawab kerjanya."],
+          ["KPS 8", "Pendidikan & pelatihan berkelanjutan bagi tiap staf."],
+          ["KPS 8.1", "Staf pemberi asuhan dilatih & mampu mendemonstrasikan teknik resusitasi (BHD)."],
+          ["KPS 9", "Penyelenggaraan pelayanan kesehatan & keselamatan staf."],
+          ["KPS 10", "Kredensial tenaga medis yang seragam & transparan."],
+          ["KPS 10.1", "Verifikasi terkini pendidikan, registrasi/izin, dan pengalaman tenaga medis."],
+          ["KPS 11", "Pemberian kewenangan klinis (RKK) tenaga medis berbasis bukti."],
+          ["KPS 12", "Evaluasi praktik profesional berkelanjutan (OPPE) tenaga medis."],
+          ["KPS 13", "Rekredensial tenaga medis minimal setiap 3 tahun."],
+          ["KPS 14", "Kredensial tenaga perawat (pengumpulan & verifikasi)."],
+          ["KPS 15", "Penugasan klinis perawat berdasar hasil kredensial."],
+          ["KPS 16", "Penilaian kinerja tenaga perawat termasuk peran dalam PMKP."],
+          ["KPS 17", "Kredensial tenaga kesehatan lain."],
+          ["KPS 18", "Penugasan klinis tenaga kesehatan lain berdasar kredensial."],
+          ["KPS 19", "Penilaian kinerja tenaga kesehatan lain termasuk peran dalam PMKP."]
+        ]
+      },
+      {
+        "kode": "MFK",
+        "nama": "Manajemen Fasilitas dan Keselamatan",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Keselamatan & keamanan fasilitas, B3 & limbah B3, proteksi kebakaran, peralatan medis, sistem utilitas, penanganan bencana, penilaian risiko konstruksi, dan pelatihan staf.",
+        "standar": [
+          ["MFK 1", "Kepatuhan pada peraturan terkait bangunan, prasarana, dan fasilitas."],
+          ["MFK 2", "Penanggung jawab kompeten mengawasi penerapan manajemen fasilitas & keselamatan."],
+          ["MFK 3", "Program keselamatan (safety) di RS."],
+          ["MFK 5", "Pengelolaan Bahan Berbahaya dan Beracun (B3) serta limbah B3."],
+          ["MFK 5.1", "Sistem pengelolaan limbah B3 cair & padat."],
+          ["MFK 6", "Pencegahan & penanggulangan kebakaran serta sarana proteksi."],
+          ["MFK 7", "Pengelolaan peralatan medik."],
+          ["MFK 8", "Memastikan seluruh sistem utilitas (pendukung) berfungsi."],
+          ["MFK 8.1", "Pemeriksaan, pemeliharaan, dan perbaikan sistem utilitas."],
+          ["MFK 8.2", "Ketersediaan air bersih & listrik sepanjang waktu, termasuk sumber cadangan."],
+          ["MFK 8.2.1", "Uji coba/uji beban sumber listrik & air cadangan."],
+          ["MFK 8.3", "Pemeriksaan air bersih & air limbah."],
+          ["MFK 9", "Penanganan bencana (disaster) yang berpotensi terjadi."],
+          ["MFK 10", "Penilaian risiko prakonstruksi (PCRA)."],
+          ["MFK 11", "Pelatihan seluruh staf tentang pengelolaan fasilitas & keselamatan."]
+        ]
+      },
+      {
+        "kode": "PMKP",
+        "nama": "Peningkatan Mutu dan Keselamatan Pasien",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Komite/tim mutu, pemilihan & pengukuran indikator, validasi & analisis data, pencapaian perbaikan, evaluasi PPK, pelaporan & pembelajaran insiden (SP2KP-RS), budaya keselamatan, dan manajemen risiko.",
+        "standar": [
+          ["PMKP 1", "Komite/Tim Penyelenggara Mutu yang kompeten."],
+          ["PMKP 2", "Dukungan pemilihan indikator serta koordinasi & integrasi pengukuran."],
+          ["PMKP 3", "Pengumpulan data indikator oleh staf terlatih."],
+          ["PMKP 4", "Agregasi & analisis data untuk mendukung peningkatan mutu."],
+          ["PMKP 4.1", "Staf kompeten mengumpulkan & menganalisis data."],
+          ["PMKP 5", "Validasi data indikator mutu."],
+          ["PMKP 6", "Pencapaian perbaikan mutu dan mempertahankannya."],
+          ["PMKP 7", "Evaluasi pelaksanaan standar pelayanan kedokteran (PPK/clinical pathway)."],
+          ["PMKP 8", "Sistem pelaporan & pembelajaran keselamatan pasien (SP2KP-RS)."],
+          ["PMKP 9", "Analisis data insiden keselamatan pasien setiap 3 bulan."],
+          ["PMKP 10", "Pengukuran & evaluasi budaya keselamatan."],
+          ["PMKP 11", "Komite/Tim Mutu memandu penerapan program manajemen risiko."]
+        ]
+      },
+      {
+        "kode": "MRMIK",
+        "nama": "Manajemen Rekam Medis dan Informasi Kesehatan",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Manajemen informasi, keamanan & kerahasiaan data, pengelolaan dokumen, rekam medis (elektronik) terstandar, kode & singkatan baku, retensi, evaluasi, dan teknologi informasi kesehatan.",
+        "standar": [
+          ["MRMIK 1", "Proses manajemen informasi untuk kebutuhan internal & eksternal."],
+          ["MRMIK 2", "Pelatihan seluruh komponen RS terkait pengelolaan informasi."],
+          ["MRMIK 2.1", "Menjaga keamanan, kerahasiaan, keutuhan, & ketersediaan data dan rekam medis."],
+          ["MRMIK 2.2", "Perlindungan kerahasiaan, keamanan, privasi, dan integritas data."],
+          ["MRMIK 3", "Pengelolaan dokumen (kebijakan, pedoman, prosedur, program)."],
+          ["MRMIK 4", "Pemenuhan kebutuhan data & informasi tepat waktu."],
+          ["MRMIK 5", "Penyelenggaraan & pengelolaan rekam medis elektronik."],
+          ["MRMIK 6", "Setiap pasien memiliki rekam medis terstandar & terkini."],
+          ["MRMIK 7", "Penetapan informasi yang dimuat dalam rekam medis."],
+          ["MRMIK 8", "Setiap entry rekam medis mencantumkan identitas PPA penulis."],
+          ["MRMIK 9", "Kode diagnosis, prosedur, simbol & singkatan baku yang seragam."],
+          ["MRMIK 10", "Keamanan, kerahasiaan, kepemilikan rekam medis, & privasi pasien."],
+          ["MRMIK 11", "Pengaturan lama penyimpanan (retensi) rekam medis."],
+          ["MRMIK 12", "Evaluasi/pengkajian rekam medis secara teratur."],
+          ["MRMIK 13", "Sistem teknologi informasi kesehatan di pelayanan."],
+          ["MRMIK 13.1", "Program mengatasi waktu henti (down time) sistem."]
+        ]
+      },
+      {
+        "kode": "PPI",
+        "nama": "Pencegahan dan Pengendalian Infeksi",
+        "kelompok": "Manajemen Rumah Sakit",
+        "ringkas": "Komite/Tim PPI, program PPI terpadu, pengkajian risiko, pengelolaan alat & BMHP, disinfeksi permukaan, linen, limbah infeksius & benda tajam, pelayanan makanan, APD, kebersihan tangan, integrasi dengan PMKP, dan edukasi.",
+        "standar": [
+          ["PPI 1", "Penetapan Komite/Tim PPI."],
+          ["PPI 1.1", "Direktur menetapkan Komite/Tim PPI sesuai kebutuhan."],
+          ["PPI 2", "Program PPI terpadu & menyeluruh."],
+          ["PPI 3", "Pengkajian risiko infeksi (ICRA) proaktif tahunan."],
+          ["PPI 4", "Pengurangan risiko infeksi terkait alat medis & BMHP."],
+          ["PPI 4.1", "Pengelolaan alat medis/BMHP (termasuk yang diproses ulang) yang aman."],
+          ["PPI 5", "Pembersihan & disinfeksi permukaan dan lingkungan."],
+          ["PPI 6", "Pengelolaan linen/laundry sesuai prinsip PPI."],
+          ["PPI 7", "Pengelolaan limbah infeksius."],
+          ["PPI 7.1", "Pengelolaan kamar jenazah & bedah mayat."],
+          ["PPI 7.2", "Pengelolaan limbah benda tajam & jarum secara aman."],
+          ["PPI 8", "Pengurangan risiko infeksi pada penyelenggaraan makanan."],
+          ["PPI 9", "Penurunan risiko infeksi pada fasilitas (pengendalian mekanis & teknis)."],
+          ["PPI 10", "Penyediaan APD & prosedur isolasi penyakit menular."],
+          ["PPI 10.1", "Penanganan lonjakan/wabah (outbreak) penyakit menular."],
+          ["PPI 11", "Kebersihan tangan (hand hygiene)."],
+          ["PPI 11.1", "Ketersediaan & penggunaan APD yang tepat."],
+          ["PPI 12", "Integrasi kegiatan PPI dengan PMKP."],
+          ["PPI 13", "Edukasi PPI kepada staf, pasien, keluarga, dan pengunjung."]
+        ]
+      },
+      {
+        "kode": "AKP",
+        "nama": "Akses dan Kontinuitas Pelayanan",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Skrining & triase, admisi & pendaftaran, alur pasien, kesinambungan asuhan & DPJP, transfer internal, pemulangan (discharge summary), rujukan, dan transportasi.",
+        "standar": [
+          ["AKP 1", "Proses skrining pasien rawat inap & rawat jalan."],
+          ["AKP 1.1", "Prioritas pasien darurat/mendesak (triase)."],
+          ["AKP 1.2", "Skrining kebutuhan pasien saat admisi rawat inap."],
+          ["AKP 1.3", "Pemberian informasi bila terjadi penundaan/hambatan pelayanan."],
+          ["AKP 2", "Proses penerimaan & pendaftaran pasien."],
+          ["AKP 2.1", "Pengelolaan alur pasien di seluruh area RS."],
+          ["AKP 3", "Kesinambungan & integrasi pelayanan."],
+          ["AKP 3.1", "Setiap pasien memiliki DPJP."],
+          ["AKP 4", "Informasi pasien disertakan saat transfer internal antar unit."],
+          ["AKP 5", "Proses pemulangan pasien dari RS."],
+          ["AKP 5.1", "Ringkasan pasien pulang (discharge summary)."],
+          ["AKP 5.2", "Tindak lanjut pasien & pemberitahuan staf."],
+          ["AKP 5.3", "Pengelolaan pasien menolak asuhan/melarikan diri."],
+          ["AKP 5.4", "Rujukan ke fasilitas kesehatan lain sesuai kebutuhan."],
+          ["AKP 5.5", "Proses rujukan agar pasien pindah dengan aman."],
+          ["AKP 5.6", "Regulasi & pencatatan proses rujukan di rekam medis."],
+          ["AKP 5.7", "Catatan untuk pasien rawat jalan dengan asuhan/diagnosis kompleks."],
+          ["AKP 6", "Proses transportasi (rujukan, pemindahan, pemulangan)."]
+        ]
+      },
+      {
+        "kode": "HPK",
+        "nama": "Hak Pasien dan Keluarga",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Hak pasien & keluarga, pengurangan hambatan akses, penghormatan martabat & privasi, perlindungan harta & dari kekerasan, keterlibatan dalam asuhan, penanganan keluhan, dan persetujuan tindakan (informed consent).",
+        "standar": [
+          ["HPK 1", "Proses yang mendukung hak pasien & keluarga."],
+          ["HPK 1.1", "Mengurangi hambatan fisik, bahasa, budaya, dan lainnya."],
+          ["HPK 1.2", "Pelayanan menghargai martabat, nilai, & kepercayaan pasien."],
+          ["HPK 1.3", "Menjaga privasi pasien & kerahasiaan informasi."],
+          ["HPK 1.4", "Melindungi harta benda pasien."],
+          ["HPK 1.5", "Melindungi pasien dari serangan fisik/verbal & identifikasi populasi berisiko."],
+          ["HPK 2", "Keterlibatan pasien & keluarga dalam asuhan melalui edukasi."],
+          ["HPK 2.1", "Informasi hak menolak atau menghentikan tindakan."],
+          ["HPK 2.2", "Hak atas pengkajian & tata laksana nyeri serta asuhan menjelang akhir hayat."],
+          ["HPK 3", "Proses menerima & menanggapi keluhan pasien."],
+          ["HPK 4", "Batasan persetujuan umum (general consent)."],
+          ["HPK 4.1", "Persetujuan tindakan kedokteran (informed consent)."],
+          ["HPK 4.2", "Pemberian persetujuan oleh pihak lain sesuai ketentuan."]
+        ]
+      },
+      {
+        "kode": "PP",
+        "nama": "Pengkajian Pasien",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Pengkajian awal & ulang, skrining nutrisi/nyeri/risiko jatuh, populasi khusus, serta pelayanan laboratorium, darah, dan radiologi (RIR).",
+        "standar": [
+          ["PP 1", "Identifikasi kebutuhan perawatan melalui proses pengkajian."],
+          ["PP 1.1", "Kebutuhan medis & keperawatan dari pengkajian awal."],
+          ["PP 1.2", "Skrining risiko nutrisi, nyeri, dan kebutuhan fungsional termasuk risiko jatuh."],
+          ["PP 1.3", "Pengkajian awal termodifikasi untuk populasi khusus."],
+          ["PP 3", "Pelayanan laboratorium sesuai kebutuhan pasien."],
+          ["PP 3.1", "Penanggung jawab pelayanan laboratorium yang kompeten."],
+          ["PP 3.2", "Kualifikasi staf laboratorium."],
+          ["PP 3.3", "Kerangka waktu penyelesaian pemeriksaan (reguler & cito)."],
+          ["PP 3.4", "Pengelolaan reagensia esensial."],
+          ["PP 3.5", "Prosedur pengambilan, identifikasi, & pengiriman spesimen."],
+          ["PP 3.6", "Nilai normal & rentang nilai untuk interpretasi hasil."],
+          ["PP 3.7", "Kendali mutu pelayanan laboratorium."],
+          ["PP 3.8", "Kerja sama dengan laboratorium rujukan terakreditasi."],
+          ["PP 3.9", "Penyelenggaraan pelayanan darah."],
+          ["PP 4", "Pelayanan radiologi klinik (RIR)."],
+          ["PP 4.1", "Penanggung jawab pelayanan RIR yang kompeten."],
+          ["PP 4.2", "Kualifikasi staf radiologi."],
+          ["PP 4.3", "Kerangka waktu pemeriksaan radiologi (reguler & cito)."],
+          ["PP 4.4", "Ketersediaan film & bahan pemeriksaan."],
+          ["PP 4.5", "Program kendali mutu radiologi."]
+        ]
+      },
+      {
+        "kode": "PAP",
+        "nama": "Pelayanan dan Asuhan Pasien",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Asuhan seragam & terintegrasi, rencana asuhan, pasien & pelayanan risiko tinggi (geriatri, jiwa, dll), EWS, resusitasi, pelayanan darah, terapi gizi, manajemen nyeri, dan asuhan akhir kehidupan.",
+        "standar": [
+          ["PAP 1", "Pelayanan & asuhan yang seragam untuk semua pasien."],
+          ["PAP 1.1", "Asuhan terintegrasi & terkoordinasi sesuai instruksi."],
+          ["PAP 1.2", "Rencana asuhan individual tiap pasien."],
+          ["PAP 2", "Penetapan pasien risiko tinggi & pelayanan risiko tinggi."],
+          ["PAP 2.1", "Pelayanan geriatri."],
+          ["PAP 2.2", "Promosi & edukasi kesehatan lanjut usia."],
+          ["PAP 2.3", "Pelayanan kesehatan jiwa."],
+          ["PAP 2.4", "Identifikasi & tindak lanjut pasien berisiko (mis. risiko bunuh diri)."],
+          ["PAP 2.5", "Pengenalan perubahan kondisi pasien memburuk (EWS)."],
+          ["PAP 2.6", "Pelayanan resusitasi tersedia di seluruh area RS."],
+          ["PAP 2.7", "Pelayanan darah & produk darah."],
+          ["PAP 3", "Terapi gizi terintegrasi & pemberian makanan."],
+          ["PAP 4", "Pengelolaan nyeri yang efektif."],
+          ["PAP 5", "Asuhan pasien menjelang akhir kehidupan."]
+        ]
+      },
+      {
+        "kode": "PAB",
+        "nama": "Pelayanan Anestesi dan Bedah",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Pelayanan anestesi & sedasi, penanggung jawab, asesmen pra-sedasi/pra-anestesi & prainduksi, persetujuan tindakan, pemantauan fisiologis & pemulihan, serta asuhan bedah (asesmen prabedah, laporan operasi, asuhan pascabedah).",
+        "standar": [
+          ["PAB 1", "Pelayanan anestesi, sedasi moderat & dalam sesuai kebutuhan pasien."],
+          ["PAB 2", "Penanggung jawab pelayanan anestesi (dokter spesialis anestesi)."],
+          ["PAB 3", "Pemberian sedasi moderat & dalam sesuai regulasi."],
+          ["PAB 3.1", "Kompetensi & kewenangan pemberi sedasi."],
+          ["PAB 3.2", "Panduan praktik klinis untuk sedasi."],
+          ["PAB 4", "Asesmen pra-anestesi & prainduksi oleh PPA yang kompeten."],
+          ["PAB 5", "Diskusi risiko, manfaat, & alternatif anestesi/sedasi dengan pasien (persetujuan)."],
+          ["PAB 6", "Pemantauan status fisiologis selama sedasi/anestesi."],
+          ["PAB 6.1", "Pemantauan pemulihan pascaanestesi/sedasi."],
+          ["PAB 7", "Asuhan bedah: asesmen prabedah & rencana operasi."],
+          ["PAB 7.1", "Informasi risiko, manfaat, & alternatif tindakan bedah (persetujuan)."],
+          ["PAB 7.2", "Laporan operasi dibuat segera setelah tindakan."],
+          ["PAB 7.3", "Rencana asuhan pascabedah."],
+          ["PAB 7.4", "Pelayanan bedah yang menggunakan implan."]
+        ]
+      },
+      {
+        "kode": "PKPO",
+        "nama": "Pelayanan Kefarmasian dan Penggunaan Obat",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Pengelolaan sediaan farmasi & BMHP dan farmasi klinik: pengorganisasian, formularium, penyimpanan (termasuk high-alert, emergensi, recall), rekonsiliasi, peresepan, dispensing, pemberian, pemantauan terapi obat, pelaporan kesalahan obat, dan penatagunaan antimikroba (PGA).",
+        "standar": [
+          ["PKPO 1", "Sistem pelayanan kefarmasian & penggunaan obat serta pengorganisasiannya."],
+          ["PKPO 2", "Formularium RS sebagai acuan peresepan & pengadaan."],
+          ["PKPO 3", "Penyimpanan sediaan farmasi & BMHP dengan benar dan aman."],
+          ["PKPO 3.1", "Pengelolaan obat/produk yang memerlukan penanganan khusus."],
+          ["PKPO 3.2", "Pengelolaan obat emergensi yang disimpan di luar Instalasi Farmasi."],
+          ["PKPO 3.3", "Penarikan (recall) & pemusnahan sediaan farmasi, BMHP, dan implan."],
+          ["PKPO 4", "Rekonsiliasi obat."],
+          ["PKPO 4.1", "Peresepan/permintaan obat & instruksi pengobatan."],
+          ["PKPO 5", "Penyiapan (dispensing) sediaan farmasi."],
+          ["PKPO 5.1", "Penyiapan obat steril/aseptik."],
+          ["PKPO 6", "Pemberian obat oleh staf yang kompeten & berwenang."],
+          ["PKPO 6.1", "Obat yang dibawa pasien dari luar RS & penggunaan obat mandiri."],
+          ["PKPO 7", "Pemantauan terapi obat (PTO) secara kolaboratif."],
+          ["PKPO 7.1", "Pelaporan & tindak lanjut kesalahan obat (medication error)."]
+        ]
+      },
+      {
+        "kode": "KE",
+        "nama": "Komunikasi dan Edukasi",
+        "kelompok": "Pelayanan Berfokus pada Pasien",
+        "ringkas": "Promosi Kesehatan RS (PKRS), pemberian informasi, pengkajian kebutuhan edukasi, penyampaian edukasi sesuai pemahaman, metode edukasi, dan kompetensi PPA dalam edukasi.",
+        "standar": [
+          ["KE 1", "Tim/unit Promosi Kesehatan Rumah Sakit (PKRS)."],
+          ["KE 2", "Pemberian informasi kepada pasien & keluarga."],
+          ["KE 3", "Pengkajian kebutuhan edukasi tiap pasien beserta kesiapan & kemampuannya."],
+          ["KE 4", "Edukasi proses asuhan disesuaikan tingkat pemahaman pasien & keluarga."],
+          ["KE 5", "Pemilihan metode edukasi sesuai nilai & preferensi pasien."],
+          ["KE 6", "Upaya promosi kesehatan menunjang asuhan berkesinambungan."],
+          ["KE 7", "PPA mampu memberikan edukasi secara efektif."]
+        ]
+      },
+      {
+        "kode": "SKP",
+        "nama": "Sasaran Keselamatan Pasien",
+        "kelompok": "Sasaran Keselamatan Pasien",
+        "ringkas": "Enam Sasaran Keselamatan Pasien nasional yang wajib diterapkan RS.",
+        "standar": [
+          ["SKP 1", "Mengidentifikasi pasien dengan benar (minimal 2 identitas)."],
+          ["SKP 2", "Meningkatkan komunikasi efektif (tulis/input–baca ulang–konfirmasi, SBAR, pelaporan hasil kritis, dan serah terima/hand over)."],
+          ["SKP 3", "Meningkatkan keamanan obat high-alert termasuk LASA/NORUM."],
+          ["SKP 3.1", "Meningkatkan keamanan penggunaan elektrolit konsentrat."],
+          ["SKP 4", "Memastikan tepat sisi, prosedur, & pasien pada pembedahan/tindakan invasif (verifikasi pra-operasi, penandaan lokasi, time-out)."],
+          ["SKP 5", "Mengurangi risiko infeksi terkait pelayanan kesehatan (kebersihan tangan)."],
+          ["SKP 6", "Mengurangi risiko cedera pasien akibat jatuh."],
+          ["SKP 6.1", "Skrining & asesmen risiko jatuh pada pasien rawat jalan."]
+        ]
+      },
+      {
+        "kode": "PROGNAS",
+        "nama": "Program Nasional",
+        "kelompok": "Program Nasional",
+        "ringkas": "Enam program nasional prioritas yang didukung RS untuk mencapai target pembangunan kesehatan.",
+        "standar": [
+          ["Prognas 1", "Peningkatan kesehatan ibu & bayi (PONEK 24 jam / 7 hari)."],
+          ["Prognas 2", "Penurunan angka kesakitan Tuberkulosis/TBC (TB DOTS)."],
+          ["Prognas 3", "Penurunan angka kesakitan HIV/AIDS."],
+          ["Prognas 4", "Penurunan prevalensi stunting & wasting."],
+          ["Prognas 5", "Pelayanan Keluarga Berencana Rumah Sakit (PKBRS)."],
+          ["Prognas 6", "Program Pengendalian Resistensi Antimikroba (PPRA)."]
+        ]
+      }
+    ]
+  },
   "profesi": [
     {
       "id": "Dokter",

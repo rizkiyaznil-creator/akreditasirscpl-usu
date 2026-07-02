@@ -243,6 +243,12 @@
       h('h3', { text: 'Standar, SKP, Program Nasional & Skoring' }),
       h('p', { text: '15 bab standar dalam 4 kelompok, 6 Sasaran Keselamatan Pasien, 6 Program Nasional, kode pembuktian R-D-O-W-S, dan skema skoring TL/TS/TT/TDD.' })
     ]));
+    if (DATA.standarRinci) {
+      grid2.appendChild(h('a', { class: 'pcard', href: '#/standar' }, [
+        h('h3', { text: 'Standar Rinci (Instrumen)' }),
+        h('p', { text: 'Peta per-bab: pernyataan tiap standar (TKRS, KPS, SKP, PKPO, dll) beserta metode pembuktian R–D–O–W–S.' })
+      ]));
+    }
     app.appendChild(grid2);
 
     document.title = 'Handbook Kesiapan Akreditasi RS — RSP CPL USU';
@@ -469,6 +475,88 @@
     window.scrollTo(0, 0);
   }
 
+  /* ---------- Standar Rinci ---------- */
+  function kodeSlug(kode) { return encodeURIComponent(kode); }
+
+  function viewStandarIndex() {
+    var sr = DATA.standarRinci || {};
+    var bab = sr.bab || [];
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Standar Rinci' }]));
+    app.appendChild(h('div', { class: 'lead' }, [
+      h('h1', { text: 'Standar Rinci (Instrumen Akreditasi)' }),
+      h('p', { text: 'Peta per-bab: pernyataan standar disarikan dari Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024). Pilih bab untuk melihat daftar standarnya.' })
+    ]));
+
+    // Kelompokkan bab sesuai kelompok, urut tetap
+    var kelompokUrut = [];
+    bab.forEach(function (b) { if (kelompokUrut.indexOf(b.kelompok) === -1) kelompokUrut.push(b.kelompok); });
+    kelompokUrut.forEach(function (kel) {
+      app.appendChild(h('h2', { class: 'section-title', text: kel }));
+      var grid = h('div', { class: 'grid' });
+      bab.filter(function (b) { return b.kelompok === kel; }).forEach(function (b) {
+        grid.appendChild(h('a', { class: 'pcard', href: '#/standar/' + kodeSlug(b.kode) }, [
+          h('h3', {}, [b.nama, ' ', h('span', { class: 'chip', text: b.kode })]),
+          h('p', { text: (b.standar ? b.standar.length + ' standar. ' : '') + (b.ringkas || '') })
+        ]));
+      });
+      app.appendChild(grid);
+    });
+
+    document.title = 'Standar Rinci — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  function viewStandarDetail(kode) {
+    var sr = DATA.standarRinci || {};
+    var b = (sr.bab || []).filter(function (x) { return x.kode === kode; })[0];
+    if (!b) { viewNotFound('Bab standar tidak ditemukan.'); return; }
+    clear(app);
+    app.appendChild(crumbs([
+      { label: 'Beranda', href: '#/' },
+      { label: 'Standar Rinci', href: '#/standar' },
+      { label: b.kode }
+    ]));
+
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('h1', {}, [b.nama, ' ', h('span', { class: 'chip', text: b.kode })]),
+      h('p', { class: 'ruang', text: b.ringkas || '' }),
+      h('div', { class: 'head-actions' }, [
+        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak']),
+        h('a', { class: 'btn', href: '#/standar' }, ['← Semua bab'])
+      ])
+    ]));
+
+    var card = h('div', { class: 'card' }, [h('h2', { text: 'Daftar standar' })]);
+    var table = h('table', { class: 'std-table' });
+    var tbody = h('tbody', {});
+    (b.standar || []).forEach(function (s) {
+      tbody.appendChild(h('tr', {}, [
+        h('td', {}, [h('strong', { text: s[0] })]),
+        h('td', { text: s[1] })
+      ]));
+    });
+    table.appendChild(tbody);
+    card.appendChild(table);
+    app.appendChild(card);
+
+    // Legenda kode pembuktian & skoring (dari umum)
+    var u = DATA.umum || {};
+    if (Array.isArray(u.kodePembuktian) && u.kodePembuktian.length) {
+      var ulK = h('ul', { class: 'clean' });
+      u.kodePembuktian.forEach(function (k) { ulK.appendChild(h('li', {}, [h('strong', { text: k[0] + ' — ' }), k[1] || ''])); });
+      var kids = [
+        h('h2', { text: 'Metode pembuktian (R–D–O–W–S)' }),
+        h('p', { class: 'note', text: 'Tiap Elemen Penilaian (EP) pada instrumen diberi kode metode pembuktian, dinilai dengan skema TL=10 / TS=5 / TT=0 (TDD tidak dinilai). Nomor EP dan daftar kelengkapan bukti tidak dicantumkan di sini.' }),
+        ulK
+      ];
+      app.appendChild(h('div', { class: 'card' }, kids));
+    }
+
+    document.title = b.nama + ' (' + b.kode + ') — Standar Rinci';
+    window.scrollTo(0, 0);
+  }
+
   /* ---------- Search ---------- */
   function buildSearchIndex() {
     SEARCH_INDEX = [];
@@ -483,6 +571,13 @@
     (u.kelompok_standar || []).forEach(function (g) {
       (g.items || []).forEach(function (row) {
         SEARCH_INDEX.push({ text: row[0] + ' — ' + row[1], badge: row[0], where: 'Bagian Umum · ' + g.grup, href: '#/umum/standar' });
+      });
+    });
+
+    var sr = DATA.standarRinci || {};
+    (sr.bab || []).forEach(function (b) {
+      (b.standar || []).forEach(function (s) {
+        SEARCH_INDEX.push({ text: s[0] + ' — ' + s[1], badge: b.kode, where: 'Standar Rinci · ' + b.nama, href: '#/standar/' + encodeURIComponent(b.kode) });
       });
     });
 
@@ -581,6 +676,10 @@
     }
     if (parts[0] === 'visi') {
       return viewVisiMisi();
+    }
+    if (parts[0] === 'standar') {
+      if (parts[1]) return viewStandarDetail(decodeURIComponent(parts[1]));
+      return viewStandarIndex();
     }
     if (parts[0] === 'cari') {
       var q = '';
@@ -756,6 +855,7 @@
     closeMenu();
     var action = item.getAttribute('data-action');
     if (action === 'visi') window.location.hash = '/visi';
+    else if (action === 'standar') window.location.hash = '/standar';
     else if (action === 'about') showAbout();
     else if (action === 'share') shareApp();
     else if (action === 'install') installApp();
