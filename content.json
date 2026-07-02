@@ -533,12 +533,134 @@
         "kelompok": "Program Nasional",
         "ringkas": "Enam program nasional prioritas yang didukung RS untuk mencapai target pembangunan kesehatan.",
         "standar": [
-          ["Prognas 1", "Peningkatan kesehatan ibu & bayi (PONEK 24 jam / 7 hari)."],
-          ["Prognas 2", "Penurunan angka kesakitan Tuberkulosis/TBC (TB DOTS)."],
-          ["Prognas 3", "Penurunan angka kesakitan HIV/AIDS."],
-          ["Prognas 4", "Penurunan prevalensi stunting & wasting."],
-          ["Prognas 5", "Pelayanan Keluarga Berencana Rumah Sakit (PKBRS)."],
-          ["Prognas 6", "Program Pengendalian Resistensi Antimikroba (PPRA)."]
+          {
+            "kode": "Prognas 1",
+            "pernyataan": "Rumah sakit melaksanakan program PONEK 24 jam dan 7 hari seminggu.",
+            "tujuan": "RS melaksanakan PONEK sesuai pedoman: pelayanan perlindungan ibu & bayi terpadu, IMD & ASI eksklusif, Perawatan Metode Kanguru pada BBLR, fungsi pusat rujukan, dan RSSIB 10 langkah menyusui; dipantau melalui indikator (mis. keterlambatan seksio sesarea, AKI/AKB, capaian IMD).",
+            "ep": [
+              { "t": "RS menetapkan regulasi pelaksanaan PONEK 24 jam.", "m": "R", "b": "Regulasi pelaksanaan PONEK.", "s": "10 / 0" },
+              { "t": "Terdapat Tim PONEK yang ditetapkan dengan rincian tugas & tanggung jawab.", "m": "D", "b": "Penetapan Tim PONEK.", "s": "10 / 5 / 0" },
+              { "t": "Terdapat program kerja acuan pelaksanaan PONEK.", "m": "R", "b": "Program kerja PONEK.", "s": "10 / 0" },
+              { "t": "Terdapat bukti pelaksanaan program PONEK yang dilaporkan sesuai ketentuan.", "m": "D, W", "b": "Bukti pelaporan; Tim PONEK.", "s": "10 / 5 / 0" },
+              { "t": "Program PONEK dipantau & dievaluasi secara rutin.", "m": "D, W", "b": "Bukti pemantauan & evaluasi; pimpinan RS & Tim PONEK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 1.1",
+            "pernyataan": "Rumah sakit melakukan pembinaan kepada jejaring fasilitas kesehatan rujukan untuk meningkatkan efektivitas sistem rujukan.",
+            "tujuan": "RS PONEK membina jejaring rujukan (Puskesmas, klinik bersalin, praktik perseorangan, fasyankes lain) melalui pelatihan dan berbagi pengalaman; RS memetakan jejaring dan menyusun program pembinaan setiap tahun.",
+            "ep": [
+              { "t": "RS menetapkan program pembinaan jejaring rujukan.", "m": "R", "b": "Program pembinaan jejaring rujukan.", "s": "10 / 5 / 0" },
+              { "t": "RS melakukan pembinaan jejaring secara berkala.", "m": "D", "b": "Bukti pelaksanaan pembinaan.", "s": "10 / 5 / 0" },
+              { "t": "Telah dilakukan evaluasi program pembinaan jejaring rujukan.", "m": "D", "b": "Bukti evaluasi pembinaan jejaring.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 2",
+            "pernyataan": "Rumah sakit melaksanakan program penanggulangan tuberkulosis.",
+            "tujuan": "Penanggulangan TB mengutamakan promotif–preventif tanpa mengabaikan kuratif–rehabilitatif: promosi kesehatan, surveilans (TB sensitif & resistan obat), pengendalian faktor risiko sesuai PPI TB, penemuan & penanganan kasus, imunisasi BCG, dan pemberian terapi pencegahan.",
+            "ep": [
+              { "t": "RS menerapkan regulasi pelaksanaan penanggulangan tuberkulosis di RS.", "m": "R", "b": "Regulasi penanggulangan TB.", "s": "10 / 0" },
+              { "t": "Direktur menetapkan Tim TB Paru RS beserta program kerjanya.", "m": "D", "b": "Penetapan Tim TB & program kerja.", "s": "10 / 5 / 0" },
+              { "t": "Ada bukti pelaksanaan promosi kesehatan, surveilans, dan upaya pencegahan TB.", "m": "D", "b": "Bukti pelaksanaan promosi, surveilans & pencegahan.", "s": "10 / 5 / 0" },
+              { "t": "RS merencanakan & mengadakan Obat Anti Tuberkulosis (OAT).", "m": "D", "b": "Bukti perencanaan & pengadaan OAT.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "RS melaksanakan pelayanan TB MDR (bagi RS rujukan TB MDR).", "m": "D", "b": "Bukti pelayanan TB MDR.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Pencatatan & pelaporan kasus TB Paru sesuai ketentuan.", "m": "D", "b": "Bukti pencatatan & pelaporan kasus TB.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 2.1",
+            "pernyataan": "Rumah sakit menyediakan sarana dan prasarana pelayanan tuberkulosis sesuai ketentuan.",
+            "tujuan": "Tersedia sarana-prasarana yang memenuhi syarat pelayanan TB Paru sesuai pedoman, termasuk ruang yang memenuhi pedoman pencegahan & pengendalian infeksi TB.",
+            "ep": [
+              { "t": "Tersedia ruang pelayanan rawat jalan yang memenuhi pedoman PPI tuberkulosis.", "m": "O", "b": "Ruang rawat jalan sesuai PPI TB.", "s": "10 / 5 / 0" },
+              { "t": "Bila memberikan rawat inap TB paru dewasa, tersedia ruang rawat inap yang memenuhi pedoman PPI TB.", "m": "O", "b": "Ruang rawat inap sesuai PPI TB.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Tersedia ruang pengambilan spesimen sputum yang memenuhi pedoman PPI TB.", "m": "O", "b": "Ruang pengambilan spesimen sputum.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "Prognas 2.2",
+            "pernyataan": "Rumah sakit melaksanakan pelayanan tuberkulosis dan upaya pengendalian faktor risiko tuberkulosis sesuai ketentuan.",
+            "tujuan": "Pelayanan TB dilaksanakan sesuai panduan praktik klinis dan pedoman pengendalian faktor risiko TB.",
+            "ep": [
+              { "t": "RS menerapkan kepatuhan staf medis terhadap panduan praktik klinis tuberkulosis.", "m": "D", "b": "Bukti kepatuhan terhadap PPK TB.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 3",
+            "pernyataan": "Rumah sakit melaksanakan penanggulangan HIV/AIDS sesuai peraturan perundang-undangan.",
+            "tujuan": "Sesuai standar pelayanan rujukan ODHA: meningkatkan fungsi VCT, ART (atau kerja sama dengan RS yang ditunjuk), pelayanan Infeksi Oportunistik, pelayanan ODHA dengan faktor risiko IDU, serta penunjang (gizi, laboratorium, radiologi, pencatatan-pelaporan).",
+            "ep": [
+              { "t": "RS melaksanakan kebijakan program penanggulangan HIV/AIDS sesuai ketentuan.", "m": "R", "b": "Penetapan program penanggulangan HIV/AIDS.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan fungsi rujukan HIV/AIDS sesuai kebijakan yang berlaku.", "m": "D", "b": "Bukti penerapan fungsi rujukan HIV/AIDS.", "s": "10 / 5 / 0" },
+              { "t": "Pelaksanaan PITC (Provider Initiated Testing and Counselling) dan PMTCT.", "m": "D", "b": "Bukti pelaksanaan PITC & PMTCT.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Pelayanan ODHA dengan faktor risiko infeksi oportunistik (IO).", "m": "D", "b": "Bukti pelayanan ODHA dengan IO.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Perencanaan, pengadaan, dan penyediaan ARV.", "m": "D", "b": "Bukti penyediaan ARV.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "Pemantauan & evaluasi program penanggulangan HIV/AIDS.", "m": "D", "b": "Bukti pelaporan pemantauan & evaluasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 4",
+            "pernyataan": "Rumah sakit melaksanakan program penurunan prevalensi stunting dan wasting.",
+            "tujuan": "Tersedia regulasi, panduan tata laksana, dan organisasi pelaksana lintas unsur (medis, keperawatan, farmasi, gizi, tim tumbuh kembang, humas). Program mencakup peningkatan kesadaran, intervensi spesifik (1000 HPK, IMD/ASI, PMT, PMBA, pemantauan pertumbuhan), surveilans gizi (ePPGBM), dan fungsi rujukan.",
+            "ep": [
+              { "t": "RS menetapkan kebijakan program penurunan stunting & wasting, tim pelaksana, dan sistem rujukan.", "m": "R", "b": "Penetapan kebijakan, tim, & sistem rujukan.", "s": "10 / 0" },
+              { "t": "RS menerapkan sistem pemantauan & evaluasi, pelaporan, dan analisis program stunting & wasting.", "m": "D", "b": "Bukti pemantauan, evaluasi, pelaporan & analisis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 4.1",
+            "pernyataan": "Rumah sakit melakukan edukasi, pendampingan intervensi & pengelolaan gizi, serta penguatan jejaring rujukan gizi kepada RS kelas di bawahnya dan FKTP di wilayahnya.",
+            "tujuan": "RS menjadi pusat rujukan kasus stunting & gizi buruk dengan komplikasi, serta melaksanakan pendampingan klinis-manajemen dan penguatan jejaring rujukan gizi.",
+            "ep": [
+              { "t": "RS membuktikan pendampingan intervensi & pengelolaan gizi serta penguatan jejaring rujukan gizi.", "m": "D, W", "b": "Bukti pendampingan, pembinaan jejaring, & rujukan gizi; Tim Stunting-Wasting.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "RS menerapkan sistem pemantauan & evaluasi, pelaporan, dan analisis.", "m": "D", "b": "Bukti pemantauan, evaluasi, pelaporan & analisis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 5",
+            "pernyataan": "Rumah sakit melaksanakan program pelayanan keluarga berencana dan kesehatan reproduksi beserta pemantauan dan evaluasinya.",
+            "tujuan": "PKBRS berperan menurunkan angka kematian ibu dan mempercepat penurunan stunting. Kunci keberhasilan: ketersediaan alat & obat kontrasepsi, sarana penunjang, SDM kompeten, dan manajemen; termasuk KB Pasca Persalinan & Pasca Keguguran, dengan regulasi SPO per metode kontrasepsi.",
+            "ep": [
+              { "t": "RS menetapkan kebijakan tentang pelaksanaan PKBRS.", "m": "R", "b": "Penetapan kebijakan PKBRS.", "s": "10 / 0 / TDD" },
+              { "t": "Terdapat Tim PKBRS yang ditetapkan direktur beserta program kerjanya.", "m": "R", "b": "Penetapan Tim PKBRS & program kerja.", "s": "10 / 0 / TDD" },
+              { "t": "RS melaksanakan program KB Pasca Persalinan dan Pasca Keguguran.", "m": "D", "b": "Bukti pelaksanaan KB PP & PK.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "RS melakukan pemantauan & evaluasi pelaksanaan PKBRS.", "m": "D", "b": "Bukti pelaporan pemantauan & evaluasi PKBRS.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "Prognas 5.1",
+            "pernyataan": "Rumah sakit menyiapkan sumber daya untuk penyelenggaraan pelayanan keluarga berencana dan kesehatan reproduksi.",
+            "tujuan": "Tersedia alat & obat kontrasepsi, sarana penunjang, layanan konseling, dan ruang pelayanan KB yang memadai.",
+            "ep": [
+              { "t": "RS menyediakan alat & obat kontrasepsi serta sarana penunjang pelayanan KB.", "m": "D, O", "b": "Daftar alat & obat kontrasepsi serta sarana penunjang KB.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "RS menyediakan layanan konseling bagi peserta & calon peserta program KB.", "m": "D", "b": "Bukti pelaksanaan layanan konseling KB.", "s": "10 / 5 / 0 / TDD" },
+              { "t": "RS merancang & menyediakan ruang pelayanan KB yang memadai.", "m": "O", "b": "Ruang pelayanan KB.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "Prognas 6",
+            "pernyataan": "Rumah sakit menyelenggarakan program pengendalian resistensi antimikroba (PPRA) sesuai peraturan perundang-undangan.",
+            "tujuan": "Resistensi antimikroba (AMR) masalah nasional & global akibat penggunaan antimikroba tidak bijak dan PPI yang belum optimal. RS menyediakan regulasi (kebijakan & panduan antibiotik), komite/tim PRA lintas unsur (KSM, keperawatan, farmasi, mikrobiologi klinik, PPI, KFT), penggunaan bijak melalui PGA, surveilans penggunaan & resistensi (MDRO: ESBL/MRSA), dan forum kajian infeksi terintegrasi.",
+            "ep": [
+              { "t": "RS menetapkan regulasi tentang pengendalian resistensi antimikroba sesuai ketentuan.", "m": "R", "b": "SK Direktur penyelenggaraan PPRA.", "s": "10 / 0" },
+              { "t": "RS menetapkan komite/tim PRA lintas unsur yang mengelola program dan bertanggung jawab langsung kepada Direktur, dengan program kerja.", "m": "R", "b": "SK komite/tim PRA & program kerja.", "s": "10 / 0" },
+              { "t": "RS melaksanakan program kerja PRA.", "m": "D", "b": "Bukti laporan pelaksanaan program PRA.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan pemantauan & evaluasi kegiatan PPRA (paling sedikit setiap tahun).", "m": "D", "b": "Bukti pemantauan & evaluasi PPRA.", "s": "10 / 5 / 0" },
+              { "t": "Komite/tim PRA melaporkan kepada pimpinan RS secara berkala dan kepada Kementerian Kesehatan sesuai ketentuan.", "m": "D", "b": "Bukti laporan ke pimpinan RS & Kemenkes (aplikasi nasional).", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "Prognas 6.1",
+            "pernyataan": "Rumah sakit mengembangkan & menerapkan penggunaan antimikroba secara bijak berdasarkan prinsip penatagunaan antimikroba (PGA).",
+            "tujuan": "PGA (antimicrobial stewardship) adalah kegiatan strategis, terpadu, dan terorganisasi untuk mengoptimalkan penggunaan antimikroba: dari penegakan diagnosis, indikasi, pemilihan jenis/dosis/rute/saat/lama, hingga pemantauan; termasuk kategorisasi AWaRe (Access, Watch, Reserve), panduan terapi & profilaksis (PPAB), serta mekanisme pengawasan PGA.",
+            "ep": [
+              { "t": "RS melaksanakan & mengembangkan penatagunaan antimikroba di unit pelayanan (melibatkan dokter, apoteker, perawat, & peserta didik) melalui praotorisasi dan prospektif review.", "m": "D, W", "b": "Bukti pelaksanaan PGA; dokter, apoteker, perawat, peserta didik.", "s": "10 / 5 / 0" },
+              { "t": "RS menyusun PPK dan Panduan Penggunaan Antibiotik untuk terapi & profilaksis (PPAB).", "m": "D", "b": "Bukti PPK & PPAB.", "s": "10 / 5 / 0" },
+              { "t": "Terdapat mekanisme pengawasan pelaksanaan PGA (pembatasan jenis, jumlah, dan durasi antibiotik).", "m": "D", "b": "Bukti pengawasan pelaksanaan PGA.", "s": "10 / 5 / 0" },
+              { "t": "Pemantauan & evaluasi berkesinambungan terhadap indikator PGA, dilaporkan kepada direktur.", "m": "D", "b": "Bukti pemantauan & evaluasi indikator PGA.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       }
     ]
