@@ -1,5 +1,5 @@
 /* =========================================================
-   Handbook Akreditasi RS — STARKES 2022
+   Handbook Akreditasi RS — RSP CPL USU
    Vanilla JS. content.json = satu-satunya sumber data.
    ========================================================= */
 
@@ -749,7 +749,7 @@
   function showAbout() {
     var box = h('div', {});
     box.appendChild(h('p', { text: 'Sarikan handbook kesiapan akreditasi rumah sakit berbasis peran untuk orientasi internal seluruh personel RS. Pilih profesi Anda untuk melihat kompetensi, bukti/dokumen, contoh pertanyaan surveior, dan checklist self-assessment.' }));
-    box.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), (DATA && DATA.sumber) || 'STARKES 2022']));
+    box.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), (DATA && DATA.sumber) || 'Standar Akreditasi RS (KMK 1596/2024)']));
     box.appendChild(h('ul', {}, [
       h('li', { text: 'Pencarian kata kunci lintas seluruh konten.' }),
       h('li', { text: 'Checklist yang tersimpan lokal di perangkat ini (localStorage), lengkap dengan tombol reset.' }),
