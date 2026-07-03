@@ -700,20 +700,135 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Asuhan seragam & terintegrasi, rencana asuhan, pasien & pelayanan risiko tinggi (geriatri, jiwa, dll), EWS, resusitasi, pelayanan darah, terapi gizi, manajemen nyeri, dan asuhan akhir kehidupan.",
         "standar": [
-          ["PAP 1", "Pelayanan & asuhan yang seragam untuk semua pasien."],
-          ["PAP 1.1", "Asuhan terintegrasi & terkoordinasi sesuai instruksi."],
-          ["PAP 1.2", "Rencana asuhan individual tiap pasien."],
-          ["PAP 2", "Penetapan pasien risiko tinggi & pelayanan risiko tinggi."],
-          ["PAP 2.1", "Pelayanan geriatri."],
-          ["PAP 2.2", "Promosi & edukasi kesehatan lanjut usia."],
-          ["PAP 2.3", "Pelayanan kesehatan jiwa."],
-          ["PAP 2.4", "Identifikasi & tindak lanjut pasien berisiko (mis. risiko bunuh diri)."],
-          ["PAP 2.5", "Pengenalan perubahan kondisi pasien memburuk (EWS)."],
-          ["PAP 2.6", "Pelayanan resusitasi tersedia di seluruh area RS."],
-          ["PAP 2.7", "Pelayanan darah & produk darah."],
-          ["PAP 3", "Terapi gizi terintegrasi & pemberian makanan."],
-          ["PAP 4", "Pengelolaan nyeri yang efektif."],
-          ["PAP 5", "Asuhan pasien menjelang akhir kehidupan."]
+          {
+            "kode": "PAP 1",
+            "pernyataan": "Pelayanan dan asuhan yang seragam diberikan untuk semua pasien sesuai peraturan perundang-undangan.",
+            "tujuan": "Pasien dengan masalah & kebutuhan yang sama berhak atas mutu asuhan yang seragam: akses tidak bergantung kemampuan bayar; asuhan oleh PPA kompeten tersedia 24 jam/7 hari; alokasi sumber daya sesuai kondisi pasien; asuhan sama di semua unit.",
+            "ep": [
+              { "t": "RS menetapkan regulasi tentang pelayanan & asuhan pasien (PAP).", "m": "R", "b": "Regulasi PAP.", "s": "10 / 0" },
+              { "t": "Asuhan yang seragam diberikan kepada setiap pasien.", "m": "D, O, W", "b": "Bukti pelaksanaan asuhan seragam; PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 1.1",
+            "pernyataan": "Proses pelayanan dan asuhan pasien terintegrasi serta terkoordinasi dilakukan sesuai instruksi.",
+            "tujuan": "Integrasi & koordinasi antar-PPA melalui CPPT, ronde multidisiplin, dan manajer pelayanan pasien (MPP). RS mengatur kewenangan & tata cara pemberian instruksi (termasuk pembatasan instruksi lisan/telepon), indikasi klinis pada permintaan pemeriksaan, dan dokumentasi prosedur/tindakan.",
+            "ep": [
+              { "t": "RS melakukan pelayanan & asuhan yang terintegrasi serta terkoordinasi.", "m": "D, W", "b": "Bukti asuhan terintegrasi; DPJP, PPA, MPP.", "s": "10 / 5 / 0" },
+              { "t": "RS menetapkan kewenangan pemberian instruksi oleh PPA kompeten, tata cara, & pendokumentasiannya.", "m": "R", "b": "Penetapan kewenangan & tata cara instruksi.", "s": "10 / 0" },
+              { "t": "Permintaan pemeriksaan laboratorium & diagnostik imajing disertai indikasi klinis (bila hasil berupa interpretasi).", "m": "D", "b": "Rekam medis permintaan disertai indikasi klinis.", "s": "10 / 5 / 0" },
+              { "t": "Prosedur & tindakan dilakukan sesuai instruksi; PPA pemberi instruksi, alasan, & hasil didokumentasikan.", "m": "D, W", "b": "Rekam medis prosedur/tindakan & hasil; PPA.", "s": "10 / 5 / 0" },
+              { "t": "Pasien yang menjalani tindakan invasif/berisiko di rawat jalan dikaji & didokumentasikan.", "m": "D", "b": "Rekam medis pengkajian tindakan invasif rawat jalan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 1.2",
+            "pernyataan": "Rencana asuhan individual setiap pasien dibuat dan didokumentasikan.",
+            "tujuan": "Rencana asuhan memuat tindakan untuk mendukung diagnosis, dengan sasaran terukur; dibuat ≤24 jam sejak rawat inap, dievaluasi berkala & direvisi, dan diverifikasi harian oleh DPJP.",
+            "ep": [
+              { "t": "PPA membuat rencana asuhan untuk setiap pasien rawat inap dalam 24 jam berdasarkan pengkajian awal.", "m": "D, W", "b": "Rekam medis rencana asuhan ≤24 jam; PPA.", "s": "10 / 5 / 0" },
+              { "t": "Rencana asuhan dievaluasi berkala, direvisi/dimutakhirkan, & didokumentasikan oleh setiap PPA.", "m": "D, W", "b": "Rekam medis evaluasi & revisi rencana asuhan.", "s": "10 / 5 / 0" },
+              { "t": "Instruksi berdasarkan rencana asuhan dibuat PPA kompeten & berwenang secara seragam, didokumentasikan di CPPT.", "m": "D, W", "b": "Rekam medis (CPPT) instruksi sesuai rencana asuhan.", "s": "10 / 5 / 0" },
+              { "t": "Rencana asuhan dibuat dengan sasaran terukur & didokumentasikan.", "m": "D, W", "b": "Rekam medis sasaran terukur.", "s": "10 / 5 / 0" },
+              { "t": "DPJP melakukan review berkala & verifikasi harian untuk memantau asuhan terintegrasi.", "m": "D, W", "b": "Rekam medis (CPPT) review & verifikasi DPJP.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2",
+            "pernyataan": "Rumah sakit menetapkan pasien risiko tinggi dan pelayanan risiko tinggi sesuai kemampuan, sumber daya, dan sarana prasarana yang dimiliki.",
+            "tujuan": "Pimpinan mengidentifikasi pasien & pelayanan risiko tinggi (mis. emergensi, koma, alat bantu hidup, restrain, dialisis, kemoterapi/radioterapi, paliatif, menular, immunocompromised), menetapkan PPK/clinical pathway kolaboratif, melatih staf, serta mengantisipasi risiko tambahan (mis. VAP, dekubitus, jatuh).",
+            "ep": [
+              { "t": "Pimpinan RS melaksanakan tanggung jawab pelayanan pasien & pelayanan risiko tinggi (identifikasi, PPK/CP, pelatihan staf).", "m": "D", "b": "Bukti pelaksanaan tanggung jawab pimpinan.", "s": "10 / 5 / 0" },
+              { "t": "RS memberikan pelayanan pasien risiko tinggi & pelayanan risiko tinggi berdasarkan populasi (anak, dewasa, geriatri).", "m": "D, O, W", "b": "Hasil identifikasi & pelaksanaan pelayanan risiko tinggi; sarana-prasarana; PPA.", "s": "10 / 5 / 0" },
+              { "t": "Pimpinan RS mengidentifikasi risiko tambahan yang dapat memengaruhi pasien & pelayanan risiko tinggi.", "m": "D, W", "b": "Bukti identifikasi risiko tambahan; PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.1",
+            "pernyataan": "Rumah sakit memberikan pelayanan geriatri rawat jalan, rawat inap akut, dan rawat inap kronis sesuai tingkat jenis pelayanan.",
+            "tujuan": "Pelayanan geriatri diselenggarakan sesuai tingkat (sederhana, lengkap, sempurna, paripurna) melalui pendekatan interdisiplin.",
+            "ep": [
+              { "t": "RS menetapkan regulasi penyelenggaraan pelayanan geriatri sesuai kemampuan & sumber daya.", "m": "R", "b": "Penetapan pelayanan geriatri.", "s": "10 / 0" },
+              { "t": "RS menetapkan tim terpadu geriatri & menyelenggarakan pelayanan sesuai tingkat jenis layanan.", "m": "D, O", "b": "Penetapan tim & penyelenggaraan pelayanan geriatri.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan pemantauan & evaluasi kegiatan pelayanan geriatri.", "m": "D, W", "b": "Bukti monitoring & evaluasi; tim geriatri terpadu.", "s": "10 / 5 / 0" },
+              { "t": "Ada pelaporan penyelenggaraan pelayanan geriatri.", "m": "D", "b": "Laporan penyelenggaraan pelayanan geriatri.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.2",
+            "pernyataan": "Rumah sakit melakukan promosi dan edukasi sebagai bagian pelayanan kesehatan warga lanjut usia di masyarakat berbasis RS (hospital based community geriatric service).",
+            "tujuan": "RS menjalankan program PKRS untuk warga lanjut usia berbasis masyarakat, dengan edukasi, media bantu, serta evaluasi & pelaporan berkala.",
+            "ep": [
+              { "t": "Ada program PKRS terkait pelayanan kesehatan warga lanjut usia berbasis RS.", "m": "R", "b": "Program PKRS pelayanan lansia (lihat KE 1).", "s": "10 / 0" },
+              { "t": "RS memberikan edukasi sebagai bagian pelayanan kesehatan lansia berbasis masyarakat.", "m": "D, W", "b": "Bukti edukasi; tim geriatri & PKRS.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan kegiatan sesuai program & tersedia media (leaflet/brosur).", "m": "D", "b": "Bukti kegiatan & media edukasi.", "s": "10 / 5 / 0" },
+              { "t": "RS melakukan evaluasi & membuat laporan kegiatan secara berkala.", "m": "D", "b": "Laporan & evaluasi program PKRS lansia.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.3",
+            "pernyataan": "Rumah sakit memberikan pelayanan kesehatan jiwa rawat jalan, rawat inap, dan gawat darurat sesuai tingkat jenis pelayanan.",
+            "tujuan": "ODMK & ODGJ termasuk populasi risiko tinggi; penanganan menghargai hak asasi manusia dan diselenggarakan berkualitas sesuai kemampuan RS.",
+            "ep": [
+              { "t": "RS menetapkan regulasi & menyelenggarakan pelayanan kesehatan jiwa (rawat jalan, rawat inap, gawat darurat) sesuai tingkat layanan.", "m": "R, D, O", "b": "Regulasi & bukti penyelenggaraan pelayanan jiwa.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "PAP 2.4",
+            "pernyataan": "Rumah sakit memiliki pelayanan untuk mengidentifikasi, menilai, mengelola, dan menindaklanjuti pasien berisiko (mis. risiko bunuh diri/menyakiti diri).",
+            "tujuan": "RS melakukan skrining & tata laksana pasien berisiko (mis. risiko bunuh diri) serta tindak lanjutnya.",
+            "ep": [
+              { "t": "RS mengidentifikasi, menilai, mengelola, & menindaklanjuti pasien berisiko (mis. risiko bunuh diri).", "m": "D, W", "b": "Regulasi & rekam medis skrining/tindak lanjut pasien berisiko.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.5",
+            "pernyataan": "Rumah sakit menerapkan proses pengenalan perubahan kondisi pasien yang memburuk (Early Warning System).",
+            "tujuan": "EWS memungkinkan deteksi dini perburukan dan aktivasi respons (mis. tim reaksi cepat) untuk mencegah henti jantung/kematian yang dapat dicegah.",
+            "ep": [
+              { "t": "RS menerapkan Early Warning System (EWS) untuk mengenali & merespons perubahan kondisi pasien yang memburuk.", "m": "D, O, W", "b": "Regulasi & rekam medis penerapan EWS; staf terkait.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.6",
+            "pernyataan": "Pelayanan resusitasi tersedia di seluruh area rumah sakit.",
+            "tujuan": "Peralatan resusitasi & obat emergensi tersedia dan staf terlatih di seluruh area untuk memberikan bantuan hidup dasar/lanjut secara cepat.",
+            "ep": [
+              { "t": "RS menyediakan pelayanan resusitasi 24 jam di seluruh area dengan peralatan & staf terlatih.", "m": "D, O, W", "b": "Ketersediaan peralatan resusitasi & bukti pelatihan staf.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 2.7",
+            "pernyataan": "Pelayanan darah dan produk darah dilaksanakan sesuai panduan klinis dan prosedur yang ditetapkan RS.",
+            "tujuan": "Permintaan, penyimpanan, uji kecocokan, distribusi, pemberian, dan pemantauan reaksi transfusi dilaksanakan sesuai ketentuan untuk menjamin keamanan.",
+            "ep": [
+              { "t": "RS melaksanakan pelayanan darah & produk darah sesuai panduan klinis & prosedur yang ditetapkan.", "m": "R, D, O", "b": "Regulasi & rekam medis pemberian & pemantauan transfusi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 3",
+            "pernyataan": "Rumah sakit memberikan makanan untuk pasien rawat inap dan terapi nutrisi terintegrasi untuk pasien dengan risiko nutrisi.",
+            "tujuan": "Makanan disediakan sesuai status gizi & kebutuhan klinis pasien; terapi gizi terintegrasi diberikan pada pasien berisiko dan dipantau responsnya.",
+            "ep": [
+              { "t": "RS menyediakan makanan sesuai kebutuhan pasien dan terapi gizi terintegrasi bagi pasien berisiko nutrisi.", "m": "R, D, O", "b": "Regulasi & rekam medis pemberian makanan & terapi gizi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 4",
+            "pernyataan": "Pasien mendapatkan pengelolaan nyeri yang efektif.",
+            "tujuan": "RS melakukan pengkajian & tata laksana nyeri, edukasi pasien/keluarga, serta pemantauan efektivitas pengelolaan nyeri.",
+            "ep": [
+              { "t": "RS menerapkan pengelolaan nyeri yang efektif (pengkajian, tata laksana, edukasi, & pemantauan).", "m": "D, W", "b": "Rekam medis pengkajian & tata laksana nyeri.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAP 5",
+            "pernyataan": "Rumah sakit memberikan asuhan pasien menjelang akhir kehidupan dengan memperhatikan kebutuhan pasien dan keluarga.",
+            "tujuan": "Asuhan akhir kehidupan mengelola gejala, menghormati nilai & keyakinan pasien, serta melibatkan & mendukung keluarga.",
+            "ep": [
+              { "t": "RS memberikan asuhan pasien menjelang akhir kehidupan dengan memperhatikan kebutuhan pasien & keluarga.", "m": "D, W", "b": "Regulasi & rekam medis asuhan akhir kehidupan.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
@@ -722,20 +837,127 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Pelayanan anestesi & sedasi, penanggung jawab, asesmen pra-sedasi/pra-anestesi & prainduksi, persetujuan tindakan, pemantauan fisiologis & pemulihan, serta asuhan bedah (asesmen prabedah, laporan operasi, asuhan pascabedah).",
         "standar": [
-          ["PAB 1", "Pelayanan anestesi, sedasi moderat & dalam sesuai kebutuhan pasien."],
-          ["PAB 2", "Penanggung jawab pelayanan anestesi (dokter spesialis anestesi)."],
-          ["PAB 3", "Pemberian sedasi moderat & dalam sesuai regulasi."],
-          ["PAB 3.1", "Kompetensi & kewenangan pemberi sedasi."],
-          ["PAB 3.2", "Panduan praktik klinis untuk sedasi."],
-          ["PAB 4", "Asesmen pra-anestesi & prainduksi oleh PPA yang kompeten."],
-          ["PAB 5", "Diskusi risiko, manfaat, & alternatif anestesi/sedasi dengan pasien (persetujuan)."],
-          ["PAB 6", "Pemantauan status fisiologis selama sedasi/anestesi."],
-          ["PAB 6.1", "Pemantauan pemulihan pascaanestesi/sedasi."],
-          ["PAB 7", "Asuhan bedah: asesmen prabedah & rencana operasi."],
-          ["PAB 7.1", "Informasi risiko, manfaat, & alternatif tindakan bedah (persetujuan)."],
-          ["PAB 7.2", "Laporan operasi dibuat segera setelah tindakan."],
-          ["PAB 7.3", "Rencana asuhan pascabedah."],
-          ["PAB 7.4", "Pelayanan bedah yang menggunakan implan."]
+          {
+            "kode": "PAB 1",
+            "pernyataan": "Rumah sakit menerapkan pelayanan anestesi, sedasi moderat dan dalam sesuai kapasitas pelayanan, standar profesi, dan peraturan perundang-undangan.",
+            "tujuan": "Anestesi & sedasi merupakan satu alur berkesinambungan (sedasi minimal hingga anestesi dalam) yang berisiko kehilangan refleks proteksi jalan napas; membutuhkan pengkajian komprehensif & pemantauan terus-menerus. Pelayanan (termasuk kegawatdaruratan) tersedia 24 jam/7 hari.",
+            "ep": [
+              { "t": "RS menetapkan regulasi pelayanan anestesi, sedasi, & pembedahan serta PPK terkait.", "m": "R", "b": "Pedoman pelayanan anestesi-sedasi & PPK.", "s": "10 / 0" },
+              { "t": "Pelayanan anestesi & sedasi yang diberikan memenuhi kebutuhan pasien.", "m": "D", "b": "Laporan kegiatan & rekam medis pelayanan anestesi-sedasi; staf anestesi.", "s": "10 / 5 / 0" },
+              { "t": "Pelayanan anestesi & sedasi tersedia 24 jam/7 hari sesuai kebutuhan pasien.", "m": "D, O, W", "b": "Daftar jaga dokter & penata/perawat anestesi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 2",
+            "pernyataan": "Rumah sakit menetapkan penanggung jawab pelayanan anestesi, sedasi moderat dan dalam adalah seorang dokter anestesi yang kompeten.",
+            "tujuan": "Penanggung jawab mengembangkan & menjaga regulasi, pengawasan administratif, program pengendalian mutu, serta pemantauan & evaluasi pelayanan sedasi-anestesi.",
+            "ep": [
+              { "t": "RS menerapkan pelayanan anestesi & sedasi secara seragam di seluruh area sesuai regulasi.", "m": "D, W", "b": "Rekam medis pelayanan anestesi-sedasi seragam; staf anestesi.", "s": "10 / 5 / 0" },
+              { "t": "RS menetapkan penanggung jawab pelayanan anestesi & sedasi (dokter anestesi kompeten) yang melaksanakan tanggung jawabnya.", "m": "D", "b": "Penetapan penanggung jawab; SPK & RKK.", "s": "10 / 0" },
+              { "t": "Bila memakai PPA anestesi dari luar RS untuk kondisi darurat, ada rekomendasi & evaluasi dari penanggung jawab.", "m": "D", "b": "Bukti rekomendasi & evaluasi PPA anestesi dari luar RS.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 3",
+            "pernyataan": "Pemberian sedasi moderat dan dalam dilakukan sesuai regulasi yang ditetapkan RS.",
+            "tujuan": "Sedasi diberikan seragam di semua tempat (termasuk di luar kamar operasi) oleh tenaga kompeten & berwenang, mencakup area pemberian, kualifikasi staf, informed consent, perbedaan populasi, peralatan, dan cara pemantauan.",
+            "ep": [
+              { "t": "RS melaksanakan pemberian sedasi moderat & dalam yang seragam di semua tempat sesuai ketentuan.", "m": "D, W", "b": "Rekam medis pelaksanaan sedasi seragam; staf anestesi.", "s": "10 / 5 / 0" },
+              { "t": "Peralatan & perbekalan gawat darurat tersedia di tempat sedasi sesuai jenis sedasi, usia, & kondisi pasien.", "m": "D, O", "b": "Daftar inventaris & ketersediaan peralatan gawat darurat.", "s": "10 / 5 / 0" },
+              { "t": "PPA terlatih dalam bantuan hidup lanjut (advanced) mendampingi & siaga selama tindakan sedasi.", "m": "D", "b": "Daftar jaga PPA; SPK & RKK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 3.1",
+            "pernyataan": "Tenaga medis yang kompeten dan berwenang memberikan pelayanan sedasi moderat dan dalam serta melaksanakan monitoring.",
+            "tujuan": "Pemberi & pemantau sedasi memiliki kompetensi & kewenangan; pemantauan fisiologis dilakukan selama sedasi hingga kriteria pemulihan terpenuhi.",
+            "ep": [
+              { "t": "Kompetensi & kewenangan (SPK/RKK) tenaga pemberi sedasi ditetapkan dan pemantauan pasien dilaksanakan & didokumentasikan.", "m": "D, W", "b": "SPK & RKK; rekam medis pemantauan sedasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 3.2",
+            "pernyataan": "Rumah sakit menetapkan panduan praktik klinis untuk pelayanan sedasi.",
+            "tujuan": "PPK sedasi menjadi acuan pelaksanaan yang seragam, termasuk pemantauan selama sedasi dan kriteria pemulihan.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan panduan praktik klinis sedasi sebagai acuan pelayanan.", "m": "R, D", "b": "PPK sedasi & bukti penerapannya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 4",
+            "pernyataan": "PPA yang kompeten dan berwenang melakukan asesmen pra-anestesi dan prainduksi.",
+            "tujuan": "Pengkajian pra-anestesi menjadi dasar perencanaan anestesi; asesmen prainduksi (terpisah) menilai stabilitas & kesiapan pasien sesaat sebelum induksi; keduanya didokumentasikan.",
+            "ep": [
+              { "t": "Pengkajian pra-anestesi dilakukan untuk setiap pasien yang akan menjalani anestesi.", "m": "D", "b": "Rekam medis pengkajian pra-anestesi.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian prainduksi dilakukan terpisah untuk mengevaluasi ulang pasien sesaat sebelum induksi.", "m": "D", "b": "Rekam medis pengkajian prainduksi.", "s": "10 / 5 / 0" },
+              { "t": "Kedua pengkajian dilakukan oleh PPA yang kompeten & berwenang dan didokumentasikan.", "m": "D", "b": "Rekam medis terisi & ditandatangani PPA kompeten.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 5",
+            "pernyataan": "Risiko, manfaat, dan alternatif tindakan sedasi/anestesi didiskusikan dengan pasien, keluarga, atau pihak yang membuat keputusan.",
+            "tujuan": "Pemberian informasi menjadi bagian proses persetujuan tindakan (informed consent), termasuk analgesia pascatindakan, dan didokumentasikan.",
+            "ep": [
+              { "t": "RS memberikan informasi jenis, risiko, manfaat, alternatif, & analgesia pascatindakan sedasi/anestesi.", "m": "D, W", "b": "Rekam medis pemberian informasi; DPJP/dokter anestesi, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Pemberian informasi dilakukan oleh dokter spesialis anestesi & didokumentasikan pada formulir persetujuan anestesi/sedasi.", "m": "D, W", "b": "Formulir persetujuan/penolakan anestesi/sedasi (lihat HPK 4.1).", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 6",
+            "pernyataan": "Status fisiologis setiap pasien selama tindakan sedasi/anestesi dipantau sesuai panduan praktik klinis dan didokumentasikan.",
+            "tujuan": "Pemantauan fisiologis memberikan informasi untuk keputusan klinis selama tindakan dan didokumentasikan di rekam medis.",
+            "ep": [
+              { "t": "RS memantau status fisiologis pasien selama sedasi/anestesi sesuai PPK & mendokumentasikannya.", "m": "D, O", "b": "Rekam medis pemantauan fisiologis selama anestesi/sedasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 6.1",
+            "pernyataan": "Pemantauan pemulihan pascaanestesi/sedasi dilakukan dan pasien ditransfer/dipulangkan berdasarkan kriteria yang ditetapkan.",
+            "tujuan": "Kriteria pemulihan digunakan untuk mengidentifikasi pasien yang sudah pulih dan siap ditransfer/dipulangkan; pemantauan didokumentasikan.",
+            "ep": [
+              { "t": "RS memantau pemulihan pascaanestesi/sedasi & menggunakan kriteria pemulihan untuk transfer/pemulangan.", "m": "D", "b": "Rekam medis pemantauan pemulihan & kriteria transfer/pulang.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 7",
+            "pernyataan": "Rumah sakit menetapkan asuhan bedah: asesmen prabedah dan rencana operasi didokumentasikan.",
+            "tujuan": "Asesmen prabedah & diagnosis praoperasi menjadi dasar rencana tindakan bedah dan didokumentasikan sebelum tindakan.",
+            "ep": [
+              { "t": "RS melaksanakan asesmen prabedah & menetapkan diagnosis praoperasi serta rencana operasi yang didokumentasikan.", "m": "D, W", "b": "Rekam medis asesmen prabedah, diagnosis praoperasi, & rencana operasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 7.1",
+            "pernyataan": "Risiko, manfaat, dan alternatif tindakan bedah diinformasikan kepada pasien/keluarga (persetujuan tindakan).",
+            "tujuan": "Informasi menjadi bagian informed consent tindakan bedah dan didokumentasikan.",
+            "ep": [
+              { "t": "RS memberikan informasi risiko, manfaat, & alternatif tindakan bedah sebagai bagian persetujuan tindakan.", "m": "D, W", "b": "Formulir persetujuan tindakan bedah (lihat HPK 4.1).", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 7.2",
+            "pernyataan": "Laporan operasi dibuat segera setelah tindakan, sebelum pasien dipindahkan.",
+            "tujuan": "Laporan operasi memuat informasi lengkap (diagnosis, prosedur, temuan, spesimen, dsb.) dan tersedia sebelum pasien dipindahkan agar kesinambungan asuhan terjaga.",
+            "ep": [
+              { "t": "Laporan operasi dibuat lengkap segera setelah tindakan, sebelum pasien dipindahkan.", "m": "D", "b": "Rekam medis laporan operasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 7.3",
+            "pernyataan": "Rencana asuhan pascabedah disusun dan didokumentasikan.",
+            "tujuan": "Rencana asuhan pascabedah (medis, keperawatan, & PPA lain) disusun & didokumentasikan untuk kesinambungan pemulihan.",
+            "ep": [
+              { "t": "RS menyusun & mendokumentasikan rencana asuhan pascabedah.", "m": "D, W", "b": "Rekam medis rencana asuhan pascabedah.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PAB 7.4",
+            "pernyataan": "Pelayanan bedah yang menggunakan implan dikelola sesuai ketentuan.",
+            "tujuan": "RS mengatur pengelolaan implan (pemilihan, penelusuran/traceability, pencatatan, serta proses recall) untuk keselamatan pasien.",
+            "ep": [
+              { "t": "RS mengelola pelayanan bedah yang menggunakan implan (penelusuran, pencatatan, & recall) sesuai ketentuan.", "m": "R, D, W", "b": "Regulasi & bukti pengelolaan implan (lihat PKPO 3.3).", "s": "10 / 5 / 0 / TDD" }
+            ]
+          }
         ]
       },
       {
