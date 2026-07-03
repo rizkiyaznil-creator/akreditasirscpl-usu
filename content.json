@@ -460,24 +460,162 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Skrining & triase, admisi & pendaftaran, alur pasien, kesinambungan asuhan & DPJP, transfer internal, pemulangan (discharge summary), rujukan, dan transportasi.",
         "standar": [
-          ["AKP 1", "Proses skrining pasien rawat inap & rawat jalan."],
-          ["AKP 1.1", "Prioritas pasien darurat/mendesak (triase)."],
-          ["AKP 1.2", "Skrining kebutuhan pasien saat admisi rawat inap."],
-          ["AKP 1.3", "Pemberian informasi bila terjadi penundaan/hambatan pelayanan."],
-          ["AKP 2", "Proses penerimaan & pendaftaran pasien."],
-          ["AKP 2.1", "Pengelolaan alur pasien di seluruh area RS."],
-          ["AKP 3", "Kesinambungan & integrasi pelayanan."],
-          ["AKP 3.1", "Setiap pasien memiliki DPJP."],
-          ["AKP 4", "Informasi pasien disertakan saat transfer internal antar unit."],
-          ["AKP 5", "Proses pemulangan pasien dari RS."],
-          ["AKP 5.1", "Ringkasan pasien pulang (discharge summary)."],
-          ["AKP 5.2", "Tindak lanjut pasien & pemberitahuan staf."],
-          ["AKP 5.3", "Pengelolaan pasien menolak asuhan/melarikan diri."],
-          ["AKP 5.4", "Rujukan ke fasilitas kesehatan lain sesuai kebutuhan."],
-          ["AKP 5.5", "Proses rujukan agar pasien pindah dengan aman."],
-          ["AKP 5.6", "Regulasi & pencatatan proses rujukan di rekam medis."],
-          ["AKP 5.7", "Catatan untuk pasien rawat jalan dengan asuhan/diagnosis kompleks."],
-          ["AKP 6", "Proses transportasi (rujukan, pemindahan, pemulangan)."]
+          {
+            "kode": "AKP 1",
+            "pernyataan": "Rumah sakit menetapkan proses skrining pasien rawat inap maupun rawat jalan untuk mengidentifikasi pelayanan yang dibutuhkan sesuai misi & sumber daya RS.",
+            "tujuan": "Skrining pada kontak pertama (triase, evaluasi visual, pemeriksaan fisis/penunjang) dilakukan di dalam/luar RS; keputusan mengobati, mentransfer, atau merujuk diambil setelah hasil skrining dievaluasi. Skrining khusus (mis. infeksi/TBC, nyeri, geriatri, jatuh) dapat dilakukan sesuai kebutuhan.",
+            "ep": [
+              { "t": "RS menetapkan regulasi Akses & Kesinambungan Pelayanan (AKP).", "m": "R", "b": "Pedoman AKP.", "s": "10 / 0" },
+              { "t": "RS menerapkan proses skrining di dalam maupun di luar RS dan terdokumentasi.", "m": "D, W", "b": "Rekam medis skrining; staf medis & keperawatan.", "s": "10 / 5 / 0" },
+              { "t": "Ada proses memberikan hasil pemeriksaan diagnostik kepada nakes kompeten untuk menentukan pasien diterima, ditransfer, atau dirujuk.", "m": "D, W", "b": "SPK & RKK; staf medis & keperawatan.", "s": "10 / 5 / 0" },
+              { "t": "Bila kebutuhan pasien tidak dapat dipenuhi, RS merujuk/membantu pasien ke fasilitas yang sesuai.", "m": "D, W", "b": "Rekam medis rujukan; dokter IGD, PPA, petugas rujukan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 1.1",
+            "pernyataan": "Pasien dengan kebutuhan darurat/mendesak diberikan prioritas untuk pengkajian dan tindakan (triase).",
+            "tujuan": "Pasien gawat/darurat diidentifikasi dengan triase berbasis bukti; pada bencana digunakan triase bencana. Staf dilatih menerapkan kriteria triase dan menstabilkan pasien sebelum transfer/rujuk.",
+            "ep": [
+              { "t": "Triase & pelayanan kegawatdaruratan diterapkan oleh staf kompeten dengan bukti kompetensi & kewenangan klinis.", "m": "D, W", "b": "Sertifikat (PPGD/BTCLS/ACLS/ATLS); SPK & RKK staf IGD.", "s": "10 / 5 / 0" },
+              { "t": "Staf menggunakan kriteria triase berbasis bukti untuk memprioritaskan pasien sesuai kegawatannya.", "m": "D, O, W", "b": "Kriteria triase & pelaksanaannya; dokter IGD, PPA.", "s": "10 / 5 / 0" },
+              { "t": "Pasien darurat dinilai & distabilkan sesuai kapasitas RS sebelum ditransfer/dirujuk, didokumentasikan.", "m": "D, W", "b": "Rekam medis monitoring pasien darurat di IGD.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 1.2",
+            "pernyataan": "Rumah sakit melakukan skrining kebutuhan pasien saat admisi rawat inap untuk menetapkan pelayanan preventif, paliatif, kuratif, rehabilitatif, khusus/spesialistik, atau intensif.",
+            "tujuan": "Skrining admisi menentukan pelayanan yang paling sesuai & prioritas; RS menetapkan kriteria masuk & keluar unit khusus/spesialistik dan unit intensif (parameter diagnostik/objektif/fisiologis); staf unit terlibat menyusun kriteria.",
+            "ep": [
+              { "t": "RS melaksanakan skrining pasien masuk rawat inap untuk menetapkan kebutuhan pelayanan (preventif/paliatif/kuratif/rehabilitatif/khusus/intensif).", "m": "D", "b": "Rekam medis formulir skrining admisi.", "s": "10 / 5 / 0" },
+              { "t": "RS menetapkan kriteria masuk & keluar unit pelayanan khusus/spesialistik.", "m": "R", "b": "Penetapan kriteria masuk & keluar unit khusus.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan kriteria masuk & keluar unit intensif dan mendokumentasikannya.", "m": "D, W", "b": "Rekam medis penerapan kriteria; DPJP, PPA.", "s": "10 / 5 / 0" },
+              { "t": "Staf kompeten & berwenang di unit khusus & intensif terlibat menyusun kriteria masuk & keluar.", "m": "D", "b": "Bukti rapat penyusunan kriteria; SPK & RKK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 1.3",
+            "pernyataan": "Rumah sakit memberikan informasi kepada pasien jika terjadi penundaan/kelambatan tindakan, pengobatan, atau pemeriksaan penunjang.",
+            "tujuan": "Pasien diberi tahu alasan penundaan/kelambatan dan alternatif yang tersedia (berlaku untuk rawat inap, rawat jalan, & penunjang diagnostik), dicatat di rekam medis.",
+            "ep": [
+              { "t": "Pasien dan/atau keluarga diberi informasi bila ada penundaan/keterlambatan pelayanan beserta alasannya, dicatat di rekam medis.", "m": "D, W", "b": "Rekam medis pemberian informasi penundaan (lihat KE 2).", "s": "10 / 5 / 0" },
+              { "t": "Pasien dan/atau keluarga diberi informasi tentang alternatif yang tersedia sesuai kebutuhan klinis, dicatat.", "m": "D, W", "b": "Rekam medis informasi alternatif; DPJP, PPA, pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 2",
+            "pernyataan": "Rumah sakit menetapkan proses penerimaan dan pendaftaran pasien rawat inap, rawat jalan, dan gawat darurat.",
+            "tujuan": "Proses mencakup pendaftaran gawat darurat, penerimaan langsung IGD→ranap, admisi ranap, pendaftaran rajal, observasi, dan pengelolaan bila tempat tidur tidak tersedia; sistem online mengurangi hambatan; pasien diberi informasi rencana asuhan, hasil yang diharapkan, & perkiraan biaya.",
+            "ep": [
+              { "t": "RS menerapkan proses penerimaan pasien (gawat darurat, IGD→ranap, admisi, rawat jalan, observasi, tanpa tempat tidur).", "m": "D, O, W", "b": "Bukti proses penerimaan; staf pendaftaran, PPA, MPP.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan sistem pendaftaran rawat jalan & rawat inap online/offline, dievaluasi & ditindaklanjuti.", "m": "D, W", "b": "Bukti sistem pendaftaran & laporan evaluasi.", "s": "10 / 5 / 0" },
+              { "t": "RS memberikan informasi rencana asuhan, hasil yang diharapkan, & perkiraan biaya kepada pasien/keluarga.", "m": "D, W", "b": "Bukti pemberian informasi rencana asuhan & biaya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 2.1",
+            "pernyataan": "Rumah sakit menetapkan proses untuk mengelola alur pasien di seluruh area rumah sakit.",
+            "tujuan": "Pengelolaan alur efektif (penerimaan, pengkajian, tindakan, transfer, pemulangan) untuk mengatasi penumpukan pasien di IGD saat tempat tidur ranap penuh, dipantau & dievaluasi.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan pengelolaan alur pasien di seluruh area RS.", "m": "R, D, W", "b": "Regulasi & bukti pengelolaan alur pasien.", "s": "10 / 5 / 0" },
+              { "t": "RS memantau & mengevaluasi efektivitas pengelolaan alur pasien.", "m": "D, W", "b": "Bukti pemantauan & evaluasi alur pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 3",
+            "pernyataan": "Rumah sakit melaksanakan kesinambungan pelayanan dan integrasi asuhan antar-PPA & unit.",
+            "tujuan": "Kesinambungan & koordinasi asuhan dijalankan sepanjang episode pelayanan, difasilitasi oleh Manajer Pelayanan Pasien (MPP)/case manager.",
+            "ep": [
+              { "t": "RS melaksanakan kesinambungan & integrasi pelayanan yang dikoordinasikan (mis. oleh MPP/case manager).", "m": "D, W", "b": "Bukti koordinasi kesinambungan pelayanan; MPP, PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 3.1",
+            "pernyataan": "Rumah sakit menetapkan bahwa setiap pasien memiliki dokter penanggung jawab pelayanan (DPJP).",
+            "tujuan": "Setiap pasien memiliki DPJP untuk memberikan & mengoordinasikan asuhan; bila lebih dari satu DPJP, ditetapkan DPJP utama.",
+            "ep": [
+              { "t": "Setiap pasien memiliki DPJP; bila lebih dari satu DPJP ditetapkan DPJP utama untuk koordinasi asuhan.", "m": "R, D", "b": "Regulasi & rekam medis penetapan DPJP/DPJP utama.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 4",
+            "pernyataan": "Rumah sakit menetapkan informasi tentang pasien disertakan pada proses transfer internal antar unit.",
+            "tujuan": "Informasi pasien (kondisi, asuhan, obat, hasil) disertakan & didokumentasikan saat transfer internal agar kesinambungan asuhan terjaga.",
+            "ep": [
+              { "t": "Informasi pasien disertakan saat transfer internal antar unit dan didokumentasikan.", "m": "D", "b": "Rekam medis formulir transfer internal.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5",
+            "pernyataan": "Rumah sakit menetapkan dan melaksanakan proses pemulangan pasien berdasarkan kondisi & kriteria.",
+            "tujuan": "Pemulangan direncanakan sejak awal (discharge planning) dan dilaksanakan berdasarkan kriteria kondisi pasien serta kebutuhan asuhan lanjutan.",
+            "ep": [
+              { "t": "RS menetapkan & melaksanakan proses pemulangan pasien berdasarkan kondisi & kriteria yang ditetapkan.", "m": "R, D", "b": "Regulasi & rekam medis proses pemulangan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.1",
+            "pernyataan": "Ringkasan pasien pulang (discharge summary) dibuat untuk semua pasien rawat inap yang keluar dari RS.",
+            "tujuan": "Ringkasan pulang memuat a.l. diagnosis, prosedur, obat, kondisi saat pulang, & instruksi tindak lanjut, diberikan kepada pasien & PPA berikutnya.",
+            "ep": [
+              { "t": "RS membuat ringkasan pasien pulang (discharge summary) untuk semua pasien rawat inap.", "m": "D", "b": "Rekam medis ringkasan pasien pulang.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.2",
+            "pernyataan": "Rumah sakit menetapkan proses untuk mengelola & menindaklanjuti pasien dan memberitahu staf RS.",
+            "tujuan": "RS mengelola tindak lanjut pasien (mis. instruksi kontrol) dan memberi tahu staf/PPA terkait untuk kesinambungan asuhan.",
+            "ep": [
+              { "t": "RS mengelola & menindaklanjuti pasien serta memberi tahu staf terkait.", "m": "D", "b": "Bukti tindak lanjut & pemberitahuan staf.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.3",
+            "pernyataan": "Rumah sakit menetapkan proses untuk mengelola pasien yang menolak rencana asuhan medis atau yang melarikan diri.",
+            "tujuan": "RS mengatur penanganan pasien yang menolak asuhan/pulang atas permintaan sendiri (APS) atau melarikan diri, termasuk pemberian informasi risiko.",
+            "ep": [
+              { "t": "RS mengelola pasien yang menolak rencana asuhan medis atau melarikan diri sesuai ketentuan.", "m": "D", "b": "Rekam medis penanganan pasien menolak asuhan/APS/melarikan diri.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.4",
+            "pernyataan": "Pasien dirujuk ke fasilitas pelayanan kesehatan lain berdasarkan kondisi untuk memenuhi kebutuhan asuhan berkesinambungan.",
+            "tujuan": "Rujukan dilakukan berdasarkan kebutuhan asuhan pasien ke fasyankes yang mampu memberikan pelayanan yang dibutuhkan.",
+            "ep": [
+              { "t": "Pasien dirujuk ke fasilitas kesehatan lain berdasarkan kondisi & kebutuhan asuhan.", "m": "D", "b": "Rekam medis rujukan sesuai kebutuhan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.5",
+            "pernyataan": "Rumah sakit menetapkan proses rujukan untuk memastikan pasien pindah dengan aman.",
+            "tujuan": "Proses rujukan mencakup komunikasi dengan fasilitas penerima, pendamping sesuai kondisi, peralatan, & pemantauan selama transfer agar pasien pindah dengan aman.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan proses rujukan yang memastikan pasien pindah dengan aman.", "m": "D, W", "b": "Rekam medis & bukti proses rujukan aman; petugas rujukan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.6",
+            "pernyataan": "Rumah sakit menetapkan regulasi untuk mengatur proses rujukan dan mencatatnya di rekam medis pasien.",
+            "tujuan": "Regulasi rujukan mengatur alur, dokumentasi, & pencatatan (mis. formulir rujukan) di rekam medis.",
+            "ep": [
+              { "t": "RS mengatur proses rujukan & mencatatnya di rekam medis pasien.", "m": "R, D", "b": "Regulasi & rekam medis (formulir) rujukan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "AKP 5.7",
+            "pernyataan": "Untuk pasien rawat jalan dengan asuhan kompleks atau diagnosis kompleks, dibuat catatan (profil ringkas) rawat jalan.",
+            "tujuan": "Profil ringkas medis rawat jalan (PRMRJ) memudahkan PPA memahami riwayat & asuhan pasien rawat jalan yang kompleks.",
+            "ep": [
+              { "t": "RS membuat catatan/profil ringkas untuk pasien rawat jalan dengan asuhan/diagnosis kompleks.", "m": "D", "b": "Rekam medis profil ringkas rawat jalan.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "AKP 6",
+            "pernyataan": "Rumah sakit menetapkan proses transportasi dalam merujuk, memindahkan, atau memulangkan pasien.",
+            "tujuan": "Transportasi (ambulans/kendaraan) memenuhi persyaratan keselamatan, peralatan, & PPI, serta sesuai kebutuhan & kondisi pasien.",
+            "ep": [
+              { "t": "RS menetapkan & melaksanakan proses transportasi (rujukan/pemindahan/pemulangan) yang aman & sesuai kebutuhan pasien.", "m": "R, D, O", "b": "Regulasi & bukti pemeliharaan/kelengkapan kendaraan transportasi.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
