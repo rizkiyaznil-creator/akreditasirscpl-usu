@@ -624,19 +624,120 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Hak pasien & keluarga, pengurangan hambatan akses, penghormatan martabat & privasi, perlindungan harta & dari kekerasan, keterlibatan dalam asuhan, penanganan keluhan, dan persetujuan tindakan (informed consent).",
         "standar": [
-          ["HPK 1", "Proses yang mendukung hak pasien & keluarga."],
-          ["HPK 1.1", "Mengurangi hambatan fisik, bahasa, budaya, dan lainnya."],
-          ["HPK 1.2", "Pelayanan menghargai martabat, nilai, & kepercayaan pasien."],
-          ["HPK 1.3", "Menjaga privasi pasien & kerahasiaan informasi."],
-          ["HPK 1.4", "Melindungi harta benda pasien."],
-          ["HPK 1.5", "Melindungi pasien dari serangan fisik/verbal & identifikasi populasi berisiko."],
-          ["HPK 2", "Keterlibatan pasien & keluarga dalam asuhan melalui edukasi."],
-          ["HPK 2.1", "Informasi hak menolak atau menghentikan tindakan."],
-          ["HPK 2.2", "Hak atas pengkajian & tata laksana nyeri serta asuhan menjelang akhir hayat."],
-          ["HPK 3", "Proses menerima & menanggapi keluhan pasien."],
-          ["HPK 4", "Batasan persetujuan umum (general consent)."],
-          ["HPK 4.1", "Persetujuan tindakan kedokteran (informed consent)."],
-          ["HPK 4.2", "Pemberian persetujuan oleh pihak lain sesuai ketentuan."]
+          {
+            "kode": "HPK 1",
+            "pernyataan": "Rumah sakit menerapkan proses yang mendukung hak pasien dan keluarganya selama mendapatkan pelayanan & perawatan.",
+            "tujuan": "Pimpinan memastikan seluruh staf berperan aktif melindungi hak pasien; kebijakan dikembangkan kolaboratif. Pasien berhak menentukan siapa yang dianggap keluarga dan sejauh mana keluarga terlibat dalam pengambilan keputusan & informasi.",
+            "ep": [
+              { "t": "RS menerapkan regulasi hak pasien & keluarga sesuai ketentuan.", "m": "R, D", "b": "Penetapan & bukti penerapan hak pasien & keluarga.", "s": "10 / 5 / 0" },
+              { "t": "RS memiliki proses mengidentifikasi siapa yang diinginkan pasien untuk berpartisipasi dalam pengambilan keputusan perawatannya.", "m": "D, W", "b": "Bukti proses identifikasi; petugas admisi, PPA, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "RS menentukan preferensi pasien (dan pada keadaan tertentu keluarga) tentang informasi yang boleh diberikan kepada keluarga/pihak lain.", "m": "W", "b": "Petugas admisi, PPA, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Semua staf dilatih tentang proses & perannya mendukung hak serta partisipasi pasien & keluarga.", "m": "D, W", "b": "Bukti pelatihan hak pasien; staf yang dilatih.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 1.1",
+            "pernyataan": "Rumah sakit berupaya mengurangi hambatan fisik, bahasa, budaya, dan lainnya dalam mengakses & memberikan layanan serta informasi kepada pasien/keluarga.",
+            "tujuan": "RS mengidentifikasi & mengurangi hambatan (mis. akses aman, rambu disabilitas/multibahasa, penerjemah); pernyataan hak & tanggung jawab pasien tersedia dalam bahasa yang dipahami.",
+            "ep": [
+              { "t": "RS mengidentifikasi & menerapkan proses mengurangi hambatan bagi pasien dalam akses, penerimaan, & pelayanan.", "m": "D, W", "b": "Rekam medis identifikasi & pengurangan hambatan; kepala unit, staf RS.", "s": "10 / 5 / 0" },
+              { "t": "Informasi terkait perawatan & tata laksana medis diberikan dengan cara & bahasa yang dipahami pasien.", "m": "D, W", "b": "Bukti pemberian informasi; PPA, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Informasi hak & tanggung jawab pasien terpampang/diberikan tertulis dalam bahasa yang dipahami pasien.", "m": "D, O, W", "b": "Media informasi hak & tanggung jawab pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 1.2",
+            "pernyataan": "Rumah sakit memberikan pelayanan yang menghargai martabat pasien, menghormati nilai & kepercayaan pribadi, serta menanggapi permintaan keyakinan agama & spiritual.",
+            "tujuan": "Pasien dirawat dengan penuh hormat; RS mengidentifikasi & menghormati nilai/keyakinan budaya & spiritual serta memenuhi kebutuhan bimbingan rohani.",
+            "ep": [
+              { "t": "Staf memberikan perawatan yang menghargai harkat & martabat pasien.", "m": "O, W", "b": "Pelaksanaan perawatan penuh penghargaan; PPA, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "RS menghormati keyakinan spiritual, budaya, & nilai yang dianut pasien.", "m": "D, W", "b": "Bukti identifikasi & penghormatan keyakinan/nilai pasien.", "s": "10 / 5 / 0" },
+              { "t": "RS memenuhi kebutuhan pasien terhadap bimbingan rohani.", "m": "D, W", "b": "PKS rohaniwan; bukti permintaan & pelaksanaan pelayanan rohani.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 1.3",
+            "pernyataan": "Rumah sakit menjaga privasi pasien dan kerahasiaan informasi, serta memberikan hak pasien mengakses informasi kesehatannya sesuai ketentuan.",
+            "tujuan": "Privasi dijaga saat wawancara, pemeriksaan, perawatan, & transfer sesuai kebutuhan pasien; informasi kesehatan dilindungi dari kehilangan/penyalahgunaan; pasien berhak mengakses informasi kesehatannya.",
+            "ep": [
+              { "t": "RS menjaga privasi pasien sesuai kebutuhan & harapan pasien (wawancara, pemeriksaan, perawatan, transfer).", "m": "O, W", "b": "Bukti pemenuhan kebutuhan privasi; PPA, pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "RS menjaga kerahasiaan informasi & menerapkan prosedur perlindungan dari kehilangan/penyalahgunaan.", "m": "R, D", "b": "Regulasi & bukti perlindungan kerahasiaan informasi.", "s": "10 / 5 / 0" },
+              { "t": "RS memberikan hak pasien mengakses informasi kesehatannya sesuai ketentuan.", "m": "D, W", "b": "Bukti pemberian akses informasi kesehatan pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 1.4",
+            "pernyataan": "Rumah sakit melindungi harta benda pasien dari pencurian atau kehilangan.",
+            "tujuan": "RS menetapkan tanggung jawab & proses perlindungan harta benda pasien, terutama pada pasien yang tidak mampu menjaga miliknya.",
+            "ep": [
+              { "t": "RS melindungi harta benda pasien dari pencurian/kehilangan sesuai ketentuan.", "m": "R, D, W", "b": "Regulasi & bukti perlindungan harta benda pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 1.5",
+            "pernyataan": "Rumah sakit melindungi pasien dari serangan fisik & verbal, dan mengidentifikasi populasi berisiko.",
+            "tujuan": "RS melindungi pasien (terutama populasi berisiko: bayi, anak, lansia, disabilitas) dari kekerasan fisik/verbal & penelantaran.",
+            "ep": [
+              { "t": "RS melindungi pasien dari serangan fisik/verbal & mengidentifikasi populasi berisiko.", "m": "D, O, W", "b": "Regulasi & bukti perlindungan; identifikasi populasi berisiko.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 2",
+            "pernyataan": "Pasien & keluarga dilibatkan dalam semua aspek perawatan & tata laksana medis melalui edukasi.",
+            "tujuan": "Pasien berhak berpartisipasi dalam keputusan asuhan, memperoleh informasi kondisi & rencana, serta hak mencari pendapat kedua (second opinion).",
+            "ep": [
+              { "t": "RS melibatkan pasien & keluarga dalam pengambilan keputusan asuhan melalui edukasi (termasuk hak second opinion).", "m": "D, W", "b": "Rekam medis keterlibatan & edukasi pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 2.1",
+            "pernyataan": "Rumah sakit memberikan informasi kepada pasien & keluarga mengenai hak mereka untuk menolak atau menghentikan tindakan/terapi.",
+            "tujuan": "RS mengatur hak pasien menolak/menghentikan tindakan termasuk resusitasi (DNR) sesuai ketentuan, disertai informasi konsekuensinya.",
+            "ep": [
+              { "t": "RS memberi informasi hak pasien menolak/menghentikan tindakan (termasuk keputusan DNR) sesuai ketentuan.", "m": "R, D", "b": "Regulasi & rekam medis penolakan/penghentian tindakan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 2.2",
+            "pernyataan": "Rumah sakit mendukung hak pasien atas pengkajian & tata laksana nyeri serta perawatan menjelang akhir kehidupan yang penuh hormat.",
+            "tujuan": "RS menghormati hak pasien atas manajemen nyeri dan asuhan akhir kehidupan yang menghargai kebutuhan & martabat pasien.",
+            "ep": [
+              { "t": "RS mendukung hak pasien atas pengkajian & tata laksana nyeri serta asuhan menjelang akhir kehidupan.", "m": "D, W", "b": "Rekam medis tata laksana nyeri & asuhan akhir kehidupan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 3",
+            "pernyataan": "Rumah sakit memberitahu pasien & keluarga mengenai proses menerima & menanggapi keluhan, serta menelaah dan menyelesaikannya.",
+            "tujuan": "RS menetapkan mekanisme penerimaan, penelaahan, & penyelesaian keluhan pasien serta memberi informasi cara menyampaikannya.",
+            "ep": [
+              { "t": "RS memberi tahu, menerima, menelaah, & menindaklanjuti keluhan pasien sesuai ketentuan.", "m": "R, D, W", "b": "Regulasi & bukti penanganan/penyelesaian keluhan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 4",
+            "pernyataan": "Rumah sakit menetapkan batasan yang jelas untuk persetujuan umum (general consent).",
+            "tujuan": "General consent diperoleh saat pasien masuk rawat inap/terdaftar rawat jalan, dengan cakupan yang jelas.",
+            "ep": [
+              { "t": "RS menetapkan batasan persetujuan umum (general consent) yang diperoleh saat pasien masuk.", "m": "R, D", "b": "Regulasi & bukti general consent.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 4.1",
+            "pernyataan": "Persetujuan tindakan (informed consent) diperoleh melalui cara yang ditetapkan RS.",
+            "tujuan": "Informed consent diberikan oleh staf terlatih dalam bahasa yang dipahami pasien; RS menetapkan daftar tindakan/prosedur yang memerlukan informed consent.",
+            "ep": [
+              { "t": "Persetujuan tindakan (informed consent) diperoleh melalui cara yang ditetapkan, oleh staf terlatih, dalam bahasa yang dipahami pasien.", "m": "D, W", "b": "Rekam medis formulir informed consent.", "s": "10 / 5 / 0" },
+              { "t": "RS menetapkan daftar tindakan & prosedur yang memerlukan informed consent.", "m": "R", "b": "Penetapan daftar tindakan yang memerlukan informed consent.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "HPK 4.2",
+            "pernyataan": "Rumah sakit menerapkan proses pemberian persetujuan oleh orang lain sesuai peraturan perundang-undangan.",
+            "tujuan": "Bila pasien tidak kompeten/berkeadaan tertentu, persetujuan diberikan oleh wali/pihak yang berwenang sesuai ketentuan.",
+            "ep": [
+              { "t": "RS menerapkan proses pemberian persetujuan oleh orang lain (wali/pihak berwenang) sesuai ketentuan.", "m": "R, D", "b": "Regulasi & rekam medis persetujuan oleh pihak lain.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
@@ -1261,13 +1362,62 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Promosi Kesehatan RS (PKRS), pemberian informasi, pengkajian kebutuhan edukasi, penyampaian edukasi sesuai pemahaman, metode edukasi, dan kompetensi PPA dalam edukasi.",
         "standar": [
-          ["KE 1", "Tim/unit Promosi Kesehatan Rumah Sakit (PKRS)."],
-          ["KE 2", "Pemberian informasi kepada pasien & keluarga."],
-          ["KE 3", "Pengkajian kebutuhan edukasi tiap pasien beserta kesiapan & kemampuannya."],
-          ["KE 4", "Edukasi proses asuhan disesuaikan tingkat pemahaman pasien & keluarga."],
-          ["KE 5", "Pemilihan metode edukasi sesuai nilai & preferensi pasien."],
-          ["KE 6", "Upaya promosi kesehatan menunjang asuhan berkesinambungan."],
-          ["KE 7", "PPA mampu memberikan edukasi secara efektif."]
+          {
+            "kode": "KE 1",
+            "pernyataan": "Rumah sakit menetapkan tim atau unit Promosi Kesehatan Rumah Sakit (PKRS) dengan tugas & tanggung jawab sesuai ketentuan.",
+            "tujuan": "PKRS menyelenggarakan promosi kesehatan bagi pasien, keluarga, & masyarakat, termasuk program pelayanan kesehatan warga lanjut usia berbasis masyarakat.",
+            "ep": [
+              { "t": "RS menetapkan tim/unit PKRS beserta tugas & tanggung jawabnya.", "m": "R, D", "b": "Penetapan tim/unit PKRS & program kerja.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 2",
+            "pernyataan": "Rumah sakit memberikan informasi kepada pasien & keluarga tentang asuhan & pelayanan.",
+            "tujuan": "Informasi mencakup jenis pelayanan, rencana & hasil asuhan, alternatif, serta penundaan/kelambatan (lihat AKP 1.3), disampaikan dengan cara yang dipahami.",
+            "ep": [
+              { "t": "RS memberikan informasi kepada pasien & keluarga tentang asuhan, pelayanan, & alternatifnya.", "m": "D, W", "b": "Bukti pemberian informasi; PPA, pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 3",
+            "pernyataan": "Rumah sakit melakukan pengkajian kebutuhan edukasi setiap pasien beserta kesiapan & kemampuannya menerima edukasi.",
+            "tujuan": "Pengkajian mencakup keyakinan & nilai, kemampuan membaca, bahasa, hambatan emosional, serta kesiapan menerima edukasi.",
+            "ep": [
+              { "t": "RS mengkaji kebutuhan edukasi tiap pasien beserta kesiapan & kemampuan menerima edukasi.", "m": "D", "b": "Rekam medis pengkajian kebutuhan edukasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 4",
+            "pernyataan": "Edukasi tentang proses asuhan disampaikan kepada pasien & keluarga sesuai tingkat pemahaman & bahasa mereka.",
+            "tujuan": "Edukasi mencakup a.l. penggunaan obat yang aman, penggunaan alat medis, potensi interaksi obat-makanan, pedoman nutrisi, manajemen nyeri, & teknik rehabilitasi.",
+            "ep": [
+              { "t": "Edukasi proses asuhan disampaikan sesuai tingkat pemahaman & bahasa pasien/keluarga.", "m": "D, W", "b": "Rekam medis edukasi; PPA, pasien/keluarga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 5",
+            "pernyataan": "Metode edukasi dipilih dengan mempertimbangkan nilai & preferensi pasien serta memungkinkan interaksi yang memadai.",
+            "tujuan": "Metode & media edukasi disesuaikan agar terjadi interaksi & verifikasi pemahaman pasien/keluarga.",
+            "ep": [
+              { "t": "RS memilih metode edukasi sesuai nilai & preferensi pasien serta memungkinkan interaksi.", "m": "D, W", "b": "Bukti metode/media edukasi & interaksi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 6",
+            "pernyataan": "Upaya promosi kesehatan dilakukan berkesinambungan untuk menunjang keberhasilan asuhan.",
+            "tujuan": "RS menghubungkan pasien dengan sumber daya/jejaring di komunitas untuk menunjang asuhan berkesinambungan (mis. rujukan edukasi/kelompok pendukung).",
+            "ep": [
+              { "t": "RS melaksanakan upaya promosi kesehatan berkesinambungan (termasuk rujukan ke sumber daya di komunitas).", "m": "D, W", "b": "Bukti kegiatan promosi kesehatan & rujukan komunitas.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KE 7",
+            "pernyataan": "Profesional Pemberi Asuhan (PPA) mampu memberikan edukasi secara efektif.",
+            "tujuan": "PPA memiliki pengetahuan & keterampilan edukasi, berkolaborasi antar-PPA, serta memverifikasi pemahaman pasien/keluarga dan mendokumentasikannya.",
+            "ep": [
+              { "t": "PPA mampu memberikan edukasi secara efektif & terdokumentasi dengan verifikasi pemahaman pasien/keluarga.", "m": "D, W", "b": "Rekam medis edukasi dengan verifikasi pemahaman; PPA.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
