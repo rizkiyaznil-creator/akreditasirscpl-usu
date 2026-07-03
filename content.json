@@ -507,26 +507,191 @@
         "kelompok": "Pelayanan Berfokus pada Pasien",
         "ringkas": "Pengkajian awal & ulang, skrining nutrisi/nyeri/risiko jatuh, populasi khusus, serta pelayanan laboratorium, darah, dan radiologi (RIR).",
         "standar": [
-          ["PP 1", "Identifikasi kebutuhan perawatan melalui proses pengkajian."],
-          ["PP 1.1", "Kebutuhan medis & keperawatan dari pengkajian awal."],
-          ["PP 1.2", "Skrining risiko nutrisi, nyeri, dan kebutuhan fungsional termasuk risiko jatuh."],
-          ["PP 1.3", "Pengkajian awal termodifikasi untuk populasi khusus."],
-          ["PP 3", "Pelayanan laboratorium sesuai kebutuhan pasien."],
-          ["PP 3.1", "Penanggung jawab pelayanan laboratorium yang kompeten."],
-          ["PP 3.2", "Kualifikasi staf laboratorium."],
-          ["PP 3.3", "Kerangka waktu penyelesaian pemeriksaan (reguler & cito)."],
-          ["PP 3.4", "Pengelolaan reagensia esensial."],
-          ["PP 3.5", "Prosedur pengambilan, identifikasi, & pengiriman spesimen."],
-          ["PP 3.6", "Nilai normal & rentang nilai untuk interpretasi hasil."],
-          ["PP 3.7", "Kendali mutu pelayanan laboratorium."],
-          ["PP 3.8", "Kerja sama dengan laboratorium rujukan terakreditasi."],
-          ["PP 3.9", "Penyelenggaraan pelayanan darah."],
-          ["PP 4", "Pelayanan radiologi klinik (RIR)."],
-          ["PP 4.1", "Penanggung jawab pelayanan RIR yang kompeten."],
-          ["PP 4.2", "Kualifikasi staf radiologi."],
-          ["PP 4.3", "Kerangka waktu pemeriksaan radiologi (reguler & cito)."],
-          ["PP 4.4", "Ketersediaan film & bahan pemeriksaan."],
-          ["PP 4.5", "Program kendali mutu radiologi."]
+          {
+            "kode": "PP 1",
+            "pernyataan": "Semua pasien diidentifikasi kebutuhan perawatan kesehatannya melalui proses pengkajian yang ditetapkan RS.",
+            "tujuan": "Pengkajian adalah proses berkesinambungan (IGD, ranap, rajal) yang terdiri dari pengumpulan data, analisis, dan penyusunan rencana asuhan. Isi minimal pengkajian awal antara lain keluhan, status fisik, psiko-sosio-spiritual, ekonomi, riwayat kesehatan/alergi/obat, pengkajian nyeri, risiko jatuh, fungsional, risiko nutrisi, kebutuhan edukasi, dan perencanaan pemulangan. Hanya PPA kompeten yang boleh melakukan pengkajian; pengkajian terkini (≤30 hari) saat tata laksana dimulai.",
+            "ep": [
+              { "t": "RS menetapkan regulasi pengkajian awal & pengkajian ulang medis dan keperawatan di IGD, rawat inap, dan rawat jalan.", "m": "R", "b": "Regulasi pengkajian awal & ulang.", "s": "10 / 0" },
+              { "t": "RS menetapkan isi minimal pengkajian awal.", "m": "R", "b": "Regulasi isi minimal pengkajian awal.", "s": "10 / 0" },
+              { "t": "Hanya PPA yang kompeten yang diperbolehkan melakukan pengkajian sesuai ketentuan RS.", "m": "D", "b": "SIP, SPK & RKK PPA; rekam medis pengkajian oleh PPA kompeten.", "s": "10 / 5 / 0" },
+              { "t": "Perencanaan pulang (discharge planning) yang mencakup kebutuhan khusus disusun sejak pengkajian awal.", "m": "D", "b": "Rekam medis pengkajian awal memuat perencanaan pulang.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 1.1",
+            "pernyataan": "Kebutuhan medis dan keperawatan pasien diidentifikasi berdasarkan pengkajian awal.",
+            "tujuan": "Pengkajian awal medis & keperawatan menghasilkan diagnosis untuk menentukan asuhan; dilaksanakan tepat waktu dan didokumentasikan.",
+            "ep": [
+              { "t": "Pengkajian awal medis & keperawatan dilaksanakan & didokumentasikan dalam 24 jam pertama sejak masuk rawat inap, atau lebih awal bila diperlukan.", "m": "D", "b": "Rekam medis pengkajian awal ≤24 jam.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian awal medis menghasilkan diagnosis medis (kondisi utama & kondisi lain yang perlu tata laksana/pemantauan).", "m": "D", "b": "Rekam medis diagnosis medis.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian awal keperawatan menghasilkan diagnosis keperawatan untuk menentukan kebutuhan asuhan/intervensi/pemantauan.", "m": "D", "b": "Rekam medis diagnosis keperawatan.", "s": "10 / 5 / 0" },
+              { "t": "Sebelum pembedahan pada kondisi mendesak, minimal ada catatan singkat & diagnosis praoperasi.", "m": "D", "b": "Rekam medis catatan & diagnosis praoperasi.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian medis pra-rawat inap/pra-prosedur rawat jalan dilakukan ≤30 hari; jika lebih, dilakukan pengkajian ulang.", "m": "D", "b": "Rekam medis pengkajian ≤30 hari.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 1.2",
+            "pernyataan": "Pasien dilakukan skrining risiko nutrisi, skrining nyeri, kebutuhan fungsional termasuk risiko jatuh, dan kebutuhan khusus lainnya.",
+            "tujuan": "Skrining menjadi bagian pengkajian awal; pasien berisiko dilanjutkan pengkajian lebih lanjut oleh staf kompeten; hasil pengkajian dari luar RS ditinjau/diverifikasi saat masuk.",
+            "ep": [
+              { "t": "Hasil pengkajian yang dikerjakan di luar RS ditinjau dan/atau diverifikasi saat masuk rawat inap atau sebelum tindakan rawat jalan.", "m": "D", "b": "Rekam medis tinjauan/verifikasi pengkajian luar RS.", "s": "10 / 5 / 0" },
+              { "t": "Pasien diskrining risiko nutrisi sebagai bagian pengkajian awal; kriteria dikembangkan bersama staf gizi.", "m": "D", "b": "Rekam medis skrining risiko nutrisi.", "s": "10 / 5 / 0" },
+              { "t": "Pasien dengan risiko nutrisional dilanjutkan dengan pengkajian gizi.", "m": "D", "b": "Rekam medis pengkajian gizi.", "s": "10 / 5 / 0" },
+              { "t": "Pasien diskrining kebutuhan fungsional termasuk risiko jatuh (melibatkan staf rehabilitasi medis).", "m": "R, D", "b": "Regulasi & rekam medis skrining fungsional/risiko jatuh.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 1.3",
+            "pernyataan": "Rumah sakit melakukan pengkajian awal yang dimodifikasi untuk populasi khusus.",
+            "tujuan": "Pengkajian tambahan disesuaikan kebutuhan populasi khusus (a.l. neonatus, anak, remaja, maternitas, geriatri, terminal, nyeri kronik, gangguan jiwa, kecanduan, korban kekerasan, penyakit menular, kemoterapi/radiasi, imunologi terganggu).",
+            "ep": [
+              { "t": "RS menetapkan jenis populasi khusus yang akan dilakukan pengkajian tambahan.", "m": "R", "b": "Regulasi jenis populasi khusus.", "s": "10 / 0" },
+              { "t": "RS melaksanakan pengkajian tambahan terhadap populasi pasien khusus sesuai ketentuan.", "m": "D", "b": "Rekam medis pengkajian tambahan populasi khusus.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 2",
+            "pernyataan": "Rumah sakit melakukan pengkajian ulang bagi semua pasien dengan interval yang ditentukan untuk membuat rencana asuhan lanjutan.",
+            "tujuan": "Pengkajian ulang oleh PPA menilai efektivitas asuhan; hasil dicatat di CPPT. DPJP mengkaji minimal setiap hari (termasuk akhir minggu/libur); perawat minimal 1x per shift.",
+            "ep": [
+              { "t": "RS melaksanakan pengkajian ulang oleh DPJP, perawat, dan PPA lain untuk menentukan rencana asuhan lanjutan.", "m": "D", "b": "Rekam medis pengkajian ulang.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian ulang medis dilaksanakan minimal satu kali sehari, termasuk akhir minggu/libur, untuk pasien akut.", "m": "D", "b": "Rekam medis pengkajian ulang medis harian.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian ulang oleh perawat minimal satu kali per shift atau sesuai perubahan kondisi.", "m": "D", "b": "Rekam medis pengkajian ulang keperawatan per shift.", "s": "10 / 5 / 0" },
+              { "t": "Pengkajian ulang oleh PPA lain dilaksanakan sesuai interval regulasi RS.", "m": "D", "b": "Rekam medis pengkajian ulang PPA lain.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3",
+            "pernyataan": "Pelayanan laboratorium tersedia untuk memenuhi kebutuhan pasien sesuai peraturan perundang-undangan.",
+            "tujuan": "RS menyelenggarakan pelayanan laboratorium terintegrasi (patologi klinik, dapat pula patologi anatomi/mikrobiologi), tersedia 24 jam termasuk darurat; POCT oleh perawat memenuhi kredensial; pemeriksaan rujukan melalui laboratorium RS.",
+            "ep": [
+              { "t": "RS menetapkan regulasi tentang pelayanan laboratorium.", "m": "R", "b": "Pedoman pelayanan laboratorium.", "s": "10 / 0" },
+              { "t": "Pelayanan laboratorium buka 24 jam, 7 hari seminggu sesuai kebutuhan pasien.", "m": "R, D", "b": "Regulasi, hasil pemeriksaan, & jadwal staf 24/7.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.1",
+            "pernyataan": "Rumah sakit menetapkan penanggung jawab pelayanan laboratorium yang kompeten dan berwenang.",
+            "tujuan": "Pimpinan laboratorium bertanggung jawab menyusun/mengevaluasi regulasi, pengawasan administrasi, kendali mutu (PMI & PME), integrasi dengan MFK & PPI, pemantauan pelayanan, serta review laboratorium rujukan.",
+            "ep": [
+              { "t": "Direktur menetapkan penanggung jawab laboratorium yang kompeten sesuai ketentuan.", "m": "R, D", "b": "Regulasi penanggung jawab; SIP, SPK & RKK.", "s": "10 / 0" },
+              { "t": "Terdapat bukti pelaksanaan tanggung jawab pimpinan laboratorium.", "m": "D", "b": "Bukti pelaksanaan tanggung jawab pimpinan laboratorium.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.2",
+            "pernyataan": "Staf laboratorium memiliki pendidikan, pelatihan, kualifikasi, dan pengalaman yang dipersyaratkan untuk mengerjakan pemeriksaan.",
+            "tujuan": "Interpretasi hasil oleh dokter kompeten & berwenang; staf pelaksana (termasuk POCT) diberi tugas sesuai kredensial; pelatihan staf dilaksanakan.",
+            "ep": [
+              { "t": "Staf laboratorium yang membuat interpretasi memenuhi persyaratan kredensial.", "m": "D", "b": "Hasil interpretasi; SPK & RKK.", "s": "10 / 5 / 0" },
+              { "t": "Staf laboratorium & staf lain yang melaksanakan pemeriksaan (termasuk POCT) memenuhi persyaratan kredensial.", "m": "D", "b": "SPK & RKK staf laboratorium & POCT.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.3",
+            "pernyataan": "Rumah sakit menetapkan kerangka waktu penyelesaian pemeriksaan reguler dan pemeriksaan segera (cito).",
+            "tujuan": "Kerangka waktu ditetapkan; hasil cito (mis. dari IGD, kamar operasi, unit intensif) diberi perhatian khusus; pemeriksaan rujukan/kontrak juga dipantau ketepatan waktunya.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan kerangka waktu penyelesaian pemeriksaan laboratorium reguler dan cito.", "m": "R, D", "b": "Regulasi & bukti pemantauan waktu penyelesaian pemeriksaan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.4",
+            "pernyataan": "Rumah sakit memiliki prosedur pengelolaan reagensia esensial yang dievaluasi berkala.",
+            "tujuan": "Reagensia esensial dikelola (pengadaan, penyimpanan, pelabelan) dan dievaluasi pelaksanaannya secara berkala.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan prosedur pengelolaan reagensia esensial serta mengevaluasinya secara berkala.", "m": "R, D", "b": "Regulasi & bukti pengelolaan/evaluasi reagensia.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.5",
+            "pernyataan": "Rumah sakit memiliki prosedur pengambilan, pengumpulan, identifikasi, pengerjaan, pengiriman, dan penyimpanan spesimen.",
+            "tujuan": "Seluruh tahap penanganan spesimen dilakukan sesuai prosedur untuk menjamin mutu & keamanan.",
+            "ep": [
+              { "t": "RS menerapkan prosedur penanganan spesimen (pengambilan, identifikasi, pengerjaan, pengiriman, penyimpanan) sesuai ketentuan.", "m": "R, D, O", "b": "Prosedur & bukti penanganan spesimen.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.6",
+            "pernyataan": "Rumah sakit menetapkan nilai normal dan rentang nilai untuk interpretasi dan pelaporan hasil laboratorium klinis.",
+            "tujuan": "Nilai normal & rentang rujukan ditetapkan dan disertakan pada pelaporan hasil.",
+            "ep": [
+              { "t": "RS menetapkan nilai normal & rentang nilai untuk interpretasi dan pelaporan hasil laboratorium.", "m": "R, D", "b": "Penetapan nilai normal & rentang nilai.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.7",
+            "pernyataan": "Rumah sakit melaksanakan prosedur kendali mutu pelayanan laboratorium, dievaluasi, dan dicatat.",
+            "tujuan": "Kendali mutu internal (PMI) & eksternal (PME) dilaksanakan, dievaluasi, dan didokumentasikan.",
+            "ep": [
+              { "t": "RS melaksanakan kendali mutu laboratorium (PMI & PME), dievaluasi & dicatat.", "m": "D, W", "b": "Bukti PMI & PME serta evaluasinya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 3.8",
+            "pernyataan": "Rumah sakit bekerja sama dengan laboratorium rujukan yang terakreditasi.",
+            "tujuan": "Laboratorium rujukan dipilih karena memenuhi peraturan & memiliki sertifikat mutu/akreditasi.",
+            "ep": [
+              { "t": "RS bekerja sama dengan laboratorium rujukan yang terakreditasi.", "m": "D", "b": "Perjanjian kerja sama & bukti akreditasi laboratorium rujukan.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "PP 3.9",
+            "pernyataan": "Rumah sakit menetapkan regulasi penyelenggaraan pelayanan darah dan menjamin pelayanan yang diberikan aman.",
+            "tujuan": "Pelayanan darah diselenggarakan sesuai ketentuan untuk menjamin keamanan (permintaan, penyimpanan, uji kecocokan, distribusi, pemberian, dan pemantauan reaksi).",
+            "ep": [
+              { "t": "RS menetapkan & menyelenggarakan pelayanan darah yang aman sesuai ketentuan.", "m": "R, D, O", "b": "Regulasi & bukti penyelenggaraan pelayanan darah.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "PP 4",
+            "pernyataan": "Rumah sakit menetapkan regulasi pelayanan Radiologi dan Pencitraan Diagnostik (RIR).",
+            "tujuan": "Pelayanan radiologi klinik diselenggarakan sesuai kebutuhan pasien dan peraturan perundang-undangan.",
+            "ep": [
+              { "t": "RS menetapkan regulasi pelayanan Radiologi & Pencitraan Diagnostik (RIR).", "m": "R", "b": "Pedoman pelayanan RIR.", "s": "10 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 4.1",
+            "pernyataan": "Rumah sakit menetapkan penanggung jawab pelayanan RIR yang kompeten dan berwenang.",
+            "tujuan": "Pimpinan RIR bertanggung jawab mengelola fasilitas & pelayanan, regulasi, kendali mutu, serta pemantauan pelayanan.",
+            "ep": [
+              { "t": "Direktur menetapkan penanggung jawab pelayanan RIR yang kompeten sesuai ketentuan.", "m": "R, D", "b": "Regulasi penanggung jawab; SIP, SPK & RKK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 4.2",
+            "pernyataan": "Semua staf radiologi klinik memiliki pendidikan, pelatihan, kualifikasi, dan pengalaman yang dipersyaratkan.",
+            "tujuan": "Staf pelaksana & interpretasi memenuhi kredensial dan diberi tugas sesuai kompetensinya.",
+            "ep": [
+              { "t": "Staf radiologi memenuhi pendidikan, pelatihan, kualifikasi & pengalaman yang dipersyaratkan (kredensial).", "m": "D", "b": "SPK & RKK staf radiologi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 4.3",
+            "pernyataan": "Rumah sakit menetapkan kerangka waktu penyelesaian pemeriksaan radiologi reguler dan cito.",
+            "tujuan": "Kerangka waktu ditetapkan; hasil cito diberi perhatian khusus.",
+            "ep": [
+              { "t": "RS menetapkan & menerapkan kerangka waktu pemeriksaan radiologi reguler dan cito.", "m": "R, D", "b": "Regulasi & bukti pemantauan waktu pemeriksaan radiologi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 4.4",
+            "pernyataan": "Film X-ray dan bahan lainnya tersedia secara teratur.",
+            "tujuan": "Ketersediaan film & bahan pemeriksaan dijaga agar pelayanan tidak terganggu.",
+            "ep": [
+              { "t": "Film X-ray & bahan lain tersedia secara teratur.", "m": "D, O", "b": "Bukti ketersediaan film & bahan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PP 4.5",
+            "pernyataan": "Rumah sakit menetapkan program kendali mutu radiologi yang dilaksanakan, divalidasi, dan didokumentasikan.",
+            "tujuan": "Program kendali mutu radiologi dijalankan, divalidasi, dan didokumentasikan untuk menjamin mutu hasil.",
+            "ep": [
+              { "t": "RS menetapkan & melaksanakan program kendali mutu radiologi, divalidasi & didokumentasikan.", "m": "D, W", "b": "Bukti program kendali mutu radiologi.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
