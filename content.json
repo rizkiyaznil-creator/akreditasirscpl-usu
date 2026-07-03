@@ -585,11 +585,11 @@
           {
             "kode": "SKP 1",
             "pernyataan": "Rumah sakit menerapkan proses untuk menjamin ketepatan identifikasi pasien.",
-            "tujuan": "Kesalahan identifikasi dapat terjadi di semua tahap pelayanan. Identifikasi memakai minimal 2 identitas (mis. nama & tanggal lahir / nomor RM); nomor kamar/lokasi tidak boleh dipakai. Tujuannya memastikan layanan, tindakan, atau pengobatan diberikan kepada pasien yang benar.",
+            "tujuan": "Kesalahan identifikasi dapat terjadi di semua tahap pelayanan. Identifikasi menggunakan minimal 2 (dua) identitas — yaitu nama lengkap dan tanggal lahir/barcode (bukan nomor kamar/lokasi). Identifikasi wajib dilakukan pada 4 saat: (1) tindakan intervensi/terapi (mis. pemberian obat, darah/produk darah, terapi radiasi); (2) tindakan (mis. memasang jalur intravena/hemodialisis); (3) sebelum tindakan diagnostik (mis. pengambilan darah/spesimen, kateterisasi jantung, radiologi diagnostik); dan (4) menyajikan makanan pasien. Dua identitas juga digunakan pada pelabelan (sampel, nampan makanan, label ASI).",
             "ep": [
               { "t": "RS menetapkan regulasi Sasaran Keselamatan Pasien (poin 1–6).", "m": "R", "b": "Penetapan sasaran keselamatan pasien poin 1–6.", "s": "10 / 0" },
               { "t": "Menerapkan identifikasi pasien menggunakan minimal 2 identitas sesuai ketentuan RS.", "m": "O, W", "b": "Penerapan identifikasi pasien; PPA; pasien/keluarga.", "s": "10 / 5 / 0" },
-              { "t": "Pasien diidentifikasi dengan minimal dua jenis identitas pada tiap tindakan/pemberian.", "m": "O, S, W", "b": "Pelaksanaan identifikasi; PPA; pasien/keluarga.", "s": "10 / 5 / 0" },
+              { "t": "Pasien diidentifikasi dengan minimal dua jenis identitas pada 4 saat: tindakan intervensi/terapi, tindakan, sebelum tindakan diagnostik, dan penyajian makanan pasien.", "m": "O, S, W", "b": "Pelaksanaan identifikasi; PPA; pasien/keluarga.", "s": "10 / 5 / 0" },
               { "t": "Identifikasi pada situasi khusus dan penggunaan label sesuai ketentuan.", "m": "D, W", "b": "Bukti identifikasi pada situasi khusus & penggunaan label.", "s": "10 / 5 / 0" }
             ]
           },
