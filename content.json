@@ -264,25 +264,194 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Komite/Tim PPI, program PPI terpadu, pengkajian risiko, pengelolaan alat & BMHP, disinfeksi permukaan, linen, limbah infeksius & benda tajam, pelayanan makanan, APD, kebersihan tangan, integrasi dengan PMKP, dan edukasi.",
         "standar": [
-          ["PPI 1", "Penetapan Komite/Tim PPI."],
-          ["PPI 1.1", "Direktur menetapkan Komite/Tim PPI sesuai kebutuhan."],
-          ["PPI 2", "Program PPI terpadu & menyeluruh."],
-          ["PPI 3", "Pengkajian risiko infeksi (ICRA) proaktif tahunan."],
-          ["PPI 4", "Pengurangan risiko infeksi terkait alat medis & BMHP."],
-          ["PPI 4.1", "Pengelolaan alat medis/BMHP (termasuk yang diproses ulang) yang aman."],
-          ["PPI 5", "Pembersihan & disinfeksi permukaan dan lingkungan."],
-          ["PPI 6", "Pengelolaan linen/laundry sesuai prinsip PPI."],
-          ["PPI 7", "Pengelolaan limbah infeksius."],
-          ["PPI 7.1", "Pengelolaan kamar jenazah & bedah mayat."],
-          ["PPI 7.2", "Pengelolaan limbah benda tajam & jarum secara aman."],
-          ["PPI 8", "Pengurangan risiko infeksi pada penyelenggaraan makanan."],
-          ["PPI 9", "Penurunan risiko infeksi pada fasilitas (pengendalian mekanis & teknis)."],
-          ["PPI 10", "Penyediaan APD & prosedur isolasi penyakit menular."],
-          ["PPI 10.1", "Penanganan lonjakan/wabah (outbreak) penyakit menular."],
-          ["PPI 11", "Kebersihan tangan (hand hygiene)."],
-          ["PPI 11.1", "Ketersediaan & penggunaan APD yang tepat."],
-          ["PPI 12", "Integrasi kegiatan PPI dengan PMKP."],
-          ["PPI 13", "Edukasi PPI kepada staf, pasien, keluarga, dan pengunjung."]
+          {
+            "kode": "PPI 1",
+            "pernyataan": "Rumah sakit menetapkan Komite/Tim PPI untuk melakukan pengkajian, perencanaan, pelaksanaan, pemantauan, dan evaluasi kegiatan PPI.",
+            "tujuan": "Direktur menetapkan regulasi PPI dan Komite/Tim PPI yang melibatkan staf klinis & non-klinis (termasuk IPCN, CSSD, gizi, laundry, laboratorium, farmasi). Informasi & data kegiatan PPI diintegrasikan ke Komite/Tim Mutu setiap bulan.",
+            "ep": [
+              { "t": "Direktur menetapkan regulasi PPI meliputi seluruh cakupan program (a–m pada gambaran umum).", "m": "R", "b": "Pedoman PPI di RS.", "s": "10 / 0" },
+              { "t": "Direktur menetapkan Komite/Tim PPI untuk mengelola & mengawasi kegiatan PPI.", "m": "R", "b": "Penetapan Komite/Tim PPI disertai uraian tugas, tanggung jawab & wewenang.", "s": "10 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 1.1",
+            "pernyataan": "Direktur menetapkan perawat PPI (IPCN) dan IPCLN serta memberikan dukungan sumber daya untuk penyelenggaraan kegiatan PPI.",
+            "tujuan": "IPCN (purna waktu) dan IPCLN ditetapkan sesuai ukuran RS, kompleksitas, tingkat risiko, dan cakupan program. Direktur menyediakan sumber daya (anggaran, SDM terlatih, sarana hand hygiene & pembuangan limbah, sistem informasi).",
+            "ep": [
+              { "t": "RS menetapkan perawat PPI/IPCN purna waktu dan IPCLN berdasarkan jumlah & kualifikasi sesuai ketentuan.", "m": "R", "b": "Penetapan IPCN purna waktu & IPCLN sesuai peraturan.", "s": "10 / 5 / 0" },
+              { "t": "Ada bukti IPCN melaksanakan supervisi pada semua kegiatan PPI di RS.", "m": "D, W", "b": "Bukti supervisi IPCN.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan mekanisme koordinasi yang melibatkan pimpinan RS dan Komite/Tim PPI.", "m": "D, W", "b": "Bukti mekanisme koordinasi; pimpinan RS, Komite/Tim PPI.", "s": "10 / 5 / 0" },
+              { "t": "Direktur memberikan dukungan sumber daya terhadap penyelenggaraan kegiatan PPI.", "m": "D, O, W", "b": "Bukti dukungan sumber daya & kelengkapan fasilitas PPI; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 2",
+            "pernyataan": "Rumah sakit menyusun dan menerapkan program PPI yang terpadu dan menyeluruh untuk mencegah penularan infeksi terkait pelayanan kesehatan.",
+            "tujuan": "Program PPI memutus siklus penularan melalui kewaspadaan isolasi: 11 kewaspadaan standar (kebersihan tangan, APD, dekontaminasi alat, pengendalian lingkungan, pengelolaan limbah & linen, kesehatan petugas, penempatan pasien, etika batuk, penyuntikan aman, lumbal pungsi aman) dan kewaspadaan berbasis transmisi (kontak, droplet, udara).",
+            "ep": [
+              { "t": "RS menetapkan kebijakan Program PPI yang terdiri dari kewaspadaan standar dan kewaspadaan transmisi.", "m": "R", "b": "Penetapan Program PPI (kewaspadaan standar & transmisi).", "s": "10 / 0" },
+              { "t": "RS melakukan evaluasi pelaksanaan program PPI disertai tindak lanjut.", "m": "D, W", "b": "Bukti evaluasi & tindak lanjut; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 3",
+            "pernyataan": "Rumah sakit melakukan pengkajian proaktif setiap tahun (ICRA) sebagai dasar penyusunan program PPI terpadu.",
+            "tujuan": "RS melakukan Infection Control Risk Assessment (ICRA) tahunan terhadap tingkat & kecenderungan infeksi sebagai prioritas program PPI. Data surveilans dikumpulkan periodik dan dianalisis setiap triwulan.",
+            "ep": [
+              { "t": "RS melaksanakan pengkajian risiko pengendalian infeksi (ICRA) tahunan dan menggunakannya untuk menentukan prioritas/fokus Program PPI.", "m": "D, W", "b": "Bukti ICRA & prioritas program; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan surveilans data secara periodik dan dianalisis setiap triwulan.", "m": "D, W", "b": "Bukti surveilans & analisis triwulan; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 4",
+            "pernyataan": "Rumah sakit mengurangi risiko infeksi terkait peralatan medis dan/atau BMHP dengan memastikan kebersihan, desinfeksi, sterilisasi, dan penyimpanan yang memenuhi syarat.",
+            "tujuan": "Tingkat pemrosesan bergantung kategori alat (kritikal → sterilisasi; semi-kritikal → disinfeksi tingkat tinggi; non-kritikal → disinfeksi tingkat rendah). Metode dilakukan seragam di semua area; staf pemroses dilatih; alat bersih/steril disimpan pada area yang memenuhi syarat.",
+            "ep": [
+              { "t": "RS menerapkan pengolahan sterilisasi mengikuti peraturan perundang-undangan.", "m": "D, O, W", "b": "Bukti pengelolaan sterilisasi; IPCN, Ka/staf CSSD.", "s": "10 / 5 / 0" },
+              { "t": "Staf pemroses alat medis/BMHP dilatih dalam pembersihan, desinfeksi, & sterilisasi serta mendapat pengawasan.", "m": "D, W", "b": "Bukti pelatihan & monitoring staf; IPCN, Ka/staf CSSD.", "s": "10 / 5 / 0" },
+              { "t": "Metode pembersihan, desinfeksi, & sterilisasi dilakukan seragam di semua area RS.", "m": "O, W", "b": "Proses seragam; IPCN, CSSD, unit pelayanan.", "s": "10 / 5 / 0" },
+              { "t": "Penyimpanan alat medis/BMHP bersih & steril pada area yang ditetapkan (bersih, kering, terlindung dari debu/kelembaban/suhu ekstrem).", "m": "D, O, W", "b": "Bukti pemantauan suhu & kelembaban area penyimpanan.", "s": "10 / 5 / 0" },
+              { "t": "Bila sterilisasi dilaksanakan di luar RS, dilakukan oleh lembaga bersertifikat mutu dengan perjanjian kerja sama.", "m": "D, W", "b": "Perjanjian kerja sama & sertifikat mutu pihak ketiga.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "PPI 4.1",
+            "pernyataan": "Rumah sakit mengelola peralatan medis dan/atau BMHP yang kedaluwarsa dan penggunaan ulang (reuse) alat sekali pakai apabila diizinkan.",
+            "tujuan": "RS menetapkan ketentuan reuse: daftar alat/material, jumlah maksimum pemakaian ulang, identifikasi kerusakan, proses pembersihan, pencatatan di rekam medis, dan evaluasi penurunan risiko infeksi. Daftar diperiksa rutin agar akurat & terkini.",
+            "ep": [
+              { "t": "RS menetapkan daftar peralatan medis/BMHP yang dapat digunakan ulang.", "m": "R", "b": "Penetapan daftar alat/BMHP reuse.", "s": "10 / 5 / 0" },
+              { "t": "RS menggunakan proses terstandar untuk menentukan kapan alat/BMHP reuse sudah tidak aman/layak digunakan ulang.", "m": "R", "b": "Regulasi penentuan kelaikan reuse.", "s": "10 / 0" },
+              { "t": "Ada bukti pemantauan, evaluasi, & tindak lanjut pelaksanaan reuse.", "m": "D, W", "b": "Bukti pemantauan & evaluasi reuse; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 5",
+            "pernyataan": "Rumah sakit menerapkan standar PPI untuk pembersihan dan disinfeksi permukaan dan lingkungan.",
+            "tujuan": "Pembersihan rutin & terminal (setelah pemulangan) dilakukan sesuai frekuensi, peralatan, dan cairan yang ditetapkan; area berisiko tinggi (mis. kamar operasi, CSSD, ICU/NICU, luka bakar) memerlukan pembersihan & disinfeksi tambahan; proses dipantau.",
+            "ep": [
+              { "t": "RS menerapkan prosedur pembersihan & disinfeksi permukaan & lingkungan sesuai standar PPI.", "m": "D, O, W", "b": "Bukti (hasil audit) & proses pembersihan; Komite/Tim PPI, IPCN, staf terkait.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan pembersihan & disinfeksi tambahan di area berisiko tinggi berdasarkan hasil pengkajian risiko.", "m": "D, O, W", "b": "Bukti pengkajian risiko (risk register) & pelaksanaan tambahan.", "s": "10 / 5 / 0" },
+              { "t": "RS melakukan pemantauan proses pembersihan & disinfeksi lingkungan.", "m": "D, O", "b": "Bukti pemantauan (hasil audit).", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 6",
+            "pernyataan": "Rumah sakit menerapkan pengelolaan linen/laundry sesuai prinsip PPI dan peraturan perundang-undangan.",
+            "tujuan": "Penanganan linen meliputi pengumpulan, pemilahan, pencucian, pengeringan, pelipatan, distribusi, & penyimpanan; area penggunaan APD diidentifikasi; supervisi IPCN dilakukan termasuk bila pengelolaan oleh pihak luar.",
+            "ep": [
+              { "t": "Ada unit kerja pengelola linen/laundry (atau perjanjian kerja sama bila pihak luar) sesuai ketentuan.", "m": "R", "b": "Penetapan unit linen/laundry atau PKS.", "s": "10 / 0" },
+              { "t": "Prinsip PPI diterapkan pada pengelolaan linen (pemilahan, transportasi, pencucian, pengeringan, penyimpanan, distribusi).", "m": "D, O, W", "b": "Bukti penerapan pengelolaan linen; Komite/Tim PPI, IPCN, staf linen.", "s": "10 / 5 / 0" },
+              { "t": "Ada bukti supervisi IPCN terhadap pengelolaan linen/laundry sesuai prinsip PPI.", "m": "D, W", "b": "Bukti supervisi & tindak lanjut (hasil audit); IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 7",
+            "pernyataan": "Rumah sakit mengurangi risiko infeksi melalui pengelolaan limbah infeksius sesuai peraturan perundang-undangan.",
+            "tujuan": "Pengelolaan limbah dengan benar meliputi limbah cairan tubuh infeksius, penanganan & pembuangan darah/komponen darah, pengelolaan limbah cair, dan pelaporan pajanan limbah infeksius.",
+            "ep": [
+              { "t": "RS mengelola limbah infeksius (cairan tubuh, darah & komponen darah, limbah cair) sesuai ketentuan.", "m": "D, O, W", "b": "Bukti pengelolaan limbah infeksius; IPCN, PJ/staf kesling.", "s": "10 / 5 / 0" },
+              { "t": "Ada pelaporan pajanan limbah infeksius dan pemantauan kepatuhan prinsip PPI.", "m": "D, W", "b": "Bukti pelaporan pajanan & pemantauan kepatuhan (hasil audit); Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 7.1",
+            "pernyataan": "Rumah sakit menetapkan pengelolaan kamar jenazah dan kamar bedah mayat sesuai peraturan perundang-undangan.",
+            "tujuan": "Pemulasaraan jenazah dan bedah mayat (post mortem) dikelola untuk meminimalkan risiko infeksi sesuai prinsip PPI.",
+            "ep": [
+              { "t": "RS mengelola kamar jenazah & bedah mayat (pemulasaraan jenazah) sesuai ketentuan & prinsip PPI.", "m": "D, O, W", "b": "Bukti pengelolaan kamar jenazah; IPCN, staf terkait.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 7.2",
+            "pernyataan": "Rumah sakit menetapkan pengelolaan limbah benda tajam dan jarum secara aman.",
+            "tujuan": "Pengelolaan benda tajam & jarum secara aman menurunkan risiko luka tusuk & penularan penyakit melalui darah (blood borne diseases), berdasarkan praktik berbasis bukti.",
+            "ep": [
+              { "t": "RS mengelola limbah benda tajam & jarum secara aman sesuai ketentuan.", "m": "D, O, W", "b": "Bukti pengelolaan benda tajam & jarum; IPCN, PJ/staf kesling.", "s": "10 / 5 / 0" },
+              { "t": "Ada data/dokumen limbah benda tajam & jarum.", "m": "D, W", "b": "Bukti data limbah benda tajam & jarum.", "s": "10 / 5 / 0" },
+              { "t": "Ada supervisi & pemantauan IPCN terhadap pengelolaan benda tajam & jarum sesuai prinsip PPI.", "m": "D, W", "b": "Ceklist, laporan supervisi, hasil audit; IPCN.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 8",
+            "pernyataan": "Rumah sakit mengurangi risiko infeksi terkait penyelenggaraan pelayanan makanan.",
+            "tujuan": "RS menetapkan regulasi pelayanan makanan (pengelolaan bahan, sanitasi dapur, alat masak & makan) untuk mengurangi risiko infeksi & kontaminasi silang, serta standar bangunan/fasilitas dapur & pantry sesuai ketentuan.",
+            "ep": [
+              { "t": "RS menetapkan regulasi tentang pelayanan makanan (pengelolaan & sanitasi, serta standar bangunan/fasilitas dapur).", "m": "R", "b": "Regulasi pelayanan makanan.", "s": "10 / 0" },
+              { "t": "Ada bukti penyimpanan bahan makanan, pengolahan, pemorsian, & distribusi sesuai ketentuan.", "m": "O, W", "b": "Pelaksanaan sesuai ketentuan; Ka/staf gizi.", "s": "10 / 5 / 0" },
+              { "t": "Penyimpanan makanan & produk nutrisi memperhatikan kesehatan lingkungan (sanitasi, suhu, pencahayaan, kelembapan, ventilasi, keamanan).", "m": "D, O, W", "b": "Pemantauan suhu & kelembaban penyimpanan; Ka/staf gizi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 9",
+            "pernyataan": "Rumah sakit menurunkan risiko infeksi pada fasilitas terkait pengendalian mekanis & teknis serta saat pembongkaran, konstruksi, dan renovasi gedung.",
+            "tujuan": "Pengendalian mekanis & teknis (ventilasi tekanan positif, biological safety cabinet, laminar airflow, termostat lemari pendingin, pemanas air sterilisasi) diterapkan; RS memiliki regulasi ICRA konstruksi/renovasi (identifikasi jenis konstruksi, kelompok risiko, matriks, kelas infeksi, tindak pengendalian, pemantauan).",
+            "ep": [
+              { "t": "RS menerapkan pengendalian mekanis & teknis minimal untuk fasilitas yang dipersyaratkan.", "m": "O, W", "b": "Penerapan pengendalian mekanis & teknis; IPCN, IPSRS, unit terkait.", "s": "10 / 5 / 0" },
+              { "t": "RS menerapkan penilaian risiko pengendalian infeksi (ICRA) konstruksi minimal meliputi cakupan yang ditetapkan.", "m": "W", "b": "ICRA konstruksi; Komite/Tim PPI, IPCN, bagian umum.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan ICRA pada semua renovasi, konstruksi, & demolisi sesuai regulasi.", "m": "D, W", "b": "Bukti ICRA pada renovasi/konstruksi/demolisi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 10",
+            "pernyataan": "Rumah sakit menyediakan APD untuk kewaspadaan dan prosedur isolasi untuk penyakit menular, melindungi pasien immunocompromised, serta mengatur transfer & penempatan pasien airborne.",
+            "tujuan": "RS menetapkan regulasi isolasi & penghalang pengaman; pasien airborne ditempatkan di kamar tekanan negatif atau sistem HEPA (≥12 kali pertukaran udara/jam); bila tidak tersedia, disediakan penanganan sementara.",
+            "ep": [
+              { "t": "RS menyediakan & menempatkan ruangan untuk pasien immunocompromised sesuai ketentuan.", "m": "O, W", "b": "Ketersediaan & penempatan pasien immunocompromised; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan transfer pasien airborne di dalam & keluar RS sesuai ketentuan (termasuk IGD).", "m": "O, W", "b": "Pelaksanaan transfer pasien airborne (lihat AKP 4).", "s": "10 / 5 / 0" },
+              { "t": "RS menempatkan pasien airborne sementara bila tidak tersedia kamar tekanan negatif.", "m": "O, W", "b": "Ketersediaan ruang isolasi sementara.", "s": "10 / 5 / 0" },
+              { "t": "Ada pemantauan ruang tekanan negatif & penempatan pasien secara rutin.", "m": "D, O, W", "b": "Bukti pemantauan ruang tekanan negatif (hasil audit).", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 10.1",
+            "pernyataan": "Rumah sakit mengembangkan dan menerapkan proses untuk menangani lonjakan mendadak (outbreak) penyakit infeksi airborne.",
+            "tujuan": "RS menyiapkan regulasi, ruang isolasi tekanan negatif, dan edukasi staf untuk menangani outbreak penyakit infeksi airborne.",
+            "ep": [
+              { "t": "RS menerapkan proses pengelolaan pasien bila terjadi outbreak penyakit infeksi airborne.", "m": "R, D, W", "b": "Regulasi & bukti penerapan pengelolaan outbreak; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" },
+              { "t": "RS menyediakan ruang isolasi tekanan negatif bila terjadi outbreak sesuai ketentuan.", "m": "O, W", "b": "Ruang isolasi tekanan negatif saat outbreak.", "s": "10 / 5 / 0" },
+              { "t": "Ada edukasi kepada staf tentang pengelolaan pasien infeksius saat outbreak airborne.", "m": "D, W", "b": "Bukti pelatihan staf.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 11",
+            "pernyataan": "Kebersihan tangan (hand hygiene) menggunakan sabun dan disinfektan sebagai sarana efektif mencegah & mengendalikan infeksi.",
+            "tujuan": "RS menerapkan hand hygiene (kapan, di mana, bagaimana; hand wash & hand rub) beserta ketersediaan fasilitas, dan melatih seluruh pegawai termasuk tenaga kontrak (lihat SKP 5).",
+            "ep": [
+              { "t": "RS menerapkan hand hygiene (5 momen; hand wash & hand rub) beserta ketersediaan fasilitasnya.", "m": "O, W, S", "b": "Penerapan 5 momen hand hygiene; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" },
+              { "t": "Sabun, disinfektan, & tissu/handuk sekali pakai tersedia di tempat cuci tangan & disinfeksi tangan.", "m": "O, W", "b": "Ketersediaan sarana hand hygiene.", "s": "10 / 5 / 0" },
+              { "t": "Ada pelaksanaan pelatihan hand hygiene kepada semua pegawai termasuk tenaga kontrak.", "m": "D, W", "b": "Bukti pelatihan hand hygiene; PPA, staf non-klinis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 11.1",
+            "pernyataan": "Sarung tangan, masker, pelindung mata, dan APD lainnya tersedia dan digunakan secara tepat apabila disyaratkan.",
+            "tujuan": "RS menetapkan tempat penyediaan APD dan melatih cara memakainya; APD digunakan tepat & benar, tersedia dalam jumlah cukup.",
+            "ep": [
+              { "t": "RS menerapkan penggunaan APD, menetapkan tempat penyediaan APD, & pelatihan cara memakainya.", "m": "D, O, W", "b": "Bukti pelatihan & tempat penyediaan APD; PPA, staf non-klinis.", "s": "10 / 5 / 0" },
+              { "t": "APD digunakan secara tepat & benar.", "m": "O, W, S", "b": "Kepatuhan penggunaan APD; Komite/Tim PPI, IPCN.", "s": "10 / 5 / 0" },
+              { "t": "Ketersediaan APD cukup sesuai regulasi.", "m": "O, W", "b": "Ketersediaan APD dalam jumlah cukup.", "s": "10 / 5 / 0" },
+              { "t": "Ada pelatihan penggunaan APD kepada semua pegawai termasuk tenaga kontrak.", "m": "D, W", "b": "Bukti pelatihan penggunaan APD.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 12",
+            "pernyataan": "Kegiatan PPI diintegrasikan dengan program PMKP menggunakan indikator yang penting secara epidemiologis.",
+            "tujuan": "RS menggunakan indikator untuk memperbaiki kegiatan PPI dan menurunkan angka infeksi; data surveilans & indikator mutu dikelola terintegrasi; Komite Mutu & PPI berkoordinasi berkala.",
+            "ep": [
+              { "t": "Ada regulasi sistem manajemen data terintegrasi antara data surveilans & indikator mutu.", "m": "R", "b": "Regulasi sistem manajemen data terintegrasi.", "s": "10 / 0" },
+              { "t": "Ada pertemuan berkala antara Komite/Tim Mutu & Komite/Tim PPI untuk berkoordinasi, didokumentasikan.", "m": "D, W", "b": "Bukti pertemuan berkala; Komite Mutu & PPI.", "s": "10 / 5 / 0" },
+              { "t": "Ada penyampaian hasil analisis data & rekomendasi PPI kepada Komite/Tim Mutu setiap tiga bulan.", "m": "D, W", "b": "Bukti analisis & rekomendasi triwulan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PPI 13",
+            "pernyataan": "Rumah sakit melakukan edukasi tentang PPI kepada staf klinis & non-klinis, pasien, keluarga, serta petugas lain yang terlibat dalam pelayanan pasien.",
+            "tujuan": "Edukasi PPI diberikan pada saat staf baru bekerja (orientasi) dan diulang secara teratur; pasien, keluarga, dan pengunjung didorong berpartisipasi dalam implementasi program PPI.",
+            "ep": [
+              { "t": "RS melaksanakan edukasi PPI kepada staf klinis & non-klinis pada saat orientasi dan secara berkala.", "m": "D, W", "b": "Bukti edukasi/pelatihan PPI bagi staf.", "s": "10 / 5 / 0" },
+              { "t": "RS melaksanakan edukasi PPI kepada pasien, keluarga, dan pengunjung.", "m": "D, W", "b": "Bukti edukasi PPI bagi pasien/keluarga/pengunjung.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
