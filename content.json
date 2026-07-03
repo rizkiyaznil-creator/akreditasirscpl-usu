@@ -143,23 +143,142 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Kepemimpinan & tata kelola RS: representasi pemilik/dewan pengawas, akuntabilitas direktur & pimpinan, komite, etika, budaya keselamatan, manajemen risiko, dan penelitian bersubjek manusia.",
         "standar": [
-          ["TKRS 1", "Struktur & wewenang representasi pemilik/dewan pengawas diatur dalam aturan internal RS (Hospital Bylaws)."],
-          ["TKRS 2", "Direktur RS bertanggung jawab menjalankan RS dan mematuhi peraturan perundang-undangan."],
-          ["TKRS 3", "Pimpinan RS menyusun misi, rencana kerja, kebijakan, dan prosedur."],
-          ["TKRS 3.1", "Pimpinan memastikan komunikasi efektif terlaksana menyeluruh di RS."],
-          ["TKRS 4", "Pimpinan merencanakan & mengembangkan program peningkatan mutu dan keselamatan pasien."],
-          ["TKRS 5", "Pimpinan menetapkan prioritas perbaikan di tingkat RS."],
-          ["TKRS 6", "Pimpinan mengkaji, memilih, dan memantau kontrak klinis & nonklinis."],
-          ["TKRS 7", "Pimpinan membuat keputusan pengadaan & penggunaan sumber daya."],
-          ["TKRS 7.1", "Pimpinan menggunakan data keamanan rantai perbekalan (supply chain)."],
-          ["TKRS 8", "Komite Medik, Komite Keperawatan, dan Komite Tenaga Kesehatan Lain terorganisasi sesuai ketentuan."],
-          ["TKRS 9", "Akuntabilitas kepala unit klinis/non-klinis atas struktur, staf, dan pelayanan unit."],
-          ["TKRS 10", "Kepala unit berpartisipasi meningkatkan mutu & keselamatan melalui pengukuran."],
-          ["TKRS 11", "Kepala unit klinis mengevaluasi kinerja dokter, perawat, dan nakes lain dengan indikator."],
-          ["TKRS 12", "Pimpinan menetapkan kerangka kerja pengelolaan etik RS."],
-          ["TKRS 13", "Pimpinan menerapkan, memantau, dan mendukung budaya keselamatan di seluruh area."],
-          ["TKRS 14", "Program manajemen risiko terintegrasi untuk mencegah cedera & kerugian."],
-          ["TKRS 15", "Pimpinan bertanggung jawab atas mutu & keamanan penelitian bersubjek manusia."]
+          {
+            "kode": "TKRS 1",
+            "pernyataan": "Struktur organisasi serta wewenang representasi pemilik/dewan pengawas dijelaskan dalam aturan internal RS (Hospital Bylaws) yang ditetapkan pemilik.",
+            "tujuan": "Representasi pemilik/dewan pengawas memiliki tugas pokok & fungsi dalam pengawasan mutu, perencanaan strategis, akuntabilitas, dan kepatuhan; pemilik tidak boleh menjadi pimpinan RS.",
+            "ep": [
+              { "t": "RS menetapkan Hospital Bylaws yang menjelaskan struktur & wewenang representasi pemilik/dewan pengawas.", "m": "R, D", "b": "Hospital Bylaws & penetapan representasi pemilik/dewan pengawas.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 2",
+            "pernyataan": "Direktur rumah sakit bertanggung jawab menjalankan RS dan mematuhi peraturan perundang-undangan.",
+            "tujuan": "Direktur mengelola operasional RS, mematuhi regulasi, serta menjalankan kebijakan pemilik.",
+            "ep": [
+              { "t": "RS menetapkan Direktur yang kompeten & bertanggung jawab menjalankan RS sesuai ketentuan.", "m": "R, D, W", "b": "Penetapan Direktur; uraian tugas & tanggung jawab.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 3",
+            "pernyataan": "Pimpinan RS menyusun misi, rencana kerja, kebijakan, dan prosedur.",
+            "tujuan": "Pimpinan menetapkan misi, rencana kerja, serta kebijakan & prosedur yang menjadi acuan operasional dan pelayanan.",
+            "ep": [
+              { "t": "Pimpinan RS menyusun & menetapkan misi, rencana kerja, kebijakan, & prosedur.", "m": "R, D, W", "b": "Penetapan misi, rencana kerja, & kebijakan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 3.1",
+            "pernyataan": "Pimpinan RS memastikan komunikasi yang efektif dilaksanakan secara menyeluruh di rumah sakit.",
+            "tujuan": "Komunikasi efektif antar unit & PPA dijamin untuk mendukung koordinasi asuhan & operasional.",
+            "ep": [
+              { "t": "Pimpinan RS memastikan komunikasi efektif terlaksana menyeluruh di RS.", "m": "D, W", "b": "Bukti mekanisme & pelaksanaan komunikasi efektif.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 4",
+            "pernyataan": "Pimpinan RS merencanakan, mengembangkan, dan menerapkan program peningkatan mutu dan keselamatan pasien.",
+            "tujuan": "Pimpinan menyediakan dukungan & sumber daya bagi program PMKP di seluruh RS.",
+            "ep": [
+              { "t": "Pimpinan RS merencanakan & mengembangkan program peningkatan mutu & keselamatan pasien.", "m": "R, D, W", "b": "Program PMKP & bukti dukungan pimpinan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 5",
+            "pernyataan": "Pimpinan RS berpartisipasi dalam menetapkan prioritas perbaikan di tingkat rumah sakit.",
+            "tujuan": "Prioritas perbaikan ditetapkan berdasarkan misi, data, dan pertimbangan mutu-keselamatan.",
+            "ep": [
+              { "t": "Pimpinan RS menetapkan prioritas perbaikan di tingkat RS.", "m": "D, W", "b": "Bukti penetapan prioritas perbaikan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 6",
+            "pernyataan": "Pimpinan RS bertanggung jawab mengkaji, memilih, dan memantau kontrak klinis & nonklinis.",
+            "tujuan": "Kontrak dikaji, dipilih, & dipantau agar memenuhi mutu dan keselamatan; kontrak klinis mempertimbangkan kredensial.",
+            "ep": [
+              { "t": "Pimpinan RS mengkaji, memilih, & memantau kontrak klinis & nonklinis.", "m": "R, D, W", "b": "Daftar kontrak & bukti pemantauan mutunya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 7",
+            "pernyataan": "Pimpinan RS membuat keputusan tentang pengadaan & penggunaan sumber daya (SDM & sumber daya lain).",
+            "tujuan": "Keputusan pengadaan mempertimbangkan mutu, keselamatan, & data; termasuk pengadaan teknologi & obat.",
+            "ep": [
+              { "t": "Pimpinan RS membuat keputusan pengadaan & penggunaan sumber daya berdasarkan data mutu & keselamatan.", "m": "D, W", "b": "Bukti keputusan pengadaan berbasis data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 7.1",
+            "pernyataan": "Pimpinan RS mencari & menggunakan data serta informasi tentang keamanan dalam rantai perbekalan (supply chain).",
+            "tujuan": "Keamanan rantai perbekalan dipantau untuk mencegah obat/alat substandar atau palsu.",
+            "ep": [
+              { "t": "Pimpinan RS menggunakan data keamanan rantai perbekalan (supply chain) untuk pengambilan keputusan.", "m": "D, W", "b": "Bukti telaah keamanan rantai perbekalan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 8",
+            "pernyataan": "Komite Medik, Komite Keperawatan, dan Komite Tenaga Kesehatan Lain menerapkan pengorganisasian sesuai ketentuan.",
+            "tujuan": "Komite profesi terorganisasi & menjalankan fungsi kredensial, mutu profesi, & etik-disiplin.",
+            "ep": [
+              { "t": "RS menetapkan & menjalankan pengorganisasian Komite Medik, Keperawatan, & Tenaga Kesehatan Lain sesuai ketentuan.", "m": "R, D, W", "b": "Penetapan komite & bukti pelaksanaan fungsinya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 9",
+            "pernyataan": "Kepala unit klinis/non-klinis menetapkan struktur, staf, dan pelayanan unitnya (akuntabilitas kepala unit).",
+            "tujuan": "Kepala unit bertanggung jawab atas kebutuhan sumber daya, pelayanan, & mutu unitnya.",
+            "ep": [
+              { "t": "Kepala unit menetapkan struktur, staf, & pelayanan unit sesuai kebutuhan.", "m": "R, D, W", "b": "Penetapan struktur & pelayanan unit.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 10",
+            "pernyataan": "Kepala unit layanan berpartisipasi meningkatkan mutu & keselamatan pasien melalui pengukuran indikator.",
+            "tujuan": "Kepala unit memilih, mengukur, & menindaklanjuti indikator mutu di unitnya.",
+            "ep": [
+              { "t": "Kepala unit melakukan pengukuran indikator mutu & keselamatan di unitnya serta menindaklanjutinya.", "m": "D, W", "b": "Bukti pengukuran & tindak lanjut indikator unit.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 11",
+            "pernyataan": "Kepala unit klinis mengevaluasi kinerja para dokter, perawat, dan tenaga kesehatan profesional lain menggunakan indikator.",
+            "tujuan": "Evaluasi kinerja profesional (mis. OPPE) diintegrasikan dengan mutu unit.",
+            "ep": [
+              { "t": "Kepala unit klinis mengevaluasi kinerja dokter, perawat, & nakes lain menggunakan indikator.", "m": "D, W", "b": "Bukti evaluasi kinerja profesional.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 12",
+            "pernyataan": "Pimpinan RS menetapkan kerangka kerja pengelolaan etik rumah sakit untuk menangani masalah etik.",
+            "tujuan": "Kerangka etik (mis. Komite Etik) menangani dilema etik klinis & bisnis RS.",
+            "ep": [
+              { "t": "Pimpinan RS menetapkan kerangka kerja pengelolaan etik RS & menanganinya sesuai ketentuan.", "m": "R, D, W", "b": "Penetapan kerangka etik & bukti penanganan masalah etik.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 13",
+            "pernyataan": "Pimpinan RS menerapkan, memantau, dan mengambil tindakan serta mendukung budaya keselamatan di seluruh area RS.",
+            "tujuan": "Budaya keselamatan (adil/just culture) diterapkan agar staf berani melapor tanpa takut disalahkan.",
+            "ep": [
+              { "t": "Pimpinan RS menerapkan, memantau, & mendukung budaya keselamatan di seluruh area RS.", "m": "R, D, W", "b": "Bukti penerapan & pengukuran budaya keselamatan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 14",
+            "pernyataan": "Program manajemen risiko yang terintegrasi digunakan untuk mencegah cedera & kerugian di rumah sakit.",
+            "tujuan": "Manajemen risiko terintegrasi (mis. risk register, FMEA) mengelola risiko klinis & non-klinis.",
+            "ep": [
+              { "t": "RS menerapkan program manajemen risiko terintegrasi untuk mencegah cedera & kerugian.", "m": "R, D, W", "b": "Program & risk register manajemen risiko terintegrasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "TKRS 15",
+            "pernyataan": "Pimpinan RS bertanggung jawab terhadap mutu & keamanan program penelitian bersubjek manusia (bila ada).",
+            "tujuan": "Penelitian bersubjek manusia dijalankan sesuai etik & perlindungan subjek (mis. komite etik penelitian).",
+            "ep": [
+              { "t": "Pimpinan RS bertanggung jawab atas mutu & keamanan penelitian bersubjek manusia sesuai ketentuan.", "m": "R, D, W", "b": "Regulasi & bukti tata kelola penelitian bersubjek manusia.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          }
         ]
       },
       {
@@ -168,27 +287,174 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Perencanaan kebutuhan staf, rekrutmen, file kepegawaian, orientasi & pelatihan, kredensial dan kewenangan klinis, penilaian kinerja, serta kesehatan & keselamatan staf.",
         "standar": [
-          ["KPS 1", "Perencanaan & penetapan persyaratan pendidikan, keterampilan, dan pengetahuan staf oleh kepala unit."],
-          ["KPS 2", "Tanggung jawab tiap staf dituangkan dalam uraian tugas."],
-          ["KPS 3", "Proses rekrutmen, evaluasi, dan pengangkatan staf yang seragam."],
-          ["KPS 4", "Memastikan kompetensi PPA sesuai kebutuhan pasien."],
-          ["KPS 5", "Memastikan kompetensi staf non-klinis sesuai persyaratan."],
-          ["KPS 6", "Informasi kepegawaian terdokumentasi dalam file tiap staf."],
-          ["KPS 7", "Orientasi bagi semua staf tentang RS, unit, dan tanggung jawab kerjanya."],
-          ["KPS 8", "Pendidikan & pelatihan berkelanjutan bagi tiap staf."],
-          ["KPS 8.1", "Staf pemberi asuhan dilatih & mampu mendemonstrasikan teknik resusitasi (BHD)."],
-          ["KPS 9", "Penyelenggaraan pelayanan kesehatan & keselamatan staf."],
-          ["KPS 10", "Kredensial tenaga medis yang seragam & transparan."],
-          ["KPS 10.1", "Verifikasi terkini pendidikan, registrasi/izin, dan pengalaman tenaga medis."],
-          ["KPS 11", "Pemberian kewenangan klinis (RKK) tenaga medis berbasis bukti."],
-          ["KPS 12", "Evaluasi praktik profesional berkelanjutan (OPPE) tenaga medis."],
-          ["KPS 13", "Rekredensial tenaga medis minimal setiap 3 tahun."],
-          ["KPS 14", "Kredensial tenaga perawat (pengumpulan & verifikasi)."],
-          ["KPS 15", "Penugasan klinis perawat berdasar hasil kredensial."],
-          ["KPS 16", "Penilaian kinerja tenaga perawat termasuk peran dalam PMKP."],
-          ["KPS 17", "Kredensial tenaga kesehatan lain."],
-          ["KPS 18", "Penugasan klinis tenaga kesehatan lain berdasar kredensial."],
-          ["KPS 19", "Penilaian kinerja tenaga kesehatan lain termasuk peran dalam PMKP."]
+          {
+            "kode": "KPS 1",
+            "pernyataan": "Kepala unit merencanakan & menetapkan persyaratan pendidikan, keterampilan, pengetahuan, dan persyaratan lain bagi staf.",
+            "tujuan": "Perencanaan kebutuhan staf (pola ketenagaan) disusun sesuai misi, populasi pasien, & pelayanan RS.",
+            "ep": [
+              { "t": "Kepala unit merencanakan & menetapkan persyaratan staf (pendidikan, keterampilan, pengetahuan) serta pola ketenagaan.", "m": "R, D, W", "b": "Pola ketenagaan & persyaratan jabatan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 2",
+            "pernyataan": "Tanggung jawab tiap staf dituangkan dalam uraian tugas.",
+            "tujuan": "Setiap staf memiliki uraian tugas yang jelas sesuai jabatan & kewenangannya.",
+            "ep": [
+              { "t": "Setiap staf memiliki uraian tugas sesuai jabatannya.", "m": "D", "b": "Uraian tugas dalam file kepegawaian.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 3",
+            "pernyataan": "Rumah sakit menyusun & menerapkan proses rekrutmen, evaluasi, dan pengangkatan staf yang seragam.",
+            "tujuan": "Proses rekrutmen–seleksi–pengangkatan dilaksanakan seragam & terdokumentasi.",
+            "ep": [
+              { "t": "RS menerapkan proses rekrutmen, evaluasi, & pengangkatan staf yang seragam.", "m": "R, D, W", "b": "Regulasi & bukti proses rekrutmen.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 4",
+            "pernyataan": "Rumah sakit memastikan kompetensi Profesional Pemberi Asuhan (PPA) sesuai kebutuhan pasien.",
+            "tujuan": "Kompetensi PPA dievaluasi agar sesuai kebutuhan & persyaratan jabatan.",
+            "ep": [
+              { "t": "RS memastikan kompetensi PPA sesuai kebutuhan pasien & dievaluasi.", "m": "D, W", "b": "Bukti evaluasi kompetensi PPA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 5",
+            "pernyataan": "Rumah sakit memastikan kompetensi staf non-klinis sesuai persyaratan jabatan.",
+            "tujuan": "Kompetensi staf non-klinis dievaluasi sesuai persyaratan.",
+            "ep": [
+              { "t": "RS memastikan kompetensi staf non-klinis sesuai persyaratan & dievaluasi.", "m": "D, W", "b": "Bukti evaluasi kompetensi staf non-klinis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 6",
+            "pernyataan": "Terdapat informasi kepegawaian yang terdokumentasi dalam file kepegawaian setiap staf.",
+            "tujuan": "File kepegawaian memuat kualifikasi, STR/SIP, uraian tugas, orientasi, pelatihan, & evaluasi kinerja.",
+            "ep": [
+              { "t": "Setiap staf memiliki file kepegawaian yang terdokumentasi & terkini.", "m": "D", "b": "File kepegawaian lengkap.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 7",
+            "pernyataan": "Semua staf diberikan orientasi mengenai rumah sakit, unit tempat mereka ditugaskan, dan tanggung jawab pekerjaannya.",
+            "tujuan": "Orientasi umum & khusus diberikan bagi staf baru (termasuk tenaga kontrak, mahasiswa, sukarelawan).",
+            "ep": [
+              { "t": "Semua staf mendapat orientasi umum & khusus tentang RS, unit, & tanggung jawab kerjanya.", "m": "D, W", "b": "Bukti pelaksanaan orientasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 8",
+            "pernyataan": "Tiap staf diberikan pendidikan & pelatihan yang berkelanjutan untuk mendukung/meningkatkan kompetensinya.",
+            "tujuan": "RS menyelenggarakan diklat berkelanjutan sesuai kebutuhan unit & pengembangan kompetensi.",
+            "ep": [
+              { "t": "RS menyelenggarakan pendidikan & pelatihan berkelanjutan bagi tiap staf.", "m": "D, W", "b": "Program & bukti pelaksanaan diklat.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 8.1",
+            "pernyataan": "Staf yang memberikan asuhan pasien & staf yang ditentukan RS dilatih & mampu mendemonstrasikan teknik resusitasi.",
+            "tujuan": "Pelatihan bantuan hidup dasar/lanjut diberikan & kompetensinya diperbarui sesuai ketentuan.",
+            "ep": [
+              { "t": "Staf pemberi asuhan dilatih & mampu mendemonstrasikan teknik resusitasi (BHD/BHL) sesuai ketentuan.", "m": "D, S", "b": "Bukti pelatihan & sertifikat resusitasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 9",
+            "pernyataan": "Rumah sakit menyelenggarakan pelayanan kesehatan & keselamatan staf (K3 RS).",
+            "tujuan": "Program K3 staf meliputi mis. pemeriksaan kesehatan, imunisasi, penanganan pajanan, & dukungan pasca-insiden.",
+            "ep": [
+              { "t": "RS menyelenggarakan program kesehatan & keselamatan staf.", "m": "R, D, W", "b": "Program K3 staf & bukti pelaksanaannya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 10",
+            "pernyataan": "Rumah sakit menyelenggarakan proses kredensial yang seragam & transparan bagi tenaga medis.",
+            "tujuan": "Kredensial tenaga medis dilakukan komite medik untuk memberikan izin praktik sesuai kompetensi.",
+            "ep": [
+              { "t": "RS menyelenggarakan kredensial tenaga medis yang seragam & transparan.", "m": "R, D, W", "b": "Regulasi & bukti proses kredensial tenaga medis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 10.1",
+            "pernyataan": "Rumah sakit melaksanakan verifikasi terkini terhadap pendidikan, registrasi/izin, pengalaman, dan lainnya bagi tenaga medis.",
+            "tujuan": "Verifikasi ke sumber primer (mis. STR/SIP, ijazah) dilakukan sebelum pemberian kewenangan.",
+            "ep": [
+              { "t": "RS melaksanakan verifikasi terkini kredensial tenaga medis (pendidikan, registrasi/izin, pengalaman).", "m": "D, W", "b": "Bukti verifikasi ke sumber primer.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 11",
+            "pernyataan": "Rumah sakit menetapkan proses yang seragam, objektif, dan berbasis bukti untuk memberikan kewenangan klinis (RKK) tenaga medis.",
+            "tujuan": "SPK & RKK diberikan berdasarkan hasil kredensial.",
+            "ep": [
+              { "t": "RS memberikan kewenangan klinis (SPK & RKK) tenaga medis berdasarkan proses berbasis bukti.", "m": "R, D", "b": "SPK & RKK tenaga medis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 12",
+            "pernyataan": "Rumah sakit menerapkan evaluasi praktik profesional berkelanjutan (OPPE) tenaga medis secara seragam.",
+            "tujuan": "OPPE memantau kinerja & mutu praktik tenaga medis secara berkelanjutan.",
+            "ep": [
+              { "t": "RS menerapkan evaluasi praktik profesional berkelanjutan (OPPE) tenaga medis.", "m": "D, W", "b": "Bukti pelaksanaan OPPE.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 13",
+            "pernyataan": "Rumah sakit melakukan rekredensial tenaga medis paling sedikit setiap 3 tahun berdasarkan penilaian praktik profesional.",
+            "tujuan": "Rekredensial memperbarui kewenangan klinis berdasarkan kinerja & kompetensi terkini.",
+            "ep": [
+              { "t": "RS melakukan rekredensial tenaga medis minimal setiap 3 tahun berdasarkan penilaian praktik profesional.", "m": "D, W", "b": "Bukti rekredensial & pembaruan RKK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 14",
+            "pernyataan": "Rumah sakit memiliki proses yang efektif untuk kredensial tenaga perawat (pengumpulan & verifikasi).",
+            "tujuan": "Kredensial perawat dilakukan komite keperawatan untuk menetapkan kewenangan klinis.",
+            "ep": [
+              { "t": "RS melaksanakan kredensial tenaga perawat (pengumpulan & verifikasi).", "m": "R, D, W", "b": "Bukti proses kredensial perawat.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 15",
+            "pernyataan": "Rumah sakit mengidentifikasi tanggung jawab pekerjaan & memberikan penugasan klinis perawat berdasarkan hasil kredensial.",
+            "tujuan": "Penugasan klinis (SPK & RKK) perawat sesuai hasil kredensial.",
+            "ep": [
+              { "t": "RS memberikan penugasan klinis perawat berdasarkan hasil kredensial.", "m": "D", "b": "SPK & RKK perawat.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 16",
+            "pernyataan": "Rumah sakit melakukan penilaian kinerja tenaga perawat termasuk perannya dalam kegiatan PMKP.",
+            "tujuan": "Kinerja perawat dinilai berkala termasuk kontribusi pada mutu & keselamatan.",
+            "ep": [
+              { "t": "RS melakukan penilaian kinerja tenaga perawat termasuk peran dalam PMKP.", "m": "D, W", "b": "Bukti penilaian kinerja perawat.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 17",
+            "pernyataan": "Rumah sakit memiliki proses yang efektif untuk kredensial tenaga kesehatan lain.",
+            "tujuan": "Kredensial tenaga kesehatan lain dilakukan komite terkait untuk menetapkan kewenangan.",
+            "ep": [
+              { "t": "RS melaksanakan kredensial tenaga kesehatan lain (pengumpulan & verifikasi).", "m": "R, D, W", "b": "Bukti proses kredensial tenaga kesehatan lain.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 18",
+            "pernyataan": "Rumah sakit memberikan penugasan klinis tenaga kesehatan lain berdasarkan hasil kredensial.",
+            "tujuan": "Penugasan klinis (SPK & RKK) tenaga kesehatan lain sesuai hasil kredensial.",
+            "ep": [
+              { "t": "RS memberikan penugasan klinis tenaga kesehatan lain berdasarkan hasil kredensial.", "m": "D", "b": "SPK & RKK tenaga kesehatan lain.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "KPS 19",
+            "pernyataan": "Rumah sakit melakukan penilaian kinerja tenaga kesehatan lain termasuk perannya dalam kegiatan PMKP.",
+            "tujuan": "Kinerja tenaga kesehatan lain dinilai berkala termasuk kontribusi pada mutu & keselamatan.",
+            "ep": [
+              { "t": "RS melakukan penilaian kinerja tenaga kesehatan lain termasuk peran dalam PMKP.", "m": "D, W", "b": "Bukti penilaian kinerja tenaga kesehatan lain.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
@@ -197,21 +463,126 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Keselamatan & keamanan fasilitas, B3 & limbah B3, proteksi kebakaran, peralatan medis, sistem utilitas, penanganan bencana, penilaian risiko konstruksi, dan pelatihan staf.",
         "standar": [
-          ["MFK 1", "Kepatuhan pada peraturan terkait bangunan, prasarana, dan fasilitas."],
-          ["MFK 2", "Penanggung jawab kompeten mengawasi penerapan manajemen fasilitas & keselamatan."],
-          ["MFK 3", "Program keselamatan (safety) di RS."],
-          ["MFK 5", "Pengelolaan Bahan Berbahaya dan Beracun (B3) serta limbah B3."],
-          ["MFK 5.1", "Sistem pengelolaan limbah B3 cair & padat."],
-          ["MFK 6", "Pencegahan & penanggulangan kebakaran serta sarana proteksi."],
-          ["MFK 7", "Pengelolaan peralatan medik."],
-          ["MFK 8", "Memastikan seluruh sistem utilitas (pendukung) berfungsi."],
-          ["MFK 8.1", "Pemeriksaan, pemeliharaan, dan perbaikan sistem utilitas."],
-          ["MFK 8.2", "Ketersediaan air bersih & listrik sepanjang waktu, termasuk sumber cadangan."],
-          ["MFK 8.2.1", "Uji coba/uji beban sumber listrik & air cadangan."],
-          ["MFK 8.3", "Pemeriksaan air bersih & air limbah."],
-          ["MFK 9", "Penanganan bencana (disaster) yang berpotensi terjadi."],
-          ["MFK 10", "Penilaian risiko prakonstruksi (PCRA)."],
-          ["MFK 11", "Pelatihan seluruh staf tentang pengelolaan fasilitas & keselamatan."]
+          {
+            "kode": "MFK 1",
+            "pernyataan": "Rumah sakit mematuhi peraturan perundang-undangan yang berkaitan dengan bangunan, prasarana, dan fasilitas.",
+            "tujuan": "RS memenuhi persyaratan perizinan & sertifikasi bangunan/prasarana (mis. IMB/PBG, SLF, sertifikat instalasi) sesuai ketentuan.",
+            "ep": [
+              { "t": "RS mematuhi peraturan terkait bangunan, prasarana, & fasilitas serta memiliki izin/sertifikat yang berlaku.", "m": "R, D, O", "b": "Dokumen izin & sertifikat fasilitas yang berlaku.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 2",
+            "pernyataan": "Rumah sakit menetapkan penanggung jawab yang kompeten untuk mengawasi penerapan manajemen fasilitas & keselamatan.",
+            "tujuan": "Penanggung jawab MFK (mis. K3RS/IPSRS) mengoordinasikan program MFK & pemantauannya.",
+            "ep": [
+              { "t": "RS menetapkan penanggung jawab MFK yang kompeten & program MFK.", "m": "R, D, W", "b": "Penetapan penanggung jawab & program MFK.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 3",
+            "pernyataan": "Rumah sakit menerapkan program manajemen fasilitas & keselamatan (MFK) terkait keselamatan di rumah sakit.",
+            "tujuan": "Program keselamatan mengurangi risiko cedera pada pasien, staf, & pengunjung (mis. area berisiko, pengamanan).",
+            "ep": [
+              { "t": "RS menerapkan program keselamatan (safety) fasilitas & memantau pelaksanaannya.", "m": "D, O, W", "b": "Bukti pelaksanaan & pemantauan program keselamatan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 5",
+            "pernyataan": "Rumah sakit menetapkan & menerapkan pengelolaan Bahan Berbahaya dan Beracun (B3) serta limbah B3 sesuai ketentuan.",
+            "tujuan": "B3 dikelola dari inventaris, penyimpanan, pelabelan, MSDS, penanganan tumpahan, hingga pembuangan.",
+            "ep": [
+              { "t": "RS menerapkan pengelolaan B3 & limbah B3 (inventaris, penyimpanan, pelabelan, MSDS, tumpahan) sesuai ketentuan.", "m": "R, D, O, W", "b": "Daftar B3, MSDS, & bukti pengelolaan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 5.1",
+            "pernyataan": "Rumah sakit memiliki sistem pengelolaan limbah B3 cair & padat sesuai peraturan perundang-undangan.",
+            "tujuan": "Limbah B3 cair & padat dikelola (pemilahan, pengangkutan, IPAL, pihak ketiga berizin) sesuai ketentuan.",
+            "ep": [
+              { "t": "RS mengelola limbah B3 cair & padat (termasuk IPAL & pihak ketiga berizin) sesuai ketentuan.", "m": "D, O, W", "b": "Bukti pengelolaan limbah B3 & izin pihak ketiga.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 6",
+            "pernyataan": "Rumah sakit menerapkan proses pencegahan, penanggulangan bahaya kebakaran, dan penyediaan sarana proteksi kebakaran.",
+            "tujuan": "Program proteksi kebakaran meliputi pencegahan, deteksi dini, jalur evakuasi, APAR/hidran, & simulasi kebakaran.",
+            "ep": [
+              { "t": "RS menerapkan proteksi kebakaran (pencegahan, deteksi, jalur evakuasi, APAR/hidran) & melaksanakan simulasi.", "m": "R, D, O, S", "b": "Program proteksi kebakaran & bukti simulasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 7",
+            "pernyataan": "Rumah sakit menetapkan & menerapkan proses pengelolaan peralatan medik.",
+            "tujuan": "Peralatan medik dikelola dari inventaris, inspeksi, uji fungsi, pemeliharaan, hingga kalibrasi berkala; insiden alat dilaporkan.",
+            "ep": [
+              { "t": "RS mengelola peralatan medik (inventaris, uji fungsi, pemeliharaan, kalibrasi berkala).", "m": "R, D, O", "b": "Jadwal & bukti pemeliharaan/kalibrasi peralatan medik.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 8",
+            "pernyataan": "Rumah sakit menetapkan & melaksanakan proses untuk memastikan semua sistem utilitas (sistem pendukung) berfungsi.",
+            "tujuan": "Sistem utilitas (listrik, air, gas medis, ventilasi, dll.) diinventarisasi & dipastikan berfungsi.",
+            "ep": [
+              { "t": "RS memastikan seluruh sistem utilitas berfungsi & terinventarisasi.", "m": "R, D, O", "b": "Daftar & pemantauan sistem utilitas.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 8.1",
+            "pernyataan": "Dilakukan pemeriksaan, pemeliharaan, dan perbaikan sistem utilitas.",
+            "tujuan": "Sistem utilitas diperiksa, dipelihara, & diperbaiki sesuai jadwal.",
+            "ep": [
+              { "t": "RS melaksanakan pemeriksaan, pemeliharaan, & perbaikan sistem utilitas sesuai jadwal.", "m": "D, O", "b": "Jadwal & bukti pemeliharaan utilitas.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 8.2",
+            "pernyataan": "Sistem utilitas rumah sakit menjamin tersedianya air bersih & listrik sepanjang waktu serta menyediakan sumber cadangan.",
+            "tujuan": "Air bersih & listrik tersedia 24 jam dengan sumber cadangan (mis. genset, tandon) untuk kondisi darurat.",
+            "ep": [
+              { "t": "RS menjamin ketersediaan air bersih & listrik 24 jam beserta sumber cadangannya.", "m": "D, O", "b": "Bukti ketersediaan & sumber cadangan air/listrik.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 8.2.1",
+            "pernyataan": "Rumah sakit melakukan uji coba/uji beban sumber listrik dan sumber air cadangan/alternatif.",
+            "tujuan": "Sumber cadangan diuji beban berkala untuk memastikan keandalannya.",
+            "ep": [
+              { "t": "RS melakukan uji coba/uji beban sumber listrik & air cadangan secara berkala.", "m": "D, O", "b": "Bukti uji beban sumber cadangan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 8.3",
+            "pernyataan": "Rumah sakit melakukan pemeriksaan air bersih & air limbah secara berkala.",
+            "tujuan": "Kualitas air bersih & air limbah diperiksa (mis. uji laboratorium) sesuai ketentuan.",
+            "ep": [
+              { "t": "RS melakukan pemeriksaan air bersih & air limbah secara berkala sesuai ketentuan.", "m": "D", "b": "Hasil uji kualitas air bersih & air limbah.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 9",
+            "pernyataan": "Rumah sakit menerapkan proses penanganan bencana untuk menanggapi bencana yang berpotensi terjadi.",
+            "tujuan": "RS menyusun Hospital Disaster Plan (HDP) berbasis Hazard Vulnerability Analysis (HVA) & melaksanakan simulasi.",
+            "ep": [
+              { "t": "RS menyusun rencana penanganan bencana (HDP berbasis HVA) & melaksanakan simulasi.", "m": "R, D, S", "b": "HDP, HVA, & bukti simulasi bencana.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MFK 10",
+            "pernyataan": "Rumah sakit melakukan penilaian risiko prakonstruksi (Pre Construction Risk Assessment/PCRA) saat merencanakan konstruksi/renovasi.",
+            "tujuan": "PCRA menilai dampak konstruksi terhadap keselamatan, mutu udara, kebisingan, & PPI (lihat PPI 9).",
+            "ep": [
+              { "t": "RS melakukan PCRA pada perencanaan konstruksi/renovasi.", "m": "D, W", "b": "Bukti PCRA konstruksi/renovasi.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "MFK 11",
+            "pernyataan": "Seluruh staf dan pihak lain dilatih & memiliki pengetahuan tentang pengelolaan fasilitas rumah sakit dan keselamatan.",
+            "tujuan": "Staf dilatih terkait keselamatan, B3, kebakaran, bencana, & utilitas sesuai perannya.",
+            "ep": [
+              { "t": "RS melatih seluruh staf tentang pengelolaan fasilitas & keselamatan sesuai perannya.", "m": "D, W, S", "b": "Bukti pelatihan MFK bagi staf.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
@@ -220,18 +591,102 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Komite/tim mutu, pemilihan & pengukuran indikator, validasi & analisis data, pencapaian perbaikan, evaluasi PPK, pelaporan & pembelajaran insiden (SP2KP-RS), budaya keselamatan, dan manajemen risiko.",
         "standar": [
-          ["PMKP 1", "Komite/Tim Penyelenggara Mutu yang kompeten."],
-          ["PMKP 2", "Dukungan pemilihan indikator serta koordinasi & integrasi pengukuran."],
-          ["PMKP 3", "Pengumpulan data indikator oleh staf terlatih."],
-          ["PMKP 4", "Agregasi & analisis data untuk mendukung peningkatan mutu."],
-          ["PMKP 4.1", "Staf kompeten mengumpulkan & menganalisis data."],
-          ["PMKP 5", "Validasi data indikator mutu."],
-          ["PMKP 6", "Pencapaian perbaikan mutu dan mempertahankannya."],
-          ["PMKP 7", "Evaluasi pelaksanaan standar pelayanan kedokteran (PPK/clinical pathway)."],
-          ["PMKP 8", "Sistem pelaporan & pembelajaran keselamatan pasien (SP2KP-RS)."],
-          ["PMKP 9", "Analisis data insiden keselamatan pasien setiap 3 bulan."],
-          ["PMKP 10", "Pengukuran & evaluasi budaya keselamatan."],
-          ["PMKP 11", "Komite/Tim Mutu memandu penerapan program manajemen risiko."]
+          {
+            "kode": "PMKP 1",
+            "pernyataan": "Rumah sakit mempunyai Komite/Tim Penyelenggara Mutu yang kompeten untuk mengelola kegiatan Peningkatan Mutu & Keselamatan Pasien.",
+            "tujuan": "Komite/Tim Mutu mengoordinasikan & mengintegrasikan kegiatan PMKP di seluruh RS.",
+            "ep": [
+              { "t": "RS menetapkan Komite/Tim Penyelenggara Mutu yang kompeten beserta program kerjanya.", "m": "R, D, W", "b": "Penetapan Komite/Tim Mutu & program kerja.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 2",
+            "pernyataan": "Komite/Tim Mutu mendukung proses pemilihan indikator serta melaksanakan koordinasi & integrasi kegiatan pengukuran.",
+            "tujuan": "Pemilihan indikator (mutu nasional, prioritas RS, unit) dikoordinasikan & diintegrasikan.",
+            "ep": [
+              { "t": "Komite/Tim Mutu mendukung pemilihan indikator & mengoordinasikan pengukurannya.", "m": "D, W", "b": "Bukti pemilihan & koordinasi indikator.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 3",
+            "pernyataan": "Pengumpulan data indikator mutu dilakukan oleh staf pengumpul data yang telah dilatih.",
+            "tujuan": "Staf pengumpul data dilatih agar data valid & konsisten.",
+            "ep": [
+              { "t": "Pengumpulan data indikator dilakukan oleh staf yang telah dilatih.", "m": "D, W", "b": "Bukti pelatihan & pengumpulan data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 4",
+            "pernyataan": "Agregasi & analisis data dilakukan untuk mendukung program peningkatan mutu & keselamatan pasien.",
+            "tujuan": "Data diagregasi & dianalisis (mis. run chart, benchmarking) untuk perbaikan.",
+            "ep": [
+              { "t": "RS melakukan agregasi & analisis data untuk mendukung PMKP.", "m": "D, W", "b": "Bukti agregasi & analisis data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 4.1",
+            "pernyataan": "Staf dengan pengalaman, pengetahuan, & keterampilan yang bertugas mengumpulkan dan menganalisis data RS.",
+            "tujuan": "Analisis data dilakukan oleh staf yang kompeten.",
+            "ep": [
+              { "t": "Staf yang kompeten mengumpulkan & menganalisis data RS.", "m": "D, W", "b": "Bukti kompetensi staf analis data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 5",
+            "pernyataan": "Rumah sakit melakukan proses validasi data terhadap indikator mutu yang diukur.",
+            "tujuan": "Validasi data menjamin akurasi sebelum data dipublikasikan/digunakan.",
+            "ep": [
+              { "t": "RS melakukan validasi data indikator mutu sesuai ketentuan.", "m": "D, W", "b": "Bukti validasi data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 6",
+            "pernyataan": "Rumah sakit mencapai & mempertahankan perbaikan mutu.",
+            "tujuan": "Perbaikan (mis. PDSA) dicapai & dipertahankan serta didokumentasikan.",
+            "ep": [
+              { "t": "RS mencapai perbaikan mutu & mempertahankannya (mis. melalui siklus PDSA).", "m": "D, W", "b": "Bukti perbaikan mutu & keberlanjutannya.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 7",
+            "pernyataan": "Dilakukan evaluasi proses pelaksanaan standar pelayanan kedokteran di rumah sakit untuk menunjang pengukuran mutu.",
+            "tujuan": "Kepatuhan terhadap PPK & clinical pathway dievaluasi untuk mengurangi variasi asuhan.",
+            "ep": [
+              { "t": "RS mengevaluasi pelaksanaan PPK/clinical pathway untuk menunjang pengukuran mutu.", "m": "D, W", "b": "Bukti audit kepatuhan PPK/clinical pathway.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 8",
+            "pernyataan": "Rumah sakit mengembangkan Sistem Pelaporan & Pembelajaran Keselamatan Pasien (SP2KP-RS).",
+            "tujuan": "Insiden keselamatan pasien dilaporkan, dianalisis, & dijadikan pembelajaran; pelaporan ke KNKP sesuai ketentuan.",
+            "ep": [
+              { "t": "RS mengembangkan & menerapkan sistem pelaporan & pembelajaran keselamatan pasien (SP2KP-RS).", "m": "R, D, W", "b": "Regulasi & bukti pelaporan insiden keselamatan pasien.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 9",
+            "pernyataan": "Data laporan insiden keselamatan pasien dianalisis setiap 3 bulan untuk memantau tren atau variasi.",
+            "tujuan": "Analisis triwulan (termasuk RCA untuk insiden sentinel) mendorong perbaikan.",
+            "ep": [
+              { "t": "RS menganalisis data insiden keselamatan pasien setiap 3 bulan (termasuk RCA bila diperlukan).", "m": "D, W", "b": "Bukti analisis triwulan & RCA.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 10",
+            "pernyataan": "Rumah sakit melakukan pengukuran & evaluasi budaya keselamatan.",
+            "tujuan": "Budaya keselamatan diukur (mis. survei) & ditindaklanjuti (terkait TKRS 13).",
+            "ep": [
+              { "t": "RS melakukan pengukuran & evaluasi budaya keselamatan serta menindaklanjutinya.", "m": "D, W", "b": "Bukti survei & tindak lanjut budaya keselamatan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "PMKP 11",
+            "pernyataan": "Komite/Tim Penyelenggara Mutu memandu penerapan program manajemen risiko di rumah sakit.",
+            "tujuan": "Manajemen risiko (risk register, FMEA) dipandu Komite/Tim Mutu (terkait TKRS 14).",
+            "ep": [
+              { "t": "Komite/Tim Mutu memandu penerapan program manajemen risiko (risk register, FMEA).", "m": "D, W", "b": "Bukti pendampingan manajemen risiko.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
@@ -240,22 +695,134 @@
         "kelompok": "Manajemen Rumah Sakit",
         "ringkas": "Manajemen informasi, keamanan & kerahasiaan data, pengelolaan dokumen, rekam medis (elektronik) terstandar, kode & singkatan baku, retensi, evaluasi, dan teknologi informasi kesehatan.",
         "standar": [
-          ["MRMIK 1", "Proses manajemen informasi untuk kebutuhan internal & eksternal."],
-          ["MRMIK 2", "Pelatihan seluruh komponen RS terkait pengelolaan informasi."],
-          ["MRMIK 2.1", "Menjaga keamanan, kerahasiaan, keutuhan, & ketersediaan data dan rekam medis."],
-          ["MRMIK 2.2", "Perlindungan kerahasiaan, keamanan, privasi, dan integritas data."],
-          ["MRMIK 3", "Pengelolaan dokumen (kebijakan, pedoman, prosedur, program)."],
-          ["MRMIK 4", "Pemenuhan kebutuhan data & informasi tepat waktu."],
-          ["MRMIK 5", "Penyelenggaraan & pengelolaan rekam medis elektronik."],
-          ["MRMIK 6", "Setiap pasien memiliki rekam medis terstandar & terkini."],
-          ["MRMIK 7", "Penetapan informasi yang dimuat dalam rekam medis."],
-          ["MRMIK 8", "Setiap entry rekam medis mencantumkan identitas PPA penulis."],
-          ["MRMIK 9", "Kode diagnosis, prosedur, simbol & singkatan baku yang seragam."],
-          ["MRMIK 10", "Keamanan, kerahasiaan, kepemilikan rekam medis, & privasi pasien."],
-          ["MRMIK 11", "Pengaturan lama penyimpanan (retensi) rekam medis."],
-          ["MRMIK 12", "Evaluasi/pengkajian rekam medis secara teratur."],
-          ["MRMIK 13", "Sistem teknologi informasi kesehatan di pelayanan."],
-          ["MRMIK 13.1", "Program mengatasi waktu henti (down time) sistem."]
+          {
+            "kode": "MRMIK 1",
+            "pernyataan": "Rumah sakit menetapkan proses manajemen informasi untuk memenuhi kebutuhan informasi internal maupun eksternal.",
+            "tujuan": "Kebutuhan informasi PPA, pimpinan, & pihak luar diidentifikasi & dipenuhi melalui sistem manajemen informasi.",
+            "ep": [
+              { "t": "RS menetapkan proses manajemen informasi untuk memenuhi kebutuhan internal & eksternal.", "m": "R, D, W", "b": "Regulasi & bukti pemenuhan kebutuhan informasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 2",
+            "pernyataan": "Seluruh komponen RS (pimpinan, PPA, kepala unit, & staf) dilatih terkait pengelolaan & penggunaan informasi.",
+            "tujuan": "Staf dilatih tentang prinsip pengelolaan, keamanan, & kerahasiaan informasi sesuai perannya.",
+            "ep": [
+              { "t": "RS melatih seluruh komponen RS terkait pengelolaan informasi.", "m": "D, W", "b": "Bukti pelatihan pengelolaan informasi.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 2.1",
+            "pernyataan": "Rumah sakit menjaga keamanan, kerahasiaan, keutuhan, dan ketersediaan data & informasi termasuk data rekam medis.",
+            "tujuan": "Data dijaga dari akses tidak sah, kerusakan, & kehilangan (mis. hak akses berjenjang, backup).",
+            "ep": [
+              { "t": "RS menjaga keamanan, kerahasiaan, keutuhan, & ketersediaan data & rekam medis.", "m": "R, D, O", "b": "Regulasi & bukti pengamanan data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 2.2",
+            "pernyataan": "Rumah sakit menjaga kerahasiaan, keamanan, privasi, dan integritas data & informasi melalui proses yang melindunginya.",
+            "tujuan": "Proteksi data (mis. enkripsi, kontrol akses) melindungi privasi & integritas informasi.",
+            "ep": [
+              { "t": "RS menerapkan proses perlindungan kerahasiaan, keamanan, privasi, & integritas data.", "m": "D, O, W", "b": "Bukti kontrol akses & perlindungan data.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 3",
+            "pernyataan": "Rumah sakit menerapkan proses pengelolaan dokumen termasuk kebijakan, pedoman, prosedur, dan program kerja.",
+            "tujuan": "Dokumen dikendalikan (penyusunan, pengesahan, distribusi, revisi, penarikan) secara seragam.",
+            "ep": [
+              { "t": "RS menerapkan pengelolaan/pengendalian dokumen (kebijakan, pedoman, prosedur, program).", "m": "R, D", "b": "Regulasi & bukti pengendalian dokumen.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 4",
+            "pernyataan": "Kebutuhan data & informasi dari pihak dalam & luar RS dipenuhi secara tepat waktu dalam format yang memenuhi harapan pengguna.",
+            "tujuan": "Data disampaikan tepat waktu & sesuai format kebutuhan pengguna.",
+            "ep": [
+              { "t": "RS memenuhi kebutuhan data & informasi tepat waktu sesuai format pengguna.", "m": "D, W", "b": "Bukti penyediaan data tepat waktu.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 5",
+            "pernyataan": "Rumah sakit menetapkan penyelenggaraan & pengelolaan rekam medis elektronik terkait asuhan pasien sesuai ketentuan.",
+            "tujuan": "Rekam medis elektronik diselenggarakan sesuai ketentuan (bila diterapkan).",
+            "ep": [
+              { "t": "RS menyelenggarakan & mengelola rekam medis elektronik sesuai ketentuan.", "m": "R, D, O", "b": "Regulasi & bukti penyelenggaraan RME.", "s": "10 / 5 / 0 / TDD" }
+            ]
+          },
+          {
+            "kode": "MRMIK 6",
+            "pernyataan": "Setiap pasien memiliki rekam medis yang terstandar dalam format seragam, selalu diperbarui (terkini), dan diisi sesuai ketentuan.",
+            "tujuan": "Rekam medis terstandar & terkini memuat data yang cukup untuk kesinambungan asuhan.",
+            "ep": [
+              { "t": "Setiap pasien memiliki rekam medis terstandar, seragam, & terkini.", "m": "D, O", "b": "Rekam medis terstandar & terkini.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 7",
+            "pernyataan": "Rumah sakit menetapkan informasi yang akan dimuat pada rekam medis pasien.",
+            "tujuan": "Isi rekam medis ditetapkan agar memuat informasi yang diperlukan bagi asuhan.",
+            "ep": [
+              { "t": "RS menetapkan isi/informasi yang dimuat dalam rekam medis pasien.", "m": "R, D", "b": "Penetapan isi rekam medis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 8",
+            "pernyataan": "Setiap catatan (entry) pada rekam medis mencantumkan identitas Profesional Pemberi Asuhan (PPA) yang menulis, tanggal, dan waktu.",
+            "tujuan": "Setiap entry dapat ditelusuri penulis & waktunya (akuntabilitas).",
+            "ep": [
+              { "t": "Setiap entry rekam medis mencantumkan identitas PPA penulis, tanggal, & waktu.", "m": "D, O", "b": "Rekam medis dengan identitas & waktu entry.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 9",
+            "pernyataan": "Rumah sakit menggunakan kode diagnosis, kode prosedur, simbol, dan singkatan baku yang seragam.",
+            "tujuan": "Kode & singkatan baku (termasuk daftar singkatan yang tidak boleh dipakai) diterapkan seragam.",
+            "ep": [
+              { "t": "RS menggunakan kode diagnosis/prosedur, simbol, & singkatan baku yang seragam.", "m": "R, D, O", "b": "Penetapan & penggunaan kode/singkatan baku.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 10",
+            "pernyataan": "Rumah sakit menjamin keamanan, kerahasiaan, dan kepemilikan rekam medis serta privasi pasien.",
+            "tujuan": "Akses rekam medis dibatasi & kepemilikan/kerahasiaan dijaga sesuai ketentuan.",
+            "ep": [
+              { "t": "RS menjamin keamanan, kerahasiaan, kepemilikan rekam medis, & privasi pasien.", "m": "R, D, O", "b": "Regulasi & bukti pengendalian akses rekam medis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 11",
+            "pernyataan": "Rumah sakit mengatur lama penyimpanan (retensi) rekam medis, data, dan informasi pasien.",
+            "tujuan": "Masa retensi & pemusnahan rekam medis diatur sesuai ketentuan.",
+            "ep": [
+              { "t": "RS mengatur lama penyimpanan (retensi) & pemusnahan rekam medis sesuai ketentuan.", "m": "R, D", "b": "Regulasi retensi & bukti pemusnahan rekam medis.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 12",
+            "pernyataan": "Dalam upaya perbaikan kinerja, rumah sakit secara teratur melakukan evaluasi/pengkajian rekam medis.",
+            "tujuan": "Review rekam medis (kelengkapan, ketepatan waktu, keterbacaan) dilakukan berkala oleh tim.",
+            "ep": [
+              { "t": "RS melakukan evaluasi/pengkajian rekam medis secara teratur.", "m": "D, W", "b": "Bukti review rekam medis berkala.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 13",
+            "pernyataan": "Rumah sakit menerapkan sistem teknologi informasi kesehatan di pelayanan untuk mengelola data & informasi.",
+            "tujuan": "Sistem teknologi informasi kesehatan (SIMRS) dikelola untuk mendukung pelayanan.",
+            "ep": [
+              { "t": "RS menerapkan sistem teknologi informasi kesehatan (SIMRS) untuk mengelola data & informasi.", "m": "R, D, O", "b": "Bukti penerapan sistem teknologi informasi kesehatan.", "s": "10 / 5 / 0" }
+            ]
+          },
+          {
+            "kode": "MRMIK 13.1",
+            "pernyataan": "Rumah sakit mengembangkan, memelihara, dan menguji program untuk mengatasi waktu henti (down time) dari sistem.",
+            "tujuan": "Program down time (manual & pemulihan) disiapkan & diuji agar pelayanan tetap berjalan saat sistem gangguan.",
+            "ep": [
+              { "t": "RS mengembangkan, memelihara, & menguji program penanganan waktu henti (down time) sistem.", "m": "D, W, S", "b": "Program & bukti uji coba down time.", "s": "10 / 5 / 0" }
+            ]
+          }
         ]
       },
       {
