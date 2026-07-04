@@ -55,6 +55,7 @@
     clear(footer);
     footer.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), DATA.sumber]));
     footer.appendChild(h('p', { text: DATA.disclaimer }));
+    footer.appendChild(h('p', { class: 'credit', text: 'Curated and Design by Muhammad Rizki Yaznil' }));
   }
 
   /* ---------- Checklist (localStorage per-scope) ---------- */
