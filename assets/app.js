@@ -49,6 +49,16 @@
   function stripQuotes(s) {
     return String(s).replace(/^["“”'\s]+|["“”'\s]+$/g, '');
   }
+  // Tombol cetak: ikon tenang di pojok kepala halaman
+  function printIconBtn(label) {
+    return h('button', {
+      class: 'icon-btn print-btn no-print',
+      type: 'button',
+      title: 'Cetak',
+      'aria-label': label || 'Cetak halaman ini',
+      onClick: function () { window.print(); }
+    }, [h('span', { 'aria-hidden': 'true', text: '🖨️' })]);
+  }
 
   /* ---------- Footer disclaimer (di tiap halaman) ---------- */
   function renderFooter() {
@@ -271,11 +281,13 @@
     var chips = h('div', { class: 'chips', 'aria-label': 'Standar terkait' });
     (p.standar || []).forEach(function (s) { chips.appendChild(h('span', { class: 'chip', text: s })); });
     app.appendChild(h('section', { class: 'profile-head' }, [
-      h('h1', { text: p.judul }),
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: p.judul }),
+        printIconBtn('Cetak handbook profesi ini')
+      ]),
       h('p', { class: 'ruang', text: p.ruang }),
       chips,
       h('div', { class: 'head-actions' }, [
-        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak handbook profesi ini']),
         h('a', { class: 'btn', href: '#/' }, ['← Pilih profesi lain'])
       ])
     ]));
@@ -344,10 +356,12 @@
     app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Bagian umum' }]));
 
     app.appendChild(h('section', { class: 'profile-head' }, [
-      h('h1', { text: 'Standar, SKP, Program Nasional & Skoring' }),
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: 'Standar, SKP, Program Nasional & Skoring' }),
+        printIconBtn('Cetak bagian umum')
+      ]),
       h('p', { class: 'ruang', text: 'Gambaran menyeluruh yang berlaku lintas profesi.' }),
       h('div', { class: 'head-actions' }, [
-        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak bagian umum']),
         h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
       ])
     ]));
@@ -426,9 +440,11 @@
     app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Visi, Misi & Moto' }]));
 
     app.appendChild(h('section', { class: 'profile-head' }, [
-      h('h1', { text: 'Visi, Misi & Moto ' + (v.nama || '') }),
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: 'Visi, Misi & Moto ' + (v.nama || '') }),
+        printIconBtn('Cetak visi, misi & moto')
+      ]),
       h('div', { class: 'head-actions' }, [
-        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak']),
         h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
       ])
     ]));
@@ -538,10 +554,12 @@
     ]));
 
     app.appendChild(h('section', { class: 'profile-head' }, [
-      h('h1', {}, [b.nama, ' ', h('span', { class: 'chip', text: b.kode })]),
+      h('div', { class: 'head-top' }, [
+        h('h1', {}, [b.nama, ' ', h('span', { class: 'chip', text: b.kode })]),
+        printIconBtn('Cetak bab ' + b.kode)
+      ]),
       h('p', { class: 'ruang', text: b.ringkas || '' }),
       h('div', { class: 'head-actions' }, [
-        h('button', { class: 'btn btn-primary', type: 'button', onClick: function () { window.print(); } }, ['🖨️ Cetak']),
         h('a', { class: 'btn', href: '#/standar' }, ['← Semua bab'])
       ])
     ]));

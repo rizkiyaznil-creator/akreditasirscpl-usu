@@ -111,6 +111,9 @@ mark{background:#fff3b0; color:inherit; padding:0 .1em; border-radius:2px}
 /* ---------- Profile head ---------- */
 .profile-head{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.2rem 1.3rem; margin-bottom:1rem}
 .profile-head h1{margin:0 0 .35rem; font-size:1.45rem; line-height:1.25}
+.head-top{display:flex; align-items:flex-start; justify-content:space-between; gap:.8rem}
+.head-top h1{margin-bottom:0; flex:1}
+.print-btn{flex:none; margin-top:.1rem}
 .profile-head .ruang{margin:0; color:var(--ink-soft); font-size:.95rem}
 .chips{display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.9rem}
 .chip{background:var(--brand-soft); color:var(--brand-ink); border:1px solid #cfe6e6; font-size:.75rem; font-weight:600; padding:.2rem .55rem; border-radius:999px}
