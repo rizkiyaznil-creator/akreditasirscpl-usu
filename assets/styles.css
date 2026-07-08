@@ -170,6 +170,37 @@ ul.clean li{margin:.35rem 0}
 .result .snippet{font-size:.9rem; margin:0}
 .empty{color:var(--ink-soft); padding:1rem 0}
 
+/* ---------- Referensi cepat: kartu beranda ---------- */
+.qcard h3{display:flex; align-items:center; gap:.5rem}
+.qcard .qicon{font-size:1.15rem; line-height:1}
+
+/* ---------- Kode Emergensi ---------- */
+.note.callout{background:#fff7ed; border-color:#f6d9b8; color:var(--ink)}
+.code-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:.7rem; margin-bottom:1rem}
+.code-item{display:flex; gap:.7rem; align-items:flex-start; background:var(--surface); border:1px solid var(--line); border-left-width:5px; border-radius:10px; padding:.7rem .85rem; box-shadow:var(--shadow)}
+.code-dot{flex:none; width:16px; height:16px; border-radius:50%; margin-top:.28rem; box-shadow:0 0 0 3px rgba(0,0,0,.05)}
+.code-body{min-width:0}
+.code-name{font-weight:800; font-size:.98rem; letter-spacing:.01em}
+.code-arti{margin:.15rem 0 0; font-size:.86rem; color:var(--ink)}
+
+/* ---------- Kebersihan Tangan ---------- */
+.wash-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:.9rem; margin-bottom:1.4rem}
+.wash-step{margin:0; background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; box-shadow:var(--shadow)}
+.wash-img{position:relative; background:#f6f2ea; border-bottom:1px solid var(--line)}
+.wash-img img{display:block; width:100%; height:auto}
+.wash-num{position:absolute; top:.5rem; left:.5rem; width:26px; height:26px; border-radius:50%; background:var(--brand,#0f6e6e); color:#fff; font-weight:800; font-size:.9rem; display:flex; align-items:center; justify-content:center}
+.wash-step figcaption{padding:.65rem .8rem; font-size:.9rem}
+.wash-step figcaption strong{display:block; color:var(--brand-ink)}
+.wash-desc{display:block; margin-top:.2rem; font-size:.82rem; color:var(--ink-soft)}
+.momen-wrap{display:grid; grid-template-columns:minmax(220px,320px) 1fr; gap:1.2rem; align-items:start; margin-bottom:1rem}
+.momen-img{background:#f6f2ea; border:1px solid var(--line); border-radius:12px; padding:.6rem}
+.momen-img img{display:block; width:100%; height:auto}
+.momen-list{margin:0; padding-left:1.3rem; display:grid; gap:.6rem}
+.momen-list li{font-size:.92rem}
+.momen-list strong{color:var(--brand-ink)}
+.momen-why{display:block; font-size:.82rem; color:var(--ink-soft); margin-top:.1rem}
+@media (max-width:640px){ .momen-wrap{grid-template-columns:1fr} }
+
 /* ---------- Footer ---------- */
 .site-footer{border-top:1px solid var(--line); background:#eef1f4; color:var(--ink-soft); font-size:.8rem; margin-top:2rem}
 .site-footer .inner{max-width:var(--maxw); margin:0 auto; padding:1.1rem 1rem}

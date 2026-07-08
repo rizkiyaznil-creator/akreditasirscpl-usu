@@ -3,7 +3,7 @@
    - content.json: network-first (agar update konten cepat terlihat), fallback cache saat offline.
    - Aset shell lain: cache-first dengan pembaruan latar (stale-while-revalidate ringan).
    Naikkan CACHE_VERSION saat mengubah aset agar cache lama tergantikan. */
-var CACHE_VERSION = 'handbook-rs-v23';
+var CACHE_VERSION = 'handbook-rs-v24';
 var SHELL = [
   './',
   './index.html',
@@ -11,7 +11,14 @@ var SHELL = [
   './assets/app.js',
   './manifest.webmanifest',
   './assets/icon-192.png',
-  './assets/icon-512.png'
+  './assets/icon-512.png',
+  './assets/handwash/step1.svg',
+  './assets/handwash/step2.svg',
+  './assets/handwash/step3.svg',
+  './assets/handwash/step4.svg',
+  './assets/handwash/step5.svg',
+  './assets/handwash/step6.svg',
+  './assets/handwash/moments.svg'
 ];
 
 self.addEventListener('install', function (e) {

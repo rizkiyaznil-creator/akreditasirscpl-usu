@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Diagram 5 momen kebersihan tangan di sekitar pasien">
+  <defs>
+    <style>
+      .zone{fill:#e6f2f2;stroke:#0f6e6e;stroke-width:2;stroke-dasharray:6 5}
+      .bed{fill:#cfe6e6;stroke:#0b5252;stroke-width:2}
+      .num{fill:#ea5330}
+      .nt{fill:#fff;font:700 15px -apple-system,Arial,sans-serif;text-anchor:middle}
+      .lbl{fill:#334e68;font:600 11px -apple-system,Arial,sans-serif}
+      .pt{fill:#0b5252;font:600 12px -apple-system,Arial,sans-serif;text-anchor:middle}
+    </style>
+  </defs>
+  <!-- patient zone -->
+  <ellipse class="zone" cx="160" cy="112" rx="120" ry="86"/>
+  <text x="160" y="30" class="lbl" text-anchor="middle">Area pasien</text>
+  <!-- bed + patient -->
+  <rect class="bed" x="112" y="96" width="96" height="46" rx="10"/>
+  <circle cx="128" cy="119" r="13" fill="#0b5252"/>
+  <text x="160" y="164" class="pt">Pasien</text>
+  <!-- numbered moments -->
+  <g>
+    <circle class="num" cx="70" cy="112" r="15"/><text x="70" y="117" class="nt">1</text>
+    <circle class="num" cx="132" cy="66" r="15"/><text x="132" y="71" class="nt">2</text>
+    <circle class="num" cx="250" cy="150" r="15"/><text x="250" y="155" class="nt">3</text>
+    <circle class="num" cx="250" cy="82" r="15"/><text x="250" y="87" class="nt">4</text>
+    <circle class="num" cx="196" cy="188" r="15"/><text x="196" y="193" class="nt">5</text>
+  </g>
+</svg>

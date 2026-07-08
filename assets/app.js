@@ -200,6 +200,25 @@
       h('p', { text: 'Sarikan berbasis peran dari Standar Akreditasi RS (KMK 1596/2024) dan Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024) untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
     ]));
 
+    // Referensi cepat (kode emergensi & kebersihan tangan)
+    if (DATA.kodeEmergensi || DATA.cuciTangan) {
+      app.appendChild(h('h2', { class: 'section-title', text: 'Referensi cepat' }));
+      var qr = h('div', { class: 'grid grid-2' });
+      if (DATA.kodeEmergensi) {
+        qr.appendChild(h('a', { class: 'pcard qcard', href: '#/emergensi' }, [
+          h('h3', {}, [h('span', { class: 'qicon', 'aria-hidden': 'true', text: '🚨' }), 'Kode Emergensi']),
+          h('p', { text: 'Kode darurat rumah sakit yang umum (Code Blue, Red, Black, dll) beserta artinya.' })
+        ]));
+      }
+      if (DATA.cuciTangan) {
+        qr.appendChild(h('a', { class: 'pcard qcard', href: '#/cuci-tangan' }, [
+          h('h3', {}, [h('span', { class: 'qicon', 'aria-hidden': 'true', text: '🧼' }), 'Kebersihan Tangan']),
+          h('p', { text: 'Enam langkah cuci tangan (dengan ilustrasi) dan lima momen kebersihan tangan.' })
+        ]));
+      }
+      app.appendChild(qr);
+    }
+
     // Visi, Misi & Moto sebagai kartu di beranda
     var vmn0 = DATA.visiMisiNilai;
     if (vmn0 && ((vmn0.visi && vmn0.visi.trim()) || (vmn0.misi && vmn0.misi.length) || (vmn0.nilai && vmn0.nilai.length))) {
@@ -492,6 +511,108 @@
     window.scrollTo(0, 0);
   }
 
+  /* ---------- Referensi cepat: Kode Emergensi ---------- */
+  function viewEmergensi() {
+    var e = DATA.kodeEmergensi || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Kode Emergensi' }]));
+
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: 'Kode Emergensi Rumah Sakit' }),
+        printIconBtn('Cetak kode emergensi')
+      ]),
+      h('div', { class: 'head-actions' }, [
+        h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
+      ])
+    ]));
+
+    if (e.catatan) {
+      app.appendChild(h('p', { class: 'note callout', text: e.catatan }));
+    }
+
+    var list = h('div', { class: 'code-grid' });
+    (e.kode || []).forEach(function (row) {
+      var nama = row[0], warna = row[1] || '#555', arti = row[2] || '';
+      list.appendChild(h('div', { class: 'code-item' }, [
+        h('span', { class: 'code-dot', style: 'background:' + warna, 'aria-hidden': 'true' }),
+        h('div', { class: 'code-body' }, [
+          h('span', { class: 'code-name', style: 'color:' + warna, text: nama }),
+          h('p', { class: 'code-arti', text: arti })
+        ])
+      ]));
+    });
+    app.appendChild(list);
+
+    document.title = 'Kode Emergensi — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Referensi cepat: Kebersihan Tangan ---------- */
+  function viewCuciTangan() {
+    var c = DATA.cuciTangan || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Kebersihan Tangan' }]));
+
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: 'Kebersihan Tangan' }),
+        printIconBtn('Cetak panduan kebersihan tangan')
+      ]),
+      h('div', { class: 'head-actions' }, [
+        h('a', { class: 'btn', href: '#/' }, ['← Beranda'])
+      ])
+    ]));
+
+    if (c.catatan) {
+      app.appendChild(h('p', { class: 'note callout', text: c.catatan }));
+    }
+
+    // Enam langkah dengan ilustrasi
+    app.appendChild(h('h2', { class: 'section-title', text: 'Enam langkah kebersihan tangan' }));
+    var steps = h('div', { class: 'wash-grid' });
+    (c.enamLangkah || []).forEach(function (row, i) {
+      var judul = Array.isArray(row) ? row[0] : row;
+      var teks = Array.isArray(row) ? (row[1] || '') : '';
+      steps.appendChild(h('figure', { class: 'wash-step' }, [
+        h('div', { class: 'wash-img' }, [
+          h('img', {
+            src: 'assets/handwash/step' + (i + 1) + '.svg',
+            alt: 'Ilustrasi langkah ' + (i + 1) + ': ' + judul,
+            loading: 'lazy'
+          }),
+          h('span', { class: 'wash-num', text: String(i + 1) })
+        ]),
+        h('figcaption', {}, [
+          h('strong', { text: judul }),
+          teks ? h('span', { class: 'wash-desc', text: teks }) : null
+        ])
+      ]));
+    });
+    app.appendChild(steps);
+
+    // Lima momen
+    app.appendChild(h('h2', { class: 'section-title', text: 'Lima momen kebersihan tangan' }));
+    var momenWrap = h('div', { class: 'momen-wrap' });
+    momenWrap.appendChild(h('div', { class: 'momen-img' }, [
+      h('img', { src: 'assets/handwash/moments.svg', alt: 'Diagram lima momen kebersihan tangan di sekitar pasien', loading: 'lazy' })
+    ]));
+    var olMomen = h('ol', { class: 'momen-list' });
+    (c.limaMomen || []).forEach(function (row) {
+      var judul = Array.isArray(row) ? row[0] : row;
+      var teks = Array.isArray(row) ? (row[1] || '') : '';
+      olMomen.appendChild(h('li', {}, [
+        h('strong', { text: judul }),
+        teks ? h('span', { class: 'momen-why', text: teks }) : null
+      ]));
+    });
+    momenWrap.appendChild(olMomen);
+    app.appendChild(momenWrap);
+
+    document.title = 'Kebersihan Tangan — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
   /* ---------- Standar Rinci ---------- */
   function kodeSlug(kode) { return encodeURIComponent(kode); }
 
@@ -642,6 +763,22 @@
       });
     });
 
+    var ke = DATA.kodeEmergensi || {};
+    (ke.kode || []).forEach(function (row) {
+      SEARCH_INDEX.push({ text: row[0] + ' — ' + (row[2] || ''), badge: 'Kode', where: 'Referensi cepat · Kode Emergensi', href: '#/emergensi' });
+    });
+    var ct = DATA.cuciTangan || {};
+    (ct.enamLangkah || []).forEach(function (row, i) {
+      var judul = Array.isArray(row) ? row[0] : row;
+      var teks = Array.isArray(row) ? (row[1] || '') : '';
+      SEARCH_INDEX.push({ text: 'Langkah ' + (i + 1) + ': ' + judul + (teks ? ' — ' + teks : ''), badge: 'Cuci Tangan', where: 'Referensi cepat · Kebersihan Tangan', href: '#/cuci-tangan' });
+    });
+    (ct.limaMomen || []).forEach(function (row, i) {
+      var judul = Array.isArray(row) ? row[0] : row;
+      var teks = Array.isArray(row) ? (row[1] || '') : '';
+      SEARCH_INDEX.push({ text: 'Momen ' + (i + 1) + ': ' + judul + (teks ? ' — ' + teks : ''), badge: '5 Momen', where: 'Referensi cepat · Kebersihan Tangan', href: '#/cuci-tangan' });
+    });
+
     (DATA.profesi || []).forEach(function (p) {
       var base = '#/profesi/' + encodeURIComponent(p.id);
       (p.tugasInti || []).forEach(function (t) {
@@ -737,6 +874,12 @@
     }
     if (parts[0] === 'visi') {
       return viewVisiMisi();
+    }
+    if (parts[0] === 'emergensi') {
+      return viewEmergensi();
+    }
+    if (parts[0] === 'cuci-tangan') {
+      return viewCuciTangan();
     }
     if (parts[0] === 'standar') {
       if (parts[1]) return viewStandarDetail(decodeURIComponent(parts[1]));

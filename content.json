@@ -21,6 +21,38 @@
       ["Teamwork & Trust (Kerja Sama dan Kepercayaan)", "kolaborasi interprofesional yang solid, komunikasi terbuka, serta saling percaya antar sejawat, peserta didik, peneliti, dan mitra kerja sebagai fondasi Academic Health System."]
     ]
   },
+  "kodeEmergensi": {
+    "catatan": "Kode darurat dapat berbeda antar rumah sakit. PENTING: sesuaikan daftar ini dengan kebijakan resmi RSP CPL USU sebelum digunakan. Warna hanya bantuan visual.",
+    "kode": [
+      ["Code Blue", "#2f6fed", "Kegawatan medis: henti jantung/napas atau perburukan mendadak. Aktifkan tim Code Blue segera."],
+      ["Code Red", "#e03131", "Kebakaran atau asap. Terapkan RACE (Rescue–Alarm–Confine–Extinguish/Evacuate)."],
+      ["Code Black", "#212529", "Ancaman bom atau ancaman orang bersenjata/berbahaya."],
+      ["Code Grey", "#868e96", "Gangguan keamanan / orang agresif atau mengancam."],
+      ["Code Pink", "#e64980", "Penculikan atau kehilangan bayi/anak."],
+      ["Code Purple", "#7048e8", "Evakuasi pasien, staf, dan pengunjung."],
+      ["Code Yellow", "#f2b600", "Bencana internal (mis. kegagalan sistem/utilitas)."],
+      ["Code Orange", "#f76707", "Tumpahan atau paparan bahan berbahaya (B3/hazmat)."],
+      ["Code Brown", "#8a5a2b", "Cuaca ekstrem atau bencana eksternal (mis. banjir, gempa)."]
+    ]
+  },
+  "cuciTangan": {
+    "catatan": "Mengacu pada prinsip kebersihan tangan WHO. Handrub berbasis alkohol 20–30 detik; cuci tangan dengan sabun & air mengalir 40–60 detik.",
+    "enamLangkah": [
+      ["Gosok kedua telapak tangan hingga merata.", "Ratakan sabun/handrub pada kedua telapak tangan."],
+      ["Gosok punggung & sela jari.", "Telapak tangan kanan menggosok punggung tangan kiri (dan sela jari), lalu sebaliknya."],
+      ["Gosok telapak dengan jari saling menyilang.", "Kedua telapak saling berhadapan dengan jari-jari saling menyilang menggosok sela-sela jari."],
+      ["Gosok punggung jari (posisi mengunci).", "Punggung jari satu tangan digosokkan pada telapak tangan lawannya dengan jari saling mengunci."],
+      ["Gosok memutar ibu jari.", "Ibu jari kiri digosok memutar dalam genggaman telapak tangan kanan, lalu sebaliknya."],
+      ["Gosok memutar ujung jari di telapak.", "Ujung jari-jari tangan kanan digosok memutar pada telapak tangan kiri, lalu sebaliknya."]
+    ],
+    "limaMomen": [
+      ["Sebelum menyentuh pasien.", "Melindungi pasien dari kuman yang dibawa tangan petugas."],
+      ["Sebelum tindakan aseptik.", "Melindungi pasien dari kuman (termasuk kumannya sendiri) yang masuk ke tubuh."],
+      ["Setelah terkena/berisiko cairan tubuh.", "Melindungi petugas & lingkungan dari kuman pasien."],
+      ["Setelah menyentuh pasien.", "Melindungi petugas & lingkungan dari kuman pasien."],
+      ["Setelah menyentuh lingkungan sekitar pasien.", "Melindungi petugas & lingkungan dari kuman pasien meski tidak menyentuh pasien."]
+    ]
+  },
   "umum": {
     "kelompok_standar": [
       {
