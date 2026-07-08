@@ -36,14 +36,14 @@
     ]
   },
   "cuciTangan": {
-    "catatan": "Mengacu pada prinsip kebersihan tangan WHO. Handrub berbasis alkohol 20–30 detik; cuci tangan dengan sabun & air mengalir 40–60 detik.",
+    "catatan": "Mengacu pada 6 Langkah Cuci Tangan Kemenkes RI (GERMAS). Biasakan cuci tangan pakai sabun dengan air mengalir ± 40–60 detik; handrub berbasis alkohol 20–30 detik.",
     "enamLangkah": [
-      ["Gosok kedua telapak tangan hingga merata.", "Ratakan sabun/handrub pada kedua telapak tangan."],
-      ["Gosok punggung & sela jari.", "Telapak tangan kanan menggosok punggung tangan kiri (dan sela jari), lalu sebaliknya."],
-      ["Gosok telapak dengan jari saling menyilang.", "Kedua telapak saling berhadapan dengan jari-jari saling menyilang menggosok sela-sela jari."],
-      ["Gosok punggung jari (posisi mengunci).", "Punggung jari satu tangan digosokkan pada telapak tangan lawannya dengan jari saling mengunci."],
-      ["Gosok memutar ibu jari.", "Ibu jari kiri digosok memutar dalam genggaman telapak tangan kanan, lalu sebaliknya."],
-      ["Gosok memutar ujung jari di telapak.", "Ujung jari-jari tangan kanan digosok memutar pada telapak tangan kiri, lalu sebaliknya."]
+      ["Bersihkan tangan, gosok sabun pada kedua telapak dengan arah memutar.", "Ratakan sabun pada kedua telapak tangan dengan gerakan memutar."],
+      ["Gosok juga kedua punggung tangan secara bergantian.", "Telapak tangan menggosok punggung tangan lainnya, lakukan bergantian."],
+      ["Gosok sela-sela jari tangan hingga bersih.", "Kedua telapak saling berhadapan dengan jari-jari saling menyilang menggosok sela-sela jari."],
+      ["Bersihkan ujung jari dengan posisi saling mengunci.", "Punggung jari kedua tangan saling mengunci, gosok bergantian."],
+      ["Gosok dan putar kedua ibu jari secara bergantian.", "Ibu jari digosok memutar dalam genggaman telapak tangan lainnya, lakukan bergantian."],
+      ["Gosok telapak tangan menggunakan ujung jari, dan bilas hingga bersih.", "Ujung jari digosok memutar pada telapak tangan lainnya, lalu bilas dengan air mengalir hingga bersih."]
     ],
     "limaMomen": [
       ["Sebelum menyentuh pasien.", "Melindungi pasien dari kuman yang dibawa tangan petugas."],
