@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Langkah 2: gosok punggung tangan dan sela jari">
+  <defs>
+    <marker id="a2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#0f6e6e"/></marker>
+    <style>.h{fill:#efd8c3;stroke:#c79f79;stroke-width:3;stroke-linejoin:round}.hb{fill:#e7c9ad;stroke:#c79f79;stroke-width:3;stroke-linejoin:round}.hl{fill:#ec6b6e;opacity:.5}.ar{fill:none;stroke:#0f6e6e;stroke-width:5;stroke-linecap:round}</style>
+  </defs>
+  <!-- lower hand (back shown) -->
+  <g class="hb" transform="translate(55,60)"><rect x="10" y="40" width="86" height="70" rx="20"/><rect x="14" y="6" width="16" height="46" rx="7"/><rect x="34" y="0" width="16" height="52" rx="7"/><rect x="54" y="4" width="16" height="48" rx="7"/><rect x="74" y="12" width="15" height="42" rx="7"/></g>
+  <rect class="hl" x="70" y="102" width="80" height="60" rx="18"/>
+  <!-- upper hand rubbing across -->
+  <g class="h" transform="translate(80,35) rotate(12)"><rect x="10" y="45" width="80" height="60" rx="18"/><rect x="16" y="8" width="15" height="42" rx="7"/><rect x="34" y="2" width="15" height="48" rx="7"/><rect x="52" y="6" width="15" height="44" rx="7"/><rect x="69" y="16" width="14" height="36" rx="7"/><rect x="78" y="58" width="34" height="15" rx="7" transform="rotate(30 78 65)"/></g>
+  <path class="ar" d="M92,150 H170" marker-end="url(#a2)"/>
+  <path class="ar" d="M168,164 H90" marker-end="url(#a2)"/>
+</svg>
