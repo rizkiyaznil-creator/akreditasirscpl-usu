@@ -40,14 +40,6 @@
     "poster": "assets/handwash/poster-cuci-tangan-kemenkes.jpg",
     "posterJudul": "Biasakan Cuci Tangan Pakai Sabun — 6 Langkah Cuci Tangan",
     "posterKredit": "Sumber: Kementerian Kesehatan RI (GERMAS) / Farmalkes",
-    "enamLangkah": [
-      ["Bersihkan tangan, gosok sabun pada kedua telapak dengan arah memutar.", "Ratakan sabun pada kedua telapak tangan dengan gerakan memutar."],
-      ["Gosok juga kedua punggung tangan secara bergantian.", "Telapak tangan menggosok punggung tangan lainnya, lakukan bergantian."],
-      ["Gosok sela-sela jari tangan hingga bersih.", "Kedua telapak saling berhadapan dengan jari-jari saling menyilang menggosok sela-sela jari."],
-      ["Bersihkan ujung jari dengan posisi saling mengunci.", "Punggung jari kedua tangan saling mengunci, gosok bergantian."],
-      ["Gosok dan putar kedua ibu jari secara bergantian.", "Ibu jari digosok memutar dalam genggaman telapak tangan lainnya, lakukan bergantian."],
-      ["Gosok telapak tangan menggunakan ujung jari, dan bilas hingga bersih.", "Ujung jari digosok memutar pada telapak tangan lainnya, lalu bilas dengan air mengalir hingga bersih."]
-    ],
     "limaMomen": [
       ["Sebelum menyentuh pasien.", "Melindungi pasien dari kuman yang dibawa tangan petugas."],
       ["Sebelum tindakan aseptik.", "Melindungi pasien dari kuman (termasuk kumannya sendiri) yang masuk ke tubuh."],
