@@ -187,14 +187,6 @@ ul.clean li{margin:.35rem 0}
 .poster-wrap{margin:0 0 1.4rem; text-align:center}
 .poster-img{display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow)}
 .poster-kredit{margin-top:.5rem; font-size:.78rem; color:var(--ink-soft)}
-.wash-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:.9rem; margin-bottom:1.4rem}
-.wash-step{margin:0; background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; box-shadow:var(--shadow)}
-.wash-img{position:relative; background:#f6f2ea; border-bottom:1px solid var(--line)}
-.wash-img img{display:block; width:100%; height:auto}
-.wash-num{position:absolute; top:.5rem; left:.5rem; width:26px; height:26px; border-radius:50%; background:var(--brand,#0f6e6e); color:#fff; font-weight:800; font-size:.9rem; display:flex; align-items:center; justify-content:center}
-.wash-step figcaption{padding:.65rem .8rem; font-size:.9rem}
-.wash-step figcaption strong{display:block; color:var(--brand-ink)}
-.wash-desc{display:block; margin-top:.2rem; font-size:.82rem; color:var(--ink-soft)}
 .momen-wrap{display:grid; grid-template-columns:minmax(220px,320px) 1fr; gap:1.2rem; align-items:start; margin-bottom:1rem}
 .momen-img{background:#f6f2ea; border:1px solid var(--line); border-radius:12px; padding:.6rem}
 .momen-img img{display:block; width:100%; height:auto}

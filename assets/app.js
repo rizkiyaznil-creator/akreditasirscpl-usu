@@ -585,29 +585,6 @@
       app.appendChild(pFig);
     }
 
-    // Enam langkah dengan ilustrasi
-    app.appendChild(h('h2', { class: 'section-title', text: 'Enam langkah kebersihan tangan' }));
-    var steps = h('div', { class: 'wash-grid' });
-    (c.enamLangkah || []).forEach(function (row, i) {
-      var judul = Array.isArray(row) ? row[0] : row;
-      var teks = Array.isArray(row) ? (row[1] || '') : '';
-      steps.appendChild(h('figure', { class: 'wash-step' }, [
-        h('div', { class: 'wash-img' }, [
-          h('img', {
-            src: 'assets/handwash/step' + (i + 1) + '.svg',
-            alt: 'Ilustrasi langkah ' + (i + 1) + ': ' + judul,
-            loading: 'lazy'
-          }),
-          h('span', { class: 'wash-num', text: String(i + 1) })
-        ]),
-        h('figcaption', {}, [
-          h('strong', { text: judul }),
-          teks ? h('span', { class: 'wash-desc', text: teks }) : null
-        ])
-      ]));
-    });
-    app.appendChild(steps);
-
     // Lima momen
     app.appendChild(h('h2', { class: 'section-title', text: 'Lima momen kebersihan tangan' }));
     var momenWrap = h('div', { class: 'momen-wrap' });
@@ -785,11 +762,6 @@
       SEARCH_INDEX.push({ text: row[0] + ' — ' + (row[2] || ''), badge: 'Kode', where: 'Referensi cepat · Kode Emergensi', href: '#/emergensi' });
     });
     var ct = DATA.cuciTangan || {};
-    (ct.enamLangkah || []).forEach(function (row, i) {
-      var judul = Array.isArray(row) ? row[0] : row;
-      var teks = Array.isArray(row) ? (row[1] || '') : '';
-      SEARCH_INDEX.push({ text: 'Langkah ' + (i + 1) + ': ' + judul + (teks ? ' — ' + teks : ''), badge: 'Cuci Tangan', where: 'Referensi cepat · Kebersihan Tangan', href: '#/cuci-tangan' });
-    });
     (ct.limaMomen || []).forEach(function (row, i) {
       var judul = Array.isArray(row) ? row[0] : row;
       var teks = Array.isArray(row) ? (row[1] || '') : '';
