@@ -531,15 +531,27 @@
       app.appendChild(h('p', { class: 'note callout', text: e.catatan }));
     }
 
+    var labelNo = e.labelNoPenting || 'No. penting';
     var list = h('div', { class: 'code-grid' });
     (e.kode || []).forEach(function (row) {
-      var nama = row[0], warna = row[1] || '#555', arti = row[2] || '';
+      var nama = row[0], warna = row[1] || '#555', arti = row[2] || '', no = row[3] || '';
+      var body = [
+        h('span', { class: 'code-name', style: 'color:' + warna, text: nama }),
+        h('p', { class: 'code-arti', text: arti })
+      ];
+      if (no) {
+        body.push(h('a', {
+          class: 'code-no', href: 'tel:' + no, style: 'background:' + warna,
+          title: labelNo + ' ' + nama
+        }, [
+          h('span', { class: 'code-no-ico', 'aria-hidden': 'true', text: '☎' }),
+          h('span', { class: 'code-no-lbl', text: labelNo + ': ' }),
+          h('strong', { text: no })
+        ]));
+      }
       list.appendChild(h('div', { class: 'code-item' }, [
         h('span', { class: 'code-dot', style: 'background:' + warna, 'aria-hidden': 'true' }),
-        h('div', { class: 'code-body' }, [
-          h('span', { class: 'code-name', style: 'color:' + warna, text: nama }),
-          h('p', { class: 'code-arti', text: arti })
-        ])
+        h('div', { class: 'code-body' }, body)
       ]));
     });
     app.appendChild(list);
@@ -759,7 +771,9 @@
 
     var ke = DATA.kodeEmergensi || {};
     (ke.kode || []).forEach(function (row) {
-      SEARCH_INDEX.push({ text: row[0] + ' — ' + (row[2] || ''), badge: 'Kode', where: 'Referensi cepat · Kode Emergensi', href: '#/emergensi' });
+      var t = row[0] + ' — ' + (row[2] || '');
+      if (row[3]) t += ' (No. penting: ' + row[3] + ')';
+      SEARCH_INDEX.push({ text: t, badge: 'Kode', where: 'Referensi cepat · Kode Emergensi', href: '#/emergensi' });
     });
     var ct = DATA.cuciTangan || {};
     (ct.limaMomen || []).forEach(function (row, i) {

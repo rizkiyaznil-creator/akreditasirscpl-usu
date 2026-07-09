@@ -182,6 +182,10 @@ ul.clean li{margin:.35rem 0}
 .code-body{min-width:0}
 .code-name{font-weight:800; font-size:.98rem; letter-spacing:.01em}
 .code-arti{margin:.15rem 0 0; font-size:.86rem; color:var(--ink)}
+.code-no{display:inline-flex; align-items:baseline; gap:.35rem; margin-top:.5rem; padding:.28rem .6rem; border-radius:999px; color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.02em}
+.code-no:hover{filter:brightness(1.06)}
+.code-no-ico{align-self:center; font-size:.9rem}
+.code-no strong{font-size:1rem; letter-spacing:.06em}
 
 /* ---------- Kebersihan Tangan ---------- */
 .poster-wrap{margin:0 0 1.4rem; text-align:center}
