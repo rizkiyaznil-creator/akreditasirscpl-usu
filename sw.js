@@ -3,7 +3,7 @@
    - content.json: network-first (agar update konten cepat terlihat), fallback cache saat offline.
    - Aset shell lain: cache-first dengan pembaruan latar (stale-while-revalidate ringan).
    Naikkan CACHE_VERSION saat mengubah aset agar cache lama tergantikan. */
-var CACHE_VERSION = 'handbook-rs-v27';
+var CACHE_VERSION = 'handbook-rs-v28';
 var SHELL = [
   './',
   './index.html',
