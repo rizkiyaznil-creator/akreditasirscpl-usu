@@ -37,6 +37,9 @@
   },
   "cuciTangan": {
     "catatan": "Mengacu pada 6 Langkah Cuci Tangan Kemenkes RI (GERMAS). Biasakan cuci tangan pakai sabun dengan air mengalir ± 40–60 detik; handrub berbasis alkohol 20–30 detik.",
+    "poster": "assets/handwash/poster-cuci-tangan-kemenkes.jpg",
+    "posterJudul": "Biasakan Cuci Tangan Pakai Sabun — 6 Langkah Cuci Tangan",
+    "posterKredit": "Sumber: Kementerian Kesehatan RI (GERMAS) / Farmalkes",
     "enamLangkah": [
       ["Bersihkan tangan, gosok sabun pada kedua telapak dengan arah memutar.", "Ratakan sabun pada kedua telapak tangan dengan gerakan memutar."],
       ["Gosok juga kedua punggung tangan secara bergantian.", "Telapak tangan menggosok punggung tangan lainnya, lakukan bergantian."],
