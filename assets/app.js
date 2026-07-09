@@ -568,6 +568,23 @@
       app.appendChild(h('p', { class: 'note callout', text: c.catatan }));
     }
 
+    // Poster resmi (opsional). Tampil bila berkasnya tersedia; jika tidak,
+    // figure disembunyikan otomatis dan panduan langkah di bawah tetap tampil.
+    if (c.poster) {
+      var pImg = h('img', {
+        class: 'poster-img',
+        src: c.poster,
+        alt: 'Poster ' + (c.posterJudul || '6 Langkah Cuci Tangan') + ' — ' + (c.posterKredit || 'Kementerian Kesehatan RI'),
+        loading: 'lazy'
+      });
+      var pFig = h('figure', { class: 'poster-wrap' }, [
+        pImg,
+        h('figcaption', { class: 'poster-kredit', text: c.posterKredit || 'Sumber: Kementerian Kesehatan RI (GERMAS)' })
+      ]);
+      pImg.addEventListener('error', function () { pFig.style.display = 'none'; });
+      app.appendChild(pFig);
+    }
+
     // Enam langkah dengan ilustrasi
     app.appendChild(h('h2', { class: 'section-title', text: 'Enam langkah kebersihan tangan' }));
     var steps = h('div', { class: 'wash-grid' });
