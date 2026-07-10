@@ -600,22 +600,25 @@
     // Lima momen
     app.appendChild(h('h2', { class: 'section-title', text: 'Lima momen kebersihan tangan' }));
 
-    // Daftar teks (selalu tampil, ikut pencarian & cetak)
-    var olMomen = h('ol', { class: 'momen-list' });
-    (c.limaMomen || []).forEach(function (row) {
-      var judul = Array.isArray(row) ? row[0] : row;
-      var teks = Array.isArray(row) ? (row[1] || '') : '';
-      olMomen.appendChild(h('li', {}, [
-        h('strong', { text: judul }),
-        teks ? h('span', { class: 'momen-why', text: teks }) : null
-      ]));
-    });
-
-    // Diagram cadangan (SVG orisinal) bila poster momen tidak tersedia
-    function momenDiagramFallback() {
-      return h('figure', { class: 'momen-img-solo' }, [
+    // Cadangan: diagram SVG orisinal + daftar teks momen. Dipakai saat
+    // poster WHO tidak tersedia (atau gagal dimuat). Saat poster tampil,
+    // teks KAPAN/MENGAPA sudah termuat di dalam poster sehingga tak diulang.
+    function momenFallbackNodes() {
+      var frag = document.createDocumentFragment();
+      frag.appendChild(h('figure', { class: 'momen-img-solo' }, [
         h('img', { src: 'assets/handwash/moments.svg', alt: 'Diagram lima momen kebersihan tangan di sekitar pasien', loading: 'lazy' })
-      ]);
+      ]));
+      var olMomen = h('ol', { class: 'momen-list' });
+      (c.limaMomen || []).forEach(function (row) {
+        var judul = Array.isArray(row) ? row[0] : row;
+        var teks = Array.isArray(row) ? (row[1] || '') : '';
+        olMomen.appendChild(h('li', {}, [
+          h('strong', { text: judul }),
+          teks ? h('span', { class: 'momen-why', text: teks }) : null
+        ]));
+      });
+      frag.appendChild(olMomen);
+      return frag;
     }
 
     if (c.momenPoster) {
@@ -629,13 +632,15 @@
         mImg,
         h('figcaption', { class: 'poster-kredit', text: c.momenKredit || 'Sumber: World Health Organization (WHO)' })
       ]);
-      // Bila berkas poster momen belum ada, jatuh ke diagram SVG.
-      mImg.addEventListener('error', function () { mFig.replaceWith(momenDiagramFallback()); });
+      // Bila berkas poster momen gagal dimuat, jatuh ke diagram + daftar teks.
+      mImg.addEventListener('error', function () {
+        mFig.parentNode.insertBefore(momenFallbackNodes(), mFig);
+        mFig.remove();
+      });
       app.appendChild(mFig);
     } else {
-      app.appendChild(momenDiagramFallback());
+      app.appendChild(momenFallbackNodes());
     }
-    app.appendChild(olMomen);
 
     document.title = 'Kebersihan Tangan — Handbook Akreditasi RS';
     window.scrollTo(0, 0);
