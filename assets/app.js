@@ -63,6 +63,11 @@
   /* ---------- Footer disclaimer (di tiap halaman) ---------- */
   function renderFooter() {
     clear(footer);
+    footer.appendChild(h('p', { class: 'tagline' }, [
+      h('strong', { text: 'RSP CPL USU' }),
+      ' — Quality, Safety and Friendly Hospital',
+      h('span', { class: 'motto', text: 'The Era of Ultimate Excellence' })
+    ]));
     footer.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), DATA.sumber]));
     footer.appendChild(h('p', { text: DATA.disclaimer }));
     footer.appendChild(h('p', { class: 'credit', text: 'Curated and Design by Muhammad Rizki Yaznil' }));
