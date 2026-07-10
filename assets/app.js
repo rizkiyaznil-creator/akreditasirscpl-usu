@@ -346,6 +346,36 @@
       return h('div', { class: 'card' }, [ul]);
     }
 
+    // Tab: KPI (opsional, mis. KPI DPJP)
+    function buildKPI() {
+      var k = p.kpi || {};
+      var frag = document.createDocumentFragment();
+      if (k.catatan) frag.appendChild(h('p', { class: 'note callout', text: k.catatan }));
+      var grid = h('div', { class: 'kpi-grid' });
+      (k.items || []).forEach(function (row) {
+        var icon = row[0], label = row[1], aspek = row[2], nilai = row[3], target = row[4], alasan = row[5] || [];
+        var ul = h('ul', { class: 'kpi-why' });
+        alasan.forEach(function (a) { ul.appendChild(h('li', { text: a })); });
+        grid.appendChild(h('div', { class: 'kpi-card' }, [
+          h('div', { class: 'kpi-head' }, [
+            h('span', { class: 'kpi-icon', 'aria-hidden': 'true', text: icon }),
+            h('span', { class: 'kpi-label', text: label })
+          ]),
+          h('div', { class: 'kpi-metric' }, [
+            aspek ? h('span', { class: 'kpi-aspek', text: aspek }) : null,
+            h('span', { class: 'kpi-nilai', text: nilai })
+          ]),
+          h('div', { class: 'kpi-target' }, [
+            h('span', { class: 'kpi-target-lbl', text: 'Target' }),
+            h('strong', { class: 'kpi-target-val', text: target })
+          ]),
+          ul
+        ]));
+      });
+      frag.appendChild(grid);
+      return frag;
+    }
+
     // Tab: Checklist (gabungan poin standar profesi)
     function buildChecklistTab() {
       var items = [];
@@ -356,12 +386,18 @@
       return buildChecklist(p.id, items, note);
     }
 
-    var tabsObj = buildTabs([
-      { id: 'kompetensi', label: 'Kompetensi & Poin Standar', build: buildKompetensi },
+    var tabDefs = [
+      { id: 'kompetensi', label: 'Kompetensi & Poin Standar', build: buildKompetensi }
+    ];
+    if (p.kpi && p.kpi.items && p.kpi.items.length) {
+      tabDefs.push({ id: 'kpi', label: (p.kpi.judul || 'KPI'), build: buildKPI });
+    }
+    tabDefs.push(
       { id: 'bukti', label: 'Bukti / Dokumen', build: buildBukti },
       { id: 'surveior', label: 'Pertanyaan Surveior', build: buildSurveior },
       { id: 'checklist', label: 'Checklist Self-Assessment', build: buildChecklistTab }
-    ]);
+    );
+    var tabsObj = buildTabs(tabDefs);
     app.appendChild(tabsObj.fragment);
     if (activeTab) selectTab(tabsObj, activeTab);
 
@@ -825,6 +861,13 @@
       (p.surveior || []).forEach(function (q) {
         SEARCH_INDEX.push({ text: stripQuotes(q), badge: 'Surveior', where: p.judul + ' · Pertanyaan surveior', href: base + '/surveior' });
       });
+      if (p.kpi && p.kpi.items) {
+        p.kpi.items.forEach(function (row) {
+          var t = row[1] + ' — ' + row[3] + ' (Target ' + row[4] + ')';
+          if (row[5] && row[5].length) t += '. ' + row[5].join('; ');
+          SEARCH_INDEX.push({ text: t, badge: 'KPI', where: p.judul + ' · ' + (p.kpi.judul || 'KPI'), href: base + '/kpi' });
+        });
+      }
     });
   }
 
