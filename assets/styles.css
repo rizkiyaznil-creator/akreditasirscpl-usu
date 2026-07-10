@@ -152,6 +152,22 @@ ul.clean li{margin:.35rem 0}
 .std-table td{padding:.4rem .5rem; border-bottom:1px solid var(--line); vertical-align:top}
 .std-table td:first-child{width:5.5rem; font-weight:700; color:var(--brand-ink)}
 
+/* ---------- KPI (mis. KPI DPJP) ---------- */
+.kpi-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:.9rem}
+.kpi-card{display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-top:4px solid #ea5330; border-radius:14px; padding:.9rem 1rem 1rem; box-shadow:var(--shadow)}
+.kpi-head{display:flex; align-items:center; gap:.55rem; margin-bottom:.6rem}
+.kpi-icon{flex:none; width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.15rem; background:linear-gradient(135deg,#fbe0d3,#f7c4ac)}
+.kpi-label{font-weight:800; font-size:1rem; color:var(--brand-ink); line-height:1.15}
+.kpi-metric{border-top:1px solid var(--line); padding-top:.5rem}
+.kpi-aspek{display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft)}
+.kpi-nilai{display:block; font-size:1.5rem; font-weight:800; color:var(--ink); line-height:1.15; margin-top:.05rem}
+.kpi-target{display:flex; align-items:baseline; gap:.5rem; margin:.55rem 0 .1rem}
+.kpi-target-lbl{font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft)}
+.kpi-target-val{font-size:1.7rem; font-weight:800; color:#e0431f; letter-spacing:.01em}
+.kpi-why{list-style:none; margin:.5rem 0 0; padding-top:.55rem; border-top:1px dashed var(--line); display:grid; gap:.35rem}
+.kpi-why li{position:relative; padding-left:.95rem; font-size:.82rem; color:var(--ink); line-height:1.35}
+.kpi-why li::before{content:''; position:absolute; left:0; top:.5em; width:6px; height:6px; border-radius:50%; background:#ea5330}
+
 /* ---------- Checklist ---------- */
 .note{font-size:.83rem; color:var(--ink-soft); background:#fbfaf5; border:1px solid #efe9d6; border-radius:8px; padding:.6rem .8rem; margin-bottom:.9rem}
 .check-item{display:flex; gap:.7rem; align-items:flex-start; padding:.7rem .3rem; border-bottom:1px solid var(--line)}

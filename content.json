@@ -2334,7 +2334,23 @@
         "\"Tunjukkan bukti Time Out pada laporan operasi pasien ini.\"",
         "\"Bagaimana proses pengambilan informed consent tindakan berisiko tinggi?\"",
         "\"Di mana Anda mendokumentasikan integrasi asuhan antar-PPA?\""
-      ]
+      ],
+      "kpi": {
+        "judul": "KPI DPJP",
+        "catatan": "Indikator Kinerja Utama (KPI) DPJP. Nilai target bersifat acuan — sesuaikan dengan kebijakan mutu resmi RSP CPL USU.",
+        "items": [
+          ["🛏️", "Visite Rawat Inap", "Sebelum pukul", "10.00", "≥85%", ["Mengurangi Length of Stay (LoS)", "Meningkatkan efisiensi BPJS", "Kepuasan pasien meningkat"]],
+          ["⏰", "Waktu Poliklinik", "Start poliklinik", "On-time", "≥90%", ["Waktu tunggu panjang → pasien cenderung tidak kembali", "RS pesaing sudah terstandar ketat"]],
+          ["📋", "Rekam Medis", "Kelengkapan", "1 x 24 jam", "≥95%", ["Rekam medis tidak lengkap = gagal klaim = pendapatan hilang", "Menjadi temuan kritikal akreditasi"]],
+          ["🧭", "Clinical Pathway", "Kepatuhan", "CP", "≥80%", ["Mengurangi LoS 15–25% sebagai dasar pengendalian biaya"]],
+          ["✍️", "Informed Consent", "Sebelum", "Tindakan", "100%", ["Kewajiban hukum (UU Kesehatan No. 17/2023)", "Menjaga reputasi RS"]],
+          ["💬", "Respons Konsul", "Respons", "Tepat waktu", "≥90%", ["Keterlambatan mengancam keselamatan pasien", "Memperpanjang LoS", "Mempengaruhi budaya kerja tim"]],
+          ["🔁", "Readmission", "Angka re-admission", "30 hari", "<5%", ["Readmission tinggi = indikator kualitas discharge buruk", "Untuk BPJS, readmisi dalam 30 hari dianggap satu episode"]],
+          ["💊", "Formularium", "Kepatuhan", "Resep", "≥95%", ["Resep di luar formularium = penyebab utama gagal klaim BPJS", "Penggunaan obat rasional menjaga beban biaya RS"]],
+          ["🧼", "Hand Hygiene", "WHO", "5 Moments", "≥85%", ["Role model bagi seluruh tim", "HAIs memperpanjang LoS rata-rata 5–7 hari"]],
+          ["👥", "MDT", "Partisipasi", "Teamwork", "≥80%", ["Rapat/joint conference sebagai sarana diskusi kasus keselamatan pasien", "Pengembangan Centre of Excellence"]]
+        ]
+      }
     },
     {
       "id": "PerawatBidan",
