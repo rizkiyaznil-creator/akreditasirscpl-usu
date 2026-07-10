@@ -41,6 +41,8 @@
     "poster": "assets/handwash/poster-cuci-tangan-kemenkes.jpg",
     "posterJudul": "Cara Mencuci Tangan dengan Benar?",
     "posterKredit": "Sumber: World Health Organization (WHO) — Keselamatan Pasien (SELAMATKAN NYAWA: Cuci Tangan Anda)",
+    "momenPoster": "assets/handwash/lima-momen-who.jpg",
+    "momenKredit": "Sumber: World Health Organization (WHO) — My 5 Moments for Hand Hygiene",
     "limaMomen": [
       ["Sebelum menyentuh pasien.", "Melindungi pasien dari kuman yang dibawa tangan petugas."],
       ["Sebelum tindakan aseptik.", "Melindungi pasien dari kuman (termasuk kumannya sendiri) yang masuk ke tubuh."],

@@ -191,14 +191,12 @@ ul.clean li{margin:.35rem 0}
 .poster-wrap{margin:0 0 1.4rem; text-align:center}
 .poster-img{display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow)}
 .poster-kredit{margin-top:.5rem; font-size:.78rem; color:var(--ink-soft)}
-.momen-wrap{display:grid; grid-template-columns:minmax(220px,320px) 1fr; gap:1.2rem; align-items:start; margin-bottom:1rem}
-.momen-img{background:#f6f2ea; border:1px solid var(--line); border-radius:12px; padding:.6rem}
-.momen-img img{display:block; width:100%; height:auto}
+.momen-img-solo{margin:0 auto 1.1rem; max-width:360px; background:#f6f2ea; border:1px solid var(--line); border-radius:12px; padding:.6rem}
+.momen-img-solo img{display:block; width:100%; height:auto}
 .momen-list{margin:0; padding-left:1.3rem; display:grid; gap:.6rem}
 .momen-list li{font-size:.92rem}
 .momen-list strong{color:var(--brand-ink)}
 .momen-why{display:block; font-size:.82rem; color:var(--ink-soft); margin-top:.1rem}
-@media (max-width:640px){ .momen-wrap{grid-template-columns:1fr} }
 
 /* ---------- Footer ---------- */
 .site-footer{border-top:1px solid var(--line); background:#eef1f4; color:var(--ink-soft); font-size:.8rem; margin-top:2rem}

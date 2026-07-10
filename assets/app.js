@@ -599,10 +599,8 @@
 
     // Lima momen
     app.appendChild(h('h2', { class: 'section-title', text: 'Lima momen kebersihan tangan' }));
-    var momenWrap = h('div', { class: 'momen-wrap' });
-    momenWrap.appendChild(h('div', { class: 'momen-img' }, [
-      h('img', { src: 'assets/handwash/moments.svg', alt: 'Diagram lima momen kebersihan tangan di sekitar pasien', loading: 'lazy' })
-    ]));
+
+    // Daftar teks (selalu tampil, ikut pencarian & cetak)
     var olMomen = h('ol', { class: 'momen-list' });
     (c.limaMomen || []).forEach(function (row) {
       var judul = Array.isArray(row) ? row[0] : row;
@@ -612,8 +610,32 @@
         teks ? h('span', { class: 'momen-why', text: teks }) : null
       ]));
     });
-    momenWrap.appendChild(olMomen);
-    app.appendChild(momenWrap);
+
+    // Diagram cadangan (SVG orisinal) bila poster momen tidak tersedia
+    function momenDiagramFallback() {
+      return h('figure', { class: 'momen-img-solo' }, [
+        h('img', { src: 'assets/handwash/moments.svg', alt: 'Diagram lima momen kebersihan tangan di sekitar pasien', loading: 'lazy' })
+      ]);
+    }
+
+    if (c.momenPoster) {
+      var mImg = h('img', {
+        class: 'poster-img',
+        src: c.momenPoster,
+        alt: 'Poster lima momen kebersihan tangan — ' + (c.momenKredit || 'World Health Organization (WHO)'),
+        loading: 'lazy'
+      });
+      var mFig = h('figure', { class: 'poster-wrap' }, [
+        mImg,
+        h('figcaption', { class: 'poster-kredit', text: c.momenKredit || 'Sumber: World Health Organization (WHO)' })
+      ]);
+      // Bila berkas poster momen belum ada, jatuh ke diagram SVG.
+      mImg.addEventListener('error', function () { mFig.replaceWith(momenDiagramFallback()); });
+      app.appendChild(mFig);
+    } else {
+      app.appendChild(momenDiagramFallback());
+    }
+    app.appendChild(olMomen);
 
     document.title = 'Kebersihan Tangan — Handbook Akreditasi RS';
     window.scrollTo(0, 0);
