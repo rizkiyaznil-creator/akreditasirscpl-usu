@@ -65,7 +65,11 @@
     clear(footer);
     footer.appendChild(h('p', { class: 'tagline' }, [
       h('strong', { text: 'RSP CPL USU' }),
-      ' — Quality, Safety and Friendly Hospital',
+      ' — ',
+      h('span', {
+        class: 'moto-caret',
+        title: 'Compassion · Academic Excellence · Responsibility · Excellence through Innovation · Safety First · Teamwork & Trust'
+      }, ['Moto CAREST']),
       h('span', { class: 'motto', text: 'The Era of Ultimate Excellence' })
     ]));
     footer.appendChild(h('p', {}, [h('strong', { text: 'Sumber: ' }), DATA.sumber]));
