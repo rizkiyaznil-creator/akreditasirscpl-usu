@@ -288,6 +288,12 @@
         h('p', { text: 'Peta per-bab: pernyataan tiap standar (TKRS, KPS, SKP, PKPO, dll) beserta metode pembuktian R–D–O–W–S.' })
       ]));
     }
+    if (DATA.mutuRisiko && (DATA.mutuRisiko.units || []).length) {
+      grid2.appendChild(h('a', { class: 'pcard', href: '#/mutu' }, [
+        h('h3', { text: 'Mutu & Risiko Unit' }),
+        h('p', { text: 'Indikator Mutu (IMUT) dan Risk Register tiap unit — ' + DATA.mutuRisiko.units.length + ' unit, dengan skor & band risiko.' })
+      ]));
+    }
     app.appendChild(grid2);
 
     document.title = 'Handbook Kesiapan Akreditasi RS — RSP CPL USU';
@@ -691,6 +697,227 @@
     window.scrollTo(0, 0);
   }
 
+  /* ---------- Mutu & Risiko Unit (IMUT + Risk Register) ---------- */
+  function findMutuUnit(id) {
+    var m = DATA.mutuRisiko || {};
+    return (m.units || []).filter(function (u) { return u.id === id; })[0] || null;
+  }
+  // Band risiko dari skor (skor = dampak x frekuensi, 1-25)
+  function riskBand(skor) {
+    var s = Number(skor) || 0;
+    if (s >= 15) return { key: 'ekstrem', label: 'Sangat tinggi' };
+    if (s >= 8) return { key: 'tinggi', label: 'Tinggi' };
+    if (s >= 4) return { key: 'sedang', label: 'Sedang' };
+    return { key: 'rendah', label: 'Rendah' };
+  }
+  function skorChip(skor) {
+    var b = riskBand(skor);
+    return h('span', { class: 'skor-chip skor-' + b.key, title: b.label, text: (skor == null ? '–' : String(skor)) });
+  }
+  // Badge kategori indikator (INM / IMP-RS / IMP-U)
+  function katKelas(kat) {
+    var k = String(kat || '').toUpperCase();
+    if (k.indexOf('NASIONAL') !== -1 || k.indexOf('INM') !== -1) return { c: 'inm', t: 'INM' };
+    if (k.indexOf('IMP-RS') !== -1 || k.indexOf('PRIORITAS RS') !== -1) return { c: 'imprs', t: 'IMP-RS' };
+    if (k.indexOf('IMP-U') !== -1 || k.indexOf('PRIORITAS UNIT') !== -1) return { c: 'impu', t: 'IMP-U' };
+    return { c: 'lain', t: kat || '-' };
+  }
+
+  function viewMutuIndex() {
+    var m = DATA.mutuRisiko || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Mutu & Risiko Unit' }]));
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: m.judul || 'Indikator Mutu & Risk Register per Unit' }),
+        printIconBtn('Cetak daftar unit')
+      ]),
+      h('p', { class: 'ruang', text: 'Tiap unit dapat membuka halamannya untuk melihat Indikator Mutu (IMUT) dan Risk Register masing-masing.' }),
+      h('div', { class: 'head-actions' }, [
+        h('a', { class: 'btn', href: '#/' }, ['← Beranda']),
+        h('a', { class: 'btn', href: '#/mutu/_ref' }, ['Referensi: Skala, Band & IKP'])
+      ])
+    ]));
+    if (m.catatan) app.appendChild(h('p', { class: 'note callout', text: m.catatan }));
+
+    var grid = h('div', { class: 'grid' });
+    (m.units || []).forEach(function (u) {
+      var nInd = (u.indikator || []).length;
+      var nRisk = (u.risikoDetail || u.risiko || []).length;
+      var meta = [];
+      meta.push(h('span', { class: 'chip', text: nInd + ' indikator' }));
+      meta.push(h('span', { class: 'chip', text: nRisk + ' risiko' }));
+      if (u.detailKode) meta.push(h('span', { class: 'chip chip-ok', text: 'risk detail' }));
+      grid.appendChild(h('a', { class: 'pcard', href: '#/mutu/' + encodeURIComponent(u.id) }, [
+        h('h3', { text: u.nama }),
+        u.pj ? h('p', { class: 'mutu-pj', text: 'PJ: ' + u.pj }) : null,
+        h('div', { class: 'chips' }, meta)
+      ]));
+    });
+    app.appendChild(grid);
+
+    document.title = 'Mutu & Risiko Unit — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  function viewMutuRef() {
+    var m = DATA.mutuRisiko || {};
+    clear(app);
+    app.appendChild(crumbs([{ label: 'Beranda', href: '#/' }, { label: 'Mutu & Risiko Unit', href: '#/mutu' }, { label: 'Referensi' }]));
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: 'Referensi: Skala, Band Risiko & Jenis IKP' }),
+        printIconBtn('Cetak referensi')
+      ]),
+      h('div', { class: 'head-actions' }, [h('a', { class: 'btn', href: '#/mutu' }, ['← Daftar unit'])])
+    ]));
+
+    // Skala penilaian
+    var sk = m.skala || {};
+    var skCard = h('div', { class: 'card' }, [h('h2', { text: 'Skala penilaian' })]);
+    function skalaRow(label, arr) {
+      var tr = h('tr', {}, [h('td', {}, [h('strong', { text: label })])]);
+      for (var i = 0; i < 5; i++) tr.appendChild(h('td', { text: (arr && arr[i]) ? (i + 1) + '. ' + arr[i] : '' }));
+      return tr;
+    }
+    var skTable = h('table', { class: 'std-table mutu-skala' }, [h('tbody', {}, [
+      h('tr', {}, [h('td', { text: 'Nilai' }), h('td', { text: '1' }), h('td', { text: '2' }), h('td', { text: '3' }), h('td', { text: '4' }), h('td', { text: '5' })]),
+      skalaRow('Dampak', sk.dampak),
+      skalaRow('Frekuensi', sk.frekuensi),
+      skalaRow('Pengontrolan', sk.pengontrolan)
+    ])]);
+    skCard.appendChild(h('div', { class: 'table-wrap' }, [skTable]));
+    skCard.appendChild(h('p', { class: 'fine', text: 'Skor Risiko = Dampak × Frekuensi (1–25). Ranking Risiko = Skor Risiko × Pengontrolan.' }));
+    app.appendChild(skCard);
+
+    // Band risiko (matrix grading) + korelasi warna skor
+    var bandCard = h('div', { class: 'card' }, [h('h2', { text: 'Band / Matrix Grading Risiko' })]);
+    var bl = h('div', { class: 'band-legend' });
+    [['rendah', 'Rendah (skor 1–3)'], ['sedang', 'Sedang (4–6)'], ['tinggi', 'Tinggi (8–12)'], ['ekstrem', 'Sangat tinggi (15–25)']].forEach(function (p) {
+      bl.appendChild(h('span', { class: 'band-item' }, [h('span', { class: 'skor-chip skor-' + p[0], text: ' ' }), p[1]]));
+    });
+    bandCard.appendChild(bl);
+    var bt = h('table', { class: 'std-table' }, [h('tbody', {})]);
+    (m.band || []).forEach(function (r) {
+      bt.querySelector('tbody').appendChild(h('tr', {}, [
+        h('td', {}, [h('strong', { text: r[0] })]), h('td', { text: r[1] }), h('td', { text: r[2] })
+      ]));
+    });
+    bandCard.appendChild(h('div', { class: 'table-wrap' }, [bt]));
+    app.appendChild(bandCard);
+
+    // Jenis IKP
+    var ikpCard = h('div', { class: 'card' }, [h('h2', { text: 'Jenis Insiden Keselamatan Pasien (IKP)' })]);
+    var it = h('table', { class: 'std-table' }, [h('tbody', {})]);
+    (m.ikp || []).forEach(function (r) {
+      it.querySelector('tbody').appendChild(h('tr', {}, [
+        h('td', {}, [h('span', { class: 'kat-badge kat-imprs', text: r[0] })]),
+        h('td', {}, [h('strong', { text: r[1] })]),
+        h('td', { text: r[2] })
+      ]));
+    });
+    ikpCard.appendChild(h('div', { class: 'table-wrap' }, [it]));
+    app.appendChild(ikpCard);
+
+    document.title = 'Referensi Mutu & Risiko — Handbook Akreditasi RS';
+    window.scrollTo(0, 0);
+  }
+
+  function viewMutuDetail(id) {
+    var u = findMutuUnit(id);
+    if (!u) { viewNotFound('Unit tidak ditemukan.'); return; }
+    clear(app);
+    app.appendChild(crumbs([
+      { label: 'Beranda', href: '#/' },
+      { label: 'Mutu & Risiko Unit', href: '#/mutu' },
+      { label: u.nama }
+    ]));
+    app.appendChild(h('section', { class: 'profile-head' }, [
+      h('div', { class: 'head-top' }, [
+        h('h1', { text: u.nama }),
+        printIconBtn('Cetak mutu & risiko unit ini')
+      ]),
+      u.pj ? h('p', { class: 'ruang', text: 'Penanggung jawab: ' + u.pj }) : null,
+      h('div', { class: 'head-actions' }, [
+        h('a', { class: 'btn', href: '#/mutu' }, ['← Daftar unit']),
+        h('a', { class: 'btn', href: '#/mutu/_ref' }, ['Skala & Band'])
+      ])
+    ]));
+
+    // Indikator Mutu
+    app.appendChild(h('h2', { class: 'section-title', text: 'Indikator Mutu (IMUT)' }));
+    if ((u.indikator || []).length) {
+      var it = h('table', { class: 'std-table mutu-ind' }, [
+        h('thead', {}, [h('tr', {}, [
+          h('th', { text: 'Kategori' }), h('th', { text: 'Judul Indikator' }), h('th', { class: 'col-target', text: 'Target' })
+        ])]),
+        h('tbody', {})
+      ]);
+      var itb = it.querySelector('tbody');
+      u.indikator.forEach(function (r) {
+        var kk = katKelas(r[0]);
+        itb.appendChild(h('tr', {}, [
+          h('td', {}, [h('span', { class: 'kat-badge kat-' + kk.c, title: r[0], text: kk.t })]),
+          h('td', { text: r[1] }),
+          h('td', { class: 'col-target' }, [h('strong', { text: r[2] })])
+        ]));
+      });
+      app.appendChild(h('div', { class: 'table-wrap' }, [it]));
+    } else {
+      app.appendChild(h('p', { class: 'note', text: 'Belum ada indikator mutu untuk unit ini pada dokumen sumber.' }));
+    }
+
+    // Risk Register
+    app.appendChild(h('h2', { class: 'section-title', text: 'Risk Register' }));
+    var hasWarn = false;
+    if ((u.risikoDetail || []).length) {
+      var rt = h('table', { class: 'std-table risk-table' }, [
+        h('thead', {}, [h('tr', {}, [
+          h('th', { text: 'No' }), h('th', { text: 'Risiko' }), h('th', { text: 'Dampak' }),
+          h('th', { text: 'Frekuensi' }), h('th', { text: 'Skor' }), h('th', { text: 'Pengontrolan' }), h('th', { text: 'Ranking' })
+        ])]),
+        h('tbody', {})
+      ]);
+      var rtb = rt.querySelector('tbody');
+      u.risikoDetail.forEach(function (r, i) {
+        // [risiko, dampak, frekuensi, skor, pengontrolan, ranking, warn]
+        if (r[6]) hasWarn = true;
+        rtb.appendChild(h('tr', {}, [
+          h('td', { text: String(i + 1) }),
+          h('td', {}, [r[0], r[6] ? h('span', { class: 'warn-flag', title: 'Inkonsistensi skor/ranking pada file sumber', text: ' ⚠' }) : null]),
+          h('td', { text: r[1] }),
+          h('td', { text: r[2] }),
+          h('td', {}, [skorChip(r[3])]),
+          h('td', { text: r[4] }),
+          h('td', {}, [h('strong', { text: (r[5] == null ? '–' : String(r[5])) })])
+        ]));
+      });
+      app.appendChild(h('div', { class: 'table-wrap' }, [rt]));
+    } else if ((u.risiko || []).length) {
+      var st = h('table', { class: 'std-table risk-table' }, [
+        h('thead', {}, [h('tr', {}, [h('th', { text: 'No' }), h('th', { text: 'Risiko' }), h('th', { text: 'Skor' })])]),
+        h('tbody', {})
+      ]);
+      var stb = st.querySelector('tbody');
+      u.risiko.forEach(function (r, i) {
+        stb.appendChild(h('tr', {}, [
+          h('td', { text: String(i + 1) }),
+          h('td', { text: r[0] }),
+          h('td', {}, [skorChip(r[1])])
+        ]));
+      });
+      app.appendChild(h('div', { class: 'table-wrap' }, [st]));
+    } else {
+      app.appendChild(h('p', { class: 'note', text: 'Belum ada risk register untuk unit ini pada dokumen sumber.' }));
+    }
+    if (hasWarn) {
+      app.appendChild(h('p', { class: 'fine', text: '⚠ Baris ditandai: terdapat inkonsistensi skor/ranking pada file Excel sumber; nilai ditampilkan apa adanya.' }));
+    }
+
+    document.title = u.nama + ' — Mutu & Risiko Unit';
+    window.scrollTo(0, 0);
+  }
+
   /* ---------- Standar Rinci ---------- */
   function kodeSlug(kode) { return encodeURIComponent(kode); }
 
@@ -854,6 +1081,22 @@
       SEARCH_INDEX.push({ text: 'Momen ' + (i + 1) + ': ' + judul + (teks ? ' — ' + teks : ''), badge: '5 Momen', where: 'Referensi cepat · Kebersihan Tangan', href: '#/cuci-tangan' });
     });
 
+    var mr = DATA.mutuRisiko || {};
+    (mr.units || []).forEach(function (u) {
+      var href = '#/mutu/' + encodeURIComponent(u.id);
+      (u.indikator || []).forEach(function (r) {
+        SEARCH_INDEX.push({ text: r[1] + ' — target ' + r[2], badge: 'IMUT', where: u.nama + ' · Indikator Mutu', href: href });
+      });
+      (u.risikoDetail || []).forEach(function (r) {
+        SEARCH_INDEX.push({ text: r[0] + ' (skor ' + (r[3] == null ? '-' : r[3]) + ')', badge: 'Risiko', where: u.nama + ' · Risk Register', href: href });
+      });
+      if (!(u.risikoDetail || []).length) {
+        (u.risiko || []).forEach(function (r) {
+          SEARCH_INDEX.push({ text: r[0] + ' (skor ' + (r[1] == null ? '-' : r[1]) + ')', badge: 'Risiko', where: u.nama + ' · Risk Register', href: href });
+        });
+      }
+    });
+
     (DATA.profesi || []).forEach(function (p) {
       var base = '#/profesi/' + encodeURIComponent(p.id);
       (p.tugasInti || []).forEach(function (t) {
@@ -959,6 +1202,11 @@
     }
     if (parts[0] === 'emergensi') {
       return viewEmergensi();
+    }
+    if (parts[0] === 'mutu') {
+      if (parts[1] === '_ref') return viewMutuRef();
+      if (parts[1]) return viewMutuDetail(decodeURIComponent(parts[1]));
+      return viewMutuIndex();
     }
     if (parts[0] === 'cuci-tangan') {
       return viewCuciTangan();

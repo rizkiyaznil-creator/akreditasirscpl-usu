@@ -172,6 +172,31 @@ ul.clean li{margin:.35rem 0}
 .kpi-why li{position:relative; padding-left:.95rem; font-size:.82rem; color:var(--ink); line-height:1.35}
 .kpi-why li::before{content:''; position:absolute; left:0; top:.5em; width:6px; height:6px; border-radius:50%; background:#ea5330}
 
+/* ---------- Mutu & Risiko Unit ---------- */
+.chip-ok{background:var(--ok-soft); color:var(--ok); border-color:#c3e6cb}
+.mutu-pj{font-size:.8rem; color:var(--ink-soft); margin:.15rem 0 .4rem}
+.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:.4rem}
+.mutu-ind, .risk-table, .mutu-skala{width:100%; border-collapse:collapse; font-size:.88rem; min-width:520px}
+.mutu-ind th, .risk-table th, .mutu-skala th{text-align:left; padding:.45rem .55rem; border-bottom:2px solid var(--line); font-size:.78rem; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-soft); white-space:nowrap}
+.mutu-ind td, .risk-table td, .mutu-skala td{padding:.5rem .55rem; border-bottom:1px solid var(--line); vertical-align:top}
+.risk-table td:first-child{width:2.2rem; color:var(--ink-soft); text-align:right}
+.col-target{white-space:nowrap; text-align:right}
+.col-target strong{color:var(--brand-ink)}
+.kat-badge{display:inline-block; font-size:.7rem; font-weight:800; padding:.12rem .45rem; border-radius:999px; letter-spacing:.02em; white-space:nowrap; color:#fff}
+.kat-inm{background:#2f6fed}
+.kat-imprs{background:#7048e8}
+.kat-impu{background:#e0431f}
+.kat-lain{background:#868e96}
+.skor-chip{display:inline-block; min-width:1.9rem; text-align:center; font-weight:800; font-size:.82rem; padding:.12rem .4rem; border-radius:6px; color:#fff}
+.skor-rendah{background:#2f6fed}
+.skor-sedang{background:#2b8a3e}
+.skor-tinggi{background:#e8a900; color:#3a2c00}
+.skor-ekstrem{background:#e03131}
+.warn-flag{color:#e0431f; font-weight:700; cursor:help}
+.band-legend{display:flex; flex-wrap:wrap; gap:.6rem 1.1rem; margin:.2rem 0 .9rem}
+.band-item{display:inline-flex; align-items:center; gap:.4rem; font-size:.83rem}
+.band-item .skor-chip{min-width:1.1rem}
+
 /* ---------- Checklist ---------- */
 .note{font-size:.83rem; color:var(--ink-soft); background:#fbfaf5; border:1px solid #efe9d6; border-radius:8px; padding:.6rem .8rem; margin-bottom:.9rem}
 .check-item{display:flex; gap:.7rem; align-items:flex-start; padding:.7rem .3rem; border-bottom:1px solid var(--line)}
