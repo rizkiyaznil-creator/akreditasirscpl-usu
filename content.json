@@ -51,6 +51,4197 @@
       ["Setelah menyentuh lingkungan sekitar pasien.", "Melindungi petugas & lingkungan dari kuman pasien meski tidak menyentuh pasien."]
     ]
   },
+  "mutuRisiko": {
+    "judul": "Indikator Mutu (IMUT) & Risk Register per Unit",
+    "sumber": "IMUT Ruangan & Daftar Risiko 2026 — RS Pendidikan Prof. dr. Chairuddin P. Lubis USU",
+    "catatan": "Data disarikan dari dokumen internal RS. Risk register menampilkan versi detail (Daftar Risiko 2026) bila tersedia; jika tidak, versi ringkas dari IMUT. Beberapa inkonsistensi skor/ranking pada file Excel asal ditandai (⚠) dan ditampilkan apa adanya — perbaikan dilakukan pada file sumber.",
+    "skala": {
+      "dampak": [
+        "Sangat Ringan",
+        "Ringan",
+        "Sedang",
+        "Berat",
+        "Sangat Berat"
+      ],
+      "frekuensi": [
+        "Sangat Jarang",
+        "Jarang",
+        "Sedang",
+        "Sering",
+        "Sangat Sering"
+      ],
+      "pengontrolan": [
+        "Sulit",
+        "Agak Sulit",
+        "Agak Mudah",
+        "Mudah"
+      ]
+    },
+    "band": [
+      [
+        "BIRU",
+        "Low (rendah)",
+        "Risiko rendah, dilakukan investigasi sederhana paling lama 1minggu diselesaikan dengan prosedur rutin"
+      ],
+      [
+        "HIJAU",
+        "Moderate (sedang)",
+        "Risiko sedang, dilakukan investigasi sederhana paling lama 2 minggu. Manajer / Pimpinan Klinis sebaiknya menilai dampak terhadap biaya dan kelola risiko"
+      ],
+      [
+        "KUNING",
+        "High (tinggi)",
+        "Risiko tinggi, dilakukan RCA paling lama 45 hari Kaji dengan detil & perlu tindakan segera serta membutuhkan perhatian top manajemen"
+      ],
+      [
+        "MERAH",
+        "Extreme (sangat tinggi)",
+        "Risiko ekstrim, dilakukan RCA paling lama 45 hari membutuhkan tindakan segera, perhatian sampai ke Direktur"
+      ]
+    ],
+    "ikp": [
+      [
+        "KPCS",
+        "Kondisi Potensial Cedera Signifikan",
+        "Situasi yang berpotensi menimbulkan cedera, tetapi belum terjadi insiden atau paparan pada pasien"
+      ],
+      [
+        "KNC",
+        "Kejadian Nyaris Cedera",
+        "Insiden yang sudah berpotensi membahayakan, tetapi berhasil dicegah sebelum mencapai pasien"
+      ],
+      [
+        "KTC",
+        "Kejadian Tidak Cedera",
+        "Insiden yang sudah terjadi dan mengenai pasien, tetapi tidak menimbulkan dampak atau cedera"
+      ],
+      [
+        "KTD",
+        "Kejadian Tidak Diharapkan",
+        "Insiden yang mengakibatkan cedera pada pasien akibat suatu tindakan atau kelalaian, bukan karena penyakit"
+      ],
+      [
+        "SENTINEL",
+        "Kejadian Sentinel",
+        "Insiden sangat serius yang mengakibatkan kematian, kecacatan permanen, atau cedera berat"
+      ]
+    ],
+    "units": [
+      {
+        "id": "rawat-inap-cendana-zaitun",
+        "nama": "RAWAT INAP (CENDANA –ZAITUN)",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            10
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            8
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            10
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            12
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            10
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            8
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            6
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            9
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            25
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            25
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            8
+          ],
+          [
+            "Plafon rusak dan bocor",
+            25
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "Ranap",
+        "risikoDetail": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            36,
+            false
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            "2 (Ringan)",
+            "4 (Sering)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Plafon rusak dan bocor",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "1 (Sulit)",
+            25,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rawat-inap-mahoni",
+        "nama": "RAWAT INAP (MAHONI)",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            10
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            8
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            10
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            12
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            10
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            8
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            6
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            9
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            25
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            25
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            8
+          ],
+          [
+            "Plafon rusak dan bocor",
+            25
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "Ranap",
+        "risikoDetail": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            36,
+            false
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            "2 (Ringan)",
+            "4 (Sering)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Plafon rusak dan bocor",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "1 (Sulit)",
+            25,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rawat-inap-meranti",
+        "nama": "RAWAT INAP (MERANTI)",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            10
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            8
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            10
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            12
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            10
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            8
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            6
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            9
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            25
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            25
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            8
+          ],
+          [
+            "Plafon rusak dan bocor",
+            25
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "Ranap",
+        "risikoDetail": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            36,
+            false
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            "2 (Ringan)",
+            "4 (Sering)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Plafon rusak dan bocor",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "1 (Sulit)",
+            25,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rawat-inap-anak",
+        "nama": "RAWAT INAP (ANAK)",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            10
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            8
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            10
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            12
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            10
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            8
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            6
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            9
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            25
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            25
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            8
+          ],
+          [
+            "Plafon rusak dan bocor",
+            25
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "Ranap",
+        "risikoDetail": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            36,
+            false
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            "2 (Ringan)",
+            "4 (Sering)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Plafon rusak dan bocor",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "1 (Sulit)",
+            25,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rawat-inap-maternitas",
+        "nama": "RAWAT INAP (MATERNITAS)",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Identifikasi Pasien di Ruang Maternitas",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh di Ruang Maternitas",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            10
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            8
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            10
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            12
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            10
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            8
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            6
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            9
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            25
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            25
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            8
+          ],
+          [
+            "Plafon rusak dan bocor",
+            25
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "Ranap",
+        "risikoDetail": [
+          [
+            "Pasien Jatuh: Terjadi akibat lantai licin, pengaman tempat tidur tidak terpasang, atau kondisi fisik pasien lemah/pusing.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi: Salah pasien saat tindakan, pemberian obat, atau pengambilan sampel laboratorium.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Infeksi Nosokomial (HAIs): Infeksi yang didapat selama dirawat, sering kali akibat infeksi saluran kemih (kateter) atau infeksi luka operasi.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Phlebitis: Peradangan vena akibat pemasangan infus yang tidak sesuai SOP",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Tertusuk Jarum/Benda Tajam: Resiko penularan penyakit bagi perawat atau tenaga medis lain.",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Ketidakpatuhan APD & Cuci Tangan: Meningkatkan resiko infeksi silang.",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Kelelahan Petugas (Burnout): Risiko petugas kelelahan akibat beban kerja tinggi yang berpotensi meningkatkan human error.",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Alat seperti pulse oxymetry atau pompa infus tidak berfungsi saat dibutuhkan. Baterai tensimeter habis dan tidak tersedia. Termometer tidak tersedia.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            36,
+            false
+          ],
+          [
+            "Stok obat farmasi di sistem periksa.id kosong",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Hasil pemeriksaan radiologi lebih dari 24 jam",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "2 (Agak Sulit)",
+            50,
+            false
+          ],
+          [
+            "Pengunjung pasien yang tidak terkontrol",
+            "2 (Ringan)",
+            "4 (Sering)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Plafon rusak dan bocor",
+            "5 (Sangat Berat)",
+            "5 (Sangat Sering)",
+            25,
+            "1 (Sulit)",
+            25,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "icu",
+        "nama": "ICU",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelegkapan Pengisian Resume Medis Sebelum Pasien Keluar dari ICU",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Rata-rata Pasien yang Kembali ke ICU dengan Kasus yang Sama < 72 jam",
+            "< 3%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Kasus Baru Pasien Decubitus Selama Dirawat di Ruang ICU",
+            "< 3%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Risiko malfungsi ventilator",
+            6
+          ],
+          [
+            "Risiko infeksi silang ke petugas/perawat karena APD kurang",
+            12
+          ],
+          [
+            "Risiko keletihan karena jumlah perawat ICU kurang",
+            4
+          ],
+          [
+            "Infeksi nosokomial",
+            8
+          ],
+          [
+            "Pasien jatuh",
+            5
+          ],
+          [
+            "Kesalahan pemberian obat",
+            5
+          ],
+          [
+            "Stok obat-obatan emergency kurang",
+            8
+          ],
+          [
+            "Ketidakpatuhan jam besuk untuk pengunjung",
+            9
+          ]
+        ],
+        "pj": "dr. Ester Lantika Ronauli Silaen, Sp. An-TI, Subsp. TI (K)/Rodearni Sihotang, S. Kep., Ners",
+        "detailKode": "ICU",
+        "risikoDetail": [
+          [
+            "Risiko malfungsi ventilator",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Risiko infeksi silang ke petugas/perawat karena APD kurang",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Risiko keletihan karena jumlah perawat ICU kurang",
+            "4 (Berat)",
+            "2 (Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            true
+          ],
+          [
+            "Infeksi nosokomial",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Pasien jatuh",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Kesalahan pemberian obat",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Stok obat-obatan emergency kurang",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Ketidakpatuhan jam besuk untuk pengunjung",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "picu",
+        "nama": "PICU",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelegkapan Pengisian Asesmen Awal Keperawatan < 24 jam",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Rata-rata Pasien yang Kembali ke ICU dengan Kasus yang Sama < 72 jam",
+            "< 3%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Pasien jatuh",
+            8
+          ],
+          [
+            "Risiko hipotermia",
+            8
+          ],
+          [
+            "Infeksi nosokomial",
+            15
+          ],
+          [
+            "Risiko sepsis",
+            15
+          ],
+          [
+            "Risiko phlebitis",
+            9
+          ],
+          [
+            "Risiko malfungsi ventilator",
+            8
+          ],
+          [
+            "Risiko kelelahan petugas karena kurangnya SDM",
+            9
+          ]
+        ],
+        "pj": "dr. Badai Buana Nasution, M. Ked(Ped), Sp. A(K)",
+        "detailKode": "PICU",
+        "risikoDetail": [
+          [
+            "Pasien jatuh",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Risiko hipotermia",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Infeksi nosokomial",
+            "5 (Sangat Berat)",
+            "3 (Sedang)",
+            15,
+            "3 (Agak Mudah)",
+            45,
+            false
+          ],
+          [
+            "Risiko sepsis",
+            "5 (Sangat Berat)",
+            "3 (Sedang)",
+            15,
+            "2 (Agak Sulit)",
+            30,
+            false
+          ],
+          [
+            "Risiko phlebitis",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Risiko malfungsi ventilator",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Risiko kelelahan petugas karena kurangnya SDM",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "nicu",
+        "nama": "NICU",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Ketepatan Waktu Visite Dokter Spesialis",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Pemahaman PPDS Stase NICU Terkait Resusitasi Bayi Kurang Bulan (NKB)",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Angka Kejadian Pulang Sebelum Dinyatakan Sembuh (Pulang Atas Permintaan Sendiri)",
+            "≤2%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Keberhasilan Perawatan Bayi dengan BBLR (BBL 1500 gr - 2500 gr)",
+            ">80%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Malfungsi alat-alat medis seperti CPAP, inkubator, dan ventilator",
+            10
+          ],
+          [
+            "Pasien jatuh",
+            5
+          ],
+          [
+            "Pasien hipotermi",
+            12
+          ],
+          [
+            "Pasien mengalami sepsis",
+            20
+          ],
+          [
+            "Pasien terkena infeksi nosokomial",
+            8
+          ],
+          [
+            "Intoleransi diet",
+            3
+          ],
+          [
+            "Risiko kelelahan petugas karena kurangnya SDM",
+            6
+          ]
+        ],
+        "pj": "Dr. dr. Syamsidah Lubis, M. Ked(Ped), Sp. A(K)/Fitriani Ekayanti Hasibuan, S. Kep., Ners",
+        "detailKode": "NICU",
+        "risikoDetail": [
+          [
+            "Malfungsi alat-alat medis seperti CPAP, inkubator, dan ventilator",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Pasien jatuh",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Pasien hipotermi",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Pasien mengalami sepsis",
+            "5 (Sangat Berat)",
+            "4 (Sering)",
+            20,
+            "3 (Agak Mudah)",
+            60,
+            false
+          ],
+          [
+            "Pasien terkena infeksi nosokomial",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Intoleransi diet",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ],
+          [
+            "Risiko kelelahan petugas karena kurangnya SDM",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "cathlab",
+        "nama": "CATHLAB",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Petugas Menggunakan APD Anti Radiasi di Cathlab",
+            "≥90%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Terpapar radiasi dari alat C-Arm",
+            12
+          ],
+          [
+            "Komplikasi medis terkait tindakan Angiografi Coroner/PCI",
+            3
+          ],
+          [
+            "Proses transfer pasien ke Cathlab tidak menggunakan modalitas yang sesuai (pasien yang seharusnya dengan tempat tidur diantar dengan kursi roda)",
+            3
+          ],
+          [
+            "Suhu dan kelembaban ruang tindakan Cathlab tidak sesuai",
+            3
+          ],
+          [
+            "Malfungsi alat-alat di cathlab",
+            5
+          ]
+        ],
+        "pj": "dr. Muhammad Yolandi Sumadio, Sp.JP(K) / Nina Apriyani Harefa, S. Kep., Ners",
+        "detailKode": "CathLab",
+        "risikoDetail": [
+          [
+            "Terpapar radiasi dari alat C-Arm",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Komplikasi medis terkait tindakan Angiografi Coroner/PCI",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Proses transfer pasien ke Cathlab tidak menggunakan modalitas yang sesuai (pasien yang seharusnya dengan tempat tidur diantar dengan kursi roda)",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Suhu dan kelembaban ruang tindakan Cathlab tidak sesuai",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ],
+          [
+            "Malfungsi alat-alat di cathlab",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "kemoterapi",
+        "nama": "KEMOTERAPI",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Presentase kejadian ekstravasasi pada pasien kemoterapi",
+            "< 5%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Penyelesaian Kemoterapi Sesuai Protokol Kemoterapi",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Resiko petugas terpapar obat sitostatika",
+            4
+          ],
+          [
+            "Resiko keluarga pendamping pasien terpapar obat sitostatika",
+            4
+          ],
+          [
+            "Resiko terjadinya ekstravasasi",
+            12
+          ],
+          [
+            "Kesalahan identifikasi pasien",
+            5
+          ],
+          [
+            "Keterlambatan waktu penyelesaian kemoterapi sesuai protokol",
+            6
+          ],
+          [
+            "Terjadinya alergi / hipersensitifitas saat pemberian obat kemoterapi",
+            8
+          ],
+          [
+            "Kesalahan pemberian obat",
+            5
+          ],
+          [
+            "Pemahaman yang tidak merata pada petugas unit terkait tentang alur pelayanan kemoterapi ODC (penjadwalan Kemoterapi dan penyerahan protokol) sehingga mengganggu proses pengamperahan obat Kemoterapi",
+            12
+          ],
+          [
+            "Kekurangan stok APD Standar",
+            20
+          ]
+        ],
+        "pj": "dr. Endi Taris Pasaribu, Msi. Med.Sp. B.Subsp. Onk (K)/ Sisjuanti, S. Kep., Ners",
+        "detailKode": "Kemo",
+        "risikoDetail": [
+          [
+            "Resiko petugas terpapar obat sitostatika",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Resiko keluarga pendamping pasien terpapar obat sitostatika",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Resiko terjadinya ekstravasasi",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Kesalahan identifikasi pasien",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Keterlambatan waktu penyelesaian kemoterapi sesuai protokol",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Terjadinya alergi / hipersensitifitas saat pemberian obat kemoterapi",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "1 (Sulit)",
+            8,
+            false
+          ],
+          [
+            "Kesalahan pemberian obat",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Pemahaman yang tidak merata pada petugas unit terkait tentang alur pelayanan kemoterapi ODC (penjadwalan Kemoterapi dan penyerahan protokol) sehingga mengganggu proses pengamperahan obat Kemoterapi",
+            "3 (Sedang)",
+            "4 (Sering)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Kekurangan stok APD Standar",
+            "4 (Berat)",
+            "5 (Sangat Sering)",
+            20,
+            "3 (Agak Mudah)",
+            60,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "igd",
+        "nama": "IGD",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Upaya Pencegahan Risiko Pasien Jatuh",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelengkapan Pengisian Asesmen Awal ≤ 30 Menit",
+            "≥90%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Pemasangan Gelang Identifikasi Pasien",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kematian Pasien ≤ 24 Jam Di IGD",
+            "≤ 0.2 %"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pemberi pelayanan kegawatdaruratan yang bersertifikat",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Response Time Konsultasi DPJP di IGD ≤ 60 menit",
+            "≥90%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Waktu tunggu pengambilan sampel laboratorium di IGD < 10 menit.",
+            "≥90%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Turn Around Time hasil laboratorium dasar di IGD",
+            "≥90%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Boarding Time Pasien IGD ke Rawat Inap ≤ 120 menit",
+            "≥90%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kesalahan identifikasi pasien saat proses pendaftaran pasien lama di IGD.",
+            9
+          ],
+          [
+            "Keterlambatan pemindahan pasien dari IGD ke ruang rawat inap",
+            15
+          ],
+          [
+            "Kerusakan fasilitas (plafon bocor) di area perawatan pasien",
+            12
+          ],
+          [
+            "Riwayat alergi obat tidak teridentifikasi saat asesmen awal",
+            3
+          ],
+          [
+            "Risiko pasien jatuh dari tempat tidur",
+            3
+          ],
+          [
+            "Petugas tertusuk jarum atau benda tajam",
+            3
+          ],
+          [
+            "Kesalahan triase pasien",
+            8
+          ],
+          [
+            "Keterlambatan respon dokter terhadap pasien gawat darurat",
+            8
+          ],
+          [
+            "Kesalahan pemberian obat pada pasien IGD",
+            8
+          ],
+          [
+            "Kepadatan pasien di IGD (overcrowding)",
+            12
+          ]
+        ],
+        "pj": "Dr. dr. Wulan Fadinie, Sp. An-TI, Subsp. A.n. O(K)/Theresiawaty Tarigan, S. Kep., Ners",
+        "detailKode": "IGD",
+        "risikoDetail": [
+          [
+            "Kesalahan identifikasi pasien saat proses pendaftaran pasien lama di IGD.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "4 (Mudah)",
+            32,
+            true
+          ],
+          [
+            "Keterlambatan pemindahan pasien dari IGD ke ruang rawat inap",
+            "3 (Sedang)",
+            "5 (Sangat Sering)",
+            15,
+            "2 (Agak Sulit)",
+            30,
+            false
+          ],
+          [
+            "Kerusakan fasilitas (plafon bocor) di area perawatan pasien",
+            "3 (Sedang)",
+            "4 (Sering)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Riwayat alergi obat tidak teridentifikasi saat asesmen awal",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Risiko pasien jatuh dari tempat tidur",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Petugas tertusuk jarum atau benda tajam",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ],
+          [
+            "Kesalahan triase pasien",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Keterlambatan respon dokter terhadap pasien gawat darurat",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Kesalahan pemberian obat pada pasien IGD",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Kepadatan pasien di IGD (overcrowding)",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "ibp",
+        "nama": "IBP",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Penundaan Operasi Elektif",
+            "≤ 5%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Penandaan Lokasi Operasi (Site Marking) pada Pasien Operasi",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kesesuaian Diagnosis Operasi Placenta Accreta Specrum Disorder (PASD) Sebelum dan Sesudah Operasi",
+            "≥ 85-90%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Kebersihan Tangan di IBP",
+            "> 85%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketidaksesuaian Diagnosis Pre dan Post Operasi.",
+            "≤5%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Pengisian Assesment Pra- Operasi",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan melakukan Surgical Safety Cheklist",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Ketidaksesuaian diagnosa pre dan post operasi",
+            9
+          ],
+          [
+            "Penundaan operasi elektif",
+            6
+          ],
+          [
+            "Salah pasien, salah prosedur, salah posisi area pembedahan",
+            5
+          ],
+          [
+            "Ketidaklengkapan asessmen anestesi",
+            5
+          ],
+          [
+            "Tertusuk jarum bekas pasien",
+            4
+          ],
+          [
+            "Efek samping obat-obatan anestesi dan sedasi",
+            5
+          ],
+          [
+            "Pasien mengalami perdarahan yang lebih banyak dari perkiraan awal",
+            8
+          ]
+        ],
+        "pj": "dr. M. Deni Nasution, Sp. BS (K)/Lenny Hutahaean,S. Kep., Ners",
+        "detailKode": "IBP",
+        "risikoDetail": [
+          [
+            "Ketidaksesuaian diagnosa pre dan post operasi",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "2 (Agak Sulit)",
+            18,
+            false
+          ],
+          [
+            "Penundaan operasi elektif",
+            "2 (Ringan)",
+            "3 (Sedang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Salah pasien, salah prosedur, salah posisi area pembedahan",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Ketidaklengkapan asessmen anestesi",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Tertusuk jarum bekas pasien",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            16,
+            false
+          ],
+          [
+            "Efek samping obat-obatan anestesi dan sedasi",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Pasien mengalami perdarahan yang lebih banyak dari perkiraan awal",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "2 (Agak Sulit)",
+            16,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rawat-jalan",
+        "nama": "RAWAT JALAN",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Waktu Tunggu Rawat Jalan",
+            "≥ 80%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kehadiran DPJP di Poliklinik Spesialis",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Penerimaan Hasil Expertise EEG dan EMG ≤ 24 jam",
+            "≥ 80%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Proses Pelayanan Bronkoskopi ≤ 120 Menit",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kesalahan Identifikasi: Salah pasien saat pemanggilan atau tindakan.",
+            4
+          ],
+          [
+            "Resiko Jatuh: Pasien jatuh karena lantai licin, kursi tunggu kurang, atau kondisi fisik lemah.",
+            4
+          ],
+          [
+            "Medication Safety: Kesalahan pemberian resep, dosis, atau jenis obat.",
+            5
+          ],
+          [
+            "Kesalahan Diagnosa: Terlewat atau terlambat diagnosa (missed/delayed diagnosis).",
+            5
+          ],
+          [
+            "Waktu Tunggu Lama: Pelayanan antrian yang tidak efisien memicu komplain.",
+            9
+          ],
+          [
+            "Penularan Penyakit: Risiko tertular penyakit dari pasien lain atau lingkungan, terutama di ruang tunggu yang padat",
+            6
+          ],
+          [
+            "Tertusuk Jarum: Insiden tertusuk jarum suntik bekas pakai.",
+            5
+          ],
+          [
+            "Paparan Cairan Tubuh: Terpercik darah atau cairan tubuh pasien.",
+            3
+          ],
+          [
+            "Ketidaktepatan Jadwal: Dokter datang tidak tepat waktu.",
+            9
+          ],
+          [
+            "Kerusakan Alat Medis: Gangguan pada alat medis yang menghambat pelayanan.",
+            12
+          ],
+          [
+            "Kekerasan Fisik/Verbal: Komplain agresif dari pasien atau keluarga.",
+            9
+          ],
+          [
+            "Stress Kerja: Beban kerja tinggi.",
+            12
+          ],
+          [
+            "Sikap Kerja Tidak Ergonomis: Risiko cedera otot/rangka.",
+            9
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD/Harliadani Nasution, SST",
+        "detailKode": "Rajal",
+        "risikoDetail": [
+          [
+            "Kesalahan Identifikasi: Salah pasien saat pemanggilan atau tindakan.",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            12,
+            true
+          ],
+          [
+            "Resiko Jatuh: Pasien jatuh karena lantai licin, kursi tunggu kurang, atau kondisi fisik lemah.",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Medication Safety: Kesalahan pemberian resep, dosis, atau jenis obat.",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Kesalahan Diagnosa: Terlewat atau terlambat diagnosa (missed/delayed diagnosis).",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "2 (Agak Sulit)",
+            10,
+            false
+          ],
+          [
+            "Waktu Tunggu Lama: Pelayanan antrian yang tidak efisien memicu komplain.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Penularan Penyakit: Risiko tertular penyakit dari pasien lain atau lingkungan, terutama di ruang tunggu yang padat",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Tertusuk Jarum: Insiden tertusuk jarum suntik bekas pakai.",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Paparan Cairan Tubuh: Terpercik darah atau cairan tubuh pasien.",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Ketidaktepatan Jadwal: Dokter datang tidak tepat waktu.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Gangguan pada alat medis yang menghambat pelayanan.",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "4 (Mudah)",
+            48,
+            false
+          ],
+          [
+            "Kekerasan Fisik/Verbal: Komplain agresif dari pasien atau keluarga.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "2 (Agak Sulit)",
+            18,
+            false
+          ],
+          [
+            "Stress Kerja: Beban kerja tinggi.",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Sikap Kerja Tidak Ergonomis: Risiko cedera otot/rangka.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "hemodialisa",
+        "nama": "HEMODIALISA",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Anemia berat yaitu jika Hb<6",
+            "0%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Presentase pasien HD dengan kt/v > 1,2",
+            "≥90%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Petugas tertusuk jarum bekas pasien",
+            5
+          ],
+          [
+            "Petugas tertular penyakit infeksius seperti TB, Hep. B, Hep C, atau HIV",
+            5
+          ],
+          [
+            "Air terkontaminasi akibat gangguan di instalasi air",
+            5
+          ],
+          [
+            "Pasang ulang CDL akibat infeksi",
+            12
+          ],
+          [
+            "Terpeleset atau terjatuh akibat plafon bocor di ruang HD",
+            5
+          ],
+          [
+            "Penundaan tindakan HD apabila barang terlambat masuk dari vendor mesin",
+            4
+          ],
+          [
+            "Mesin HD panas akibat AC mati",
+            4
+          ],
+          [
+            "Adekuasi dialisis tidak tercapai",
+            12
+          ],
+          [
+            "Resiko jatuh",
+            5
+          ]
+        ],
+        "pj": "DR. dr. Riri Andri Muzasti, Sp. PD-KGH, FINASIM / Ana Pebriana Lubis, S. Kep, Ners",
+        "detailKode": "HD",
+        "risikoDetail": [
+          [
+            "Petugas tertusuk jarum bekas pasien",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Petugas tertular penyakit infeksius seperti TB, Hep. B, Hep C, atau HIV",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Air terkontaminasi akibat gangguan di instalasi air",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Pasang ulang CDL akibat infeksi",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Terpeleset atau terjatuh akibat plafon bocor di ruang HD",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "2 (Agak Sulit)",
+            10,
+            false
+          ],
+          [
+            "Penundaan tindakan HD apabila barang terlambat masuk dari vendor mesin",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Mesin HD panas akibat AC mati",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "1 (Sulit)",
+            4,
+            false
+          ],
+          [
+            "Adekuasi dialisis tidak tercapai",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "2 (Agak Sulit)",
+            24,
+            false
+          ],
+          [
+            "Resiko jatuh",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rehabilitasi-medik",
+        "nama": "REHABILITASI MEDIK",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Drop Out Pasien Terhadap Pelayanan Rehabilitasi yang Direncanakan",
+            "≤50%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Risiko infeksi karena penggunaan alat terapi yang sama secara bergantian",
+            8
+          ],
+          [
+            "Luka Bakar pada pasien",
+            4
+          ],
+          [
+            "Risiko pasien terjatuh",
+            10
+          ],
+          [
+            "Komplain dari pasien karena antrian yang lama",
+            6
+          ],
+          [
+            "Petugas kelelahan karena kurangnya SDM",
+            9
+          ]
+        ],
+        "pj": "dr. Tari Mediyanti, Sp. KFR/Muhammad Adi Yusni, A.Md.Ft",
+        "detailKode": "RehabMedik",
+        "risikoDetail": [
+          [
+            "Risiko infeksi karena penggunaan alat terapi yang sama secara bergantian",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "2 (Agak Sulit)",
+            16,
+            false
+          ],
+          [
+            "Luka Bakar pada pasien",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Risiko pasien terjatuh",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Komplain dari pasien karena antrian yang lama",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Petugas kelelahan karena kurangnya SDM",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "poli-eksekutif-sibayak",
+        "nama": "POLI EKSEKUTIF SIBAYAK",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kehadiran DPJP di Poliklinik Spesialis",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kesalahan Identifikasi: Salah pasien saat pemanggilan atau tindakan.",
+            4
+          ],
+          [
+            "Resiko Jatuh: Pasien jatuh karena lantai licin, kursi tunggu kurang, atau kondisi fisik lemah.",
+            4
+          ],
+          [
+            "Medication Safety: Kesalahan pemberian resep, dosis, atau jenis obat.",
+            5
+          ],
+          [
+            "Kesalahan Diagnosa: Terlewat atau terlambat diagnosa (missed/delayed diagnosis).",
+            5
+          ],
+          [
+            "Waktu Tunggu Lama: Pelayanan antrian yang tidak efisien memicu komplain.",
+            9
+          ],
+          [
+            "Penularan Penyakit: Risiko tertular penyakit dari pasien lain atau lingkungan, terutama di ruang tunggu yang padat",
+            6
+          ],
+          [
+            "Tertusuk Jarum: Insiden tertusuk jarum suntik bekas pakai.",
+            5
+          ],
+          [
+            "Paparan Cairan Tubuh: Terpercik darah atau cairan tubuh pasien.",
+            3
+          ],
+          [
+            "Ketidaktepatan Jadwal: Dokter datang tidak tepat waktu.",
+            9
+          ],
+          [
+            "Kerusakan Alat Medis: Gangguan pada alat medis yang menghambat pelayanan.",
+            12
+          ],
+          [
+            "Kekerasan Fisik/Verbal: Komplain agresif dari pasien atau keluarga.",
+            9
+          ],
+          [
+            "Stress Kerja: Beban kerja tinggi.",
+            12
+          ],
+          [
+            "Sikap Kerja Tidak Ergonomis: Risiko cedera otot/rangka.",
+            9
+          ]
+        ],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD/Harliadani Nasution, SST",
+        "detailKode": "Rajal",
+        "risikoDetail": [
+          [
+            "Kesalahan Identifikasi: Salah pasien saat pemanggilan atau tindakan.",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            12,
+            true
+          ],
+          [
+            "Resiko Jatuh: Pasien jatuh karena lantai licin, kursi tunggu kurang, atau kondisi fisik lemah.",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Medication Safety: Kesalahan pemberian resep, dosis, atau jenis obat.",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Kesalahan Diagnosa: Terlewat atau terlambat diagnosa (missed/delayed diagnosis).",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "2 (Agak Sulit)",
+            10,
+            false
+          ],
+          [
+            "Waktu Tunggu Lama: Pelayanan antrian yang tidak efisien memicu komplain.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Penularan Penyakit: Risiko tertular penyakit dari pasien lain atau lingkungan, terutama di ruang tunggu yang padat",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Tertusuk Jarum: Insiden tertusuk jarum suntik bekas pakai.",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Paparan Cairan Tubuh: Terpercik darah atau cairan tubuh pasien.",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Ketidaktepatan Jadwal: Dokter datang tidak tepat waktu.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Kerusakan Alat Medis: Gangguan pada alat medis yang menghambat pelayanan.",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "4 (Mudah)",
+            48,
+            false
+          ],
+          [
+            "Kekerasan Fisik/Verbal: Komplain agresif dari pasien atau keluarga.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "2 (Agak Sulit)",
+            18,
+            false
+          ],
+          [
+            "Stress Kerja: Beban kerja tinggi.",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Sikap Kerja Tidak Ergonomis: Risiko cedera otot/rangka.",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "radiologi",
+        "nama": "RADIOLOGI",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Pengulangan Foto",
+            "≤ 5%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Hasil Ekspertise Radiologi ≤ 24 jam",
+            "≥ 95 %"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kesalahan data pasien di formulir radiologi",
+            4
+          ],
+          [
+            "Kesalahan lokasi marker",
+            6
+          ],
+          [
+            "Proses perbaikan alat radiologi yang cukup lama",
+            12
+          ],
+          [
+            "Risiko paparan radiasi karena APD kurang memadai",
+            12
+          ],
+          [
+            "Pengulangan pemeriksaan akibat pasien kurang kooperatif",
+            6
+          ],
+          [
+            "Hasil bacaan radiologi lama dikeluarkan",
+            12
+          ]
+        ],
+        "pj": "dr. Elvita R. Daulay, M.Ked(Rad),Sp. Rad(K)/Muhammad Jaka Syahputra, S. Si",
+        "detailKode": "Radiologi",
+        "risikoDetail": [
+          [
+            "Kesalahan data pasien di formulir radiologi",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            16,
+            false
+          ],
+          [
+            "Kesalahan lokasi marker",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "4 (Mudah)",
+            24,
+            false
+          ],
+          [
+            "Proses perbaikan alat radiologi yang cukup lama",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "2 (Agak Sulit)",
+            24,
+            false
+          ],
+          [
+            "Risiko paparan radiasi karena APD kurang memadai",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Pengulangan pemeriksaan akibat pasien kurang kooperatif",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Hasil bacaan radiologi lama dikeluarkan",
+            "3 (Sedang)",
+            "4 (Sering)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "laboratorium-klinik-terpadu",
+        "nama": "LABORATORIUM KLINIK TERPADU",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Pelaporan hasil Kritis Laboratorium < 30 menit",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Respon Time Pemeriksaan Analisa Gas Darah (AGDA) IGD < 30 Menit",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pelaporan Hasil Pemeriksaan Spesimen Patologi Anatomik < 7 hari",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pelaporan Turn Around Time (TAT) Pemeriksaan Mikrobiologi Klinik",
+            ">95%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pelaporan Waktu Tunggu Hasil Laboratorium < 140 menit",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Risiko tertusuk jarum bekas pasien",
+            5
+          ],
+          [
+            "Pengambilan darah terlambat karena kurangnya SDM",
+            16
+          ],
+          [
+            "Overheating alat-alat laboratorium karena suhu ruangan meningkat akibat AC mati",
+            10
+          ],
+          [
+            "Kesalahan input nama pasien atau hasil pemeriksaan akibat penumpukan order",
+            5
+          ],
+          [
+            "Sample rusak akibat tabung yang tidak sesuai standar atau kesalahan saat pengambilan sample",
+            8
+          ],
+          [
+            "Hasil pemeriksaan yang inkonklusif akibat adanya kontaminasi",
+            3
+          ]
+        ],
+        "pj": "dr. Almaycano Ginting, M. Kes, M.Ked(Clin.Path), Sp. PK/Kholidah Putri Warni Dasopang, S. K. M",
+        "detailKode": "Lab",
+        "risikoDetail": [
+          [
+            "Risiko tertusuk jarum bekas pasien",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Pengambilan darah terlambat karena kurangnya SDM",
+            "4 (Berat)",
+            "4 (Sering)",
+            16,
+            "3 (Agak Mudah)",
+            48,
+            false
+          ],
+          [
+            "Overheating alat-alat laboratorium karena suhu ruangan meningkat akibat AC mati",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "2 (Agak Sulit)",
+            20,
+            false
+          ],
+          [
+            "Kesalahan input nama pasien atau hasil pemeriksaan akibat penumpukan order",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Sample rusak akibat tabung yang tidak sesuai standar atau kesalahan saat pengambilan sample",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "2 (Agak Sulit)",
+            16,
+            false
+          ],
+          [
+            "Hasil pemeriksaan yang inkonklusif akibat adanya kontaminasi",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "gizi",
+        "nama": "GIZI",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Pemberian Makanan Kepada Pasien Rawat Inap",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Insiden kontaminasi makanan (penerimaan bahan makanan, penyimpanan bahan makanan, pengolahan, distribusi)",
+            5
+          ],
+          [
+            "Ketidakpatuhan higiene & sanitasi petugas (APD dan kepatuhan cuci tangan)",
+            10
+          ],
+          [
+            "Kesalahan verifikasi & monitoring distribusi makanan (ketepatan jam pengantaran)",
+            8
+          ],
+          [
+            "Kesalahan penulisan/pemberian diet pasien",
+            10
+          ],
+          [
+            "Bahan makanan tidak cukup atau rusak karena penyimpanan salah",
+            10
+          ],
+          [
+            "Makanan hangus/masih mentah",
+            8
+          ],
+          [
+            "Pengkajian/asuhan gizi tidak terlaksana",
+            20
+          ]
+        ],
+        "pj": "dr. Fitriyani Nasution, M. Gizi, Sp.GK, Subsp. KM/Indah Septiani Pasaribu, S. Kep, Ners, M. Kep",
+        "detailKode": "Gizi",
+        "risikoDetail": [
+          [
+            "Insiden kontaminasi makanan (penerimaan bahan makanan, penyimpanan bahan makanan, pengolahan, distribusi)",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Ketidakpatuhan higiene & sanitasi petugas (APD dan kepatuhan cuci tangan)",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Kesalahan verifikasi & monitoring distribusi makanan (ketepatan jam pengantaran)",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Kesalahan penulisan/pemberian diet pasien",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Bahan makanan tidak cukup atau rusak karena penyimpanan salah",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "2 (Agak Sulit)",
+            20,
+            false
+          ],
+          [
+            "Makanan hangus/masih mentah",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Pengkajian/asuhan gizi tidak terlaksana",
+            "5 (Sangat Berat)",
+            "4 (Sering)",
+            20,
+            "2 (Agak Sulit)",
+            40,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "cssd",
+        "nama": "CSSD",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelulusan Uji Biologi Pada Proses Sterilisasi di CSSD",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Terjadinya kerusakan pada mesin sterilisasi",
+            10
+          ],
+          [
+            "Alat/ instrument tidak pre cleaning",
+            12
+          ],
+          [
+            "Salah pelabelan",
+            3
+          ],
+          [
+            "Alat / instrument tidak lengkap atau hilang",
+            9
+          ]
+        ],
+        "pj": "Yopi Agusanda/Anggun Dita Mentari, A. Md",
+        "detailKode": "CSSD",
+        "risikoDetail": [
+          [
+            "Terjadinya kerusakan pada mesin sterilisasi",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Alat/ instrument tidak pre cleaning",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Salah pelabelan",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ],
+          [
+            "Alat / instrument tidak lengkap atau hilang",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "2 (Agak Sulit)",
+            18,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "linen-laundry",
+        "nama": "LINEN-LAUNDRY",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Penyediaan Linen untuk Ruang Rawat Inap",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Standar Kuman Bagi Linen Bersih Setelah Proses",
+            "<20 CFU 10X10 cm2"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Tidak Ada Complain dari Pengguna Jasa Linen-Laundry",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kurangnya PAR linen operasi dan ruangan",
+            20
+          ],
+          [
+            "Terlambatnya distribusi linen bersih",
+            9
+          ],
+          [
+            "Kehilangan stok linen",
+            6
+          ],
+          [
+            "Kerusakan mesin cuci linen infeksius",
+            15
+          ],
+          [
+            "Stok linen ruangan kurang",
+            9
+          ],
+          [
+            "Penutup linen saat pengangkutan dan distribusi tidak sesuai standar",
+            8
+          ]
+        ],
+        "pj": "Nafi Yannis, S. Kep, Ners, M. Kep/Petra Singarimbun, S. Pd",
+        "detailKode": "Linen",
+        "risikoDetail": [
+          [
+            "Kurangnya PAR linen operasi dan ruangan",
+            "4 (Berat)",
+            "5 (Sangat Sering)",
+            20,
+            "3 (Agak Mudah)",
+            30,
+            true
+          ],
+          [
+            "Terlambatnya distribusi linen bersih",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Kehilangan stok linen",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "4 (Mudah)",
+            24,
+            false
+          ],
+          [
+            "Kerusakan mesin cuci linen infeksius",
+            "5 (Sangat Berat)",
+            "3 (Sedang)",
+            15,
+            "3 (Agak Mudah)",
+            45,
+            false
+          ],
+          [
+            "Stok linen ruangan kurang",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Penutup linen saat pengangkutan dan distribusi tidak sesuai standar",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "farmasi",
+        "nama": "FARMASI",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Penggunaan Formularium Nasional",
+            "≥ 80%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Pemasangan Label Obat High Alert",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepuasan Pelayanan Farmasi Rawat Jalan",
+            "≥80%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Antrian obat rawat jalan yang lama sehingga memicu komplain",
+            9
+          ],
+          [
+            "Stok obat-obatan PRB terbatas",
+            8
+          ],
+          [
+            "Pelayanan obat-obatan lama akibat kurangnya SDM",
+            16
+          ],
+          [
+            "Ketidaksesuaian stok obat di farmasi dengan di periksa.id",
+            9
+          ],
+          [
+            "Kurangnya stok stiker untuk obat-obatan high alert dan LASA",
+            8
+          ]
+        ],
+        "pj": "Rima Elfitra Rambe, S.Farm., Apt/Yuliana, S.Farm., Apt",
+        "detailKode": "Farmasi",
+        "risikoDetail": [
+          [
+            "Antrian obat rawat jalan yang lama sehingga memicu komplain",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Stok obat-obatan PRB terbatas",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Pelayanan obat-obatan lama akibat kurangnya SDM",
+            "4 (Berat)",
+            "4 (Sering)",
+            16,
+            "2 (Agak Sulit)",
+            32,
+            false
+          ],
+          [
+            "Ketidaksesuaian stok obat di farmasi dengan di periksa.id",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Kurangnya stok stiker untuk obat-obatan high alert dan LASA",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "bdrs",
+        "nama": "BDRS",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Respon Time Penyedian Darah yang Sudah Tersedia di RS ≤ 30 menit",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Persentase Produk Darah yang Ditransfusikan dari Total Produk Darah yang Telah Dilakukan Crossmatch",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Stok darah tidak tersedia",
+            6
+          ],
+          [
+            "Darah tidak terpakai sampai lewat masa kadaluarsa",
+            2
+          ],
+          [
+            "Kerusakan kulkas dan alat lainnya",
+            5
+          ],
+          [
+            "Darah yang sudah di-cross match tidak jadi digunakan",
+            3
+          ]
+        ],
+        "pj": "dr. Malayana Rahmita Nasution,M.Ked(Clin.Path), Sp. PK/Kurnia Rezky Jayanti Lubis, A.Md.AK",
+        "detailKode": "BDRS",
+        "risikoDetail": [
+          [
+            "Stok darah tidak tersedia",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Darah tidak terpakai sampai lewat masa kadaluarsa",
+            "2 (Ringan)",
+            "1 (Sangat Jarang)",
+            2,
+            "4 (Mudah)",
+            8,
+            false
+          ],
+          [
+            "Kerusakan kulkas dan alat lainnya",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Darah yang sudah di-cross match tidak jadi digunakan",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "mcu",
+        "nama": "MCU",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelengkapan Pengisian Rekam Medis MCU",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Penyerahan Hasil MCU",
+            "95%"
+          ]
+        ],
+        "risiko": [
+          [
+            "SDM laboratorium tidak stand-by",
+            6
+          ],
+          [
+            "Salah identifikasi pasien (hasil tertukar)",
+            4
+          ],
+          [
+            "Keterlambatan hasil MCU",
+            6
+          ],
+          [
+            "Kesalahan input data",
+            3
+          ],
+          [
+            "Pasien jatuh di area MCU",
+            5
+          ]
+        ],
+        "pj": "dr. Ika Setia Ningrum, M. K. M/Rizky, SKM",
+        "detailKode": "MCU",
+        "risikoDetail": [
+          [
+            "SDM laboratorium tidak stand-by",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Salah identifikasi pasien (hasil tertukar)",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            16,
+            false
+          ],
+          [
+            "Keterlambatan hasil MCU",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kesalahan input data",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "4 (Mudah)",
+            12,
+            false
+          ],
+          [
+            "Pasien jatuh di area MCU",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "pemulasaran-jenazah",
+        "nama": "PEMULASARAN JENAZAH",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Penyelesaian Pemulasaran Jenazah ≤ 2 Jam Sejak Jenazah Diterima di Unit Pemulasaran",
+            "≥ 90%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Paparan Penyakit Infeksius (HIV, Hepatitis B/C, TB, dll.)",
+            5
+          ],
+          [
+            "Kesalahan Identifikasi Jenazah",
+            5
+          ],
+          [
+            "Paparan Bahan Kimia (Formalin, Disinfektan Konsentrasi Tinggi)",
+            12
+          ],
+          [
+            "Kontaminasi Lingkungan (Limbah Infeksius Tidak Terkelola)",
+            8
+          ],
+          [
+            "Infeksi Silang Lingkungan (Kontaminasi Permukaan & Alat)",
+            12
+          ]
+        ],
+        "pj": "dr. Adriansyah Lubis, M. Kes, M. Ked(For), Sp. FM/Zulfauzen",
+        "detailKode": "Jenazah",
+        "risikoDetail": [
+          [
+            "Paparan Penyakit Infeksius (HIV, Hepatitis B/C, TB, dll.)",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Kesalahan Identifikasi Jenazah",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Paparan Bahan Kimia (Formalin, Disinfektan Konsentrasi Tinggi)",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ],
+          [
+            "Kontaminasi Lingkungan (Limbah Infeksius Tidak Terkelola)",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Infeksi Silang Lingkungan (Kontaminasi Permukaan & Alat)",
+            "4 (Berat)",
+            "3 (Sedang)",
+            12,
+            "3 (Agak Mudah)",
+            36,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "rekam-medik",
+        "nama": "REKAM MEDIK",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelengkapan Resume Medis Setelah Pasien Pulang Rawat Inap",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Laporan Rekam Medis < Tanggal 5",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Mata lelah karena terlalu lama menggunakan komputer",
+            9
+          ],
+          [
+            "Sulitnya koordinasi dengan DPJP yang tidak lengkap mengisi rekam medis elektronik",
+            16
+          ],
+          [
+            "Gejala LBP akibat terlalu lama duduk",
+            9
+          ],
+          [
+            "Risiko peretasan rekam medis elektronik",
+            5
+          ]
+        ],
+        "pj": "Isma, A. Md/Endang Gusti Rand, A. Md",
+        "detailKode": "RM",
+        "risikoDetail": [
+          [
+            "Mata lelah karena terlalu lama menggunakan komputer",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Sulitnya koordinasi dengan DPJP yang tidak lengkap mengisi rekam medis elektronik",
+            "4 (Berat)",
+            "4 (Sering)",
+            16,
+            "3 (Agak Mudah)",
+            48,
+            false
+          ],
+          [
+            "Gejala LBP akibat terlalu lama duduk",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Risiko peretasan rekam medis elektronik",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "2 (Agak Sulit)",
+            10,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "it",
+        "nama": "IT",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Respon Time terhadap Troubleshooting IT – Komunikasi Kurang dari 60 Menit",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Kerusakan perangkat komputer",
+            4
+          ],
+          [
+            "Kerusakan perangkat jaringan",
+            9
+          ],
+          [
+            "Hacking",
+            4
+          ],
+          [
+            "Data Phising",
+            3
+          ],
+          [
+            "Gangguan arus listrik (tersengat listrik)",
+            4
+          ]
+        ],
+        "pj": "Yoseph Juli Christopher Sitanggang, S. Kom/Riki Setiawan, S. Kom",
+        "detailKode": "IT",
+        "risikoDetail": [
+          [
+            "Kerusakan perangkat komputer",
+            "2 (Ringan)",
+            "2 (Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Kerusakan perangkat jaringan",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "3 (Agak Mudah)",
+            27,
+            false
+          ],
+          [
+            "Hacking",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Data Phising",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Gangguan arus listrik (tersengat listrik)",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "psrs",
+        "nama": "PSRS",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Efektivitas Pengolahan Air Bersih Non Konsumsi di Rumah Sakit",
+            "≥ 95 %"
+          ]
+        ],
+        "risiko": [
+          [
+            "Risiko terpeleset akibat kebocoran plafon dan atap",
+            15
+          ],
+          [
+            "Panel listrik korslet",
+            8
+          ],
+          [
+            "Gangguan sanitasi akibat kerusakan pompa air",
+            4
+          ],
+          [
+            "Risiko tersandung akibat keramik lantai pecah-pecah",
+            4
+          ],
+          [
+            "Risiko orang terjebak di dalam lift saat lift malfungsi",
+            4
+          ],
+          [
+            "Genset tidak langsung berfungsi pada saat mati listrik",
+            5
+          ]
+        ],
+        "pj": "Fadly Irawan, A. Md/Dandy Febriansah",
+        "detailKode": "PSRS",
+        "risikoDetail": [
+          [
+            "Risiko terpeleset akibat kebocoran plafon dan atap",
+            "5 (Sangat Berat)",
+            "3 (Sedang)",
+            15,
+            "3 (Agak Mudah)",
+            45,
+            false
+          ],
+          [
+            "Panel listrik korslet",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Gangguan sanitasi akibat kerusakan pompa air",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "4 (Mudah)",
+            16,
+            false
+          ],
+          [
+            "Risiko tersandung akibat keramik lantai pecah-pecah",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Risiko orang terjebak di dalam lift saat lift malfungsi",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Genset tidak langsung berfungsi pada saat mati listrik",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "2 (Agak Sulit)",
+            10,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "upal",
+        "nama": "UPAL",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Baku mutu air limbah cair",
+            "100%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Mata perih terkena uap sampah medis",
+            2
+          ],
+          [
+            "Terkena chemical pengelolaan air limbah",
+            1
+          ],
+          [
+            "Terhirup uap sampah medis",
+            10
+          ],
+          [
+            "Terhirup racun serangga",
+            10
+          ]
+        ],
+        "pj": "Eko Wibowo, S. K. M/Muhammad Rizki Aulia, AMKL",
+        "detailKode": "PAL",
+        "risikoDetail": [
+          [
+            "Mata perih terkena uap sampah medis",
+            "2 (Ringan)",
+            "1 (Sangat Jarang)",
+            2,
+            "3 (Agak Mudah)",
+            6,
+            false
+          ],
+          [
+            "Terkena chemical pengelolaan air limbah",
+            "1 (Sangat Ringan)",
+            "1 (Sangat Jarang)",
+            1,
+            "4 (Mudah)",
+            4,
+            false
+          ],
+          [
+            "Terhirup uap sampah medis",
+            "2 (Ringan)",
+            "5 (Sangat Sering)",
+            10,
+            "4 (Mudah)",
+            40,
+            false
+          ],
+          [
+            "Terhirup racun serangga",
+            "2 (Ringan)",
+            "5 (Sangat Sering)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "humas",
+        "nama": "HUMAS",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu (INM)",
+            "Kecepatan Waktu Tanggap Komplain",
+            "≥80%"
+          ],
+          [
+            "Indikator Nasional Mutu (INM)",
+            "Kepuasan Pasien dan Keluarga",
+            ">76,61%"
+          ]
+        ],
+        "risiko": [
+          [
+            "Resiko perkataan tidak menyenangkan dari pasien",
+            8
+          ],
+          [
+            "Perbuatan tidak menyenangkan dari pasien",
+            4
+          ],
+          [
+            "Resiko tertular penyakit dari pasien",
+            6
+          ],
+          [
+            "Kesulitan koordinasi dengan dinas sosial",
+            9
+          ]
+        ],
+        "pj": "Mufti Husni, SE/Mardhatillah, A. Md.M",
+        "detailKode": "Humas",
+        "risikoDetail": [
+          [
+            "Resiko perkataan tidak menyenangkan dari pasien",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Perbuatan tidak menyenangkan dari pasien",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "2 (Agak Sulit)",
+            8,
+            false
+          ],
+          [
+            "Resiko tertular penyakit dari pasien",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            18,
+            false
+          ],
+          [
+            "Kesulitan koordinasi dengan dinas sosial",
+            "3 (Sedang)",
+            "3 (Sedang)",
+            9,
+            "2 (Agak Sulit)",
+            18,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "sarana-medik",
+        "nama": "SARANA MEDIK",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ketepatan Waktu Pelaporan hasil pemeliharaan, setting dan kalibrasi ventilator dalam waktu 30 Menit",
+            "100%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "anastesiologi-dan-terapi-intensif",
+        "nama": "ANASTESIOLOGI DAN TERAPI INTENSIF",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kelengkapan Assesment Pra Anestesi dan Pra Sedasi",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Proses Monitoring Status Fisiologis Selama Anestesi",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Proses Monitoring Proses Pemulihan Anestesi dan Sedasi Dalam",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Konversi Tindakan dari Lokal/ Regional ke General Anestesi",
+            "<5%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Komplikasi Obat-obatan Anestesi Karena Over Dosis, Reaksi Obat",
+            "<5%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kejadian Salah Penempatan Endo Tracheal Tube (ETT)",
+            "0%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "logistik-dan-aset",
+        "nama": "LOGISTIK DAN ASET",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Tingkat Akurasi Data Stok Fisik dan Sistem Aplikasi",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Penanggulangan Aset Yang Sudah Rusak Atau Habis Masa Pakai",
+            ">90%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "uva",
+        "nama": "UVA",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pengajuan Klaim Reguler BPJS Sebelum /atau Tanggal 15 Setiap Bulan (RANAP)",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Pengajuan Klaim Reguler BPJS Sebelum /atau Tanggal 15 Setiap Bulan (RAJAL)",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Klaim pending BPJS ≤ 10 % dari pengajuan klaim regular BPJS setiap bulannya (RANAP)",
+            "≥90%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Klaim pending BPJS ≤ 10 % dari pengajuan klaim regular BPJS setiap bulannya (RAJAL)",
+            "≥90%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "komite-ppi",
+        "nama": "KOMITE PPI",
+        "indikator": [
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Kebersihan Tangan",
+            "> 85%"
+          ],
+          [
+            "Indikator Nasional Mutu 2026 (INM)",
+            "Kepatuhan Penggunaan Alat Pelindung Diri (APD)",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepatuhan Kebersihan Tangan di IBP",
+            "> 85%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Infeksi Aliran Darah (IAD)",
+            "< 3,5‰"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Infeksi Daerah Operasi (IDO)",
+            "< 2%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Infeksi Saluran Kemih (ISK)",
+            "< 4,7‰"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Plebitis",
+            "< 5‰"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Ventilator Assosiated Pneumonia (VAP)",
+            "< 5,8‰"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "tim-tb-dots",
+        "nama": "TIM TB DOTS",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Proporsi Pasien TB Paru Terkonfirmasi Bakteriologis di Antara Terduga TB",
+            "≥5-15%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "tim-code-blue",
+        "nama": "TIM CODE BLUE",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Respon Time Tim Code Blue Tiba di Tempat Kejadian < 5 Menit",
+            "100%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "komite-keperawatan",
+        "nama": "KOMITE KEPERAWATAN",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Audit Dokumentasi Penerapan Standar Asuhan Keperawatan",
+            "100%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "hvac",
+        "nama": "HVAC",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Kepatuhan Pemeliharaan AC Split Sesuai Jadwal",
+            "≥80%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "penelitian",
+        "nama": "PENELITIAN",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Jumlah Penelitian Klinis Aktif Terkait Kasus Maternal High Risk",
+            "≥ 4 Penelitian/ Tahun"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Persentase Kepatuhan Peneliti dalam Mengumpulkan Laporan Hasil Penelitian",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Persentase Peneliti yang Mencantumkan Acknowledgment kepada RS Prof. dr. CPL USU dalam Kata Pengantar",
+            "100%"
+          ],
+          [
+            "Indikator Mutu Prioritas Unit (IMP-U)",
+            "Persentase Peneliti yang Mencantumkan Afiliasi RS Prof. dr. CPL USU dalam Publikasi",
+            "100%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "diklat",
+        "nama": "DIKLAT",
+        "indikator": [
+          [
+            "Indikator Mutu Prioritas RS (IMP-RS)",
+            "Kepuasan Peserta Didik Spesialis dan Sub Spesialis Terhadap Proses Diagnosis dan Tatalaksana Placenta Accreta Specrum Disorder (PASD) di RS",
+            "≥80%"
+          ]
+        ],
+        "risiko": []
+      },
+      {
+        "id": "kamar-bersalin-vk",
+        "nama": "Kamar Bersalin (VK)",
+        "indikator": [],
+        "risiko": [],
+        "pj": "Riska Rumondang Siregar, S. Kep., Ners, M. Kes",
+        "detailKode": "VK",
+        "risikoDetail": [
+          [
+            "Bayi hipotermia karena infant warmer rusak",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ],
+          [
+            "Risiko penyakit menular seperti HIV, Hep. B dan Hep. C",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Bayi tertukar",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Tersiram air panas saat memandikan bayi",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "4 (Mudah)",
+            32,
+            false
+          ],
+          [
+            "Penculikan bayi",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "4 (Mudah)",
+            20,
+            false
+          ],
+          [
+            "Risiko terpeleset",
+            "4 (Berat)",
+            "2 (Jarang)",
+            8,
+            "3 (Agak Mudah)",
+            24,
+            false
+          ]
+        ]
+      },
+      {
+        "id": "instalasi-diagnostik-terpadu-idt",
+        "nama": "Instalasi Diagnostik Terpadu (IDT)",
+        "indikator": [],
+        "risiko": [],
+        "pj": "dr. Irfan Lubis, M.Ked(PD), Sp. PD",
+        "detailKode": "IDT",
+        "risikoDetail": [
+          [
+            "Kerusakan peralatan akibat kurang perawatan",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ],
+          [
+            "Maintenance alat elektromedis",
+            "3 (Sedang)",
+            "2 (Jarang)",
+            6,
+            "3 (Agak Mudah)",
+            12,
+            true
+          ],
+          [
+            "Manajemen situasi gawat darurat",
+            "5 (Sangat Berat)",
+            "2 (Jarang)",
+            10,
+            "3 (Agak Mudah)",
+            30,
+            false
+          ],
+          [
+            "Resiko cross infection kontak dari pasien",
+            "5 (Sangat Berat)",
+            "1 (Sangat Jarang)",
+            5,
+            "3 (Agak Mudah)",
+            15,
+            false
+          ],
+          [
+            "Ketidaktepatan waktu tindakan",
+            "4 (Berat)",
+            "1 (Sangat Jarang)",
+            4,
+            "3 (Agak Mudah)",
+            12,
+            false
+          ],
+          [
+            "Komplain pasien karena peningkatan jam puasa",
+            "3 (Sedang)",
+            "1 (Sangat Jarang)",
+            3,
+            "3 (Agak Mudah)",
+            9,
+            false
+          ]
+        ]
+      }
+    ]
+  },
+
   "umum": {
     "kelompok_standar": [
       {
