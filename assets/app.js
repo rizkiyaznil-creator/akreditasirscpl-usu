@@ -209,8 +209,9 @@
       h('p', { text: 'Sarikan berbasis peran dari Standar Akreditasi RS (KMK 1596/2024) dan Instrumen Survei Akreditasi RS (Kepdirjen 47104/2024) untuk orientasi internal. Pilih profesi Anda, atau buka bagian umum untuk gambaran menyeluruh.' })
     ]));
 
-    // Referensi cepat (kode emergensi & kebersihan tangan)
-    if (DATA.kodeEmergensi || DATA.cuciTangan) {
+    // Referensi cepat (kode emergensi, kebersihan tangan & mutu/risiko unit)
+    var hasMutu = DATA.mutuRisiko && (DATA.mutuRisiko.units || []).length;
+    if (DATA.kodeEmergensi || DATA.cuciTangan || hasMutu) {
       app.appendChild(h('h2', { class: 'section-title', text: 'Referensi cepat' }));
       var qr = h('div', { class: 'grid grid-2' });
       if (DATA.kodeEmergensi) {
@@ -223,6 +224,12 @@
         qr.appendChild(h('a', { class: 'pcard qcard', href: '#/cuci-tangan' }, [
           h('h3', {}, [h('span', { class: 'qicon', 'aria-hidden': 'true', text: '🧼' }), 'Kebersihan Tangan']),
           h('p', { text: 'Enam langkah cuci tangan (dengan ilustrasi) dan lima momen kebersihan tangan.' })
+        ]));
+      }
+      if (hasMutu) {
+        qr.appendChild(h('a', { class: 'pcard qcard', href: '#/mutu' }, [
+          h('h3', {}, [h('span', { class: 'qicon', 'aria-hidden': 'true', text: '📊' }), 'Mutu & Risiko Unit']),
+          h('p', { text: 'Indikator Mutu (IMUT) dan Risk Register tiap unit — ' + DATA.mutuRisiko.units.length + ' unit, dengan skor & band risiko.' })
         ]));
       }
       app.appendChild(qr);
@@ -286,12 +293,6 @@
       grid2.appendChild(h('a', { class: 'pcard', href: '#/standar' }, [
         h('h3', { text: 'Standar Rinci (Instrumen)' }),
         h('p', { text: 'Peta per-bab: pernyataan tiap standar (TKRS, KPS, SKP, PKPO, dll) beserta metode pembuktian R–D–O–W–S.' })
-      ]));
-    }
-    if (DATA.mutuRisiko && (DATA.mutuRisiko.units || []).length) {
-      grid2.appendChild(h('a', { class: 'pcard', href: '#/mutu' }, [
-        h('h3', { text: 'Mutu & Risiko Unit' }),
-        h('p', { text: 'Indikator Mutu (IMUT) dan Risk Register tiap unit — ' + DATA.mutuRisiko.units.length + ' unit, dengan skor & band risiko.' })
       ]));
     }
     app.appendChild(grid2);
